@@ -31,7 +31,7 @@ function Carousel() {
       <div
         className="RightButton"
         onClick={() => {
-          imgNumber < images.length -1 &&
+          imgNumber < images.length -1 && 
           setimgNumber(imgNumber + 1);
         }}
       >
