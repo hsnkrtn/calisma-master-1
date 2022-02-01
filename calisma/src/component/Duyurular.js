@@ -6,11 +6,27 @@ import "../App.css";
 
 
 function Duyurular() {
-const [bgaNumber, setbgaNumber]= useState(1);
+const [bgaNumber, setbgaNumber]= useState(0);
+
+
+
+  useEffect(() => {
+    if(bgaNumber==0 ) { 
+ setTimeout(() => {
+       setbgaNumber((bgaNumber) => bgaNumber + 1);
+}, 10000); }
+else {
+  setTimeout(() => {
+    setbgaNumber((bgaNumber) => bgaNumber - 1);
+}, 10000);
+  
+}
+});
+
 
 
   return (
-    <div className=" DuyurularAlani bga  " 
+    <div className=" DuyurularAlani bga " 
     style={{backgroundImage: `url(${bga[bgaNumber].a})`} }  >
    <div className="bga "> </div>
 
