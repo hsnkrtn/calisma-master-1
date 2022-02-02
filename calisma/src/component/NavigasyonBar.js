@@ -25,8 +25,7 @@ function Navigasyonbar() {
 
 
   const changeNavbar = ()=> {
-
-    console.log (window.scrollY); 
+ 
     if (window.scrollY > 60 ) { setshowNavbar(false)   } 
     else { setshowNavbar(true)}
 
@@ -37,7 +36,7 @@ function Navigasyonbar() {
   return (
     <nav className=   {showNavbar ? "NavigasyonBar Shadow   ":" NavigasyonBar  "} >
       <a className="brand">
-        <img className="brand1" src="hastane-logo.png" height={90}></img>
+        <img className="brand1" src="hastanelogo.jpg" height={90} width={90}></img>
           <p1 className=" brand2" > FIRAT ÜNİVERSİTESİ HASTANESİ  </p1>  
       </a>
 

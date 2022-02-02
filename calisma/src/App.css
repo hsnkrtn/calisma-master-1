@@ -23,8 +23,7 @@
   font-weight: 800;
   letter-spacing: 1px;
   color: white;
-  flex-wrap: wrap;
-  align-content: center;
+
 }
 
 .slider1 {
@@ -416,6 +415,10 @@ color: yellow  !important;
 
 
 }
+.HLeftButton:hover {
+  color: #850432;
+  
+  }
 
 .HLeftButton a {
   position: absolute;
@@ -448,6 +451,10 @@ left:0%;
   width: 90px;
   opacity: 0.7;
 
+
+}
+.HRightButton:hover {
+color: #850432;
 
 }
 .HRightButton a {
@@ -683,9 +690,13 @@ height: 750px;
   font-weight: bold;
   font-style: italic;
   text-decoration: none;
-  color: black;
+  color: #4f647f;
   text-align: center;
 
+
+}
+.buyukbaslik:hover{
+color: #850432;
 
 }
 
@@ -698,9 +709,12 @@ height: 750px;
   width: 400px;
   background-color: transparent;
   text-align: center;
-  border-radius: 10px;
+  border-bottom: #4f647f solid 5px ;
 }
+.Haber:hover {
+  border-color: #850432;
 
+}
 .Haber p1 {
   position: relative;
   top: 30px;
@@ -730,7 +744,7 @@ height: 750px;
 
 }
 .Haber h1:hover {
-color: #0d6efd;
+color: #850432;
 
 }
 .Hfotograf {
@@ -792,8 +806,12 @@ height: 500px;
   font-weight: bold;
   font-style: italic;
   text-decoration: none;
-  color: black;
+  color: #4f647f;
   text-align: center;
+
+}
+.DuyuruBuyukBaslik:hover {
+color: #850432;
 
 }
 .duyurular 
@@ -808,9 +826,6 @@ height: 500px;
   
 }
 
-.DuyuruBaslik{
-  font-size: 20px;
-}
 
 .DuyuruDetay {
 
@@ -824,15 +839,23 @@ height: 500px;
   height: 100px;
   width: 350px;
   background-color: rgb(255, 255, 255, 0.7);
-  border: #4f647f solid 1px;
+  border: #4f647f solid 2px;
   border-radius: 10px;
-  color: #4f647f;
   margin-left: 15px;
   margin-right: 15px;
-
+color: #4f647f;
   
 
 }
+.Duyuru h1 {
+  color: #4f647f;
+}
+.Duyuru:hover {
+color: #850432;
+border-color: #850432;
+
+}
+
 .DuyuruIcerik{
 position: absolute;
 top: 0px;
