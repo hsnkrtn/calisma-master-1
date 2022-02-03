@@ -42,7 +42,6 @@ function Carousel() {
         </a>
       </div>
 
-      {/* <img   className="Resimler" src={images[{imgNumber}].a}></img> */}
     </div>
   );
 }

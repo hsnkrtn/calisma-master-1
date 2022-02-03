@@ -4,17 +4,27 @@ import { Component } from "react";
 
 
 
+
 class Haberler extends Component {
   constructor(props) {
     super(props);
+    this.arttirHaberId = this.arttirHaberId.bind(this);
     this.state = {
       count: 0
     };
-  };
+  }
+
+ arttirHaberId (e){
+this.setState({
+    count : this.state.count+1
+  }
+); }
 
   render() {
     const HaberCount= this.state.count;
     const num = [1,2,3] ; 
+
+
     return (
       <DataConsumer>
         {(value) => {
@@ -22,7 +32,7 @@ class Haberler extends Component {
 
 
 
-    // console.log (hasHaber.Haberler[0].HaberBasligi);
+     console.log (hasHaber.HaberlerSonId);
 
   
          
@@ -39,12 +49,12 @@ class Haberler extends Component {
                   </section>
                 </div>
                 
-              {
-               num.map((ghs) =>  
-             
-               <div className="Haber" id={hasHaber.Haberler[HaberCount].HaberId}>
+         { hasHaber.Haberler.map((GöstelrilecekHaberler) => (
+            
+               <div className="Haber" id= {GöstelrilecekHaberler.HaberId}
+               >
                   <div>
-                    <img className="Hfotograf" src={hasHaber.Haberler[HaberCount].HaberFotografi}></img>
+                    <img className="Hfotograf" src={GöstelrilecekHaberler.HaberFotografi}></img>
                     <span className="Htarih">
                       <p1> Tarih </p1>
                     </span>
@@ -52,23 +62,28 @@ class Haberler extends Component {
 
                   <a>
                     <h1 className="HBaslik">
-                    {hasHaber.Haberler[HaberCount].HaberBasligi}
+                    {/* {hasHaber.Haberler[HaberCount].HaberBasligi} */}
+                    {GöstelrilecekHaberler.HaberBasligi}
                     </h1>
                   </a>
                   <p1 className="Hdetay">
-                  {hasHaber.Haberler[HaberCount].HaberDetayi}
+                  {GöstelrilecekHaberler.HaberDetayi}
                   </p1>
                 </div>
-     
-                )
-              
+         ))
                 }
+        
+       
+              
+              
+       
+              
               
 
          
              
 
-                <div className="HRightButton">
+                <div className="HRightButton" onClick={ this.arttirHaberId } >
                   <a>
                     <span>
                       <i className="fa fa-angle-right"></i>

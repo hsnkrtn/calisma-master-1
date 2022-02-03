@@ -4,19 +4,12 @@ const DataContext = React.createContext ();
 // provider , consumeer
  export  class ContextProvider  extends Component {
     
+
+    
 state   = {
-    users : [
-        {
-            name: "Hasan",
-            surname: "Kurtini",
-            deperment: "IT"
-        },
-        {
-            name: "enes",
-            surname: "dogan",
-            department: "electronic",
-        },
-    ],
+    HaberlerSonId:0 ,
+   
+
     Haberler : [
 {
     HaberId:1,
@@ -53,7 +46,8 @@ HaberDetayi : " detay3 "
 
 
 
-}
+},
+
 
     ]
 };
@@ -64,6 +58,7 @@ render() {
             {this.props.children}
         </DataContext.Provider>
         )
+
     }
 }
 const DataConsumer= DataContext.Consumer;
