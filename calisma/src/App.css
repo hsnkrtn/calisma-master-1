@@ -1,9 +1,19 @@
+.hehe{
+position: absolute;
+top: 3000px;
+left: 0px;
+background-color: red;
+width: 599px;
+height: 599px;
+}
+
 .brand {
   text-decoration: none;
   position: absolute;
   left: 10%;
   color: white;
 }
+
 
 .brand1 {
   position: relative;
@@ -925,6 +935,27 @@ height: 550px;
 background-color: #4f647f;
 } 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*  Mobil */
 
 @media only screen and (max-width: 700px) {
@@ -1170,12 +1201,16 @@ background-color: #4f647f;
 
   }
   .Card1 {
+    height: 180px;
+
     margin-top: 15px;
     text-align: center;
     width: 100%;
     left: 0px;
   }
   .Card2 {
+    height: 180px;
+
     margin-top: 15px;
 margin-left: 0px;
 margin-right: 0px;
@@ -1185,20 +1220,37 @@ margin-right: 0px;
     left: 0px;
   }
   .Card3 {
+    height: 180px;
+
     margin-top: 15px;
     width: 100%;
 
     left: 0px;
   }
   .HVEbaslik{
-    top: 1200px;
+    position: absolute;
+    top: 1000px;
   }
   .HaberlerVeEtkinlikler{
+    position: relative;
+    top: 0px;
     display: block;
     
   }
+  .duyurular 
+{
+display: block;
 
+}
+.Duyuru{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.Cards
+{
+height: fit-content;
 
+}
 }
 
 @media only screen and (min-width: 600px) {

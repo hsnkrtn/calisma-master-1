@@ -7,12 +7,16 @@ import DataConsumer from "../context";
 
       <DataConsumer>
         {(value) => {
-          const {users} = value;
+          const {Haberler} = value; 
+          const Haberlerimiz= Haberler.map((h) => {
+  } );
 
-          console.log(value); }}
+return < div className=" hehe ">  </div>
+    }}
       </DataConsumer>
       
     );
   }
+  
 }
 export default Yonetici;
