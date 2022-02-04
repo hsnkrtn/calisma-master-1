@@ -3,33 +3,47 @@ import { Component } from "react";
 
 
 
-
-
 class Haberler extends Component {
+static contextType = DataConsumer;
   constructor(props) {
     super(props);
     this.arttirHaberId = this.arttirHaberId.bind(this);
     this.state = {
-      count: 0
+      count: 5
     };
   }
 
  arttirHaberId (e){
 this.setState({
     count : this.state.count+1
+
   }
-); }
+
+);
+
+}
 
   render() {
+    const { ArttirID}=this.context;
     const HaberCount= this.state.count;
 
 
     return (
       <DataConsumer>
         {(value) => {
+
+
+//  context api içindeki enbüyükId değerini alıyor
+          let ebID= value.HaberlerSonId;
+ //  context apiçindeki bütün haberleri alıyor 
+
            let hasHaber  = value.Haberler;
-        let GostelrilecekHaberler = hasHaber.filter(  hbr=> hbr.HaberId >2 );
-        console.log ( hasHaber) ;
+  // context api içindeki haberleri Id si ebID değerinden daha büyük olanları alıyor         
+        let gelenhaberler = hasHaber.filter(  hbr=> hbr.HaberId >=ebID );
+// gelen haberleri tersten sıralıyor
+     let   GostelrilecekHaberler= gelenhaberler.reverse();
+console.log ( ebID );
+
         console.log ( GostelrilecekHaberler) ;
          
           return  <div className="HVEbaslik HVEbg ">
@@ -58,7 +72,6 @@ this.setState({
 
                   <a>
                     <h1 className="HBaslik">
-                    {/* {hasHaber.Haberler[HaberCount].HaberBasligi} */}
                     {GostelrilecekHaberler.HaberBasligi}
                     </h1>
                   </a>
@@ -68,7 +81,6 @@ this.setState({
                 </div>
                 )
         }
-         {/* )) } */}
         
        
               
@@ -80,7 +92,7 @@ this.setState({
          
              
 
-                <div className="HRightButton" onClick={ this.arttirHaberId } >
+                <div className="HRightButton" onClick={ ArttirID } >
                   <a>
                     <span>
                       <i className="fa fa-angle-right"></i>
