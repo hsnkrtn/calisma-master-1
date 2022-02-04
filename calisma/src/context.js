@@ -86,7 +86,6 @@ HaberDetayi : " detay7 "
 // }
 
 componentDidMount (){
-    console.log("ilk",this.state.HaberlerSonId)
 this.state.Haberler.map((IdAlacak,index) =>     
 {
     if(IdAlacak.HaberId > this.state.HaberlerSonId){
@@ -94,13 +93,12 @@ this.state.Haberler.map((IdAlacak,index) =>
             HaberlerSonId:IdAlacak.HaberId
             
         })
-
+console.log (this.state.HaberlerSonId)
     }
 
 }
 
 );
-console.log ("sonid",this.state.HaberlerSonId)
 
 }
 
