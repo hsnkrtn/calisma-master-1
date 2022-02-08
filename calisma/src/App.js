@@ -15,7 +15,7 @@ class App extends Component {
         <NavigasyonBar />
         <Carousel />
         <Cards />
-        <Yonetici/>
+
         <Haberler/> 
         <Duyurular/>
         <Footer/>

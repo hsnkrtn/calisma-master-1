@@ -55,12 +55,12 @@ a:hover {
 .NavigasyonBar {
   position: fixed;
   z-index: 1;
-  width: 1800px;
+  width: 2000px;
   height: 90px;
   background-color: transparent;
   display: flex;
   left: 50%;
-  margin-left: -900px;
+  margin-left: -1000px;
   top: 0px;
   transition: all 0.2s ease-in-out;
   box-shadow: inset 2px 50px 100px #4f647f;
@@ -69,18 +69,18 @@ a:hover {
   position: fixed;
   z-index: 1;
   transition: all 0.5s ease-in-out;
-  width: 1800px;
+  width: 2000px;
   height: 200px;
   box-shadow: inset 2px 90px 100px #4f647f;
   left: 50%;
-  margin-left: -900px;
+  margin-left: -1000px;
   top: 0px;
   display: flex;
 }
 
 .Links {
   position: absolute;
-  left: 45%;
+  left: 50%;
   max-height: 90px;
   color: white;
 }
@@ -428,7 +428,6 @@ color: yellow  !important;
   position: relative;
   width: 100px;
   height: 400px;
- 
   opacity: 0.7;
   font-size: 100px;
   display: flex;
@@ -880,8 +879,49 @@ margin-left: -345px; */
   background-color: #4f647f;
 }
 
-/*  Mobil */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  Mobil */
+@media only screen and (max-width: 1600px) {
+  .Shadow{
+    width: 1600px;
+    margin-left: -800px;
+    
+  }
+  .NavigasyonBar{
+width: 1600px;
+margin-left: -800px;
+
+  }
+  .Links{
+    left: 43%;
+  }
+
+  }
 @media only screen and (max-width: 700px) {
   .brand {
     position: absolute;
@@ -906,7 +946,7 @@ margin-left: -345px; */
   }
 
   .NavigasyonBar #hidden {
-    position: absolute;
+    position: fixed;
     top: 90px;
     width: 313px;
     display: flex;
@@ -921,6 +961,7 @@ margin-left: -345px; */
     margin-left: 0px;
   }
   .Shadow {
+    position: fixed;
     height: 100px;
     box-shadow: inset 2px 30px 100px #4f647f;
   }
@@ -936,12 +977,26 @@ margin-left: -345px; */
     height: 50px;
     text-align: center;
   }
-  .MenüButton {
+  .Slider-container{
+    width: 525px;
+  }
+
+.HLeftButton{
+  position: relative;
+  left: 36px;
+  font-size: 50px;
+}
+.HRightButton {
+  position: relative;
+  right: 36px;
+  font-size: 50px;
+} 
+.MenüButton {
     display: flex;
     align-items: center;
     position: absolute;
     top: 20px;
-    left: 86%;
+    left: 80%;
 
     border: 2px solid white;
   }
@@ -1150,7 +1205,7 @@ margin-left: -345px; */
 
     left: 0px;
   }
-  .HVEbaslik {
+  .HVE {
     position: absolute;
     top: 1000px;
   }
