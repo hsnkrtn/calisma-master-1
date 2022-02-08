@@ -95,8 +95,6 @@ export class ContextProvider extends Component {
   }
 
   render() {
-const Haberler =this.state.Haberler;
-this.state.hbrDiziboyutu =Haberler.length;
 
 
 
