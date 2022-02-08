@@ -1,13 +1,11 @@
-.hehe{
-position: absolute;
-top: 3000px;
-left: 0px;
-background-color: red;
-width: 599px;
-height: 599px;
+.hehe {
+  position: absolute;
+  top: 3000px;
+  left: 0px;
+  background-color: red;
+  width: 599px;
+  height: 599px;
 }
-
-
 
 .brand {
   text-decoration: none;
@@ -15,7 +13,6 @@ height: 599px;
   left: 10%;
   color: white;
 }
-
 
 .brand1 {
   position: relative;
@@ -35,7 +32,6 @@ height: 599px;
   font-weight: 800;
   letter-spacing: 1px;
   color: white;
-
 }
 
 .slider1 {
@@ -56,9 +52,7 @@ a:hover {
   cursor: pointer;
 }
 
-
 .NavigasyonBar {
-  
   position: fixed;
   z-index: 1;
   width: 2000px;
@@ -417,29 +411,36 @@ color: yellow  !important;
   right: 33%;
   font-size: 100px;
 }
-.HLeftButton{
-  position: relative;
-  left: 0%;
-  top: 0px;
-  height: 100%;
+.HLeftButton {
+  position: absolute;
+  left: 150px;
+  height: 450px;
   width: 90px;
   opacity: 0.7;
-
-
+  font-size: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 .HLeftButton:hover {
   color: #850432;
-  
-  }
-
-.HLeftButton a {
+}
+.HRightButton {
   position: absolute;
-  top: 50%;
-  margin-top: -75px;
-  right: 50%;
+  right: 150px;
+  height: 450px;
+  width: 90px;
+  opacity: 0.7;
   font-size: 100px;
-
-} 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.HRightButton:hover {
+  color: #850432;
+}
 
 .RightButton {
   position: absolute;
@@ -455,29 +456,6 @@ color: yellow  !important;
   font-size: 100px;
   left: 33%;
 }
-.HRightButton{
-  position: relative;
-left:0%; 
- top: 0px;
-  height: 100%;
-  width: 90px;
-  opacity: 0.7;
-
-
-}
-.HRightButton:hover {
-color: #850432;
-
-}
-.HRightButton a {
-  position: absolute;
-  top: 50%;
-  margin-top: -75px;
-  font-size: 100px;
-  left: 50%;
-
-} 
-
 
 .search-box {
   position: absolute;
@@ -611,8 +589,8 @@ margin-left: -345px; */
   top: 0px;
   height: 230px;
   width: 200px;
-margin-left: 30px;
-margin-right: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
   background-color: rgb(255, 255, 255, 1);
   text-align: center;
   border: #4f647f solid 3px;
@@ -662,133 +640,135 @@ margin-right: 30px;
   font-size: 60px;
 }
 
-
-.HVEbaslik{
-position: absolute;
-top: 1000px;
-height: 750px;
+.HVE {
+  position: absolute;
+  top: 1000px;
+  height: 750px;
   width: 100%;
- text-align: center;
- flex-wrap: wrap;
- align-content: end;
-
-}
-.HVEbg {
-  position: relative;
-  top: 0px;
-  left: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-image: url("../public/hbg14.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-
-}
-
-.HaberlerVeEtkinlikler {
-  position: absolute;
-  top: 150px;
-  height: 450px;
-  width: 100%;
-  justify-content: center;
-  display: flex;
-
-
 }
 
 .buyukbaslik {
-  position: relative;
-  top: 50px;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  width: 310px;
+  margin-left: -155px;
   font-size: 30px;
-  font-family: Lato, sans-serif ;
+  font-family: Lato, sans-serif;
   font-weight: bold;
   font-style: italic;
   text-decoration: none;
   color: #4f647f;
-  text-align: center;
+}
+.buyukbaslik:hover {
+  color: #850432;
+}
 
+.HaberlerVeEtkinlikler {
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  display: flex-start;
+  background-color: transparent;
+  white-space: nowrap;
+  overflow-x: scroll;
+  overflow: hidden;
+  scroll-behavior: smooth;
 
 }
-.buyukbaslik:hover{
-color: #850432;
-
+.Slider-container {
+  position: absolute;
+  width: 1290px;
+  height: 455px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
 }
 
 .Haber {
-  position: relative;
-  top: 0px;
   margin-left: 15px;
   margin-right: 15px;
   height: 450px;
   width: 400px;
-  background-color: transparent;
-  text-align: center;
-  border-bottom: #4f647f solid 5px ;
+  background-color: rgb(146, 211, 202,  0.1);
+  border-bottom: #4f647f solid 5px;
+  display: inline-block;
+  cursor: pointer;
+}
+#slider::-webkit-scrollbar {
+  display: flex;
 }
 .Haber:hover {
   border-color: #850432;
-
 }
-.Haber p1 {
-  position: relative;
-  top: 30px;
-  font-size: 15px;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical; 
-    overflow:hidden;
-    text-align: left;
-    color : rgb(109, 109, 109)
 
 
-
-
-}
-.Haber h1 {
-  position: relative;
-  top: 10px;
-  font-size: 18px;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical; 
-    overflow:hidden;
-    text-align: left;
-    color: #4f647f;
-
-
-}
 .Haber h1:hover {
-color: #850432;
-
+  color: #850432;
 }
 .Hfotograf {
+  z-index: 0;
   position: relative;
-  top: 0px;
+  top: -30px;
   height: 225px;
   width: 100%;
   border-radius: 5px 5px 0px 0px;
-  
 }
 .HBaslik {
-
   font-size: 20px;
+  color: #4f647f;
+  position: relative;
+  top: 10px;
+  font-size: 18px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-align: left;
   color: #4f647f;
 }
 .Hdetay {
   font-size: 15px;
   color: black;
+  position: relative;
+  top: 30px;
+  font-size: 15px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-align: left;
+  color: rgb(109, 109, 109);
+}
+.Htarih {
+  z-index: 1;
+  position: relative;
+  top: 0px;
+  left: 50%;
+  margin-left: -75px;
+  height: 30px;
+  width: 150px;
+  background-color: #850432;
+  color: #ffffff;
+  border-radius: 0px 0px 10px 10px;
+  display: flex;
+  justify-content: center;
 }
 
 .DuyurularAlani {
-
   position: absolute;
-top: 1750px;
-height: 500px;
+  top: 1750px;
+  height: 500px;
   width: 100%;
-
- 
- 
 }
-.bga{
-  
+.bga {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -796,56 +776,40 @@ height: 500px;
   justify-content: center;
   width: 100%;
   height: 550px;
-  /* background-image: url("../public/hstn3.jpg  "); */
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment:fixed;
-  /* -webkit-filter: blur(px); */
+  background-attachment: fixed;
   border-top: white solid 1px;
-
-
-
-
 }
-.DuyuruBuyukBaslik{
-
+.DuyuruBuyukBaslik {
   position: absolute;
   left: 50%;
   margin-left: -71px;
   top: 50px;
   font-size: 30px;
-  font-family: Lato, sans-serif ;
+  font-family: Lato, sans-serif;
   font-weight: bold;
   font-style: italic;
   text-decoration: none;
   color: #4f647f;
   text-align: center;
-
 }
 .DuyuruBuyukBaslik:hover {
-color: #850432;
-
+  color: #850432;
 }
-.duyurular 
-{
+.duyurular {
   position: absolute;
   top: 150px;
   height: 300px;
   width: 100%;
   justify-content: center;
   display: flex;
-
-  
 }
-
 
 .DuyuruDetay {
-
   font-size: 15px;
-
-
 }
-.Duyuru{
+.Duyuru {
   position: relative;
   top: 0px;
   height: 100px;
@@ -855,108 +819,69 @@ color: #850432;
   border-radius: 10px;
   margin-left: 15px;
   margin-right: 15px;
-color: #4f647f;
-  
-
+  color: #4f647f;
 }
 .Duyuru h1 {
   color: #4f647f;
 }
 .Duyuru:hover {
-color: #850432;
-border-color: #850432;
-
+  color: #850432;
+  border-color: #850432;
 }
 
-.DuyuruIcerik{
-position: absolute;
-top: 0px;
-left: 10px;
-
-
+.DuyuruIcerik {
+  position: absolute;
+  top: 0px;
+  left: 10px;
 }
 
-.DuyuruIcon{
-position: relative;
-left: 5px;
-width: 60px;
-height: 100%;
-display: flex;
-flex-wrap:wrap;
-align-content:center;
-bottom: 2px;
-
+.DuyuruIcon {
+  position: relative;
+  left: 5px;
+  width: 60px;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  bottom: 2px;
 }
-.fa-envelope{
+.fa-envelope {
   font-size: 60px;
-
-  
 }
 .Duyuru p1 {
   position: relative;
   top: 30px;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical; 
-    overflow:hidden;
-
-
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .Duyuru h1 {
   position: absolute;
   left: 60px;
   top: 20px;
   width: 270px;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical; 
-    overflow:hidden;
-    font-size: 15px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: 15px;
 }
 
-.Htarih{
-position: absolute;
-left: 50%;
-margin-left: -15px;
-top: -20px;
-color: blue;
-}
-.Dtarih{
-position: relative;
-left:60px;
-top: 70px;
-color:blue;
-
+.Dtarih {
+  position: relative;
+  left: 60px;
+  top: 70px;
+  color: blue;
 }
 .Footer {
-position: absolute;
-left: 0px;
-top: 2300px;
-width: 100%;
-height: 550px;
-background-color: #4f647f;
-} 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  position: absolute;
+  left: 0px;
+  top: 2300px;
+  width: 100%;
+  height: 550px;
+  background-color: #4f647f;
+}
 
 /*  Mobil */
 
@@ -1200,7 +1125,6 @@ background-color: #4f647f;
     width: 414px;
     height: 780px;
     display: block;
-
   }
   .Card1 {
     height: 180px;
@@ -1214,8 +1138,8 @@ background-color: #4f647f;
     height: 180px;
 
     margin-top: 15px;
-margin-left: 0px;
-margin-right: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
     width: 100%;
     text-align: center;
 
@@ -1229,30 +1153,25 @@ margin-right: 0px;
 
     left: 0px;
   }
-  .HVEbaslik{
+  .HVEbaslik {
     position: absolute;
     top: 1000px;
   }
-  .HaberlerVeEtkinlikler{
+  .HaberlerVeEtkinlikler {
     position: relative;
     top: 0px;
     display: block;
-    
   }
-  .duyurular 
-{
-display: block;
-
-}
-.Duyuru{
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-.Cards
-{
-height: fit-content;
-
-}
+  .duyurular {
+    display: block;
+  }
+  .Duyuru {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .Cards {
+    height: fit-content;
+  }
 }
 
 @media only screen and (min-width: 600px) {

@@ -17,67 +17,73 @@ class Haberler extends Component {
     });
   }
 
+  slideLeft =()=>{
+    var slider = document.getElementById("slider");
+    slider.scrollLeft = slider.scrollLeft + 500;
+}
+
+ slideRight =()=>{
+    var slider = document.getElementById("slider");
+    slider.scrollLeft = slider.scrollLeft - 500;
+}
+
   render() {
     const { ArttirID } = this.context;
     const HaberCount = this.state.count;
+    const habersayisi= [1,2,3,4,5,6,7,8,9,10];
 
     return (
       <DataConsumer>
         {(value) => {
-          let ghabersayisi = value.ghabersayisi;
-
-          let GosterilecekHaberler = value.Haberler.filter(
-            (hbr,index) => index >= ghabersayisi
-          );
+          let GosterilecekHaberler = value.Haberler;
 
           let GosterilecekHaberlerson = GosterilecekHaberler.reverse();
           console.log(GosterilecekHaberlerson);
 
           return (
-            <div className="HVEbaslik HVEbg ">
-              <a className=" buyukbaslik"> Haberler & Etkinlikler </a>
-              <div className="HaberlerVeEtkinlikler">
-                <div className="HLeftButton">
-                  <section className="LeftButtonInner">
-                    <a>
-                      <span>
-                        <i className="fa fa-angle-left"></i>
-                      </span>
-                    </a>
-                  </section>
-                </div>
+            <div className="HVE ">
+            <a className=" buyukbaslik"> Haberler & Etkinlikler </a>
 
-                {/* { hasHaber.Haberler.map((GostelrilecekHaberler) => ( */}
-                {GosterilecekHaberlerson.map((GosterilecekHaberlerson) => (
-                  <div className="Haber" id={GosterilecekHaberlerson.HaberId}>
-                    <div>
+            <div className="HRightButton" onClick={this.slideLeft}>
+                <i className="fa fa-angle-right"></i>
+              </div>
+              <div className="Slider-container"> 
+            
+
+            
+
+              <div className="HaberlerVeEtkinlikler"  id="slider">
+                {GosterilecekHaberlerson.map(
+                  (GosterilecekHaberlerson, index) => {
+                    return (
+                    <div className="Haber" key={index} id={GosterilecekHaberlerson.HaberId}>
+                       <div>
+                      <div className="Htarih"> <p >Tarih</p>  </div>
+
                       <img
                         className="Hfotograf"
                         src={GosterilecekHaberlerson.HaberFotografi}
                       ></img>
-                      <span className="Htarih">
-                        <p1> Tarih </p1>
-                      </span>
+
+                      <a>
+                        <h1 className="HBaslik">
+                          {GosterilecekHaberlerson.HaberBasligi}
+                        </h1>
+                      </a>
+                      <p1 className="Hdetay">
+                        {GosterilecekHaberlerson.HaberDetayi}
+                      </p1>
                     </div>
+                    </div>        
 
-                    <a>
-                      <h1 className="HBaslik">
-                        {GosterilecekHaberlerson.HaberBasligi}
-                      </h1>
-                    </a>
-                    <p1 className="Hdetay">
-                      {GosterilecekHaberlerson.HaberDetayi}
-                    </p1>
-                  </div>
-                ))}
 
-                <div className="HRightButton" onClick={ArttirID}>
-                  <a>
-                    <span>
-                      <i className="fa fa-angle-right"></i>
-                    </span>
-                  </a>
-                </div>
+                    )
+        }
+                )}
+              </div>
+              </div>
+              <div className="HLeftButton" onClick={this.slideRight} >
+                <i className="fa fa-angle-left"></i>
               </div>
             </div>
           );

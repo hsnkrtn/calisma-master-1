@@ -6,8 +6,6 @@ export class ContextProvider extends Component {
   constructor(props) {
     super(props);
     this.state = {
-hbrDiziboyutu:null,
-ghabersayisi:null,
 
 
       Haberler: [
@@ -79,28 +77,26 @@ ghabersayisi:null,
           HaberFotografi: " bga2.jpg",
           HaberBasligi:
             " Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3",
-          HaberDetayi: " detay10 ",
+          HaberDetayi: " detay10 Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3 ",
         },
       ],
     };
   }
-   ArttirID  = ()=> {
-      this.setState({
-        hbrDiziboyutu:this.state.hbrDiziboyutu
-      })
-      console.log ( this.state.hbrDiziboyutu);
-  }
+  //  ArttirID  = ()=> {
+  //     this.setState({
+  //       hbrDiziboyutu:this.state.hbrDiziboyutu
+  //     })
+  //     console.log ( this.state.hbrDiziboyutu);
+  // }
 
   componentDidMount() {
 
     console.log(this.state.hbrDiziboyutu);
-    console.log(this.state.ghabersayisi);
   }
 
   render() {
 const Haberler =this.state.Haberler;
 this.state.hbrDiziboyutu =Haberler.length;
-this.state.ghabersayisi= this.state.hbrDiziboyutu-3;
 
 
 
