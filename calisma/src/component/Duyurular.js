@@ -14,10 +14,13 @@ class Duyurular extends Component {
   }
   slideDown = () => {
     var slider = document.getElementById("DuyuruSlider");
-    slider.scrollTop = slider.scrollTop + 330;
+
+    slider.scrollTop = slider.scrollTop + 400;
+    console.log(slider.lastscrollTop);
   };
 
   render() {
+  
     return (
       <DataConsumer>
         {(value) => {

@@ -121,7 +121,37 @@ Duyurular : [
         DuyuruId:8,
         DuyuruBaslik: "8duyularin baslik burada bu sekilde gorunecek",
         Dtarih : "09.02.2022"
-      }
+      },
+      {
+        DuyuruId:9,
+        DuyuruBaslik: "9duyularin baslik burada bu sekilde gorunecek",
+        Dtarih : "09.02.2022"
+      },
+      {
+        DuyuruId:10,
+        DuyuruBaslik: "10duyularin baslik burada bu sekilde gorunecek",
+        Dtarih : "09.02.2022"
+      },
+      {
+        DuyuruId:11,
+        DuyuruBaslik: "11duyularin baslik burada bu sekilde gorunecek",
+        Dtarih : "09.02.2022"
+      },
+      {
+        DuyuruId:12,
+        DuyuruBaslik: "12duyularin baslik burada bu sekilde gorunecek",
+        Dtarih : "09.02.2022"
+      },
+      {
+        DuyuruId:13,
+        DuyuruBaslik: "13duyularin baslik burada bu sekilde gorunecek",
+        Dtarih : "09.02.2022"
+      },
+      {
+        DuyuruId:14,
+        DuyuruBaslik: "14duyularin baslik burada bu sekilde gorunecek",
+        Dtarih : "09.02.2022"
+      },
 ],
 
     };
