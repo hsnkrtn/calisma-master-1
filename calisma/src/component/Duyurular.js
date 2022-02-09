@@ -37,8 +37,8 @@ class Duyurular extends Component {
     return (
       <DataConsumer>
         {(value) => {
-          let ButunDuyurular = value.Duyurular;
-          let GosterilecekDuyurular = ButunDuyurular.reverse();
+          let GosterilecekDuyurular = value.Duyurular.reverse();
+          
           return (
             <div
               className=" bga "
@@ -49,6 +49,7 @@ class Duyurular extends Component {
               <div className="bga "></div>
               <div className="Duyuruslider">
                 <div className="duyurular">
+                  
                   {GosterilecekDuyurular.map((GosterilecekDuyurular, index) => {
                     return (
                       <div
