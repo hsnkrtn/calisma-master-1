@@ -11,31 +11,34 @@ class Duyurular extends Component {
     this.state = {
       bgaNumber: 0,
     };
-  }
-  componentDidMount() {
-    if (this.state.bgaNumber == 0) {
-      setTimeout(() => {
-        this.setState({
-          bgaNumber: this.state.bgaNumber + 1,
-        });
-      }, 10000);
-    } else {
-      setTimeout(() => {
-        this.setState({
-          bgaNumber: this.state.bgaNumber + 1,
-        });
-      }, 10000);
-    }
+
+
+
   }
 
   render() {
+    switch (this.state.bgaNumber){
+      case 0: 
+      setTimeout (() => {
+      this.setState ({
+     bgaNumber:1
+      })  } ,10000);
+      break;
+      case 1: 
+      setTimeout (() => {
+        this.setState ({
+          bgaNumber:0
+        })  } ,10000);
+        break;
+
+
+  }
+  
     return (
       <DataConsumer>
         {(value) => {
           let ButunDuyurular = value.Duyurular;
-          console.log(Duyurular);
           let GosterilecekDuyurular = ButunDuyurular.reverse();
-          console.log(GosterilecekDuyurular);
           return (
             <div
               className=" bga "
