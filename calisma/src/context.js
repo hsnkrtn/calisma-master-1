@@ -139,11 +139,11 @@ Duyurular : [
   }
 
   render() {
-
+  
 
 
     return (
-      <DataContext.Provider value={{ ...this.state, ArttirID: this.ArttirID }}>
+      <DataContext.Provider value={this.state}>
         {this.props.children}
       </DataContext.Provider>
     );
