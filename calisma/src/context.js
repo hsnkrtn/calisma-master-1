@@ -79,7 +79,26 @@ export class ContextProvider extends Component {
             " Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3",
           HaberDetayi: " detay10 Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3 ",
         },
+      
       ],
+Duyurular : [
+      {
+        DuyuruId:1,
+        DuyuruBaslik: "duyularin baslik burada bu sekilde gorunecek",
+        Dtarih : "09.02.2022"
+      },
+      {
+        DuyuruId:2,
+        DuyuruBaslik: "duyularin baslik burada bu sekilde gorunecek",
+        Dtarih : "09.02.2022"
+      },
+      {
+        DuyuruId:3,
+        DuyuruBaslik: "duyularin baslik burada bu sekilde gorunecek",
+        Dtarih : "09.02.2022"
+      }
+],
+
     };
   }
   //  ArttirID  = ()=> {
