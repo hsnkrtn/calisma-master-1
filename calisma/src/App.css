@@ -694,6 +694,8 @@ margin-left: -345px; */
   align-items: center;
   justify-content: center;
  
+
+
 }
 
 .Haber {
@@ -766,22 +768,29 @@ margin-left: -345px; */
   justify-content: center;
 }
 
-.DuyurularAlani {
-  position: absolute;
-  top: 1750px;
-  height: 500px;
-  width: 100%;
-}
+
 .bga {
   position: absolute;
+  top: 1750px;
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 550px;
+  height: 750px;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   border-top: white solid 1px;
+align-items: center;
+}
+.Duyuruslider{
+  position: absolute;
+  width: 1140px;
+  height: 405px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+
 }
 .DuyuruBuyukBaslik {
   position: absolute;
@@ -800,20 +809,20 @@ margin-left: -345px; */
   color: #850432;
 }
 .duyurular {
-  position: absolute;
-  top: 150px;
-  height: 300px;
+
+  height: 100%;
   width: 100%;
   justify-content: center;
-  display: flex;
+  display: flex-start;
+  background-color: transparent;
+  white-space:pre-wrap;
+  overflow-y: scroll;
+  overflow: hidden;
+  scroll-behavior: smooth;
 }
 
-.DuyuruDetay {
-  font-size: 15px;
-}
 .Duyuru {
   position: relative;
-  top: 0px;
   height: 100px;
   width: 350px;
   background-color: rgb(255, 255, 255, 0.7);
@@ -821,7 +830,11 @@ margin-left: -345px; */
   border-radius: 10px;
   margin-left: 15px;
   margin-right: 15px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   color: #4f647f;
+  display: inline-block;
+cursor: pointer;
 }
 .Duyuru h1 {
   color: #4f647f;
@@ -850,14 +863,7 @@ margin-left: -345px; */
 .fa-envelope {
   font-size: 60px;
 }
-.Duyuru p1 {
-  position: relative;
-  top: 30px;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
+
 .Duyuru h1 {
   position: absolute;
   left: 60px;
@@ -879,7 +885,7 @@ margin-left: -345px; */
 .Footer {
   position: absolute;
   left: 0px;
-  top: 2300px;
+  top: 2500px;
   width: 100%;
   height: 550px;
   background-color: #4f647f;
@@ -1003,6 +1009,9 @@ margin-left: -800px;
   right: 0%;
   font-size: 50px;
 } 
+
+
+
 .MenüButton {
     display: flex;
     align-items: center;
@@ -1231,13 +1240,19 @@ margin-left: -800px;
     width: 300px;
   }
  
-  .duyurular {
-    display: block;
-  }
-  .Duyuru {
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
+  .Duyuruslider {
+ 
+    width: 100%;
+    height: 345px;
+}
+.Duyuru {
+left: 50%;
+margin-left: -175px;
+margin-bottom: 15px;
+margin-top: 15px;
+margin-right: 0px;
+display: block;
+}
   .Cards {
     height: fit-content;
   }

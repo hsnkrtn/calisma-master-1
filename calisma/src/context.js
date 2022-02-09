@@ -84,17 +84,42 @@ export class ContextProvider extends Component {
 Duyurular : [
       {
         DuyuruId:1,
-        DuyuruBaslik: "duyularin baslik burada bu sekilde gorunecek",
+        DuyuruBaslik: "1duyularin baslik burada bu sekilde gorunecek",
         Dtarih : "09.02.2022"
       },
       {
         DuyuruId:2,
-        DuyuruBaslik: "duyularin baslik burada bu sekilde gorunecek",
+        DuyuruBaslik: "2duyularin baslik burada bu sekilde gorunecek",
         Dtarih : "09.02.2022"
       },
       {
         DuyuruId:3,
-        DuyuruBaslik: "duyularin baslik burada bu sekilde gorunecek",
+        DuyuruBaslik: "3duyularin baslik burada bu sekilde gorunecek",
+        Dtarih : "09.02.2022"
+      },
+      {
+        DuyuruId:4,
+        DuyuruBaslik: "4duyularin baslik burada bu sekilde gorunecek",
+        Dtarih : "09.02.2022"
+      },
+      {
+        DuyuruId:5,
+        DuyuruBaslik: "5duyularin baslik burada bu sekilde gorunecek",
+        Dtarih : "09.02.2022"
+      },
+      {
+        DuyuruId:6,
+        DuyuruBaslik: "6duyularin baslik burada bu sekilde gorunecek",
+        Dtarih : "09.02.2022"
+      },
+      {
+        DuyuruId:7,
+        DuyuruBaslik: "7duyularin baslik burada bu sekilde gorunecek",
+        Dtarih : "09.02.2022"
+      },
+      {
+        DuyuruId:8,
+        DuyuruBaslik: "8duyularin baslik burada bu sekilde gorunecek",
         Dtarih : "09.02.2022"
       }
 ],

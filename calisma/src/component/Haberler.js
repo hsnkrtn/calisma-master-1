@@ -5,18 +5,13 @@ class Haberler extends Component {
   static contextType = DataConsumer;
   constructor(props) {
     super(props);
-    this.arttirHaberId = this.arttirHaberId.bind(this);
+  
     this.state = {
       count: 5,
     };
   }
 
-  arttirHaberId(e) {
-    this.setState({
-      count: this.state.count + 1,
-    });
-  }
-
+ 
   slideLeft = () => {
     var slider = document.getElementById("slider");
     slider.scrollLeft = slider.scrollLeft + 330;
@@ -28,8 +23,7 @@ class Haberler extends Component {
   };
 
   render() {
-    const { ArttirID } = this.context;
-    const HaberCount = this.state.count;
+
     const habersayisi = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
     return (
