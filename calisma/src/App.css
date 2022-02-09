@@ -208,7 +208,8 @@ color: yellow  !important;
   background-color: white;
   flex-direction: row;
   border-bottom: #4f647f solid 5px;
-right: -100px;}
+right: -100px;
+}
 #BolumlerListItems a {
   color: black;
 }
@@ -781,7 +782,6 @@ margin-left: -345px; */
   background-attachment: fixed;
   border-top: white solid 1px;
  align-items: center;
- transition: all 1s ease-in-out;
 
 }
 .Duyuruslider{
@@ -838,9 +838,7 @@ margin-left: -345px; */
   display: inline-block;
 cursor: pointer;
 }
-.Duyuru h1 {
-  color: #4f647f;
-}
+
 .Duyuru:hover {
   color: #850432;
   border-color: #850432;
@@ -849,8 +847,14 @@ cursor: pointer;
 .DuyuruIcerik {
   position: absolute;
   top: 0px;
-  left: 10px;
+  width: 100%;
+  height: 100%;
+left: 10px;
 }
+/* .DuyuruIcerik h1{
+  left: 10px;
+
+} */
 
 .DuyuruIcon {
   position: relative;
@@ -893,7 +897,19 @@ cursor: pointer;
   background-color: #4f647f;
 }
 
-
+.DuyuruDown{
+  position: relative;
+  top: 250px;
+  opacity: 0.7;
+  font-size: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.DuyuruDown:hover {
+  color: #850432;
+}
 
 
 
@@ -934,6 +950,10 @@ margin-left: -800px;
   .Links{
     left: 43%;
   }
+  #BolumlerListItems{
+  right: -200px;
+}
+
 
   }
 @media only screen and (max-width: 700px) {
@@ -1011,6 +1031,7 @@ margin-left: -800px;
   right: 0%;
   font-size: 50px;
 } 
+
 
 
 

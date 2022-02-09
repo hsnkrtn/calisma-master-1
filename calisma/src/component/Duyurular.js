@@ -11,34 +11,18 @@ class Duyurular extends Component {
     this.state = {
       bgaNumber: 0,
     };
-
-
-
   }
+  slideDown = () => {
+    var slider = document.getElementById("DuyuruSlider");
+    slider.scrollTop = slider.scrollTop + 330;
+  };
 
   render() {
-    switch (this.state.bgaNumber){
-      case 0: 
-      setTimeout (() => {
-      this.setState ({
-     bgaNumber:1
-      })  } ,10000);
-      break;
-      case 1: 
-      setTimeout (() => {
-        this.setState ({
-          bgaNumber:0
-        })  } ,10000);
-        break;
-
-
-  }
-  
     return (
       <DataConsumer>
         {(value) => {
           let GosterilecekDuyurular = value.Duyurular.reverse();
-          
+
           return (
             <div
               className=" bga "
@@ -47,9 +31,12 @@ class Duyurular extends Component {
               <a className=" DuyuruBuyukBaslik"> Duyurular </a>
 
               <div className="bga "></div>
+              
               <div className="Duyuruslider">
-                <div className="duyurular">
-                  
+
+                
+
+                <div className="duyurular" id="DuyuruSlider">
                   {GosterilecekDuyurular.map((GosterilecekDuyurular, index) => {
                     return (
                       <div
@@ -73,6 +60,9 @@ class Duyurular extends Component {
                   })}
                 </div>
               </div>
+              <div className="DuyuruDown" onClick={this.slideDown}>
+                <i class="fa fa-angle-down"></i>       
+                 </div>
             </div>
           );
         }}
