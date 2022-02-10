@@ -10,17 +10,43 @@ class Duyurular extends Component {
     super(props);
     this.state = {
       bgaNumber: 0,
+      UpbottonShow: false,
+      DownbottonShow: true,
+      ScrollValue: 0,
+      ScrollLastValue: 0,
     };
+    console.log(this.state.ScrollValue);
+
+    console.log(this.state.UpbottonShow);
   }
+
   slideDown = () => {
     var slider = document.getElementById("DuyuruSlider");
+    this.state.ScrollLastValue = slider.scrollHeight;
+    this.state.ScrollValue = slider.scrollTop;
+    slider.scrollTop = this.state.ScrollValue + 400;
+    console.log(this.state.ScrollValue);
 
-    slider.scrollTop = slider.scrollTop + 400;
-    console.log(slider.lastscrollTop);
+    switch (this.state.ScrollValue) {
+      case 0:
+        this.setState({
+          UpbottonShow: true,
+          DownbottonShow: true,
+        });
+    }
+  };
+  slideUp = () => {
+    var slider = document.getElementById("DuyuruSlider");
+    this.state.ScrollValue = slider.scrollTop;
+    slider.scrollTop = this.state.ScrollValue - 400;
+    if (this.state.ScrollValue <= 400) {
+      this.setState({
+        UpbottonShow: false,
+      });
+    }
   };
 
   render() {
-  
     return (
       <DataConsumer>
         {(value) => {
@@ -34,11 +60,8 @@ class Duyurular extends Component {
               <a className=" DuyuruBuyukBaslik"> Duyurular </a>
 
               <div className="bga "></div>
-              
+
               <div className="Duyuruslider">
-
-                
-
                 <div className="duyurular" id="DuyuruSlider">
                   {GosterilecekDuyurular.map((GosterilecekDuyurular, index) => {
                     return (
@@ -50,6 +73,7 @@ class Duyurular extends Component {
                         <div className="DuyuruIcon">
                           <i class="fa  fa-envelope"></i>
                         </div>
+
                         <div className="DuyuruIcerik">
                           <h1 className="DuyuruBaslik">
                             {GosterilecekDuyurular.DuyuruBaslik}
@@ -63,9 +87,22 @@ class Duyurular extends Component {
                   })}
                 </div>
               </div>
-              <div className="DuyuruDown" onClick={this.slideDown}>
-                <i class="fa fa-angle-down"></i>       
-                 </div>
+              <div
+                className={
+                  this.state.DownbottonShow ? "DuyuruDown" : "DuyuruDownHidden"
+                }
+                onClick={this.slideDown}
+              >
+                <i class="fa fa-angle-down"></i>
+              </div>
+              <div
+                className={
+                  this.state.UpbottonShow ? "DuyuruUp" : "DuyuruUpHidden"
+                }
+                onClick={this.slideUp}
+              >
+                <i class="fa fa-angle-up"></i>
+              </div>
             </div>
           );
         }}
