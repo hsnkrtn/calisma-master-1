@@ -77,7 +77,6 @@ console.log (this.state.ScrollMoveValue)
             >
               <a className=" DuyuruBuyukBaslik"> Duyurular </a>
 
-              <div className="bga "></div>
 
               <div className="Duyuruslider">
                 <div className="duyurular" id="DuyuruSlider">
