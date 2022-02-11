@@ -164,8 +164,11 @@ Duyurular : [
   // }
 
   componentDidMount() {
+this.setState({
+  Duyurular:this.state.Duyurular.reverse(),  
+  Haberler:this.state.Haberler.reverse()
+})
 
-    console.log(this.state.hbrDiziboyutu);
   }
 
   render() {

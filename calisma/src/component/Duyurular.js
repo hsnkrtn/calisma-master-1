@@ -13,18 +13,36 @@ class Duyurular extends Component {
       UpbottonShow: false,
       DownbottonShow: true,
       ScrollValue: 0,
-      ScrollLastValue: 0,
+      ScrollMoveValue:400,
+
     };
     console.log(this.state.ScrollValue);
 
     console.log(this.state.UpbottonShow);
   }
+  componentDidMount (){
+    let WindowWidth = window.innerWidth;
+if(WindowWidth<700){
+  this.setState ({
+    
+    ScrollMoveValue:345
+  })
+  console.log (WindowWidth)
+}
+else {
+  this.setState ({
+    
+    ScrollMoveValue:400
+  })
+}
+console.log (this.state.ScrollMoveValue)
+
+  }
 
   slideDown = () => {
     var slider = document.getElementById("DuyuruSlider");
-    this.state.ScrollLastValue = slider.scrollHeight;
     this.state.ScrollValue = slider.scrollTop;
-    slider.scrollTop = this.state.ScrollValue + 400;
+    slider.scrollTop = this.state.ScrollValue + this.state.ScrollMoveValue;
     console.log(this.state.ScrollValue);
 
     switch (this.state.ScrollValue) {
@@ -38,7 +56,7 @@ class Duyurular extends Component {
   slideUp = () => {
     var slider = document.getElementById("DuyuruSlider");
     this.state.ScrollValue = slider.scrollTop;
-    slider.scrollTop = this.state.ScrollValue - 400;
+    slider.scrollTop = this.state.ScrollValue - this.state.ScrollMoveValue;
     if (this.state.ScrollValue <= 400) {
       this.setState({
         UpbottonShow: false,
@@ -50,8 +68,8 @@ class Duyurular extends Component {
     return (
       <DataConsumer>
         {(value) => {
-          let GosterilecekDuyurular = value.Duyurular.reverse();
-
+          let GosterilecekDuyurular = value.Duyurular;
+            
           return (
             <div
               className=" bga "
