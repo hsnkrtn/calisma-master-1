@@ -9,31 +9,26 @@
 
 
 .brand {
-  text-decoration: none;
-  position: absolute;
+  position: relative;
   left: 10%;
-  color: white;
+  top: 0%;
+width: 252px;
+height: 90px;
+transition: all 0.2s ease-in-out;
+
+
+}
+.brand1{
+  height: 140px;
+  width: 392px;
+  position: relative;
+  left: 10%;
+  top: 0%;
+  transition: all 0.2s ease-in-out;
+
 }
 
-.brand1 {
-  position: relative;
-  left: 0%;
-  border: 2px solid #850432;
-  border-radius: 50px;
-}
 
-.brand2 {
-  text-decoration: none;
-  color: white;
-  position: relative;
-  left: 0px;
-  top: 0px;
-  font-family: Nova Flat;
-  font-size: 22px;
-  font-weight: 800;
-  letter-spacing: 1px;
-  color: white;
-}
 
 .slider1 {
   height: 1000px;
