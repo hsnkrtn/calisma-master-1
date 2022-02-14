@@ -18,6 +18,7 @@ class App extends Component {
         <Haberler/> 
         <Duyurular/>
         <Footer/>
+        <Yonetici/>
       </div>
     );
   }

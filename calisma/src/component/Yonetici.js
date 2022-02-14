@@ -11,7 +11,7 @@ import DataConsumer from "../context";
           const Haberlerimiz= Haberler.map((h) => {
   } );
 
-return < div className=" hehe ">  </div>
+return < div className="  ">  </div>
     }}
       </DataConsumer>
       

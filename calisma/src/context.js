@@ -6,7 +6,7 @@ export class ContextProvider extends Component {
   constructor(props) {
     super(props);
     this.state = {
-
+        calis:0,
 
       Haberler: [
         {
