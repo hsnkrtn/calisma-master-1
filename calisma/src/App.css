@@ -7,28 +7,130 @@
   height: 599px;
 }
 
-
-.brand {
+.Footer {
+  position: absolute;
+  left: 0px;
+  top: 2400px;
+  width: 100%;
+  height: 600px;
+  background-color: #4f647f;
+  background-image: url("../public/fbg3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footerInner {
+  position: absolute;
+  height: 500px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+.Footer p1:hover{
+  color: #850432;
+  text-decoration: underline;
+}
+.footerlogodetails {
   position: relative;
-  left: 10%;
-  top: 0%;
-width: 252px;
-height: 90px;
-transition: all 0.2s ease-in-out;
+  width: 400px;
+  height: 400px;
+  font-size: 14px;
+}
+.footerlogo {
+  position: relative;
+  width: 300;
+  height: 107px;
+  top: 4px;
+  left: 0px;
+  cursor: pointer;
+  margin-right: 100%;
+  margin-bottom: 50px;
+
+}
+.footerInner ul {
+  list-style-type: none;
+  font-size: 14px;
 
 
 }
-.brand1{
+.footerInner li {
+  cursor: pointer;
+
+}
+.footerInner li:hover {
+color: #850432;
+text-decoration:underline;
+}
+.footerInner h1 {
+  font-size: 20px;
+
+}
+
+.footerInner h1:hover {
+text-decoration: underline;
+color: #850432;
+cursor: pointer;
+
+}
+
+.footerlogodetails .fa-envelope{
+  font-size: 16px;
+}
+.SocialMedia{
+  position: absolute;
+  top: 270px;
+  cursor: pointer;
+
+}
+.fa-instagram{
+  
+  font-size: 30px
+}
+.OnemliLinkler {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  height: 400px;
+  width: 300px;
+
+}
+
+.Hizmetlerimiz {
+  position: relative;
+  top: 0px;
+  height: 400px;
+  width: 300px;
+
+}
+.Dokumanlar{
+  position: relative;
+  top: 0px;
+  height: 400px;
+  width: 300px;
+
+}
+
+.brand {
+  cursor: pointer;
+  position: relative;
+  left: 10%;
+  top: 0%;
+  width: 252px;
+  height: 90px;
+  transition: all 0.2s ease-in-out;
+}
+.brand1 {
   height: 140px;
   width: 392px;
   position: relative;
   left: 10%;
   top: 0%;
   transition: all 0.2s ease-in-out;
-
 }
-
-
 
 .slider1 {
   height: 1000px;
@@ -204,7 +306,7 @@ color: yellow  !important;
   background-color: white;
   flex-direction: row;
   border-bottom: #4f647f solid 5px;
-right: -100px;
+  right: -100px;
 }
 #BolumlerListItems a {
   color: black;
@@ -242,11 +344,9 @@ right: -100px;
   border-bottom: #4f647f solid 5px;
   position: relative;
   right: 1100px;
-
 }
 #Map {
   display: flex;
-
 }
 .IletisimItemsIframe h {
   font-weight: bold;
@@ -259,8 +359,6 @@ right: -100px;
   background-color: white;
   flex-direction: column;
   border-bottom: #4f647f solid 5px;
-  
-
 }
 
 #ListItems a {
@@ -406,18 +504,15 @@ right: -100px;
   height: 100%;
   width: 90px;
   opacity: 0.7;
-  
 }
 .LeftButton a {
   position: absolute;
   top: 40%;
   right: 33%;
   font-size: 100px;
-
 }
 .LeftButton:hover {
-color: #850432;
-
+  color: #850432;
 }
 .HLeftButton {
   position: relative;
@@ -464,8 +559,7 @@ color: #850432;
 }
 .RightButton:hover {
   color: #850432;
-  
-  }
+}
 
 .search-box {
   position: absolute;
@@ -541,7 +635,6 @@ color: #850432;
 }
 
 .harita {
-
   height: 600px;
   width: 1200px;
 }
@@ -588,7 +681,6 @@ color: #850432;
   border-radius: 10px;
   color: #4f647f;
   cursor: pointer;
-
 }
 .Card1:hover {
   background-color: #4f647f !important;
@@ -608,7 +700,6 @@ color: #850432;
   border-radius: 10px;
   color: #4f647f;
   cursor: pointer;
-
 }
 .Card2:hover {
   background-color: #4f647f !important;
@@ -637,7 +728,6 @@ color: #850432;
   border-radius: 10px;
   color: #4f647f;
   cursor: pointer;
-
 }
 .Card3:hover {
   background-color: #4f647f !important;
@@ -663,7 +753,7 @@ color: #850432;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("../public/hbg12.jpg");
+  background-image: url("../public/hbg14.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -694,13 +784,10 @@ color: #850432;
   white-space: nowrap;
   overflow-x: scroll;
   overflow: hidden;
-  scroll-behavior:smooth;
-  cursor:grabbing;
+  scroll-behavior: smooth;
+  cursor: grabbing;
   user-select: none;
-
-
 }
-
 
 .Slider-container {
   position: absolute;
@@ -709,9 +796,6 @@ color: #850432;
   display: flex;
   align-items: center;
   justify-content: center;
- 
-
-
 }
 
 .Haber {
@@ -719,7 +803,7 @@ color: #850432;
   margin-right: 15px;
   height: 400px;
   width: 300px;
-  background-color: rgb(146, 211, 202,  0.1);
+  background-color: rgb(146, 211, 202, 0.1);
   border-bottom: #4f647f solid 5px;
   display: inline-block;
   cursor: pointer;
@@ -730,7 +814,6 @@ color: #850432;
 .Haber:hover {
   border-color: #850432;
 }
-
 
 .Haber h1:hover {
   color: #850432;
@@ -784,7 +867,6 @@ color: #850432;
   justify-content: center;
 }
 
-
 .bga {
   position: absolute;
   top: 1650px;
@@ -796,18 +878,15 @@ color: #850432;
   background-repeat: no-repeat;
   background-attachment: fixed;
   border-top: white solid 1px;
- align-items: center;
-
+  align-items: center;
 }
-.Duyuruslider{
+.Duyuruslider {
   position: absolute;
   width: 1140px;
   height: 405px;
   display: flex;
   align-items: center;
   justify-content: center;
- 
-
 }
 .DuyuruBuyukBaslik {
   position: absolute;
@@ -826,13 +905,12 @@ color: #850432;
   color: #850432;
 }
 .duyurular {
-
   height: 100%;
   width: 100%;
   justify-content: center;
   display: flex-start;
   background-color: transparent;
-  white-space:pre-wrap;
+  white-space: pre-wrap;
   overflow-y: scroll;
   overflow: hidden;
   scroll-behavior: smooth;
@@ -851,7 +929,7 @@ color: #850432;
   margin-bottom: 50px;
   color: #4f647f;
   display: inline-block;
-cursor: pointer;
+  cursor: pointer;
 }
 
 .Duyuru:hover {
@@ -864,7 +942,7 @@ cursor: pointer;
   top: 0px;
   width: 100%;
   height: 100%;
-left: 10px;
+  left: 10px;
 }
 /* .DuyuruIcerik h1{
   left: 10px;
@@ -904,7 +982,7 @@ left: 10px;
   color: blue;
 }
 
-.DuyuruDown{
+.DuyuruDown {
   position: absolute;
   bottom: 100px;
   height: 50px;
@@ -916,14 +994,13 @@ left: 10px;
   justify-content: center;
   cursor: pointer;
 }
-.DuyuruDownHidden{
+.DuyuruDownHidden {
   display: none;
 }
 .DuyuruDown:hover {
   color: #850432;
 }
-.DuyuruUp
-{
+.DuyuruUp {
   position: absolute;
   top: 100px;
   height: 50px;
@@ -934,87 +1011,46 @@ left: 10px;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-display: flex;
+  display: flex;
 }
 .DuyuruUp:hover {
   color: #850432;
-
 }
 
-.DuyuruUpHidden{
+.DuyuruUpHidden {
   display: none;
 }
 
-
-.Footer {
-  position: absolute;
-  left: 0px;
-  top: 2400px;
-  width: 100%;
-  height: 600px;
-  background-color: #4f647f;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*  Mobil */
 @media only screen and (max-width: 1600px) {
-  .Shadow{
+  .Shadow {
     width: 1600px;
     margin-left: -800px;
-    
   }
-  .NavigasyonBar{
-width: 1600px;
-margin-left: -800px;
-
+  .NavigasyonBar {
+    width: 1600px;
+    margin-left: -800px;
   }
-  .Links{
+  .Links {
     left: 43%;
   }
-  #BolumlerListItems{
-  right: -200px;
-}
-
-
+  #BolumlerListItems {
+    right: -200px;
   }
+}
 @media only screen and (max-width: 700px) {
   .brand {
     position: absolute;
-    left: 10px;
+    left: 5%;
     top: 20px;
     height: 50px;
-    width: 150px;
+    width: 140px;
   }
   .brand1 {
-    width: 50px;
+    left: 5%;
+    top: 20px;
     height: 50px;
-    border: 2px solid white;
-  }
-
-  .brand2 {
-    font-size: 10px;
-    position: absolute;
-    left: 55px;
-    top: 0px;
-
-    height: 50px;
+    width: 140px;
   }
 
   .NavigasyonBar #hidden {
@@ -1033,13 +1069,14 @@ margin-left: -800px;
     margin-left: 0px;
   }
   .Shadow {
+    position: fixed;
     width: 100%;
     position: fixed;
-    height: 100px;
+    height: 120px;
     box-shadow: inset 2px 30px 100px #4f647f;
   }
   .carousel {
-    height: 400px;
+    height: 500px;
     width: 100%;
   }
 
@@ -1051,27 +1088,24 @@ margin-left: -800px;
     height: 50px;
     text-align: center;
   }
-  .Slider-container{
+  .Slider-container {
     width: 100%;
   }
 
-.HLeftButton{
-  position: relative;
-  width: 50px;
-  left: 0%;
-  font-size: 50px;
-}
-.HRightButton {
-  position: relative;
-  width: 50px;
-  right: 0%;
-  font-size: 50px;
-} 
+  .HLeftButton {
+    position: relative;
+    width: 50px;
+    left: 0%;
+    font-size: 50px;
+  }
+  .HRightButton {
+    position: relative;
+    width: 50px;
+    right: 0%;
+    font-size: 50px;
+  }
 
-
-
-
-.MenüButton {
+  .MenüButton {
     display: flex;
     align-items: center;
     position: absolute;
@@ -1093,7 +1127,7 @@ margin-left: -800px;
     position: absolute;
     top: 20px;
     left: 245px;
-    right: 300px;
+
     margin-left: 0px;
     margin-right: 0px;
   }
@@ -1105,7 +1139,7 @@ margin-left: -800px;
     top: -3px;
   }
   .search-box {
-    position: relative;
+    position: absolute;
     top: 20px;
     left: 185px;
   }
@@ -1251,7 +1285,7 @@ margin-left: -800px;
 
   .Cards {
     position: absolute;
-    top: 400px;
+    top: 500px;
     left: 50%;
     margin-left: -207px;
     width: 100%;
@@ -1264,7 +1298,6 @@ margin-left: -800px;
     text-align: center;
     width: 100%;
     left: 0px;
-
   }
   .Card2 {
     height: 180px;
@@ -1274,7 +1307,6 @@ margin-left: -800px;
     width: 100%;
     text-align: center;
     left: 0px;
-
   }
   .Card3 {
     height: 180px;
@@ -1286,7 +1318,7 @@ margin-left: -800px;
   }
   .HVE {
     position: absolute;
-    top: 1000px;
+    top: 1100px;
     height: 700px;
   }
   .HaberlerVeEtkinlikler {
@@ -1294,23 +1326,22 @@ margin-left: -800px;
     top: 0px;
     display: block;
   }
-  .Haber{
+  .Haber {
     width: 300px;
   }
- 
+
   .Duyuruslider {
- 
     width: 100%;
-    height:360px;
-}
-.Duyuru {
-left: 50%;
-margin-left: -175px;
-margin-bottom: 15px;
-margin-top: 15px;
-margin-right: 0px;
-display: block;
-}
+    height: 360px;
+  }
+  .Duyuru {
+    left: 50%;
+    margin-left: -175px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-right: 0px;
+    display: block;
+  }
   .Cards {
     height: fit-content;
   }
