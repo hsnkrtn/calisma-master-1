@@ -6,7 +6,87 @@ export class ContextProvider extends Component {
   constructor(props) {
     super(props);
     this.state = {
-        calis:0,
+      calis: 0,
+      tanitim: [
+        { TanitimBaslik: "Tarihçe" },
+        { TanitimBaslik: "Genel Tanıtım" },
+        { TanitimBaslik: "Kat Planı" },
+        { TanitimBaslik: "Resimler Ve Videolar" },
+        { TanitimBaslik: "Yemek Listesi" },
+      ],
+      Kurumsal: [
+        { KurumsalBaslik: "Rektörümüz" },
+        { KurumsalBaslik: "Misyon Ve Vizyon" },
+        { KurumsalBaslik: "Değerlerimiz" },
+        { KurumsalBaslik: "Amaç Ve Hedeflerimiz" },
+        { KurumsalBaslik: "Kalite Yönetimi" },
+      ],
+      //Bolumler
+DahiliTıpBilimleri : [
+{DahiliBaslik: "Acil Tıp Anabilim Dalı  " },
+{DahiliBaslik: "Adli Tıp Anabilim Dalı  " },
+{DahiliBaslik: " Aile Hekimliği Anabilim Dalı " },
+{DahiliBaslik: "Çocuk Sağlığı ve Hastalıkları Anabilim Dalı " },
+{DahiliBaslik: " Çocuk ve Ergen Ruh Sağlığı Hastalıkları Anabilim Dalı " },
+{DahiliBaslik: " Dermatoloji Anabilim Dalı " },
+{DahiliBaslik: "Enfeksiyon Hastalıkları Anabilim Dalı  " },
+{DahiliBaslik: "Fiziksel Tıp ve Rehabilitasyon Anabilim Dalı  " },
+{DahiliBaslik: "Göğüs Hastalıkları Anabilim Dalı  " },
+{DahiliBaslik: " Halk Sağlığı Anabilim Dalı " },
+{DahiliBaslik: " İç Hastalıkları Anabilim Dalı " },
+{DahiliBaslik: "Kardiyoloji Anabilim Dalı  " },
+{DahiliBaslik: " Nörolojii Anabilim Dalı " },
+{DahiliBaslik: " Nükleer Tıp Anabilim Dalı " },
+{DahiliBaslik: " Psikiyatri Anabilim Dalı" },
+{DahiliBaslik: "  Radyasyon Onkolojisi Anabilim Dalı" },
+{DahiliBaslik: "Radyodiagnostik Anabilim Dalı  " },
+{DahiliBaslik: " Tıbbi Genetik Anabilim Dalı - Genetik Hastalıklar Değerlendirme Merkezi" },
+
+
+],
+CerrahiTipBilimleri:[
+{CerrahiBaslik: " Anesteziyoloji ve Reanimasyon Anabilim Dalı  "},
+{CerrahiBaslik: "Beyin Cerrahisi Anabilim Dalı   "},
+{CerrahiBaslik: "  Çocuk Cerrahisi Anabilim Dalı "},
+{CerrahiBaslik: " Genel Cerrahi Anabilim Dalı  "},
+{CerrahiBaslik: " Göğüs Cerrahisi Anabilim Dalı  "},
+{CerrahiBaslik: " Göz Hastalıkları Anabilim Dalı  "},
+{CerrahiBaslik: "  Kadın Hastalıkları ve Doğum Anabilim Dalı "},
+{CerrahiBaslik: "  Kalp-Damar Cerrahisi Anabilim Dalı "},
+{CerrahiBaslik: "Kulak Burun Boğaz Hastalıkları Anabilim Dalı   "},
+{CerrahiBaslik: "Ortopedi ve Travmatoloji Anabilim Dalı   "},
+{CerrahiBaslik: " Patoloji Anabilim Dalı  "},
+{CerrahiBaslik: " Plastik ve Rekonstrüktif Cerrahi Anabilim Dalı  "},
+{CerrahiBaslik: "  Üroloji Anabilim Dalı "},
+
+],
+TemelTipBilimleri :[
+  {TemelBaslik:"Biyokimya Anabilim Dalı  "},
+  {TemelBaslik:" İmmünoloji Anabilim Dalı "},
+  {TemelBaslik:" Mikrobiyoloji ve Klinik Mikrobiyoloji Anabilim Dalı "},
+  {TemelBaslik:"Parazitoloji Anabilim Dalı  "},
+  {TemelBaslik:"  Tıbbi Biyoloji Anabilim Dalı"},
+ 
+],
+DigerTedaviUniteleri : [
+  {DigerTedaviBaslik:"Geleneksel ve Tamamlayıcı Tıp Uygulama Merkezi(GETAT)"},
+],
+
+
+Yonetim :[
+{YonetimBaslik: "  Hastane Başhekimi"},
+{YonetimBaslik: "   Başhekim Yardımcıları"},
+{YonetimBaslik:  " Başmüdür"},
+{YonetimBaslik: " Müdür ve Müdür Yardımcıları"},
+{YonetimBaslik: "  Bilgi İşlem Koordinatörlüğü"},
+{YonetimBaslik: " Hemşirelik Hizmetleri"},
+{YonetimBaslik: " Organizasyon Şeması"},
+],
+
+
+
+
+
 
       Haberler: [
         {
@@ -77,83 +157,82 @@ export class ContextProvider extends Component {
           HaberFotografi: " bga2.jpg",
           HaberBasligi:
             " Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3",
-          HaberDetayi: " detay10 Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3 ",
+          HaberDetayi:
+            " detay10 Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3 ",
         },
-      
       ],
-Duyurular : [
-      {
-        DuyuruId:1,
-        DuyuruBaslik: "1duyularin baslik burada bu sekilde gorunecek",
-        Dtarih : "09.02.2022"
-      },
-      {
-        DuyuruId:2,
-        DuyuruBaslik: "2duyularin baslik burada bu sekilde gorunecek",
-        Dtarih : "09.02.2022"
-      },
-      {
-        DuyuruId:3,
-        DuyuruBaslik: "3duyularin baslik burada bu sekilde gorunecek",
-        Dtarih : "09.02.2022"
-      },
-      {
-        DuyuruId:4,
-        DuyuruBaslik: "4duyularin baslik burada bu sekilde gorunecek",
-        Dtarih : "09.02.2022"
-      },
-      {
-        DuyuruId:5,
-        DuyuruBaslik: "5duyularin baslik burada bu sekilde gorunecek",
-        Dtarih : "09.02.2022"
-      },
-      {
-        DuyuruId:6,
-        DuyuruBaslik: "6duyularin baslik burada bu sekilde gorunecek",
-        Dtarih : "09.02.2022"
-      },
-      {
-        DuyuruId:7,
-        DuyuruBaslik: "7duyularin baslik burada bu sekilde gorunecek",
-        Dtarih : "09.02.2022"
-      },
-      {
-        DuyuruId:8,
-        DuyuruBaslik: "8duyularin baslik burada bu sekilde gorunecek",
-        Dtarih : "09.02.2022"
-      },
-      {
-        DuyuruId:9,
-        DuyuruBaslik: "9duyularin baslik burada bu sekilde gorunecek",
-        Dtarih : "09.02.2022"
-      },
-      {
-        DuyuruId:10,
-        DuyuruBaslik: "10duyularin baslik burada bu sekilde gorunecek",
-        Dtarih : "09.02.2022"
-      },
-      {
-        DuyuruId:11,
-        DuyuruBaslik: "11duyularin baslik burada bu sekilde gorunecek",
-        Dtarih : "09.02.2022"
-      },
-      {
-        DuyuruId:12,
-        DuyuruBaslik: "12duyularin baslik burada bu sekilde gorunecek",
-        Dtarih : "09.02.2022"
-      },
-      {
-        DuyuruId:13,
-        DuyuruBaslik: "13duyularin baslik burada bu sekilde gorunecek",
-        Dtarih : "09.02.2022"
-      },
-      {
-        DuyuruId:14,
-        DuyuruBaslik: "14duyularin baslik burada bu sekilde gorunecek",
-        Dtarih : "09.02.2022"
-      },
-],
-
+      Duyurular: [
+        {
+          DuyuruId: 1,
+          DuyuruBaslik: "1duyularin baslik burada bu sekilde gorunecek",
+          Dtarih: "09.02.2022",
+        },
+        {
+          DuyuruId: 2,
+          DuyuruBaslik: "2duyularin baslik burada bu sekilde gorunecek",
+          Dtarih: "09.02.2022",
+        },
+        {
+          DuyuruId: 3,
+          DuyuruBaslik: "3duyularin baslik burada bu sekilde gorunecek",
+          Dtarih: "09.02.2022",
+        },
+        {
+          DuyuruId: 4,
+          DuyuruBaslik: "4duyularin baslik burada bu sekilde gorunecek",
+          Dtarih: "09.02.2022",
+        },
+        {
+          DuyuruId: 5,
+          DuyuruBaslik: "5duyularin baslik burada bu sekilde gorunecek",
+          Dtarih: "09.02.2022",
+        },
+        {
+          DuyuruId: 6,
+          DuyuruBaslik: "6duyularin baslik burada bu sekilde gorunecek",
+          Dtarih: "09.02.2022",
+        },
+        {
+          DuyuruId: 7,
+          DuyuruBaslik: "7duyularin baslik burada bu sekilde gorunecek",
+          Dtarih: "09.02.2022",
+        },
+        {
+          DuyuruId: 8,
+          DuyuruBaslik: "8duyularin baslik burada bu sekilde gorunecek",
+          Dtarih: "09.02.2022",
+        },
+        {
+          DuyuruId: 9,
+          DuyuruBaslik: "9duyularin baslik burada bu sekilde gorunecek",
+          Dtarih: "09.02.2022",
+        },
+        {
+          DuyuruId: 10,
+          DuyuruBaslik: "10duyularin baslik burada bu sekilde gorunecek",
+          Dtarih: "09.02.2022",
+        },
+        {
+          DuyuruId: 11,
+          DuyuruBaslik: "11duyularin baslik burada bu sekilde gorunecek",
+          Dtarih: "09.02.2022",
+        },
+        {
+          DuyuruId: 12,
+          DuyuruBaslik: "12duyularin baslik burada bu sekilde gorunecek",
+          Dtarih: "09.02.2022",
+        },
+        {
+          DuyuruId: 13,
+          DuyuruBaslik: "13duyularin baslik burada bu sekilde gorunecek",
+          Dtarih: "09.02.2022",
+        },
+        {
+          DuyuruId: 14,
+          DuyuruBaslik: "14duyularin baslik burada bu sekilde gorunecek",
+          Dtarih: "09.02.2022",
+        },
+      ],
     };
   }
   //  ArttirID  = ()=> {
@@ -164,17 +243,13 @@ Duyurular : [
   // }
 
   componentDidMount() {
-this.setState({
-  Duyurular:this.state.Duyurular.reverse(),  
-  Haberler:this.state.Haberler.reverse()
-})
-
+    this.setState({
+      Duyurular: this.state.Duyurular.reverse(),
+      Haberler: this.state.Haberler.reverse(),
+    });
   }
 
   render() {
-  
-
-
     return (
       <DataContext.Provider value={this.state}>
         {this.props.children}

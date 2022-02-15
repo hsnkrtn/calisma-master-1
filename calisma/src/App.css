@@ -7,113 +7,6 @@
   height: 599px;
 }
 
-.Footer {
-  position: absolute;
-  left: 0px;
-  top: 2400px;
-  width: 100%;
-  height: 600px;
-  background-color: #4f647f;
-  background-image: url("../public/fbg3.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.footerInner {
-  position: absolute;
-  height: 500px;
-  width: 80%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #ffffff;
-}
-.Footer p1:hover{
-  color: #850432;
-  text-decoration: underline;
-}
-.footerlogodetails {
-  position: relative;
-  width: 400px;
-  height: 400px;
-  font-size: 14px;
-}
-.footerlogo {
-  position: relative;
-  width: 300;
-  height: 107px;
-  top: 4px;
-  left: 0px;
-  cursor: pointer;
-  margin-right: 100%;
-  margin-bottom: 50px;
-
-}
-.footerInner ul {
-  list-style-type: none;
-  font-size: 14px;
-
-
-}
-.footerInner li {
-  cursor: pointer;
-
-}
-.footerInner li:hover {
-color: #850432;
-text-decoration:underline;
-}
-.footerInner h1 {
-  font-size: 20px;
-
-}
-
-.footerInner h1:hover {
-text-decoration: underline;
-color: #850432;
-cursor: pointer;
-
-}
-
-.footerlogodetails .fa-envelope{
-  font-size: 16px;
-}
-.SocialMedia{
-  position: absolute;
-  top: 270px;
-  cursor: pointer;
-
-}
-.fa-instagram{
-  
-  font-size: 30px
-}
-.OnemliLinkler {
-  position: relative;
-  left: 0px;
-  top: 0px;
-  height: 400px;
-  width: 300px;
-
-}
-
-.Hizmetlerimiz {
-  position: relative;
-  top: 0px;
-  height: 400px;
-  width: 300px;
-
-}
-.Dokumanlar{
-  position: relative;
-  top: 0px;
-  height: 400px;
-  width: 300px;
-
-}
-
 .brand {
   cursor: pointer;
   position: relative;
@@ -178,32 +71,96 @@ a:hover {
 
 .Links {
   position: absolute;
-  left: 50%;
-  max-height: 90px;
-  color: white;
-}
-
-.Links a {
-  width: 100px;
+  left: 65%;
   height: 90px;
-  font-size: 17px;
-  padding-left: 15px;
-  padding-right: 10px;
+  margin-bottom: 0px;
+  margin-left: -270px;
+  width: 540px;
+ }
+.Links ul {
+  margin: 0px;
+  padding: 0px;
+}
+.LinksList {
+  position: relative;
+  top: 0px;
+  margin: 0px;
+  padding: 0px;
+  height: fit-content;
+  width: fit-content;
+  list-style: none;
   display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  letter-spacing: 0.7px;
-  font-weight: 200;
+  color: #ffffff;
+  
 }
-/* .Links a:hover {d
-  background-color: white;
-color: yellow  !important;
 
-} */
-#ListItems a:hover {
-  background-color: #4f647f;
-  color: white !important;
+.Links li {
+  position: relative;
+  background-color: transparent;
+  height: 90px;
+  width: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
+.Listeler li:hover {
+  background-color: #4f647f;
+  color: white ;
+}
+
+.ButtonColor{
+  background-color: #ffffff !important;
+  color: black;
+}
+
+.Listeler {
+  position: absolute;
+  top: 90px;
+  height: fit-content;
+  width: auto;
+  min-width: 200px;
+  color: black;
+  background-color: white;
+  border-bottom: 5px solid #4f647f;
+
+}
+.KurumsalListesi{
+  position: absolute;
+  top: 90px;
+  height: fit-content;
+  width: auto;
+  min-width: 200px;
+  color: black;
+  background-color: white;
+  border-bottom: 5px solid #4f647f;
+
+}
+
+.Listeler ul {
+  height: 100%;
+  width: 100%;
+}
+.Listeler li {
+  height: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+  display: block;
+  font-size: 15px;
+  cursor: pointer;
+
+}
+
+
+.ListeyiGizle {
+  display: none;
+}
+
+
+
+
+
 
 .RandevuAlButton {
   position: absolute;
@@ -219,6 +176,7 @@ color: yellow  !important;
   font-size: 20px;
   text-align: center;
   border-radius: 25px;
+  font-size: 20px;
 }
 .RandevuAlButton:hover {
   background-color: #850432;
@@ -226,9 +184,6 @@ color: yellow  !important;
   border: 2px solid;
   border-color: #ffffff;
   transition: all 0.5s ease-out;
-}
-.RandevuAlButton a {
-  font-size: 20px;
 }
 
 .MenüButton {
@@ -264,76 +219,6 @@ color: yellow  !important;
   font-size: 18px;
 }
 
-.TanitimItems {
-  display: none;
-  justify-content: center;
-}
-.TanitimItems a {
-  padding-top: 7px;
-  padding-bottom: 7px;
-  font-size: 14px;
-  height: 30px;
-  width: auto;
-}
-.KurumsalItems {
-  display: none;
-  justify-content: center;
-}
-.KurumsalItems a {
-  padding-top: 7px;
-  padding-bottom: 7px;
-  font-size: 14px;
-  height: 30px;
-  width: auto;
-}
-.BolumlerItems {
-  position: absolute;
-  display: none;
-  height: 600px;
-  width: 1400px;
-}
-.GeriButtonBolumler {
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
-  display: none;
-}
-
-#BolumlerListItems {
-  top: 90px;
-  display: flex;
-  position: absolute;
-  background-color: white;
-  flex-direction: row;
-  border-bottom: #4f647f solid 5px;
-  right: -100px;
-}
-#BolumlerListItems a {
-  color: black;
-}
-#BolumlerListItems a:hover {
-  background-color: #4f647f;
-  color: white !important;
-}
-.BolumlerItems a {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  height: 50px;
-  width: 500px;
-  font-weight: bolder;
-}
-
-.YonetimItems {
-  display: none;
-  justify-content: center;
-}
-.YonetimItems a {
-  padding-top: 7px;
-  padding-bottom: 7px;
-  font-size: 14px;
-  height: 30px;
-  width: auto;
-}
 .IletisimItems {
   display: none;
   width: 90px;
@@ -348,132 +233,7 @@ color: yellow  !important;
 #Map {
   display: flex;
 }
-.IletisimItemsIframe h {
-  font-weight: bold;
-}
 
-#ListItems {
-  top: 90px;
-  display: flex;
-  position: absolute;
-  background-color: white;
-  flex-direction: column;
-  border-bottom: #4f647f solid 5px;
-}
-
-#ListItems a {
-  color: black;
-}
-.DahiliListesi {
-  position: absolute;
-  top: 50px;
-  left: 0%;
-  font-weight: normal;
-  display: flex;
-  flex-direction: column;
-}
-.DahiliListesi a {
-  font-size: 13px;
-  font-weight: normal;
-  width: 350px;
-  height: 30px;
-  padding-top: 1px;
-  padding-bottom: 1px;
-}
-#dahili {
-  top: 90px;
-  display: flex;
-  position: absolute;
-  background-color: #850432;
-  flex-direction: column;
-}
-
-#dahili a {
-  font-size: 13x;
-}
-
-.CerrahiListesi {
-  position: absolute;
-  top: 50px;
-  left: 350px;
-  font-weight: normal;
-  display: flex;
-  flex-direction: column;
-}
-.CerrahiListesi a {
-  height: 30px;
-  font-size: 13px;
-  font-weight: normal;
-  width: 350px;
-  padding-top: 1px;
-  padding-bottom: 1px;
-}
-#cerrahi {
-  top: 90px;
-  display: flex;
-  position: absolute;
-  background-color: #850432;
-  flex-direction: column;
-}
-#diger {
-  top: 90px;
-  display: flex;
-  position: absolute;
-  background-color: #850432;
-  flex-direction: column;
-}
-#diger {
-  font-size: 13px;
-}
-#cerrahi a {
-  font-size: 13px;
-}
-.TemelListesi {
-  position: absolute;
-  top: 50px;
-  left: 700px;
-  font-weight: normal;
-  display: flex;
-  flex-direction: column;
-}
-.TemelListesi a {
-  font-size: 13px;
-  font-weight: normal;
-  width: 350px;
-  height: 30px;
-  padding-top: 1px;
-  padding-bottom: 1px;
-}
-#Tlist {
-  top: 90px;
-  display: flex;
-  position: absolute;
-  background-color: #850432;
-  flex-direction: column;
-}
-
-#Tlist a {
-  font-size: 13px;
-}
-
-.DigerListesi {
-  position: absolute;
-  top: 50px;
-  left: 1050px;
-  font-weight: normal;
-  display: flex;
-  flex-direction: column;
-}
-.DigerListesi a {
-  font-size: 13px;
-  font-weight: normal;
-  width: 350px;
-  height: 30px;
-  padding-top: 1px;
-  padding-bottom: 1px;
-  padding-left: 1px;
-  padding-right: 1px;
-}
 .GeriButton {
   display: none;
   text-decoration: none;
@@ -637,23 +397,6 @@ color: yellow  !important;
 .harita {
   height: 600px;
   width: 1200px;
-}
-
-.GeriButtonBolumler {
-  display: none;
-}
-.GeriButtonDahili {
-  display: none;
-}
-
-.GeriButtonCerrahi {
-  display: none;
-}
-.GeriButtonTemel {
-  display: none;
-}
-.GeriButtonDiger {
-  display: none;
 }
 
 /*Cards      */
@@ -1021,6 +764,104 @@ color: yellow  !important;
   display: none;
 }
 
+.Footer {
+  position: absolute;
+  left: 0px;
+  top: 2400px;
+  width: 100%;
+  height: 600px;
+  background-color: #4f647f;
+  background-image: url("../public/fbg3.jpg");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footerInner {
+  position: absolute;
+  height: 500px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+.Footer p1:hover {
+  color: #850432;
+  text-decoration: underline;
+}
+.footerlogodetails {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  font-size: 14px;
+}
+.footerlogo {
+  position: relative;
+  width: 300;
+  height: 107px;
+  top: 4px;
+  left: 0px;
+  cursor: pointer;
+  margin-right: 100%;
+  margin-bottom: 50px;
+}
+.footerInner ul {
+  list-style-type: none;
+  font-size: 14px;
+}
+.footerInner li {
+  cursor: pointer;
+}
+
+.footerInner li:hover {
+  color: #850432;
+  text-decoration: underline;
+}
+.footerInner h1 {
+  font-size: 20px;
+}
+
+.footerInner h1:hover {
+  text-decoration: underline;
+  color: #850432;
+  cursor: pointer;
+}
+
+.footerlogodetails .fa-envelope {
+  font-size: 16px;
+}
+.SocialMedia {
+  position: absolute;
+  top: 270px;
+  cursor: pointer;
+}
+.fa-instagram {
+  font-size: 30px;
+}
+.OnemliLinkler {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  height: 400px;
+  width: 300px;
+}
+
+.Hizmetlerimiz {
+  position: relative;
+  top: 0px;
+  height: 400px;
+  width: 300px;
+}
+.Dokumanlar {
+  position: relative;
+  top: 0px;
+  height: 400px;
+  width: 300px;
+}
+
 /*  Mobil */
 @media only screen and (max-width: 1600px) {
   .Shadow {
@@ -1031,9 +872,7 @@ color: yellow  !important;
     width: 1600px;
     margin-left: -800px;
   }
-  .Links {
-    left: 43%;
-  }
+
   #BolumlerListItems {
     right: -200px;
   }
@@ -1053,14 +892,15 @@ color: yellow  !important;
     width: 140px;
   }
 
-  .NavigasyonBar #hidden {
+ #hidden {
     position: fixed;
     top: 90px;
     width: 313px;
     display: flex;
     flex-direction: column;
     background-color: #850432;
-    max-height: 600px;
+    height: 600px;
+    
   }
   .NavigasyonBar {
     position: fixed;
@@ -1069,25 +909,28 @@ color: yellow  !important;
     margin-left: 0px;
   }
   .Shadow {
+    margin-left: 0px;
+    left: 0px;
     position: fixed;
     width: 100%;
     position: fixed;
     height: 120px;
     box-shadow: inset 2px 30px 100px #4f647f;
   }
+
+
+
+
+
+
+
+
+
   .carousel {
     height: 500px;
     width: 100%;
   }
 
-  .NavigasyonBar .Links a {
-    font-size: 15px;
-    transition: all 0.5s ease-out;
-    width: 100%;
-    font-size: 20px;
-    height: 50px;
-    text-align: center;
-  }
   .Slider-container {
     width: 100%;
   }
@@ -1115,12 +958,6 @@ color: yellow  !important;
     border: 2px solid white;
   }
 
-  .Links {
-    position: absolute;
-    left: 100px;
-    display: none;
-  }
-
   .RandevuAlButton {
     width: 100px;
     border: 2px solid #ffffff;
@@ -1143,113 +980,6 @@ color: yellow  !important;
     top: 20px;
     left: 185px;
   }
-  #ListItems {
-    top: 0px;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-  #ListItems a {
-    font-size: 15px;
-  }
-  #BolumlerListItems {
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    flex-direction: column;
-    min-height: 313px;
-    height: 313px;
-  }
-  #BolumlerListItems a {
-    font-size: 20px;
-    height: 50px;
-  }
-  .GeriButtonBolumler {
-    display: flex;
-  }
-
-  #geributtonflex {
-    display: flex;
-  }
-
-  #gerinone {
-    display: none;
-  }
-
-  #dahili {
-    top: 0px;
-    left: 0px;
-    flex-wrap: wrap;
-    align-content: center;
-    width: 100%;
-    min-height: 600px;
-  }
-
-  #dahili a {
-    font-size: 12px;
-    height: 30px;
-  }
-  .GeriButtonDahili {
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-    display: flex;
-  }
-
-  #cerrahi {
-    top: 0px;
-    left: 0px;
-    flex-wrap: wrap;
-    align-content: center;
-    width: 100%;
-    height: 600px;
-  }
-  #cerrahi a {
-    font-size: 12px;
-    height: 30px;
-  }
-  .GeriButtonCerrahi {
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-    display: flex;
-  }
-  #Tlist {
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    min-height: 313px;
-  }
-
-  #Tlist a {
-    font-size: 11px;
-    height: 30px;
-  }
-  .GeriButtonTemel {
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-    display: flex;
-  }
-
-  #diger {
-    top: 0px;
-    left: 0px;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    min-height: 313px;
-  }
-  #diger a {
-    font-size: 12px;
-    height: 30px;
-  }
-  .GeriButtonDiger {
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-    display: flex;
-  }
 
   .GeriButton {
     bottom: 0px;
@@ -1268,19 +998,6 @@ color: yellow  !important;
     position: relative;
     height: 100px;
     width: 313px;
-  }
-
-  .DahiliListesi {
-    display: none;
-  }
-  .CerrahiListesi {
-    display: none;
-  }
-  .TemelListesi {
-    display: none;
-  }
-  .DigerListesi {
-    display: none;
   }
 
   .Cards {
@@ -1350,8 +1067,5 @@ color: yellow  !important;
 @media only screen and (min-width: 600px) {
   .NavigasyonBar #hidden {
     display: none;
-  }
-  .Links {
-    display: flex;
   }
 }
