@@ -12,6 +12,7 @@ class Navigasyonbar extends Component {
       showTanitimList: false,
       showKurumsalList: false,
       showYonetimList: false,
+      showBolumlerList: false,
       showListItems2_1: false,
       showListItems2_2: false,
       showListItems2_3: false,
@@ -39,6 +40,8 @@ class Navigasyonbar extends Component {
           let TanıtımListesi = value.tanitim;
           let KurumsalListesi = value.Kurumsal;
           let YonetimListesi = value.Yonetim;
+          let DahiliListesi = value.DahiliTıpBilimleri;
+          let CerrahiListesi = value.CerrahiTipBilimleri;
           console.log(TanıtımListesi);
           return (
             <nav
@@ -131,6 +134,9 @@ class Navigasyonbar extends Component {
                     </div>
                   </div>
 
+
+
+
                   <div
                     onMouseLeave={() => {
                       this.setState({ showYonetimList: false });
@@ -167,7 +173,90 @@ class Navigasyonbar extends Component {
                         })}
                       </ul>
                     </div>
+
+
                   </div>
+
+                                  
+                  <div onMouseLeave={() => {
+                      this.setState({ showBolumlerList: false });
+                    }}  > 
+
+                          <li
+                      className={
+                        this.state.showBolumlerList ? "ButtonColor" : null
+                      }
+                      onMouseEnter={() => {
+                        this.setState({ showBolumlerList: true });
+                      }}
+                    >
+                      Bölümler
+                    </li>
+
+                 <div   className={
+                        this.state.showBolumlerList ? "Listeler" : "ListeyiGizle"
+                      } >   
+
+                      
+                    <div
+                      className={
+                        this.state.showBolumlerList ? "DahiliListesi" : "ListeyiGizle"
+                      }
+                    >
+                      <ul>
+                        {DahiliListesi.map((DahiliListesi, index) => {
+                          return (
+                            <li>
+                              &nbsp;
+                              <span>
+                                <i className="fa fa-chevron-right"></i>
+                              </span>
+                              &nbsp;
+                              {DahiliListesi.DahiliBaslik}
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    </div>
+                    <div
+                      className={
+                        this.state.showBolumlerList ? "CerrahiListesi" : "ListeyiGizle"
+                      }
+                    >
+                      <ul>
+                        {CerrahiListesi.map((CerrahiListesi, index) => {
+                          return (
+                            <li>
+                              &nbsp;
+                              <span>
+                                <i className="fa fa-chevron-right"></i>
+                              </span>
+                              &nbsp;
+                              {CerrahiListesi.CerrahiBaslik}
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    </div>
+
+
+
+
+
+
+
+
+
+                  </div>
+
+
+
+                  </div>
+
+
+
+
+
 
                   <li>Bölümler</li>
                   <li>Doktorlar</li>
