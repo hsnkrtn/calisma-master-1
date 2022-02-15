@@ -11,7 +11,7 @@ class Navigasyonbar extends Component {
       showLinks: false,
       showTanitimList: false,
       showKurumsalList: false,
-      showYonetimList:false,
+      showYonetimList: false,
       showListItems2_1: false,
       showListItems2_2: false,
       showListItems2_3: false,
@@ -53,114 +53,122 @@ class Navigasyonbar extends Component {
 
               <div className="Links" id={this.state.showLinks ? "hidden" : ""}>
                 <ul className="LinksList">
-              
-
-
-
-                <div onMouseLeave={()=>{  
-                  this.setState({showTanitimList:false})
-                } }  >
-                  <li  className= {this.state.showTanitimList ? "ButtonColor":  null }    onMouseEnter ={() =>{
-                  this.setState({ showTanitimList:true })}
-                }   >Tanıtım</li>
-
-                    
                   <div
-                    className={
-                      this.state.showTanitimList
-                        ? "Listeler"
-                        : "ListeyiGizle"
-                    }
+                    onMouseLeave={() => {
+                      this.setState({ showTanitimList: false });
+                    }}
                   >
-                    <ul>
-                      {TanıtımListesi.map((TanıtımListesi, index) => {
-                        return (
-                          <li>
-                            &nbsp;
-                            <span>
-                              <i className="fa fa-chevron-right"></i>
-                            </span>
-                            &nbsp;
-                            {TanıtımListesi.TanitimBaslik}
-                          </li>
-                        );
-                      })}
-                    </ul>
+                    <li
+                      className={
+                        this.state.showTanitimList ? "ButtonColor" : null
+                      }
+                      onMouseEnter={() => {
+                        this.setState({ showTanitimList: true });
+                      }}
+                    >
+                      Tanıtım
+                    </li>
+
+                    <div
+                      className={
+                        this.state.showTanitimList ? "Listeler" : "ListeyiGizle"
+                      }
+                    >
+                      <ul>
+                        {TanıtımListesi.map((TanıtımListesi, index) => {
+                          return (
+                            <li>
+                              &nbsp;
+                              <span>
+                                <i className="fa fa-chevron-right"></i>
+                              </span>
+                              &nbsp;
+                              {TanıtımListesi.TanitimBaslik}
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    </div>
                   </div>
-                  </div>
 
-
-                <div onMouseLeave={()=>{  
-                  this.setState({showKurumsalList:false})
-                } }  >
-                  <li  className= {this.state.showKurumsalList ? "ButtonColor":  null }    onMouseEnter ={() =>{
-                  this.setState({ showKurumsalList:true })}
-                }   >Kurumsal</li>
-
-                    
                   <div
-                    className={
-                      this.state.showKurumsalList
-                        ? "Listeler"
-                        : "ListeyiGizle"
-                    }
+                    onMouseLeave={() => {
+                      this.setState({ showKurumsalList: false });
+                    }}
                   >
-                    <ul>
-                      {KurumsalListesi.map((KurumsalListesi, index) => {
-                        return (
-                          <li>
-                            &nbsp;
-                            <span>
-                              <i className="fa fa-chevron-right"></i>
-                            </span>
-                            &nbsp;
-                            {KurumsalListesi.KurumsalBaslik}
-                          </li>
-                        );
-                      })}
-                    </ul>
+                    <li
+                      className={
+                        this.state.showKurumsalList ? "ButtonColor" : null
+                      }
+                      onMouseEnter={() => {
+                        this.setState({ showKurumsalList: true });
+                      }}
+                    >
+                      Kurumsal
+                    </li>
+
+                    <div
+                      className={
+                        this.state.showKurumsalList
+                          ? "Listeler"
+                          : "ListeyiGizle"
+                      }
+                    >
+                      <ul>
+                        {KurumsalListesi.map((KurumsalListesi, index) => {
+                          return (
+                            <li>
+                              &nbsp;
+                              <span>
+                                <i className="fa fa-chevron-right"></i>
+                              </span>
+                              &nbsp;
+                              {KurumsalListesi.KurumsalBaslik}
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    </div>
                   </div>
-                  </div>
 
-
-                <div onMouseLeave={()=>{  
-                  this.setState({showYonetimList:false})
-                } }  >
-                  <li  className= {this.state.showYonetimList ? "ButtonColor":  null }    onMouseEnter ={() =>{
-                  this.setState({ showYonetimList:true })}
-                }   >Yönetim</li>
-
-                    
                   <div
-                    className={
-                      this.state.showYonetimList
-                        ? "Listeler"
-                        : "ListeyiGizle"
-                    }
+                    onMouseLeave={() => {
+                      this.setState({ showYonetimList: false });
+                    }}
                   >
-                    <ul>
-                      {YonetimListesi.map((YonetimListesi, index) => {
-                        return (
-                          <li>
-                            &nbsp;
-                            <span>
-                              <i className="fa fa-chevron-right"></i>
-                            </span>
-                            &nbsp;
-                            {YonetimListesi.YonetimBaslik}
-                          </li>
-                        );
-                      })}
-                    </ul>
+                    <li
+                      className={
+                        this.state.showYonetimList ? "ButtonColor" : null
+                      }
+                      onMouseEnter={() => {
+                        this.setState({ showYonetimList: true });
+                      }}
+                    >
+                      Yönetim
+                    </li>
+
+                    <div
+                      className={
+                        this.state.showYonetimList ? "Listeler" : "ListeyiGizle"
+                      }
+                    >
+                      <ul>
+                        {YonetimListesi.map((YonetimListesi, index) => {
+                          return (
+                            <li>
+                              &nbsp;
+                              <span>
+                                <i className="fa fa-chevron-right"></i>
+                              </span>
+                              &nbsp;
+                              {YonetimListesi.YonetimBaslik}
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    </div>
                   </div>
-                  </div>
 
-
-
-
-
-
-                 
                   <li>Bölümler</li>
                   <li>Doktorlar</li>
                   <li>İletişim</li>
