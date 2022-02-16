@@ -13,8 +13,11 @@ class Navigasyonbar extends Component {
       showKurumsalList: false,
       showYonetimList: false,
       showBolumlerList: true,
-      showDoktorlarList: false,
+      showDahiliList: false,
+      showCerrahiList: false,
       showTemelList: false,
+      showDigerTedavilist:false,
+      showDoktorlarList: false,
       showIletisimItems: false,
     };
   }
@@ -90,17 +93,18 @@ class Navigasyonbar extends Component {
                           );
                         })}
                       </ul>
-                    
-                        <button className="GeriButton"
-                          onMouseEnter={() =>
-                            this.setState({ showTanitimList: false })
-                          }
-                        >
-                          <span>
+
+                      <button
+                        className="GeriButton"
+                        onMouseEnter={() =>
+                          this.setState({ showTanitimList: false })
+                        }
+                      >
+                        <span>
                           <i class="fa fa-reply"></i>
-                          </span> &nbsp; Geri
-                        </button>
-                      
+                        </span>{" "}
+                        &nbsp; Geri
+                      </button>
                     </div>
                   </div>
 
@@ -141,16 +145,18 @@ class Navigasyonbar extends Component {
                           );
                         })}
                       </ul>
-                      
-                      <button className="GeriButton"
-                          onMouseEnter={() =>
-                            this.setState({ showKurumsalList: false })
-                          }
-                        >
-                          <span>
+
+                      <button
+                        className="GeriButton"
+                        onMouseEnter={() =>
+                          this.setState({ showKurumsalList: false })
+                        }
+                      >
+                        <span>
                           <i class="fa fa-reply"></i>
-                          </span> &nbsp; Geri
-                        </button>
+                        </span>{" "}
+                        &nbsp; Geri
+                      </button>
                     </div>
                   </div>
 
@@ -190,20 +196,21 @@ class Navigasyonbar extends Component {
                         })}
                       </ul>
 
-                      <button className="GeriButton"
-                          onMouseEnter={() =>
-                            this.setState({ showYonetimList: false })
-                          }
-                        >
-                          <span>
+                      <button
+                        className="GeriButton"
+                        onMouseEnter={() =>
+                          this.setState({ showYonetimList: false })
+                        }
+                      >
+                        <span>
                           <i class="fa fa-reply"></i>
-                          </span> &nbsp; Geri
-                        </button>
+                        </span>{" "}
+                        &nbsp; Geri
+                      </button>
 
-                    </div>
                     
+                    </div>
                   </div>
-
 
                   <div
                     onMouseLeave={() => {
@@ -229,16 +236,24 @@ class Navigasyonbar extends Component {
                       }
                     >
                       <div className="Bolumler">
-                        <div
-                          className={
-                            this.state.showBolumlerList
-                              ? "DahiliListesi"
-                              : "ListeyiGizle"
-                          }
-                        >
-                           <h1 className="DahiliButton" role="Button"> DAHİLİ TIP BİLİMLERİ </h1>
-                          <ul>
-                         
+                        <div>
+                          <h1 className="DahiliButton" role="Button"   onMouseEnter={() =>
+                                this.setState({ showDahiliList: true })} >
+                            {" "}
+                            DAHİLİ TIP BİLİMLERİ{" "}
+                          </h1>
+                          <ul
+                            className={
+                              this.state.showBolumlerList
+                                ? "DahiliListesi"
+                                : "ListeyiGizle"
+                            }
+                            id={
+                              this.state.showDahiliList
+                                ? "Bolumlistelerinigoster"
+                                : null
+                            }
+                          >
                             {DahiliListesi.map((DahiliListesi, index) => {
                               return (
                                 <li>
@@ -250,21 +265,40 @@ class Navigasyonbar extends Component {
                                   {DahiliListesi.DahiliBaslik}
                                 </li>
                               );
-                            })}
+                            })}{" "}
+                            <button
+                              className="GeriButton"
+                              onMouseEnter={() =>
+                                this.setState({ showDahiliList: false })
+                              }
+                            >
+                              <span>
+                                <i class="fa fa-reply"></i>
+                              </span>{" "}
+                              &nbsp; Geri
+                            </button>
                           </ul>
                         </div>
 
-
-
-                        <div
-                          className={
-                            this.state.showBolumlerList
-                              ? "CerrahiListesi"
-                              : "ListeyiGizle"
-                          }
-                        >
-                          <ul>
-                            <h1 className="CerrahiButton" role="Button"> CERRAHİ TIP BİLİMLERİ</h1>
+                        <div>
+                          {" "}
+                          <h1 className="CerrahiButton" role="Button" onMouseEnter={() =>
+                                this.setState({ showCerrahiList: true })} >
+                          
+                            CERRAHİ TIP BİLİMLERİ
+                          </h1>
+                          <ul
+                            className={
+                              this.state.showBolumlerList
+                                ? "CerrahiListesi"
+                                : "ListeyiGizle"
+                            }
+                            id={
+                              this.state.showCerrahiList
+                                ? "Bolumlistelerinigoster"
+                                : null
+                            }
+                          >
                             {CerrahiListesi.map((CerrahiListesi, index) => {
                               return (
                                 <li>
@@ -276,24 +310,40 @@ class Navigasyonbar extends Component {
                                   {CerrahiListesi.CerrahiBaslik}
                                 </li>
                               );
-                            })}
+                            })}{" "}
+                            <button
+                              className="GeriButton"
+                              onMouseEnter={() =>
+                                this.setState({ showCerrahiList: false })
+                              }
+                            >
+                              <span>
+                                <i class="fa fa-reply"></i>
+                              </span>{" "}
+                              &nbsp; Geri
+                            </button>
                           </ul>
                         </div>
 
-
-
-                        
-
-
-                        <div
-                          className={
-                            this.state.showBolumlerList
-                              ? "TemelListesi"
-                              : "ListeyiGizle"
-                          }
-                        > <h1 className="TemelButton" role="Button"> TEMEL TIP BİLİMLERİ </h1>
-                          <ul>
-                           
+                        <div>
+                          {" "}
+                          <h1 className="TemelButton" role="Button" onMouseEnter={() =>
+                                this.setState({ showTemelList: true })}>
+                            {" "}
+                            TEMEL TIP BİLİMLERİ{" "}
+                          </h1>
+                          <ul
+                            className={
+                              this.state.showBolumlerList
+                                ? "TemelListesi"
+                                : "ListeyiGizle"
+                            }
+                            id={
+                              this.state.showTemelList
+                                ? "Bolumlistelerinigoster"
+                                : null
+                            }
+                          >
                             {TemelListesi.map((TemelListesi, index) => {
                               return (
                                 <li>
@@ -306,18 +356,38 @@ class Navigasyonbar extends Component {
                                 </li>
                               );
                             })}
+                            <button
+                              className="GeriButton"
+                              onMouseEnter={() =>
+                                this.setState({ showTemelList: false })
+                              }
+                            >
+                              <span>
+                                <i class="fa fa-reply"></i>
+                              </span>{" "}
+                              &nbsp; Geri
+                            </button>
                           </ul>
                         </div>
 
-                        <div
-                          className={
-                            this.state.showBolumlerList
-                              ? "DigerTedaviListesi"
-                              : "ListeyiGizle"
-                          }
-                        >
-                          <ul>
-                            <h1  className="DigerButton" role="Button"> DİĞER TEDAVİ ÜNİTELERİ </h1>
+                        <div>
+                          <h1 className="DigerButton" role="Button" onMouseEnter={() =>
+                                this.setState({ showDigerTedavilist: true })}>
+                            {" "}
+                            DİĞER TEDAVİ ÜNİTELERİ{" "}
+                          </h1>
+                          <ul
+                            className={
+                              this.state.showBolumlerList
+                                ? "DigerTedaviListesi"
+                                : "ListeyiGizle"
+                            }
+                           id={
+                              this.state.showDigerTedavilist
+                                ? "Bolumlistelerinigoster"
+                                : null
+                            }
+                          >
                             {DigerTedaviListesi.map(
                               (DigerTedaviListesi, index) => {
                                 return (
@@ -331,13 +401,63 @@ class Navigasyonbar extends Component {
                                   </li>
                                 );
                               }
-                            )}
+                            )}{" "}
+                            <button
+                              className="GeriButton"
+                              onMouseEnter={() =>
+                                this.setState({ showDigerTedavilist: false })
+                              }
+
+                            >
+                              <span>
+                                <i class="fa fa-reply"></i>
+                              </span>{" "}
+                              &nbsp; Geri
+                            </button>
                           </ul>
                         </div>
+
+                        
                       </div>
+                      <button
+                        className="GeriButtonBolumler"
+                        onMouseEnter={() =>
+                          this.setState({ showBolumlerList: false })
+                        }
+                      >
+                        <span>
+                          <i class="fa fa-reply"></i>
+                        </span>{" "}
+                        &nbsp; Geri
+                      </button>
                     </div>
                   </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{/* 
                   <div
                     onMouseLeave={() => {
                       this.setState({ showDoktorlarList: false });
@@ -485,8 +605,8 @@ class Navigasyonbar extends Component {
                         </div>
                       </div>
                     </div>
-                  </div>
-
+                  </div> */}
+<li>Doktorlar</li>
                   <div
                     onMouseLeave={() => {
                       this.setState({ showIletisimItems: false });
@@ -510,20 +630,35 @@ class Navigasyonbar extends Component {
                           : "ListeyiGizle"
                       }
                     >
+
                       <iframe
                         className="harita"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3114.6093589334732!2d39.20330651580714!3d38.68084487960478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4076c0895a19c2a3%3A0x56a2b23e62945af6!2sF%C4%B1rat+%C3%9Cniversitesi+Hastanesi!5e0!3m2!1str!2str!4v1515742266104"
-                      ></iframe>
-                      <p>
+                      >   </iframe>
+                        <div className="HastaneIletisim">
                         <h>Adres </h> : Üniversite Mahallesi Yahya Kemal Caddesi
                         No:25 MERKEZ/ELAZIĞ <br></br>
                         <h>Telefon </h>: 0424 233 35 55<br></br>
                         <h>E-mail </h>: hastane@firat.edu.tr<br></br>
                         <h> Hesap Bilgileri</h>: Fırat Ünv Hastanesi Döner
                         Sermaye İşletme Müdürlüğü TR860001001561135354675057
-                      </p>
+                        <button
+                        className="GeriButtonBolumler"
+                        onMouseEnter={() =>
+                          this.setState({ showIletisimItems: false })
+                        }
+                      >
+                        <span>
+                          <i class="fa fa-reply"></i>
+                        </span>{" "}
+                        &nbsp; Geri
+                      </button>
+                      </div>
+                 
                     </div>
+                 
                   </div>
+               
                 </ul>
               </div>
 
