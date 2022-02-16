@@ -274,11 +274,13 @@ a:hover {
 .GeriButton {
   position: absolute;
   bottom: 0px;
-  display: flex;
+  display: none;
   text-decoration: none;
   width: 100%;
 }
-
+.GeriButtonBolumler {
+  display: none;
+}
 .carousel {
   position: absolute;
   z-index: 0;
