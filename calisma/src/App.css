@@ -17,6 +17,7 @@
   transition: all 0.2s ease-in-out;
 }
 .brand1 {
+  cursor: pointer;
   height: 140px;
   width: 392px;
   position: relative;
@@ -123,7 +124,9 @@ a:hover {
   color: black;
   background-color: white;
   border-bottom: 5px solid #4f647f;
-
+  background-image: url("../public/hbg5.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 
@@ -146,20 +149,59 @@ a:hover {
 .ListeyiGizle {
   display: none;
 }
+.Bolumler{
+position: absolute;
+left: 0%;
+margin-left: -900px;
+top: 0px;
+width: 1200px;
+height: 700px;
+background-color:white;
+border-bottom: 5px solid #4f647f;
+background-image: url("../public/hbg5.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+
+}
+.Bolumler li {
+  font-size: 14px;
+}
+.Bolumler h1 {
+  font-size: 20px;
+  cursor: pointer;
+}
 .DahiliListesi {
-position: relative;
+position: absolute;
+width: 300px;
 left: 0px;
 top: 0px;
-background-color: aqua;
+display: inline-block;
+
 
 }
 .CerrahiListesi {
-  position: relative;
+  position: absolute;
+  width: 300px;
   top: 0px;
-  right: 0px;
-  background-color: bisque;
-}
+  left: 300px;
+  display: inline-block;
 
+}
+.TemelListesi{
+  position: absolute;
+  width: 300px;
+  top: 0px;
+  left: 600px;
+  display: inline-block;
+
+}
+.DigerTedaviListesi{
+  position: absolute;
+  width: 300px;
+  top: 0px;
+  left: 900px;
+  display: inline-block;
+}
 
 
 
@@ -222,19 +264,20 @@ background-color: aqua;
   font-size: 18px;
 }
 
-.IletisimItems {
-  display: none;
-  width: 90px;
-}
+
 .IletisimItemsIframe {
+  position: absolute;
+  
+  right: 0%;
   background-color: #ffffff;
   color: black;
   border-bottom: #4f647f solid 5px;
-  position: relative;
-  right: 1100px;
+  
 }
-#Map {
-  display: flex;
+.harita{
+  position: relative;
+  height: 500px;
+  width: 1150px;
 }
 
 .GeriButton {
@@ -397,10 +440,7 @@ background-color: aqua;
   outline: none;
 }
 
-.harita {
-  height: 600px;
-  width: 1200px;
-}
+
 
 /*Cards      */
 
@@ -800,10 +840,11 @@ background-color: aqua;
   width: 400px;
   height: 400px;
   font-size: 14px;
+  cursor: pointer;
 }
 .footerlogo {
   position: relative;
-  width: 300;
+  width: 300px;
   height: 107px;
   top: 4px;
   left: 0px;
