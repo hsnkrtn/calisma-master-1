@@ -845,6 +845,7 @@ a:hover {
 .footerInner ul {
   list-style-type: none;
   font-size: 14px;
+padding-left: 0px;
 }
 .footerInner li {
   cursor: pointer;
@@ -1097,9 +1098,15 @@ height: 30px;
     height: 500px;
     width: 100%;
   }
+  .carouselInner {
+    width: 100%;
+  }
 
   .Slider-container {
+    bottom: 0px;
     width: 100%;
+    height: 80%;
+
   }
 
   .HLeftButton {
@@ -1107,6 +1114,7 @@ height: 30px;
     width: 50px;
     left: 0%;
     font-size: 50px;
+    bottom: 0px;
   }
   .HRightButton {
     position: relative;
@@ -1167,8 +1175,7 @@ height: 30px;
   .Cards {
     position: absolute;
     top: 500px;
-    left: 50%;
-    margin-left: -207px;
+ 
     width: 100%;
     height: 780px;
     display: block;
@@ -1200,11 +1207,12 @@ height: 30px;
   .HVE {
     position: absolute;
     top: 1100px;
-    height: 700px;
+    height: 550px;
+    width: 100%;
   }
   .HaberlerVeEtkinlikler {
     position: relative;
-    top: 0px;
+    height: 400px;
     display: block;
   }
   .Haber {
@@ -1226,7 +1234,59 @@ height: 30px;
   .Cards {
     height: fit-content;
   }
+
+  .Footer {
+height: 1000px;
+
+  }
+  .footerInner {
+top: 100px;
+width: 90%;
+height: 100%;
+  }
+  .footerInner ul {
+    font-size: 14px;
+    padding-left: 0px;
+  }
+  .footerInner h1 {
+font-size: 16px;
+
+  }
+  .footerlogodetails {
+    position: absolute;
+    top: 0px;
+    left:0px;
+    width: 100%;
+    height: 400px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .OnemliLinkler{
+    position: relative;
+top: 100px;
+width: 100%;
+
+
+  }
+.Hizmetlerimiz{
+  position: relative;
+  top:100px;
+  width: 100%;
+
 }
+.Dokumanlar{
+  position: relative;
+  top:100px;
+  width: 100%;
+
+}
+
+
+
+}
+
+
+
 
 @media only screen and (min-width: 600px) {
   .NavigasyonBar #hidden {
