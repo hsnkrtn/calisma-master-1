@@ -805,7 +805,6 @@ a:hover {
   height: 600px;
   background-color: #4f647f;
   background-image: url("../public/fbg3.jpg");
-
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -831,20 +830,22 @@ a:hover {
   height: 400px;
   font-size: 14px;
   cursor: pointer;
+  margin-right: 30px;
+  font-size: 16px;
 }
+
 .footerlogo {
   position: relative;
-  width: 300px;
-  height: 107px;
+  width: 400px;
+  height: 142px;
   top: 4px;
   left: 0px;
   cursor: pointer;
-  margin-right: 100%;
   margin-bottom: 50px;
 }
 .footerInner ul {
   list-style-type: none;
-  font-size: 14px;
+  font-size: 16px;
 padding-left: 0px;
 }
 .footerInner li {
@@ -872,8 +873,8 @@ padding-left: 0px;
   margin-right : 0%;
 }
 .SocialMedia {
-  position: absolute;
-  top: 270px;
+  position: relative;
+  top: 0px;
   cursor: pointer;
 }
 .fa-instagram {
