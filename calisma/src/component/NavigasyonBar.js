@@ -626,7 +626,7 @@ class Navigasyonbar extends Component {
                         No:25 MERKEZ/ELAZIĞ <br></br>
                         <h>Telefon </h>: 0424 233 35 55<br></br>
                         <h>E-mail </h>: hastane@firat.edu.tr<br></br>
-                        <h> Hesap Bilgileri</h>: Fırat Ünv Hastanesi Döner
+                        <h> Hesap Bilgileri</h>: Fırat Üniversitesi Hastanesi Döner
                         Sermaye İşletme Müdürlüğü TR860001001561135354675057
                         <button
                           className="GeriButtonBolumler"
