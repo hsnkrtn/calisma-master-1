@@ -635,7 +635,7 @@ a:hover {
 .Slider-container {
   position: absolute;
   width: 1162px;
-  height: 420px;
+  height: 405px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -658,8 +658,8 @@ a:hover {
 }
 .Haber:hover {
   border-color: #850432;
-  transition: all 0.5s ease-out;
-  transform: scale(1.1);
+
+  
 }
 
 .Haber h1:hover {
@@ -675,13 +675,7 @@ a:hover {
   transition: 0.3s ease-in-out;
 
 }
-.Hfotograf:hover {
-	transform: scale(1.05);
-transition: 0.3s ease-in-out;
 
-
-
-}
 
 .HBaslik {
   font-size: 20px;
@@ -807,10 +801,7 @@ transition: 0.3s ease-in-out;
   height: 100%;
   left: 10px;
 }
-/* .DuyuruIcerik h1{
-  left: 10px;
 
-} */
 
 .DuyuruIcon {
   position: relative;
@@ -1189,7 +1180,7 @@ align-items: flex-start;
   }
 
   .carousel {
-    height: 500px;
+    height: 600px;
     width: 100%;
   }
   .carouselInner {
@@ -1197,9 +1188,7 @@ align-items: flex-start;
   }
 
   .Slider-container {
-    bottom: 0px;
     width: 100%;
-    height: 80%;
 
   }
 
@@ -1272,51 +1261,65 @@ align-items: flex-start;
 
   .Cards {
     position: absolute;
-    top: 500px;
+      top:420px;
     width: 100%;
-    height: 780px;
-    display: block;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+
+  } 
+  .Cards p1{
+    display: none;
   }
+ 
   .Card1 {
-    height: 180px;
+    height: 150px;
     margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
     text-align: center;
-    width: 100%;
+    width: 110px;
     left: 0px;
   }
 
   .Card2 {
-    height: 180px;
+    height: 150px;
     margin-top: 15px;
-    margin-left: 0px;
-    margin-right: 0px;
-    width: 100%;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 110px;
     text-align: center;
     left: 0px;
+
   }
   .Card3 {
-    height: 180px;
-
+    height: 150px;
+    margin-bottom: 15px;
     margin-top: 15px;
-    width: 100%;
+    margin-right: 15px;
 
+    width: 110px;
+    
     left: 0px;
+
   }
   .HVE {
     position: absolute;
-    top: 1100px;
-    height: 550px;
-    width: 100%;
+    top: 600px;
+    height: 700px;
   }
   .HaberlerVeEtkinlikler {
+    top: 0px;
     position: relative;
-    height: 400px;
     display: block;
   }
   .Haber {
     width: 300px;
   }
-
+  .Haber :hover{
+  transform:none;
+  }
   .Duyuruslider {
     width: 100%;
     height: 360px;
@@ -1329,8 +1332,8 @@ align-items: flex-start;
     margin-right: 0px;
     display: block;
   }
-  .Cards {
-    height: fit-content;
+  .bga {
+  top: 1150px;
   }
 
   .Footer {
@@ -1359,6 +1362,10 @@ font-size: 16px;
     height: 400px;
     font-size: 14px;
     cursor: pointer;
+  }
+  .footerlogo{
+width: 100%;
+
   }
   .OnemliLinkler{
     position: relative;

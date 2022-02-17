@@ -69,9 +69,9 @@ componentDidMount() {
     return (
       <DataConsumer>
         {(value) => {
-          let GosterilecekHaberler = value.Haberler;
+          let GosterilecekHaberlerson = value.Haberler;
 
-          let GosterilecekHaberlerson = GosterilecekHaberler.reverse();
+          
           console.log(GosterilecekHaberlerson);
           
 
@@ -95,7 +95,7 @@ componentDidMount() {
                           key={index}
                           id={GosterilecekHaberlerson.HaberId}
                         >
-                          <div>
+                          
                             <div className="Htarih">
                               {" "}
                               <p>Tarih</p>{" "}
@@ -115,7 +115,6 @@ componentDidMount() {
                               {GosterilecekHaberlerson.HaberDetayi}
                             </p1>
                           </div>
-                        </div>
                       );
                     }
                   )}

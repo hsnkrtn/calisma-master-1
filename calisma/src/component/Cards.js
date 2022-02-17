@@ -4,9 +4,9 @@ function Cards() {
   return (
     <div className="Cards">
 
-      
+
       <div className="Card1">
-      <div className="CardIcon">
+        <div className="CardIcon">
           <span><i class="fa fa-calendar"></i>
 
 
@@ -20,7 +20,7 @@ function Cards() {
             Bölüm ve doktor seçip randevu almak için tıklayınız.
           </p1>
         </div>
-      
+
       </div>
 
 
@@ -41,8 +41,8 @@ function Cards() {
 
 
       <div className="Card3">
-      <div className="CardIcon">
-          <span><i class="fa fa-stethoscope"></i> 
+        <div className="CardIcon">
+          <span><i class="fa fa-stethoscope"></i>
           </span>
         </div>
 
