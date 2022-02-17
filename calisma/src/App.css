@@ -943,7 +943,6 @@ padding-left: 0px;
     font-size: 15px;
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
     
   }
   #hidden {
@@ -1025,6 +1024,8 @@ padding-left: 0px;
 }
 #Bolumlistelerinigoster li{
 height: 50px;
+display: flex;
+align-items: flex-start;
 }
   .CerrahiButton {
     position: absolute;
