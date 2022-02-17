@@ -16,7 +16,7 @@ class Navigasyonbar extends Component {
       showDahiliList: false,
       showCerrahiList: false,
       showTemelList: false,
-      showDigerTedavilist:false,
+      showDigerTedavilist: false,
       showDoktorlarList: false,
       showIletisimItems: false,
     };
@@ -64,9 +64,7 @@ class Navigasyonbar extends Component {
                     }}
                   >
                     <li
-                      className={
-                        this.state.showTanitimList ? "ButtonColor" : null
-                      }
+                      className="btn-13 "
                       onMouseEnter={() => {
                         this.setState({ showTanitimList: true });
                       }}
@@ -114,9 +112,7 @@ class Navigasyonbar extends Component {
                     }}
                   >
                     <li
-                      className={
-                        this.state.showKurumsalList ? "ButtonColor" : null
-                      }
+                     className="btn-13 "
                       onMouseEnter={() => {
                         this.setState({ showKurumsalList: true });
                       }}
@@ -166,9 +162,8 @@ class Navigasyonbar extends Component {
                     }}
                   >
                     <li
-                      className={
-                        this.state.showYonetimList ? "ButtonColor" : null
-                      }
+                                           className="btn-13 "
+
                       onMouseEnter={() => {
                         this.setState({ showYonetimList: true });
                       }}
@@ -207,8 +202,6 @@ class Navigasyonbar extends Component {
                         </span>{" "}
                         &nbsp; Geri
                       </button>
-
-                    
                     </div>
                   </div>
 
@@ -218,9 +211,8 @@ class Navigasyonbar extends Component {
                     }}
                   >
                     <li
-                      className={
-                        this.state.showBolumlerList ? "ButtonColor" : null
-                      }
+                                       className="btn-13 "
+
                       onMouseEnter={() => {
                         this.setState({ showBolumlerList: true });
                       }}
@@ -237,8 +229,13 @@ class Navigasyonbar extends Component {
                     >
                       <div className="Bolumler">
                         <div>
-                          <h1 className="DahiliButton" role="Button"   onMouseEnter={() =>
-                                this.setState({ showDahiliList: true })} >
+                          <h1
+                            className="DahiliButton"
+                            role="Button"
+                            onMouseEnter={() =>
+                              this.setState({ showDahiliList: true })
+                            }
+                          >
                             {" "}
                             DAHİLİ TIP BİLİMLERİ{" "}
                           </h1>
@@ -282,9 +279,13 @@ class Navigasyonbar extends Component {
 
                         <div>
                           {" "}
-                          <h1 className="CerrahiButton" role="Button" onMouseEnter={() =>
-                                this.setState({ showCerrahiList: true })} >
-                          
+                          <h1
+                            className="CerrahiButton"
+                            role="Button"
+                            onMouseEnter={() =>
+                              this.setState({ showCerrahiList: true })
+                            }
+                          >
                             CERRAHİ TIP BİLİMLERİ
                           </h1>
                           <ul
@@ -327,8 +328,13 @@ class Navigasyonbar extends Component {
 
                         <div>
                           {" "}
-                          <h1 className="TemelButton" role="Button" onMouseEnter={() =>
-                                this.setState({ showTemelList: true })}>
+                          <h1
+                            className="TemelButton"
+                            role="Button"
+                            onMouseEnter={() =>
+                              this.setState({ showTemelList: true })
+                            }
+                          >
                             {" "}
                             TEMEL TIP BİLİMLERİ{" "}
                           </h1>
@@ -371,8 +377,13 @@ class Navigasyonbar extends Component {
                         </div>
 
                         <div>
-                          <h1 className="DigerButton" role="Button" onMouseEnter={() =>
-                                this.setState({ showDigerTedavilist: true })}>
+                          <h1
+                            className="DigerButton"
+                            role="Button"
+                            onMouseEnter={() =>
+                              this.setState({ showDigerTedavilist: true })
+                            }
+                          >
                             {" "}
                             DİĞER TEDAVİ ÜNİTELERİ{" "}
                           </h1>
@@ -382,7 +393,7 @@ class Navigasyonbar extends Component {
                                 ? "DigerTedaviListesi"
                                 : "ListeyiGizle"
                             }
-                           id={
+                            id={
                               this.state.showDigerTedavilist
                                 ? "Bolumlistelerinigoster"
                                 : null
@@ -407,7 +418,6 @@ class Navigasyonbar extends Component {
                               onMouseEnter={() =>
                                 this.setState({ showDigerTedavilist: false })
                               }
-
                             >
                               <span>
                                 <i class="fa fa-reply"></i>
@@ -416,8 +426,6 @@ class Navigasyonbar extends Component {
                             </button>
                           </ul>
                         </div>
-
-                        
                       </div>
                       <button
                         className="GeriButtonBolumler"
@@ -433,31 +441,7 @@ class Navigasyonbar extends Component {
                     </div>
                   </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{/* 
+                  {/* 
                   <div
                     onMouseLeave={() => {
                       this.setState({ showDoktorlarList: false });
@@ -606,7 +590,8 @@ class Navigasyonbar extends Component {
                       </div>
                     </div>
                   </div> */}
-<li>Doktorlar</li>
+                  <li                      className="btn-13 "
+>Doktorlar</li>
                   <div
                     onMouseLeave={() => {
                       this.setState({ showIletisimItems: false });
@@ -614,7 +599,7 @@ class Navigasyonbar extends Component {
                   >
                     <li
                       className={
-                        this.state.showIletisimItems ? "ButtonColor" : null
+                        this.state.showIletisimItems ? "btn-13 ButtonColor" : null
                       }
                       onMouseEnter={() => {
                         this.setState({ showIletisimItems: true });
@@ -630,12 +615,13 @@ class Navigasyonbar extends Component {
                           : "ListeyiGizle"
                       }
                     >
-
                       <iframe
                         className="harita"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3114.6093589334732!2d39.20330651580714!3d38.68084487960478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4076c0895a19c2a3%3A0x56a2b23e62945af6!2sF%C4%B1rat+%C3%9Cniversitesi+Hastanesi!5e0!3m2!1str!2str!4v1515742266104"
-                      >   </iframe>
-                        <div className="HastaneIletisim">
+                      >
+                        {" "}
+                      </iframe>
+                      <div className="HastaneIletisim">
                         <h>Adres </h> : Üniversite Mahallesi Yahya Kemal Caddesi
                         No:25 MERKEZ/ELAZIĞ <br></br>
                         <h>Telefon </h>: 0424 233 35 55<br></br>
@@ -643,22 +629,19 @@ class Navigasyonbar extends Component {
                         <h> Hesap Bilgileri</h>: Fırat Ünv Hastanesi Döner
                         Sermaye İşletme Müdürlüğü TR860001001561135354675057
                         <button
-                        className="GeriButtonBolumler"
-                        onMouseEnter={() =>
-                          this.setState({ showIletisimItems: false })
-                        }
-                      >
-                        <span>
-                          <i class="fa fa-reply"></i>
-                        </span>{" "}
-                        &nbsp; Geri
-                      </button>
+                          className="GeriButtonBolumler"
+                          onMouseEnter={() =>
+                            this.setState({ showIletisimItems: false })
+                          }
+                        >
+                          <span>
+                            <i class="fa fa-reply"></i>
+                          </span>{" "}
+                          &nbsp; Geri
+                        </button>
                       </div>
-                 
                     </div>
-                 
                   </div>
-               
                 </ul>
               </div>
 
