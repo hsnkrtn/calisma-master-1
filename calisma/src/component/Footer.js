@@ -9,33 +9,29 @@ class Footer extends Component {
             <img className="footerlogo" src=" hastanelogo.png"></img>
             <p1>
               <span>
-                <i class="fa fa-envelope"></i>
-              </span>&nbsp;
-
-              hastane@firat.edu.tr
+                <i class="fa fa-envelope"></i> </span>  hastane@firat.edu.tr
             </p1>
             <br></br>
             <p1>
               <span>
-                <i class="fa fa-phone"></i> </span> &nbsp;
-
-               0424 233 35 55
+                <i class="fa fa-phone"></i>{" "}
+              </span>{" "}
+              &nbsp; 0424 233 35 55
             </p1>
             <br></br>
             <p1>
               <span>
                 <i class="fa fa-map"></i>
-              </span>&nbsp;
-
-              Üniversite Mahallesi Yahya Kemal Caddesi No:25 MERKEZ/ELAZIĞ
+              </span>
+              &nbsp; Üniversite Mahallesi Yahya Kemal Caddesi No:25
+              MERKEZ/ELAZIĞ
             </p1>
             <br></br>
             <p1 className="SocialMedia">
               <span>
                 <i className="fa fa-instagram"></i>{" "}
-              </span> &nbsp;
-
-              fuhastanesiresmihesap
+              </span>{" "}
+              &nbsp; fuhastanesiresmihesap
             </p1>
           </div>
           <div className="OnemliLinkler">

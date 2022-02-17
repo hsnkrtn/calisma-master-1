@@ -7,6 +7,39 @@
   height: 599px;
 }
 
+
+.btn-13 {
+background-color: black;
+  color: #fff;
+
+}
+.btn-13:after {
+ position: absolute;
+ content: "";
+ width: 100%;
+ height: 0;
+ bottom: 0;
+ left: 0;
+ z-index: -1;
+ background-color : #e0e5ec;
+ transition: all 0.3s ease;
+}
+.btn-13:hover {
+ color: #000;
+}
+.btn-13:hover:after {
+ top: 0;
+ height: 100%;
+
+ 
+}
+.btn-13:active {
+ top: 2px;
+}
+
+
+
+
 .brand {
   cursor: pointer;
   position: relative;
@@ -16,6 +49,7 @@
   height: 90px;
   transition: all 0.2s ease-in-out;
 }
+
 .brand1 {
   cursor: pointer;
   height: 140px;
@@ -77,7 +111,7 @@ a:hover {
   margin-bottom: 0px;
   margin-left: -270px;
   width: 540px;
- }
+}
 .Links ul {
   margin: 0px;
   padding: 0px;
@@ -92,7 +126,6 @@ a:hover {
   list-style: none;
   display: flex;
   color: #ffffff;
-  
 }
 
 .Links li {
@@ -107,12 +140,14 @@ a:hover {
 }
 .Listeler li:hover {
   background-color: #4f647f;
-  color: white ;
+  color: white;
 }
 
-.ButtonColor{
-  background-color: #ffffff !important;
+.ButtonColor {
+  background-color: transparent !important;
   color: black;
+  transition: all 0.5s ease-out;
+
 }
 
 .Listeler {
@@ -130,10 +165,6 @@ a:hover {
 }
 
 
-.Listeler ul {
-  height: 100%;
-  width: 100%;
-}
 .Listeler li {
   height: auto;
   padding-top: 5px;
@@ -142,27 +173,27 @@ a:hover {
   display: block;
   font-size: 15px;
   cursor: pointer;
-
 }
-
 
 .ListeyiGizle {
   display: none;
 }
-.Bolumler{
-position: absolute;
-left: 0%;
-margin-left: -900px;
-top: 0px;
-width: 1200px;
-height: 700px;
-background-color:white;
-border-bottom: 5px solid #4f647f;
-background-image: url("../public/hbg5.jpg");
-background-size: cover;
-background-repeat: no-repeat;
-
+.Bolumler {
+  position: absolute;
+  left: 0%;
+  margin-left: -900px;
+  top: 0px;
+  width: 1200px;
+  height: 700px;
+  background-color: white;
+  border-bottom: 5px solid #4f647f;
+  background-image: url("../public/hbg5.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-start;
 }
+
 .Bolumler li {
   font-size: 14px;
 }
@@ -171,41 +202,22 @@ background-repeat: no-repeat;
   cursor: pointer;
 }
 .DahiliListesi {
-position: absolute;
-width: 300px;
-left: 0px;
-top: 0px;
-display: inline-block;
-
-
+  width: 300px;
+  display: inline-block;
 }
+
 .CerrahiListesi {
-  position: absolute;
   width: 300px;
-  top: 0px;
-  left: 300px;
-  display: inline-block;
-
-}
-.TemelListesi{
-  position: absolute;
-  width: 300px;
-  top: 0px;
-  left: 600px;
-  display: inline-block;
-
-}
-.DigerTedaviListesi{
-  position: absolute;
-  width: 300px;
-  top: 0px;
-  left: 900px;
   display: inline-block;
 }
-
-
-
-
+.TemelListesi {
+  width: 300px;
+  display: inline-block;
+}
+.DigerTedaviListesi {
+  width: 300px;
+  display: inline-block;
+}
 
 .RandevuAlButton {
   position: absolute;
@@ -222,6 +234,8 @@ display: inline-block;
   text-align: center;
   border-radius: 25px;
   font-size: 20px;
+  transition: all 0.5s ease-out;
+
 }
 .RandevuAlButton:hover {
   background-color: #850432;
@@ -229,6 +243,7 @@ display: inline-block;
   border: 2px solid;
   border-color: #ffffff;
   transition: all 0.5s ease-out;
+  transform: scale(1.1);
 }
 
 .MenüButton {
@@ -264,28 +279,43 @@ display: inline-block;
   font-size: 18px;
 }
 
-
 .IletisimItemsIframe {
   position: absolute;
-  
   right: 0%;
   background-color: #ffffff;
   color: black;
   border-bottom: #4f647f solid 5px;
-  
-}
-.harita{
-  position: relative;
   height: 500px;
   width: 1150px;
+
+}
+.IletisimItemsIframe h {
+  font-weight: bold;
+  font-size: 16px;
+}
+.HastaneIletisim {
+  position: relative;
+  bottom: 0px;
+  background-color: #ffffff;
+}
+
+.harita {
+  position: relative;
+  height: fit-content;
+  width: 100%;
+  height: 80%;
 }
 
 .GeriButton {
+  position: absolute;
+  bottom: 0px;
   display: none;
   text-decoration: none;
   width: 100%;
 }
-
+.GeriButtonBolumler {
+  display: none;
+}
 .carousel {
   position: absolute;
   z-index: 0;
@@ -323,30 +353,38 @@ display: inline-block;
 .HLeftButton {
   position: relative;
   width: 100px;
-  height: 400px;
+  height: 100%;
   opacity: 0.7;
   font-size: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition: 0.3s ease-in-out;
+
 }
 .HLeftButton:hover {
   color: #850432;
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
 }
 .HRightButton {
   position: relative;
   width: 100px;
-  height: 400px;
+  height: 100%;
   opacity: 0.7;
   font-size: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition: 0.3s ease-in-out;
+
 }
 .HRightButton:hover {
   color: #850432;
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
 }
 
 .RightButton {
@@ -373,6 +411,12 @@ display: inline-block;
   left: 80%;
   width: fit-content;
   height: fit-content;
+    transition: all 0.5s ease-out;
+
+}
+.search-box:hover{
+  transition: all 0.5s ease-out;
+  transform: scale(1.1);
 }
 .input-search {
   height: 50px;
@@ -440,8 +484,6 @@ display: inline-block;
   outline: none;
 }
 
-
-
 /*Cards      */
 
 .Cards {
@@ -467,11 +509,16 @@ display: inline-block;
   border-radius: 10px;
   color: #4f647f;
   cursor: pointer;
+  transition: 0.3s ease-in-out;
+
 }
 .Card1:hover {
   background-color: #4f647f !important;
   color: white;
   border: white solid 3px;
+    transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+  
 }
 .Card2 {
   position: relative;
@@ -486,11 +533,16 @@ display: inline-block;
   border-radius: 10px;
   color: #4f647f;
   cursor: pointer;
+  transition: 0.3s ease-in-out;
+
 }
 .Card2:hover {
   background-color: #4f647f !important;
   color: white;
   border: white solid 3px;
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+  
 }
 
 .CardIcon {
@@ -514,11 +566,16 @@ display: inline-block;
   border-radius: 10px;
   color: #4f647f;
   cursor: pointer;
+  transition: 0.3s ease-in-out;
+
+  
 }
 .Card3:hover {
   background-color: #4f647f !important;
   color: white;
   border: white solid 3px;
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
 }
 
 .fa-stethoscope {
@@ -578,7 +635,7 @@ display: inline-block;
 .Slider-container {
   position: absolute;
   width: 1162px;
-  height: 405px;
+  height: 420px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -593,12 +650,16 @@ display: inline-block;
   border-bottom: #4f647f solid 5px;
   display: inline-block;
   cursor: pointer;
+  transition: all 0.5s ease-out;
+
 }
 #slider::-webkit-scrollbar {
   display: flex;
 }
 .Haber:hover {
   border-color: #850432;
+  transition: all 0.5s ease-out;
+  transform: scale(1.1);
 }
 
 .Haber h1:hover {
@@ -611,7 +672,17 @@ display: inline-block;
   height: 225px;
   width: 100%;
   border-radius: 5px 5px 0px 0px;
+  transition: 0.3s ease-in-out;
+
 }
+.Hfotograf:hover {
+	transform: scale(1.05);
+transition: 0.3s ease-in-out;
+
+
+
+}
+
 .HBaslik {
   font-size: 20px;
   color: #4f647f;
@@ -716,11 +787,17 @@ display: inline-block;
   color: #4f647f;
   display: inline-block;
   cursor: pointer;
+  transition: 0.3s ease-in-out;
+
 }
 
 .Duyuru:hover {
   color: #850432;
   border-color: #850432;
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+  
+
 }
 
 .DuyuruIcerik {
@@ -815,7 +892,6 @@ display: inline-block;
   height: 600px;
   background-color: #4f647f;
   background-image: url("../public/fbg3.jpg");
-
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -841,20 +917,23 @@ display: inline-block;
   height: 400px;
   font-size: 14px;
   cursor: pointer;
+  margin-right: 30px;
+  font-size: 16px;
 }
+
 .footerlogo {
   position: relative;
-  width: 300px;
-  height: 107px;
+  width: 400px;
+  height: 142px;
   top: 4px;
   left: 0px;
   cursor: pointer;
-  margin-right: 100%;
   margin-bottom: 50px;
 }
 .footerInner ul {
   list-style-type: none;
-  font-size: 14px;
+  font-size: 16px;
+padding-left: 0px;
 }
 .footerInner li {
   cursor: pointer;
@@ -877,9 +956,12 @@ display: inline-block;
 .footerlogodetails .fa-envelope {
   font-size: 16px;
 }
+.footerlogo {
+  margin-right : 0%;
+}
 .SocialMedia {
-  position: absolute;
-  top: 270px;
+  position: relative;
+  top: 0px;
   cursor: pointer;
 }
 .fa-instagram {
@@ -917,20 +999,17 @@ display: inline-block;
     margin-left: -800px;
   }
 
-  #BolumlerListItems {
-    right: -200px;
-  }
 }
 @media only screen and (max-width: 700px) {
   .brand {
     position: absolute;
-    left: 5%;
+    left: 0%;
     top: 20px;
     height: 50px;
     width: 140px;
   }
   .brand1 {
-    left: 5%;
+    left: 0%;
     top: 20px;
     height: 50px;
     width: 140px;
@@ -939,24 +1018,161 @@ display: inline-block;
   .Links {
     display: none;
   }
-  .LinksList{
+  .LinksList {
     position: absolute;
     display: block;
+    width: 300px;
+    height: 300px;
   }
-  .LinksList li{
-width: 313px;
-height: 50px;
-font-size: 15px;
-  }
- #hidden {
-    position: fixed;
-    top: 90px;
-    width: 313px;
-    background-color: #850432;
-    height: auto;
+
+  .LinksList li {
+    height: 50px;
+    width:100%;
+    font-size: 15px;
     display: flex;
+    justify-content: flex-start;
     
   }
+  #hidden {
+    z-index: 2;
+    position: absolute;
+    top: 90px;
+    left: 100%;
+    width: 300px;
+    background-color: #850432;
+    height: 300px;
+    display: flex;
+  }
+  .Listeler {
+    position: absolute;
+    z-index: 3;
+    height: fit-content;
+    min-height: 300px;
+    top: 0px;
+    right: 0%;
+    width: 300px;
+  }
+  
+  .GeriButton {
+    position: relative;
+    bottom: 0px;
+    display: flex;
+    border: none;
+    background: transparent;
+    height: 50px;
+    align-items: center;
+    font-size: 15px;
+  }
+  .GeriButtonBolumler{
+    position: absolute;
+    display: flex;
+    bottom: 0px;
+    height: 50px;
+    width: 100%;
+    border: none;
+    background: transparent;
+    align-items: center;
+
+  }
+  
+
+  .Bolumler {
+    position: absolute;
+    left: 0px;  
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    margin-left: 0px;
+    border: none;
+
+  }
+  .DahiliButton {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 50px;
+    width: 100%;
+  display: flex;
+  align-items: center;
+}
+#Bolumlistelerinigoster{
+  z-index: 4;
+  display: block;
+  position: absolute;
+  background-color: #ffffff;
+    left: 0px;  
+    top: 0px;
+    width: 300px;
+    height: fit-content;
+    min-height: 300px;
+    margin-left: 0px;
+
+
+
+}
+#Bolumlistelerinigoster li{
+height: 50px;
+display: flex;
+align-items: flex-start;
+}
+  .CerrahiButton {
+    position: absolute;
+    left: 0px;
+    top: 50px;
+    height: 50px;
+    width: 100%;
+    display: flex;
+  align-items: center;
+  }
+  .TemelButton {
+    position: absolute;
+    left: 0px;
+    top: 100px;
+    height: 50px;
+    width: 100%;
+    display: flex;
+  align-items: center;
+  }
+  .DigerButton {
+    position: absolute;
+    left: 0px;
+    top: 150px;
+    height: 50px;
+    width: 100%;
+    display: flex;
+  align-items: center;
+  }
+  .DahiliListesi {
+    display: none;
+  }
+  .CerrahiListesi {
+    display: none;
+  }
+  .TemelListesi {
+    display: none;
+
+  }
+.DigerTedaviListesi {
+  display: none;
+}
+.IletisimItemsIframe {
+  position: absolute;
+  right: 0%;
+  background-color: #ffffff;
+  color: black;
+  border-bottom: #4f647f solid 5px;
+  height: 300px;
+  width: 100%;
+
+}
+.HastaneIletisim {
+  position: relative;
+  bottom: 0px;
+  height: 210px;
+
+} 
+
+
   .NavigasyonBar {
     position: fixed;
     width: 100%;
@@ -966,41 +1182,43 @@ font-size: 15px;
   .Shadow {
     margin-left: 0px;
     left: 0px;
-    position: fixed;
     width: 100%;
     position: fixed;
     height: 120px;
     box-shadow: inset 2px 30px 100px #4f647f;
   }
 
-
-
-
-
-
-
-
-
   .carousel {
     height: 500px;
     width: 100%;
   }
+  .carouselInner {
+    width: 100%;
+  }
 
   .Slider-container {
+    bottom: 0px;
     width: 100%;
+    height: 80%;
+
   }
 
   .HLeftButton {
     position: relative;
     width: 50px;
+    height: 100%;
     left: 0%;
     font-size: 50px;
+    top: 0px;
+
   }
   .HRightButton {
     position: relative;
+    height: 100%;
     width: 50px;
     right: 0%;
     font-size: 50px;
+    top: 0px;
   }
 
   .MenüButton {
@@ -1008,7 +1226,7 @@ font-size: 15px;
     align-items: center;
     position: absolute;
     top: 20px;
-    left: 86%;
+    right: 0%;
 
     border: 2px solid white;
   }
@@ -1018,8 +1236,7 @@ font-size: 15px;
     border: 2px solid #ffffff;
     position: absolute;
     top: 20px;
-    left: 245px;
-
+    left:57%;
     margin-left: 0px;
     margin-right: 0px;
   }
@@ -1032,13 +1249,9 @@ font-size: 15px;
   }
   .search-box {
     position: absolute;
+    z-index: 5;
     top: 20px;
-    left: 185px;
-  }
-
-  .GeriButton {
-    bottom: 0px;
-    display: flex;
+    left: 40%;
   }
 
   .BolumlerItems a {
@@ -1048,18 +1261,18 @@ font-size: 15px;
   .IletisimItems {
     position: absolute;
     left: 0px;
+    width: 100%;
   }
   .harita {
     position: relative;
-    height: 100px;
-    width: 313px;
+    height: 300px;
+    width: 100%;
+    border: none;
   }
 
   .Cards {
     position: absolute;
     top: 500px;
-    left: 50%;
-    margin-left: -207px;
     width: 100%;
     height: 780px;
     display: block;
@@ -1071,6 +1284,7 @@ font-size: 15px;
     width: 100%;
     left: 0px;
   }
+
   .Card2 {
     height: 180px;
     margin-top: 15px;
@@ -1091,11 +1305,12 @@ font-size: 15px;
   .HVE {
     position: absolute;
     top: 1100px;
-    height: 700px;
+    height: 550px;
+    width: 100%;
   }
   .HaberlerVeEtkinlikler {
     position: relative;
-    top: 0px;
+    height: 400px;
     display: block;
   }
   .Haber {
@@ -1117,7 +1332,60 @@ font-size: 15px;
   .Cards {
     height: fit-content;
   }
+
+  .Footer {
+height: 1000px;
+width: 100%;
+
+  }
+  .footerInner {
+top: 100px;
+width: 90%;
+height: 100%;
+  }
+  .footerInner ul {
+    font-size: 14px;
+    padding-left: 0px;
+  }
+  .footerInner h1 {
+font-size: 16px;
+
+  }
+  .footerlogodetails {
+    position: absolute;
+    top: 0px;
+    left:0px;
+    width: 100%;
+    height: 400px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .OnemliLinkler{
+    position: relative;
+top: 100px;
+width: 100%;
+
+
+  }
+.Hizmetlerimiz{
+  position: relative;
+  top:100px;
+  width: 100%;
+
 }
+.Dokumanlar{
+  position: relative;
+  top:100px;
+  width: 100%;
+
+}
+
+
+
+}
+
+
+
 
 @media only screen and (min-width: 600px) {
   .NavigasyonBar #hidden {
