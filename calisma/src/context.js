@@ -7,8 +7,16 @@ export class ContextProvider extends Component {
     super(props);
     this.state = {
       calis: 0,
-      tanitim: [
-        { TanitimBaslik: "Tarihçe" },
+      Tanitim: [
+        { TanitimBaslik: "Tarihçe" ,
+        TanitimFotograf :"bga5.jpg ",
+          TanitimDetay : " tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak "
+                   
+
+      
+      
+      
+      },
         { TanitimBaslik: "Genel Tanıtım" },
         { TanitimBaslik: "Kat Planı" },
         { TanitimBaslik: "Resimler Ve Videolar" },
@@ -74,9 +82,7 @@ DigerTedaviUniteleri : [
 
 
 Yonetim :[
-{YonetimBaslik: "Hastane Başhekimi"},
-{YonetimBaslik: "Başhekim Yardımcıları"},
-{YonetimBaslik:  "Başmüdür"},
+{YonetimBaslik: "Hastane Başhekimliği"},
 {YonetimBaslik: "Müdür ve Müdür Yardımcıları"},
 {YonetimBaslik: "Bilgi İşlem Koordinatörlüğü"},
 {YonetimBaslik: "Hemşirelik Hizmetleri"},

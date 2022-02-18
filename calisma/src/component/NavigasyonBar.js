@@ -12,7 +12,7 @@ class Navigasyonbar extends Component {
       showTanitimList: false,
       showKurumsalList: false,
       showYonetimList: false,
-      showBolumlerList: true,
+      showBolumlerList: false,
       showDahiliList: false,
       showCerrahiList: false,
       showTemelList: false,
@@ -37,7 +37,7 @@ class Navigasyonbar extends Component {
     return (
       <DataConsumer>
         {(value) => {
-          let TanıtımListesi = value.tanitim;
+          let TanıtımListesi = value.Tanitim;
           let KurumsalListesi = value.Kurumsal;
           let YonetimListesi = value.Yonetim;
           let DahiliListesi = value.DahiliTıpBilimleri;

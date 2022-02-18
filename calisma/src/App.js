@@ -1,25 +1,30 @@
 import React, { Component } from "react";
 import "./App.css";
 import NavigasyonBar from "./component/NavigasyonBar";
-import Carousel from "./component/Carousel";
-import Cards from "./component/Cards";
-import Yonetici from "./component/Yonetici";
-import Haberler from "./component/Haberler";
-import Duyurular from "./component/Duyurular";
+import Home from "./component/Home";
 import Footer from "./component/Footer";
+import GenelTanıtım from "./component/GenelTanıtım";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <NavigasyonBar />
-        <Carousel />
-        <Cards />
-        <Haberler/> 
-        <Duyurular/>
-        <Footer/>
-        <Yonetici/>
-      </div>
+      <Router>
+        <div className="App">
+          <NavigasyonBar />
+          <div className="ComponentsContent">
+            <Switch>
+              <Route exact path="/">
+                <Home />
+              </Route>
+              <Route path="/GenelTanitim">
+                <GenelTanıtım />
+              </Route>
+            </Switch>
+          </div>
+          <Footer />
+        </div>
+      </Router>
     );
   }
 }
