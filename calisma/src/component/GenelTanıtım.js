@@ -118,27 +118,8 @@ return (
 {  Data.Haberler[0].HaberId   }
 
 </div>
- <div className="GenelTanitimIcerik" > 
-
  
 
-{  Data.Haberler[0].HaberId   }
-
-</div>
- <div className="GenelTanitimIcerik" > 
-
- 
-
-{  Data.Haberler[0].HaberId   }
-
-</div>
- <div className="GenelTanitimIcerik" > 
-
- 
-
-{  Data.Haberler[0].HaberId   }
-
-</div>
  </div>);
     }}
       </DataConsumer>

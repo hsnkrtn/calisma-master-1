@@ -1,14 +1,15 @@
 
 
+.App{
+height: 100%;
 
-
-
-
+}
 
 
 .ComponentsContent {
   position: relative;
-  height: fit-content;
+  height: fit-content;  
+      top:200px ;
   width: 100%;
 }
 
@@ -113,7 +114,7 @@ a:hover {
 }
 .GenelTanıtım {
   position: relative;
-  top: 200px;
+  top: 0%;
   height: 100%;
 }
 
@@ -683,7 +684,7 @@ a:hover {
 .Haber h1:hover {
   color: #850432;
 }
-.Hfotograf {
+.Hfotograf {  
   z-index: 0;
   position: relative;
   top: -30px;
@@ -894,9 +895,8 @@ a:hover {
 }
 
 .Footer {
-  position: relative;
+  position: absolute;
   left: 0px;
-  top: 100%;
   width: 100%;
   height: 600px;
   background-color: #4f647f;

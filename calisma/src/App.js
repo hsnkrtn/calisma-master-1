@@ -20,9 +20,10 @@ class App extends Component {
               <Route path="/GenelTanitim">
                 <GenelTanıtım />
               </Route>
-            </Switch>
+            </Switch>     
+            <Footer />
           </div>
-          <Footer />
+     
         </div>
       </Router>
     );
