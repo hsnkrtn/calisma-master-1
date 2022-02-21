@@ -9,7 +9,7 @@ export class ContextProvider extends Component {
       calis: 0,
       Tanitim: [
         {
-          id:"1",
+          Id:"1",
           TanitimBaslik: "Tarihçe" ,
         TanitimFotograf :"bga5.jpg ",
           TanitimDetay : " tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak "
@@ -19,13 +19,13 @@ export class ContextProvider extends Component {
       
       
       },
-        {   id:"2",
+        {   Id:"2",
         TanitimBaslik: "Genel Tanıtım" },
-        {  id:"3",
+        {  Id:"3",
          TanitimBaslik: "Kat Planı" },
-        {   id:"4",
+        {   Id:"4",
         TanitimBaslik: "Resimler Ve Videolar" },
-        {  id:"5",
+        {  Id:"5",
          TanitimBaslik: "Yemek Listesi" },
       ],
       Kurumsal: [

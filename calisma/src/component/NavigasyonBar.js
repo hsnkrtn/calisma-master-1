@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import "../App.css";
 import DataConsumer from "../context";
+import GenelTanıtım from "./GenelTanıtım";
 
 class Navigasyonbar extends Component {
   static contextType = DataConsumer;
@@ -20,11 +20,18 @@ class Navigasyonbar extends Component {
       showDigerTedavilist: false,
       showDoktorlarList: false,
       showIletisimItems: false,
+      Id:"",
+      Dizi:"",
     };
   }
+
   componentDidMount() {
     window.addEventListener("scroll", this.changeNavbar);
   }
+  SendIdData = () => {
+
+  this.props.GondilenIdler("gidinartik");
+};
 
   changeNavbar = () => {
     if (window.scrollY > 100) {
@@ -45,7 +52,6 @@ class Navigasyonbar extends Component {
           let CerrahiListesi = value.CerrahiTipBilimleri;
           let TemelListesi = value.TemelTipBilimleri;
           let DigerTedaviListesi = value.DigerTedaviUniteleri;
-          console.log(TanıtımListesi);
           return (
             <nav
               className={
@@ -83,7 +89,7 @@ class Navigasyonbar extends Component {
                       <ul>
                         {TanıtımListesi.map((TanıtımListesi, index) => {
                           return (
-                         <Link  Link to= { `/GenelTanitim/${TanıtımListesi.id}`} >    <li>
+                         <Link  Link to= { `/GenelTanitim/${TanıtımListesi.id}`} onClick={this.SendIdData}     >    <li>
                             
                               &nbsp;
                               <span>

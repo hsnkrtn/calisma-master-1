@@ -1,21 +1,35 @@
 import React, { Component } from "react";
 import DataConsumer from "../context";
+import Navigasyonbar from "./NavigasyonBar";
 
 class GenelTanıtım extends Component {
-  componentDidMount() {}
+  componentDidMount() {  
+    
+  }
+  constructor(props) {
+    super(props);
+    this.state = {
+      msg: "",
+    };
+  }
+  verial = (d) => {
+    this.setState({ msg: d });
+  };
 
   render() {
+    const { msg } = this.state.msg;
     return (
       <DataConsumer>
         {(value) => {
           const Data = value;
 
-          console.log(Data);
+          console.log(this.state.msg);
 
           return (
             <div className="GenelTanıtım">
               <div className="GenelTanitimIcerik">
-                {Data.Haberler[0].HaberId}
+                <h1> {this.state.msg} </h1>
+                <Navigasyonbar SendIdData={this.verial.bind} />
               </div>
             </div>
           );
