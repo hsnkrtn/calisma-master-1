@@ -1,32 +1,27 @@
 import React, { Component } from "react";
 import DataConsumer from "../context";
 
- class GenelTanıtım extends Component {
+class GenelTanıtım extends Component {
+  componentDidMount() {}
+
   render() {
     return (
-
       <DataConsumer>
         {(value) => {
-          const Data= value 
+          const Data = value;
 
-console.log (Data)
+          console.log(Data);
 
-return ( 
- < div className="GenelTanıtım"> 
- <div className="GenelTanitimIcerik" > 
-
- 
-
-{  Data.Haberler[0].HaberId   }
-
-</div>
-
- </div>);
-    }}
+          return (
+            <div className="GenelTanıtım">
+              <div className="GenelTanitimIcerik">
+                {Data.Haberler[0].HaberId}
+              </div>
+            </div>
+          );
+        }}
       </DataConsumer>
-      
     );
   }
-  
 }
 export default GenelTanıtım;

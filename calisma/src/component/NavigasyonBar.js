@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import "../App.css";
 import DataConsumer from "../context";
 
@@ -51,10 +52,12 @@ class Navigasyonbar extends Component {
                 this.state.showNavbar ? " Shadow   " : " NavigasyonBar  "
               }
             >
+            <a className="logolink"> 
+            <Link to={`/`}>
               <img
                 className={this.state.showNavbar ? "brand1" : "brand"}
                 src=" hastanelogo.png"
-              ></img>
+              ></img></Link> </a>
 
               <div className="Links" id={this.state.showLinks ? "hidden" : ""}>
                 <ul className="LinksList">
@@ -67,9 +70,9 @@ class Navigasyonbar extends Component {
                       className="btn-13 "
                       onMouseEnter={() => {
                         this.setState({ showTanitimList: true });
-                      }}
+                      }} c
                     >
-                      Tanıtım
+                     Tanıtım
                     </li>
 
                     <div
@@ -80,14 +83,16 @@ class Navigasyonbar extends Component {
                       <ul>
                         {TanıtımListesi.map((TanıtımListesi, index) => {
                           return (
-                            <li>
+                         <Link  Link to= { `/GenelTanitim/${TanıtımListesi.id}`} >    <li>
+                            
                               &nbsp;
                               <span>
                                 <i className="fa fa-chevron-right"></i>
                               </span>
                               &nbsp;
                               {TanıtımListesi.TanitimBaslik}
-                            </li>
+                             
+                            </li> </Link>
                           );
                         })}
                       </ul>
@@ -112,7 +117,7 @@ class Navigasyonbar extends Component {
                     }}
                   >
                     <li
-                     className="btn-13 "
+                      className="btn-13 "
                       onMouseEnter={() => {
                         this.setState({ showKurumsalList: true });
                       }}
@@ -162,8 +167,7 @@ class Navigasyonbar extends Component {
                     }}
                   >
                     <li
-                                           className="btn-13 "
-
+                      className="btn-13 "
                       onMouseEnter={() => {
                         this.setState({ showYonetimList: true });
                       }}
@@ -211,8 +215,7 @@ class Navigasyonbar extends Component {
                     }}
                   >
                     <li
-                                       className="btn-13 "
-
+                      className="btn-13 "
                       onMouseEnter={() => {
                         this.setState({ showBolumlerList: true });
                       }}
@@ -590,8 +593,7 @@ class Navigasyonbar extends Component {
                       </div>
                     </div>
                   </div> */}
-                  <li                      className="btn-13 "
->Doktorlar</li>
+                  <li className="btn-13 ">Doktorlar</li>
                   <div
                     onMouseLeave={() => {
                       this.setState({ showIletisimItems: false });
@@ -599,7 +601,9 @@ class Navigasyonbar extends Component {
                   >
                     <li
                       className={
-                        this.state.showIletisimItems ? "btn-13 ButtonColor" : null
+                        this.state.showIletisimItems
+                          ? "btn-13 ButtonColor"
+                          : null
                       }
                       onMouseEnter={() => {
                         this.setState({ showIletisimItems: true });
@@ -626,8 +630,9 @@ class Navigasyonbar extends Component {
                         No:25 MERKEZ/ELAZIĞ <br></br>
                         <h>Telefon </h>: 0424 233 35 55<br></br>
                         <h>E-mail </h>: hastane@firat.edu.tr<br></br>
-                        <h> Hesap Bilgileri</h>: Fırat Üniversitesi Hastanesi Döner
-                        Sermaye İşletme Müdürlüğü TR860001001561135354675057
+                        <h> Hesap Bilgileri</h>: Fırat Üniversitesi Hastanesi
+                        Döner Sermaye İşletme Müdürlüğü
+                        TR860001001561135354675057
                         <button
                           className="GeriButtonBolumler"
                           onMouseEnter={() =>

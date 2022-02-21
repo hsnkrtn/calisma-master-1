@@ -16,7 +16,7 @@ class App extends Component {
               <Route exact path="/">
                 <Home />
               </Route>
-              <Route path="/GenelTanitim">
+              <Route path="/GenelTanitim/:id">
                 <GenelTanıtım />
               </Route>
             </Switch>

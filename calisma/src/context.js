@@ -8,7 +8,9 @@ export class ContextProvider extends Component {
     this.state = {
       calis: 0,
       Tanitim: [
-        { TanitimBaslik: "Tarihçe" ,
+        {
+          id:"1",
+          TanitimBaslik: "Tarihçe" ,
         TanitimFotograf :"bga5.jpg ",
           TanitimDetay : " tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak "
                    
@@ -17,10 +19,14 @@ export class ContextProvider extends Component {
       
       
       },
-        { TanitimBaslik: "Genel Tanıtım" },
-        { TanitimBaslik: "Kat Planı" },
-        { TanitimBaslik: "Resimler Ve Videolar" },
-        { TanitimBaslik: "Yemek Listesi" },
+        {   id:"2",
+        TanitimBaslik: "Genel Tanıtım" },
+        {  id:"3",
+         TanitimBaslik: "Kat Planı" },
+        {   id:"4",
+        TanitimBaslik: "Resimler Ve Videolar" },
+        {  id:"5",
+         TanitimBaslik: "Yemek Listesi" },
       ],
       Kurumsal: [
         { KurumsalBaslik: "Rektörümüz" },
@@ -31,7 +37,8 @@ export class ContextProvider extends Component {
       ],
       //Bolumler
 DahiliTıpBilimleri : [
-{DahiliBaslik: "Acil Tıp Anabilim Dalı  " },
+
+{DahiliBaslik: "Acil Tıp Anabilim Dalı  "},
 {DahiliBaslik: "Adli Tıp Anabilim Dalı  " },
 {DahiliBaslik: "Aile Hekimliği Anabilim Dalı " },
 {DahiliBaslik: "Çocuk Sağlığı ve Hastalıkları Anabilim Dalı " },
