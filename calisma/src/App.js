@@ -11,8 +11,7 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <NavigasyonBar />
-          <div className="ComponentsContent">
+            <NavigasyonBar />
             <Switch>
               <Route exact path="/">
                 <Home />
@@ -20,11 +19,9 @@ class App extends Component {
               <Route path="/GenelTanitim">
                 <GenelTanıtım />
               </Route>
-            </Switch>     
+            </Switch>
             <Footer />
           </div>
-     
-        </div>
       </Router>
     );
   }
