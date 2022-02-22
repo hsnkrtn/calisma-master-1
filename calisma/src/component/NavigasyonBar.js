@@ -20,18 +20,14 @@ class Navigasyonbar extends Component {
       showDigerTedavilist: false,
       showDoktorlarList: false,
       showIletisimItems: false,
-      Id:"",
-      Dizi:"",
+      id: "",
+      Dizi: "",
     };
   }
 
   componentDidMount() {
     window.addEventListener("scroll", this.changeNavbar);
   }
-  SendIdData = () => {
-
-  this.props.GondilenIdler("gidinartik");
-};
 
   changeNavbar = () => {
     if (window.scrollY > 100) {
@@ -58,12 +54,14 @@ class Navigasyonbar extends Component {
                 this.state.showNavbar ? " Shadow   " : " NavigasyonBar  "
               }
             >
-            <a className="logolink"> 
-            <Link to={`/`}>
-              <img
-                className={this.state.showNavbar ? "brand1" : "brand"}
-                src=" hastanelogo.png"
-              ></img></Link> </a>
+              <a className="logolink">
+                <Link to={`/`}>
+                  <img
+                    className={this.state.showNavbar ? "brand1" : "brand"}
+                    src=" hastanelogo.png"
+                  ></img>
+                </Link>{" "}
+              </a>
 
               <div className="Links" id={this.state.showLinks ? "hidden" : ""}>
                 <ul className="LinksList">
@@ -76,9 +74,10 @@ class Navigasyonbar extends Component {
                       className="btn-13 "
                       onMouseEnter={() => {
                         this.setState({ showTanitimList: true });
-                      }} c
+                      }}
+                      c
                     >
-                     Tanıtım
+                      Tanıtım
                     </li>
 
                     <div
@@ -89,16 +88,19 @@ class Navigasyonbar extends Component {
                       <ul>
                         {TanıtımListesi.map((TanıtımListesi, index) => {
                           return (
-                         <Link  Link to= { `/GenelTanitim/${TanıtımListesi.id}`} onClick={this.SendIdData}     >    <li>
-                            
-                              &nbsp;
-                              <span>
-                                <i className="fa fa-chevron-right"></i>
-                              </span>
-                              &nbsp;
-                              {TanıtımListesi.TanitimBaslik}
-                             
-                            </li> </Link>
+                            <Link
+                              
+                              to={`/GenelTanitim/${TanıtımListesi.id}`}
+                            >
+                              <li>
+                                &nbsp;
+                                <span>
+                                  <i className="fa fa-chevron-right"></i>
+                                </span>
+                                &nbsp;
+                                {TanıtımListesi.TanitimBaslik}
+                              </li>{" "}
+                            </Link>
                           );
                         })}
                       </ul>

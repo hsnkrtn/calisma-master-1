@@ -1,41 +1,20 @@
-import React, { Component } from "react";
-import DataConsumer from "../context";
-import Navigasyonbar from "./NavigasyonBar";
+import React from "react";
 
-class GenelTanıtım extends Component {
-  componentDidMount() {  
-    
-  }
-  constructor(props) {
-    super(props);
-    this.state = {
-      msg: "",
-    };
-  }
-  verial = (d) => {
-    this.setState({ msg: d });
-  };
+function GenelTanıtım() {
+  return (
+    <div className="GenelTanitim">
+      <div className="GenelTanitimIcerik"></div>
+         <h1 className="GenelTanitimBaslik">{}</h1> 
+        <img className="GenelTanitimFotograf" >{}</img>
+        <p1 className="GenelTanitimDetay" >{}</p1>
 
-  render() {
-    const { msg } = this.state.msg;
-    return (
-      <DataConsumer>
-        {(value) => {
-          const Data = value;
 
-          console.log(this.state.msg);
 
-          return (
-            <div className="GenelTanıtım">
-              <div className="GenelTanitimIcerik">
-                <h1> {this.state.msg} </h1>
-                <Navigasyonbar SendIdData={this.verial.bind} />
-              </div>
-            </div>
-          );
-        }}
-      </DataConsumer>
-    );
-  }
+
+
+
+    </div>
+  );
 }
+
 export default GenelTanıtım;
