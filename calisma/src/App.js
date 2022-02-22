@@ -3,7 +3,7 @@ import "./App.css";
 import NavigasyonBar from "./component/NavigasyonBar";
 import Home from "./component/Home";
 import Footer from "./component/Footer";
-import GenelTanıtım from "./component/GenelTanıtım";
+import GenelTanitim from "./component/GenelTanitim";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 class App extends Component {
@@ -17,7 +17,7 @@ class App extends Component {
                 <Home />
               </Route>
               <Route path="/GenelTanitim/:Id">
-                <GenelTanıtım />
+                <GenelTanitim />
               </Route>
             </Switch>
             <Footer />

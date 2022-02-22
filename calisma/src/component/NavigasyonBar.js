@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import DataConsumer from "../context";
-import GenelTanıtım from "./GenelTanıtım";
+import GenelTanitim from "./GenelTanitim";
 
 class Navigasyonbar extends Component {
   static contextType = DataConsumer;
@@ -20,8 +20,8 @@ class Navigasyonbar extends Component {
       showDigerTedavilist: false,
       showDoktorlarList: false,
       showIletisimItems: false,
-      id: "",
-      Dizi: "",
+      id: "12312",
+      Dizi: "asdfasdfa",
     };
   }
 
@@ -36,10 +36,20 @@ class Navigasyonbar extends Component {
       this.setState({ showNavbar: true });
     }
   };
+RouterVerileriniGonder=() =>  {
+
+  this.setState({
+    Dizi: []
+  })
+
+}
 
   render() {
+
+  
     return (
       <DataConsumer>
+       
         {(value) => {
           let TanıtımListesi = value.Tanitim;
           let KurumsalListesi = value.Kurumsal;
@@ -60,6 +70,7 @@ class Navigasyonbar extends Component {
                     className={this.state.showNavbar ? "brand1" : "brand"}
                     src=" hastanelogo.png"
                   ></img>
+                  
                 </Link>{" "}
               </a>
 
@@ -99,7 +110,7 @@ class Navigasyonbar extends Component {
                                 </span>
                                 &nbsp;
                                 {TanıtımListesi.TanitimBaslik}
-                              </li>{" "}
+                              </li>
                             </Link>
                           );
                         })}
@@ -689,5 +700,6 @@ class Navigasyonbar extends Component {
     );
   }
 }
+
 
 export default Navigasyonbar;
