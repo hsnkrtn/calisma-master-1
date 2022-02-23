@@ -64,15 +64,14 @@ RouterVerileriniGonder=() =>  {
                 this.state.showNavbar ? " Shadow   " : " NavigasyonBar  "
               }
             >
-              <a className="logolink">
-                <Link to={`/`}>
+        
+                <Link   className="logolink" to={`/`}>
                   <img
                     className={this.state.showNavbar ? "brand1" : "brand"}
                     src=" hastanelogo.png"
                   ></img>
                   
                 </Link>{" "}
-              </a>
 
               <div className="Links" id={this.state.showLinks ? "hidden" : ""}>
                 <ul className="LinksList">

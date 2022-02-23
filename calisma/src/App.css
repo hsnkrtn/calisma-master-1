@@ -37,7 +37,9 @@ background-color: black;
 }
 
 .logolink{
-  position: relative;
+  height: fit-content;
+  width: fit-content;
+  position: absolute;
   left: 10%;
 }
 
