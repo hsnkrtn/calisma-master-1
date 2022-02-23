@@ -16,9 +16,7 @@ class Duyurular extends Component {
       ScrollMoveValue:400,
 
     };
-    console.log(this.state.ScrollValue);
 
-    console.log(this.state.UpbottonShow);
   }
   componentDidMount (){
     let WindowWidth = window.innerWidth;
@@ -27,7 +25,6 @@ if(WindowWidth<700){
     
     ScrollMoveValue:345
   })
-  console.log (WindowWidth)
 }
 else {
   this.setState ({
@@ -35,7 +32,6 @@ else {
     ScrollMoveValue:400
   })
 }
-console.log (this.state.ScrollMoveValue)
 
   }
 
@@ -43,7 +39,6 @@ console.log (this.state.ScrollMoveValue)
     var slider = document.getElementById("DuyuruSlider");
     this.state.ScrollValue = slider.scrollTop;
     slider.scrollTop = this.state.ScrollValue + this.state.ScrollMoveValue;
-    console.log(this.state.ScrollValue);
 
     switch (this.state.ScrollValue) {
       case 0:

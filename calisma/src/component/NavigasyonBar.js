@@ -20,8 +20,15 @@ class Navigasyonbar extends Component {
       showDigerTedavilist: false,
       showDoktorlarList: false,
       showIletisimItems: false,
-      id: "12312",
-      Dizi: "asdfasdfa",
+      TanıtımListesi: [],
+
+      GonderilenVeriler: [
+        {
+          Baslik: "d",
+          Fotograf: "a",
+          Detay: "a",
+        },
+      ],
     };
   }
 
@@ -36,22 +43,25 @@ class Navigasyonbar extends Component {
       this.setState({ showNavbar: true });
     }
   };
-RouterVerileriniGonder=() =>  {
+  VerileriGonder = (e) => {
+const  { Baslik,Fotograf,Detay}=this.state.GonderilenVeriler[0];
 
-  this.setState({
-    Dizi: []
-  })
+const GenelTanitimVerileri = {
+Baslik,
+Fotograf,
+Detay,
 
 }
 
-  render() {
 
-  
+console.log(GenelTanitimVerileri);
+  };
+
+  render() {
     return (
       <DataConsumer>
-       
         {(value) => {
-          let TanıtımListesi = value.Tanitim;
+          this.state.TanıtımListesi = value.Tanitim;
           let KurumsalListesi = value.Kurumsal;
           let YonetimListesi = value.Yonetim;
           let DahiliListesi = value.DahiliTıpBilimleri;
@@ -64,15 +74,12 @@ RouterVerileriniGonder=() =>  {
                 this.state.showNavbar ? " Shadow   " : " NavigasyonBar  "
               }
             >
-        
-                <Link   className="logolink" to={`/`}>
-                  <img
-                    className={this.state.showNavbar ? "brand1" : "brand"}
-                    src=" hastanelogo.png"
-                  ></img>
-                  
-                </Link>{" "}
-
+              <Link className="logolink" to={`/`}>
+                <img
+                  className={this.state.showNavbar ? "brand1" : "brand"}
+                  src=" hastanelogo.png"
+                ></img>
+              </Link>{" "}
               <div className="Links" id={this.state.showLinks ? "hidden" : ""}>
                 <ul className="LinksList">
                   <div
@@ -96,23 +103,33 @@ RouterVerileriniGonder=() =>  {
                       }
                     >
                       <ul>
-                        {TanıtımListesi.map((TanıtımListesi, index) => {
-                          return (
-                            <Link
+                        {this.state.TanıtımListesi.map(
+                          (TanıtımListesi, index) => {
+                            return (
+                              <Link
+                                onClick={() => { this.VerileriGonder()
+                                  this.setState({
+                                    Baslik  : this.state.TanıtımListesi.Baslik
+                                  });
+                                 
+                                }
+                                
                               
-                              to={`/GenelTanitim/${TanıtımListesi.id}`}
-                            >
-                              <li>
-                                &nbsp;
-                                <span>
-                                  <i className="fa fa-chevron-right"></i>
-                                </span>
-                                &nbsp;
-                                {TanıtımListesi.Baslik}
-                              </li>
-                            </Link>
-                          );
-                        })}
+                              }
+                                to={`/GenelTanitim/${TanıtımListesi.id}`}
+                              >
+                                <li>
+                                  &nbsp;
+                                  <span>
+                                    <i className="fa fa-chevron-right"></i>
+                                  </span>
+                                  &nbsp;
+                                  {TanıtımListesi.Baslik}
+                                </li>
+                              </Link>
+                            );
+                          }
+                        )}
                       </ul>
 
                       <button
@@ -134,15 +151,16 @@ RouterVerileriniGonder=() =>  {
                       this.setState({ showKurumsalList: false });
                     }}
                   >
-                    <li
-                      className="btn-13 "
-                      onMouseEnter={() => {
-                        this.setState({ showKurumsalList: true });
-                      }}
-                    >
-                      Kurumsal
-                    </li>
-
+                  
+                      <li
+                        className="btn-13 "
+                        onMouseEnter={() => {
+                          this.setState({ showKurumsalList: true });
+                        }}
+                      >
+                        Kurumsal
+                      </li>
+                  
                     <div
                       className={
                         this.state.showKurumsalList
@@ -153,6 +171,14 @@ RouterVerileriniGonder=() =>  {
                       <ul>
                         {KurumsalListesi.map((KurumsalListesi, index) => {
                           return (
+                            <Link
+                            onClick={() => {
+                              this.setState({
+                                GonderilenVeriler: this.state.KurumsalListesi,
+                              });
+                            }}
+                            to={`/GenelTanitim/${KurumsalListesi.id}`}
+                          >
                             <li>
                               &nbsp;
                               <span>
@@ -161,6 +187,7 @@ RouterVerileriniGonder=() =>  {
                               &nbsp;
                               {KurumsalListesi.Baslik}
                             </li>
+                            </Link>
                           );
                         })}
                       </ul>
@@ -201,6 +228,14 @@ RouterVerileriniGonder=() =>  {
                       <ul>
                         {YonetimListesi.map((YonetimListesi, index) => {
                           return (
+                            <Link
+                            onClick={() => {
+                              this.setState({
+                                GonderilenVeriler: this.state.YonetimListesi,
+                              });
+                            }}
+                            to={`/GenelTanitim/${YonetimListesi.id}`}
+                          >
                             <li>
                               &nbsp;
                               <span>
@@ -209,6 +244,7 @@ RouterVerileriniGonder=() =>  {
                               &nbsp;
                               {YonetimListesi.Baslik}
                             </li>
+                            </Link>
                           );
                         })}
                       </ul>
@@ -429,7 +465,7 @@ RouterVerileriniGonder=() =>  {
                                       <i className="fa fa-chevron-right"></i>
                                     </span>
                                     &nbsp;
-                                    {DigerTedaviListesi.DigerTedaviBaslik}
+                                    {DigerTedaviListesi.Baslik}
                                   </li>
                                 );
                               }
@@ -667,7 +703,6 @@ RouterVerileriniGonder=() =>  {
                   </div>
                 </ul>
               </div>
-
               <div className="search-box">
                 <button className="btn-search ">
                   <i className="fa fa-search"></i>
@@ -679,11 +714,9 @@ RouterVerileriniGonder=() =>  {
                   placeholder="Arama Yap"
                 ></input>
               </div>
-
               <button className="RandevuAlButton">
                 <a> RANDEVU AL </a>
               </button>
-
               <button
                 className="MenüButton"
                 onClick={() =>
@@ -699,6 +732,5 @@ RouterVerileriniGonder=() =>  {
     );
   }
 }
-
 
 export default Navigasyonbar;

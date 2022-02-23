@@ -114,6 +114,7 @@ a:hover {
   width: 100%;
 display: flex;
 justify-content: center;
+
 }
 
 .GenelTanitimIcerik{
@@ -121,9 +122,11 @@ justify-content: center;
   height: 100%;
   width: 80%;
   background-color: #850432;
-
+  overflow-wrap: break-word;
 
 }
+
+
 .Links {
   position: absolute;
   left: 65%;

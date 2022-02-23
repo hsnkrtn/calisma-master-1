@@ -6,19 +6,26 @@ export class ContextProvider extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      calis: 0,
+      GenelTanitimVeriler: [
+        {
+          Baslik: " ",
+          Fotograf: "hbg5.jpg",
+          Detay: "",
+        },
+      ],
+
       Tanitim: [
         {
           id: "1",
           Baslik: "Tarihçe",
-          TanitimFotograf: "bga5.jpg ",
-          TanitimDetay:
-            " tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak ",
+          Fotograf: "bga2.jpg ",
+          Detay:
+            "  tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak ",
         },
-        {id: "2", Baslik: "Genel Tanıtım" },
-        {id: "3", Baslik: "Kat Planı" },
-        {id: "4", Baslik: "Resimler Ve Videolar" },
-        {id: "5", Baslik: "Yemek Listesi" },
+        { id: "2", Baslik: "Genel Tanıtım" },
+        { id: "3", Baslik: "Kat Planı" },
+        { id: "4", Baslik: "Resimler Ve Videolar" },
+        { id: "5", Baslik: "Yemek Listesi" },
       ],
       Kurumsal: [
         { Baslik: "Rektörümüz" },
@@ -34,8 +41,7 @@ export class ContextProvider extends Component {
         { Baslik: "Aile Hekimliği Anabilim Dalı " },
         { Baslik: "Çocuk Sağlığı ve Hastalıkları Anabilim Dalı " },
         {
-          Baslik:
-            "Çocuk ve Ergen Ruh Sağlığı Hastalıkları Anabilim Dalı ",
+          Baslik: "Çocuk ve Ergen Ruh Sağlığı Hastalıkları Anabilim Dalı ",
         },
         { Baslik: "Dermatoloji Anabilim Dalı " },
         { Baslik: "Enfeksiyon Hastalıkları Anabilim Dalı  " },
@@ -78,8 +84,7 @@ export class ContextProvider extends Component {
       ],
       DigerTedaviUniteleri: [
         {
-          Baslik:
-            "Geleneksel ve Tamamlayıcı Tıp Uygulama Merkezi(GETAT)",
+          Baslik: "Geleneksel ve Tamamlayıcı Tıp Uygulama Merkezi(GETAT)",
         },
       ],
 
