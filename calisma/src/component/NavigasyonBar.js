@@ -109,7 +109,7 @@ RouterVerileriniGonder=() =>  {
                                   <i className="fa fa-chevron-right"></i>
                                 </span>
                                 &nbsp;
-                                {TanıtımListesi.TanitimBaslik}
+                                {TanıtımListesi.Baslik}
                               </li>
                             </Link>
                           );
@@ -160,7 +160,7 @@ RouterVerileriniGonder=() =>  {
                                 <i className="fa fa-chevron-right"></i>
                               </span>
                               &nbsp;
-                              {KurumsalListesi.KurumsalBaslik}
+                              {KurumsalListesi.Baslik}
                             </li>
                           );
                         })}
@@ -208,7 +208,7 @@ RouterVerileriniGonder=() =>  {
                                 <i className="fa fa-chevron-right"></i>
                               </span>
                               &nbsp;
-                              {YonetimListesi.YonetimBaslik}
+                              {YonetimListesi.Baslik}
                             </li>
                           );
                         })}
@@ -281,7 +281,7 @@ RouterVerileriniGonder=() =>  {
                                     <i className="fa fa-chevron-right"></i>
                                   </span>
                                   &nbsp;
-                                  {DahiliListesi.DahiliBaslik}
+                                  {DahiliListesi.Baslik}
                                 </li>
                               );
                             })}{" "}
@@ -330,7 +330,7 @@ RouterVerileriniGonder=() =>  {
                                     <i className="fa fa-chevron-right"></i>
                                   </span>
                                   &nbsp;
-                                  {CerrahiListesi.CerrahiBaslik}
+                                  {CerrahiListesi.Baslik}
                                 </li>
                               );
                             })}{" "}
@@ -380,7 +380,7 @@ RouterVerileriniGonder=() =>  {
                                     <i className="fa fa-chevron-right"></i>
                                   </span>
                                   &nbsp;
-                                  {TemelListesi.TemelBaslik}
+                                  {TemelListesi.Baslik}
                                 </li>
                               );
                             })}
