@@ -21,14 +21,10 @@ class Navigasyonbar extends Component {
       showDoktorlarList: false,
       showIletisimItems: false,
       TanıtımListesi: [],
-
-      GonderilenVeriler: [
-        {
-          Baslik: "d",
-          Fotograf: "a",
-          Detay: "a",
-        },
-      ],
+          Baslik: "",
+          Fotograf: "",
+          Detay: "",
+    
     };
   }
 
@@ -43,8 +39,8 @@ class Navigasyonbar extends Component {
       this.setState({ showNavbar: true });
     }
   };
-  VerileriGonder = (e) => {
-const  { Baslik,Fotograf,Detay}=this.state.GonderilenVeriler[0];
+  VerileriGonder = (dispatch,e) => {
+const  { Baslik,Fotograf,Detay}=this.state;
 
 const GenelTanitimVerileri = {
 Baslik,
@@ -52,6 +48,7 @@ Fotograf,
 Detay,
 
 }
+dispatch({type : "GENEL_GUNCELLE", payload:GenelTanitimVerileri })
 
 
 console.log(GenelTanitimVerileri);
@@ -61,6 +58,7 @@ console.log(GenelTanitimVerileri);
     return (
       <DataConsumer>
         {(value) => {
+          const {dispatch}=value;
           this.state.TanıtımListesi = value.Tanitim;
           let KurumsalListesi = value.Kurumsal;
           let YonetimListesi = value.Yonetim;
@@ -107,9 +105,13 @@ console.log(GenelTanitimVerileri);
                           (TanıtımListesi, index) => {
                             return (
                               <Link
-                                onClick={() => { this.VerileriGonder()
+                                onClick={() => { this.VerileriGonder.bind(this,dispatch)
                                   this.setState({
-                                    Baslik  : this.state.TanıtımListesi.Baslik
+                                    Baslik  : this.state.TanıtımListesi[index].Baslik,
+                                    Detay  : this.state.TanıtımListesi[index].Detay,
+                                    Fotograf: this.state.TanıtımListesi[index].Fotograf,
+
+                                
                                   });
                                  
                                 }

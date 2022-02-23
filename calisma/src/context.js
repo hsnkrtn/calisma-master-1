@@ -1,6 +1,21 @@
 import React, { Component } from "react";
 
 const DataContext = React.createContext();
+const reducer = (state,action) => {
+
+switch (action.type) {
+
+  case "GENEL_GUNCELLE":
+    return{
+...state,
+GenelTanitimVeriler : [...state.GenelTanitimVeriler,action.payload]
+
+    }
+}
+
+}
+
+
 // provider , consumeer
 export class ContextProvider extends Component {
   constructor(props) {
@@ -241,6 +256,10 @@ export class ContextProvider extends Component {
           Dtarih: "09.02.2022",
         },
       ],
+
+      dispacth : action => {
+        this.setState(state=> reducer(state,action))
+      }
     };
   }
   //  ArttirID  = ()=> {
@@ -256,6 +275,9 @@ export class ContextProvider extends Component {
       Haberler: this.state.Haberler.reverse(),
     });
   }
+
+
+
 
   render() {
     return (
