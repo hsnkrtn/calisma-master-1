@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import DataConsumer from "../context";
 import GenelTanitim from "./GenelTanitim";
+//export const veri = "hasannn";
 
 class Navigasyonbar extends Component {
   static contextType = DataConsumer;
@@ -21,10 +22,9 @@ class Navigasyonbar extends Component {
       showDoktorlarList: false,
       showIletisimItems: false,
       TanıtımListesi: [],
-          Baslik: "",
-          Fotograf: "",
-          Detay: "",
-    
+      Baslik: "",
+      Fotograf: "",
+      Detay: "",
     };
   }
 
@@ -39,26 +39,11 @@ class Navigasyonbar extends Component {
       this.setState({ showNavbar: true });
     }
   };
-  VerileriGonder = (dispatch,e) => {
-const  { Baslik,Fotograf,Detay}=this.state;
-
-const GenelTanitimVerileri = {
-Baslik,
-Fotograf,
-Detay,
-
-}
-dispatch({type : "GENEL_GUNCELLE", payload:GenelTanitimVerileri })
-
-
-console.log(GenelTanitimVerileri);
-  };
 
   render() {
     return (
       <DataConsumer>
         {(value) => {
-          const {dispatch}=value;
           this.state.TanıtımListesi = value.Tanitim;
           let KurumsalListesi = value.Kurumsal;
           let YonetimListesi = value.Yonetim;
@@ -72,6 +57,7 @@ console.log(GenelTanitimVerileri);
                 this.state.showNavbar ? " Shadow   " : " NavigasyonBar  "
               }
             >
+              <div></div>
               <Link className="logolink" to={`/`}>
                 <img
                   className={this.state.showNavbar ? "brand1" : "brand"}
@@ -90,7 +76,6 @@ console.log(GenelTanitimVerileri);
                       onMouseEnter={() => {
                         this.setState({ showTanitimList: true });
                       }}
-                      c
                     >
                       Tanıtım
                     </li>
@@ -105,20 +90,24 @@ console.log(GenelTanitimVerileri);
                           (TanıtımListesi, index) => {
                             return (
                               <Link
-                                onClick={() => { this.VerileriGonder.bind(this,dispatch)
+                                onClick={() => {
                                   this.setState({
-                                    Baslik  : this.state.TanıtımListesi[index].Baslik,
-                                    Detay  : this.state.TanıtımListesi[index].Detay,
-                                    Fotograf: this.state.TanıtımListesi[index].Fotograf,
-
-                                
+                                    Baslik:
+                                      this.state.TanıtımListesi[index].Baslik,
+                                    Detay:
+                                      this.state.TanıtımListesi[index].Detay,
+                                    Fotograf:
+                                      this.state.TanıtımListesi[index].Fotograf,
                                   });
-                                 
-                                }
-                                
-                              
-                              }
-                                to={`/GenelTanitim/${TanıtımListesi.id}`}
+                                  console.log(this.state.Baslik);
+                                }}
+                                to={{
+                                  pathname: `/GenelTanitim/${TanıtımListesi.id} `,
+                                  state: {
+                                    Baslik: this.state.Baslik,
+                                    Detay: this.state.Detay,
+                                  },
+                                }}
                               >
                                 <li>
                                   &nbsp;
@@ -153,16 +142,15 @@ console.log(GenelTanitimVerileri);
                       this.setState({ showKurumsalList: false });
                     }}
                   >
-                  
-                      <li
-                        className="btn-13 "
-                        onMouseEnter={() => {
-                          this.setState({ showKurumsalList: true });
-                        }}
-                      >
-                        Kurumsal
-                      </li>
-                  
+                    <li
+                      className="btn-13 "
+                      onMouseEnter={() => {
+                        this.setState({ showKurumsalList: true });
+                      }}
+                    >
+                      Kurumsal
+                    </li>
+
                     <div
                       className={
                         this.state.showKurumsalList
@@ -174,21 +162,21 @@ console.log(GenelTanitimVerileri);
                         {KurumsalListesi.map((KurumsalListesi, index) => {
                           return (
                             <Link
-                            onClick={() => {
-                              this.setState({
-                                GonderilenVeriler: this.state.KurumsalListesi,
-                              });
-                            }}
-                            to={`/GenelTanitim/${KurumsalListesi.id}`}
-                          >
-                            <li>
-                              &nbsp;
-                              <span>
-                                <i className="fa fa-chevron-right"></i>
-                              </span>
-                              &nbsp;
-                              {KurumsalListesi.Baslik}
-                            </li>
+                              onClick={() => {
+                                this.setState({
+                                  GonderilenVeriler: this.state.KurumsalListesi,
+                                });
+                              }}
+                              to={`/GenelTanitim/${KurumsalListesi.id}`}
+                            >
+                              <li>
+                                &nbsp;
+                                <span>
+                                  <i className="fa fa-chevron-right"></i>
+                                </span>
+                                &nbsp;
+                                {KurumsalListesi.Baslik}
+                              </li>
                             </Link>
                           );
                         })}
@@ -231,21 +219,21 @@ console.log(GenelTanitimVerileri);
                         {YonetimListesi.map((YonetimListesi, index) => {
                           return (
                             <Link
-                            onClick={() => {
-                              this.setState({
-                                GonderilenVeriler: this.state.YonetimListesi,
-                              });
-                            }}
-                            to={`/GenelTanitim/${YonetimListesi.id}`}
-                          >
-                            <li>
-                              &nbsp;
-                              <span>
-                                <i className="fa fa-chevron-right"></i>
-                              </span>
-                              &nbsp;
-                              {YonetimListesi.Baslik}
-                            </li>
+                              onClick={() => {
+                                this.setState({
+                                  GonderilenVeriler: this.state.YonetimListesi,
+                                });
+                              }}
+                              to={`/GenelTanitim/${YonetimListesi.id}`}
+                            >
+                              <li>
+                                &nbsp;
+                                <span>
+                                  <i className="fa fa-chevron-right"></i>
+                                </span>
+                                &nbsp;
+                                {YonetimListesi.Baslik}
+                              </li>
                             </Link>
                           );
                         })}

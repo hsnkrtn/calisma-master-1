@@ -1,33 +1,20 @@
-import React, { Component } from "react";
-import DataConsumer from "../context";
+import React from "react";
+import { useLocation } from "react-router-dom"
 
-class GenelTanitim extends Component {
-  static contextType = DataConsumer;
+function GenelTanitim(props) {
+  const location = useLocation()
+const Baslik = location.state.Baslik;
+const Detay = location.state.Detay;
 
-  render() {
+
     return (
-      <DataConsumer>
-        {(value) => {
-          let Veriler = value.GenelTanitimVeriler;
-          console.log(Veriler);
-          return (
-            <div className="GenelTanitim">
-              {Veriler.map((Veriler,index)  => {   
-                return ( 
-                <div className="GenelTanitimIcerik">
-                
-                  <img   className="Hfotograf" src={Veriler.Fotograf}></img>
-                  <h1> {Veriler.Baslik} asdfasdaf</h1>
-                  <p1> {Veriler.Detay}</p1>
-                </div>
-                ); 
-             }  )}
-            </div>
-          ); 
-        }}
-      </DataConsumer>
-    );
-  }
+    <div className="GenelTanitim">
+      <div className="GenelTanitimIcerik">
+        <h1> {Baslik}</h1>
+        <p1> {Detay}</p1>
+      </div>
+    </div>
+  );
 }
 
 export default GenelTanitim;
