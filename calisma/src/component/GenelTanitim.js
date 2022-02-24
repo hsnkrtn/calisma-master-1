@@ -17,4 +17,6 @@ const Detay = location.state.Detay;
   );
 }
 
+
+
 export default GenelTanitim;
