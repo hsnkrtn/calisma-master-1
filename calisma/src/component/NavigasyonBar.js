@@ -22,6 +22,7 @@ class Navigasyonbar extends Component {
       showDoktorlarList: false,
       showIletisimItems: false,
       TanıtımListesi: [],
+      KurumsalListesi: [],
       Baslik: "",
       Fotograf: "",
       Detay: "",
@@ -45,7 +46,7 @@ class Navigasyonbar extends Component {
       <DataConsumer>
         {(value) => {
           this.state.TanıtımListesi = value.Tanitim;
-          let KurumsalListesi = value.Kurumsal;
+          this.state.KurumsalListesi = value.Kurumsal;
           let YonetimListesi = value.Yonetim;
           let DahiliListesi = value.DahiliTıpBilimleri;
           let CerrahiListesi = value.CerrahiTipBilimleri;
@@ -90,7 +91,7 @@ class Navigasyonbar extends Component {
                           (TanıtımListesi, index) => {
                             return (
                               <Link
-                                onClick={() => {
+                              onMouseEnter  ={() => {
                                   this.setState({
                                     Baslik:
                                       this.state.TanıtımListesi[index].Baslik,
@@ -99,10 +100,9 @@ class Navigasyonbar extends Component {
                                     Fotograf:
                                       this.state.TanıtımListesi[index].Fotograf,
                                   });
-                                  console.log(this.state.Baslik);
                                 }}
                                 to={{
-                                  pathname: `/GenelTanitim/${TanıtımListesi.id} `,
+                                  pathname: `/GenelTanitim/Tanitim/${TanıtımListesi.id} `,
                                   state: {
                                     Baslik: this.state.Baslik,
                                     Detay: this.state.Detay,
@@ -159,27 +159,41 @@ class Navigasyonbar extends Component {
                       }
                     >
                       <ul>
-                        {KurumsalListesi.map((KurumsalListesi, index) => {
-                          return (
-                            <Link
-                              onClick={() => {
+                        {this.state.KurumsalListesi.map(
+                          (KurumsalListesi, index) => {
+                            return (
+                              <Link
+                              onMouseEnter={() => {
                                 this.setState({
-                                  GonderilenVeriler: this.state.KurumsalListesi,
+                                  Baslik:
+                                    this.state.KurumsalListesi[index].Baslik,
+                                  Detay:
+                                    this.state.KurumsalListesi[index].Detay,
+                                  Fotograf:
+                                    this.state.KurumsalListesi[index].Fotograf,
                                 });
+                                console.log(this.state.Baslik);
                               }}
-                              to={`/GenelTanitim/${KurumsalListesi.id}`}
+                              to={{
+                                pathname: `/GenelTanitim/Kurumsal/${KurumsalListesi.id} `,
+                                state: {
+                                  Baslik: this.state.Baslik,
+                                  Detay: this.state.Detay,
+                                },
+                              }}
                             >
-                              <li>
-                                &nbsp;
-                                <span>
-                                  <i className="fa fa-chevron-right"></i>
-                                </span>
-                                &nbsp;
-                                {KurumsalListesi.Baslik}
-                              </li>
-                            </Link>
-                          );
-                        })}
+                                <li>
+                                  &nbsp;
+                                  <span>
+                                    <i className="fa fa-chevron-right"></i>
+                                  </span>
+                                  &nbsp;
+                                  {KurumsalListesi.Baslik}
+                                </li>
+                              </Link>
+                            );
+                          }
+                        )}
                       </ul>
 
                       <button

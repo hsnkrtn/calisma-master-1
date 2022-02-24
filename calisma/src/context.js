@@ -1,20 +1,6 @@
 import React, { Component } from "react";
 
 const DataContext = React.createContext();
-const reducer = (state,action) => {
-
-switch (action.type) {
-
-  case "GENEL_GUNCELLE":
-    return{
-...state,
-GenelTanitimVeriler : [...state.GenelTanitimVeriler,action.payload]
-
-    }
-}
-
-}
-
 
 // provider , consumeer
 export class ContextProvider extends Component {
@@ -37,17 +23,58 @@ export class ContextProvider extends Component {
           Detay:
             "  tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak ",
         },
-        { id: "2", Baslik: "Genel Tanıtım" },
-        { id: "3", Baslik: "Kat Planı" },
-        { id: "4", Baslik: "Resimler Ve Videolar" },
-        { id: "5", Baslik: "Yemek Listesi" },
+        {
+          id: "2",
+          Baslik: "Genel Tanıtım",
+          Detay:
+            "  tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak ",
+        },
+        {
+          id: "3",
+          Baslik: "Kat Planı",
+          Detay:
+            "  tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak ",
+        },
+        {
+          id: "4",
+          Baslik: "Resimler Ve Videolar",
+          Detay:
+            "  tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak ",
+        },
+        {
+          id: "5",
+          Baslik: "Yemek Listesi",
+          Detay:
+            "  tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak ",
+        },
       ],
       Kurumsal: [
-        { Baslik: "Rektörümüz" },
-        { Baslik: "Misyon Ve Vizyon" },
-        { Baslik: "Değerlerimiz" },
-        { Baslik: "Amaç Ve Hedeflerimiz" },
-        { Baslik: "Kalite Yönetimi" },
+        {
+          id: "1",
+          Baslik: "Rektörümüz",
+          Detay:
+            "  tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak ",
+        },
+        {
+          id: "2",
+          Baslik: "Misyon Ve Vizyon",
+          Detay:
+            "  tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak ",
+        },
+        {
+          id: "3",
+          Baslik: "Değerlerimiz",
+          Detay:
+            "  tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak ",
+        },
+        {
+          id: "4",
+          Baslik: "Amaç Ve Hedeflerimiz",
+          Detay:
+            "tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak ",
+        },
+        { id: "5", Baslik: "Kalite Yönetimi",  Detay:
+            "tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak ", },
       ],
       //Bolumler
       DahiliTıpBilimleri: [
@@ -256,10 +283,6 @@ export class ContextProvider extends Component {
           Dtarih: "09.02.2022",
         },
       ],
-
-      dispacth : action => {
-        this.setState(state=> reducer(state,action))
-      }
     };
   }
   //  ArttirID  = ()=> {
@@ -275,9 +298,6 @@ export class ContextProvider extends Component {
       Haberler: this.state.Haberler.reverse(),
     });
   }
-
-
-
 
   render() {
     return (
