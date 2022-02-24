@@ -91,7 +91,7 @@ class Navigasyonbar extends Component {
                           (TanıtımListesi, index) => {
                             return (
                               <Link
-                              onMouseEnter  ={() => {
+                                onMouseEnter={() => {
                                   this.setState({
                                     Baslik:
                                       this.state.TanıtımListesi[index].Baslik,
@@ -163,25 +163,26 @@ class Navigasyonbar extends Component {
                           (KurumsalListesi, index) => {
                             return (
                               <Link
-                              onMouseEnter={() => {
-                                this.setState({
-                                  Baslik:
-                                    this.state.KurumsalListesi[index].Baslik,
-                                  Detay:
-                                    this.state.KurumsalListesi[index].Detay,
-                                  Fotograf:
-                                    this.state.KurumsalListesi[index].Fotograf,
-                                });
-                                console.log(this.state.Baslik);
-                              }}
-                              to={{
-                                pathname: `/GenelTanitim/Kurumsal/${KurumsalListesi.id} `,
-                                state: {
-                                  Baslik: this.state.Baslik,
-                                  Detay: this.state.Detay,
-                                },
-                              }}
-                            >
+                                onMouseEnter={() => {
+                                  this.setState({
+                                    Baslik:
+                                      this.state.KurumsalListesi[index].Baslik,
+                                    Detay:
+                                      this.state.KurumsalListesi[index].Detay,
+                                    Fotograf:
+                                      this.state.KurumsalListesi[index]
+                                        .Fotograf,
+                                  });
+                                  console.log(this.state.Baslik);
+                                }}
+                                to={{
+                                  pathname: `/GenelTanitim/Kurumsal/${KurumsalListesi.id} `,
+                                  state: {
+                                    Baslik: this.state.Baslik,
+                                    Detay: this.state.Detay,
+                                  },
+                                }}
+                              >
                                 <li>
                                   &nbsp;
                                   <span>
@@ -719,7 +720,16 @@ class Navigasyonbar extends Component {
                 ></input>
               </div>
               <button className="RandevuAlButton">
-                <a> RANDEVU AL </a>
+                <Link
+                  to={{
+                    pathname:
+                      "https://ftmhbys.mergentech.com.tr/mergenTechSbsHastaPortaliIstemci/giris",
+                  }}
+                  target="_blank"
+                >
+                  {" "}
+                  RANDEVU AL{" "}
+                </Link>
               </button>
               <button
                 className="MenüButton"

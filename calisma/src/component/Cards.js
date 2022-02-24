@@ -1,10 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Cards() {
   return (
     <div className="Cards">
 
-
+<Link to={{  pathname: "https://ftmhbys.mergentech.com.tr/mergenTechSbsHastaPortaliIstemci/giris" }}  target="_blank">  
       <div className="Card1">
         <div className="CardIcon">
           <span><i class="fa fa-calendar"></i>
@@ -22,9 +23,10 @@ function Cards() {
         </div>
 
       </div>
+</Link>
 
 
-
+<Link to={{  pathname: "https://ftmhbys.mergentech.com.tr/mergenTechSbsHastaPortaliIstemci/giris" }}  target="_blank">
       <div className="Card2">
         <div className="CardIcon">
           <span>
@@ -38,7 +40,7 @@ function Cards() {
         </div>
       </div>
 
-
+      </Link>
 
       <div className="Card3">
         <div className="CardIcon">
