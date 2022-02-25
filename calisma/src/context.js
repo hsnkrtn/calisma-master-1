@@ -73,8 +73,12 @@ export class ContextProvider extends Component {
           Detay:
             "tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak ",
         },
-        { id: "5", Baslik: "Kalite Yönetimi",  Detay:
-            "tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak ", },
+        {
+          id: "5",
+          Baslik: "Kalite Yönetimi",
+          Detay:
+            "tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak ",
+        },
       ],
       //Bolumler
       DahiliTıpBilimleri: [
@@ -131,11 +135,11 @@ export class ContextProvider extends Component {
       ],
 
       Yonetim: [
-        { Baslik: "Hastane Başhekimliği" },
-        { Baslik: "Müdür ve Müdür Yardımcıları" },
-        { Baslik: "Bilgi İşlem Koordinatörlüğü" },
-        { Baslik: "Hemşirelik Hizmetleri" },
-        { Baslik: "Organizasyon Şeması" },
+        { id: "1", Baslik: "Hastane Başhekimliği" },
+        { id: "2", Baslik: "Müdür ve Müdür Yardımcıları" },
+        { id: "3", Baslik: "Bilgi İşlem Koordinatörlüğü" },
+        { id: "4", Baslik: "Hemşirelik Hizmetleri" },
+        { id: "5", Baslik: "Organizasyon Şeması" },
       ],
 
       Haberler: [

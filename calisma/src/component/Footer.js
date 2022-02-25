@@ -1,12 +1,13 @@
 import React, { Component } from "react";
-
+  import {HastaneFotograflari} from "./Helpers/HastaneResimlerData.js"
 class Footer extends Component {
   render() {
+    const Logo=HastaneFotograflari[0].Logo;
     return (
       <div className="Footer">
         <div className="footerInner">
           <div className="footerlogodetails">
-            <img className="footerlogo" src=" hastanelogo.png"></img>
+            <img className="footerlogo" src={Logo}></img>
             <p1>
               <span>
                 <i class="fa fa-envelope"></i> </span>  hastane@firat.edu.tr

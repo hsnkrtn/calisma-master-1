@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import DataConsumer from "../context";
-import GenelTanitim from "./GenelTanitim";
-//export const veri = "hasannn";
+import { HastaneFotograflari } from "./Helpers/HastaneResimlerData";
 
 class Navigasyonbar extends Component {
   static contextType = DataConsumer;
@@ -42,6 +41,7 @@ class Navigasyonbar extends Component {
   };
 
   render() {
+    const logo = HastaneFotograflari[0].Logo;
     return (
       <DataConsumer>
         {(value) => {
@@ -61,8 +61,11 @@ class Navigasyonbar extends Component {
               <div></div>
               <Link className="logolink" to={`/`}>
                 <img
+                  
+                  title="Hastane Logo "
                   className={this.state.showNavbar ? "brand1" : "brand"}
-                  src=" hastanelogo.png"
+                  src={logo}
+                  alt="Hastane Logo "
                 ></img>
               </Link>{" "}
               <div className="Links" id={this.state.showLinks ? "hidden" : ""}>
@@ -239,7 +242,7 @@ class Navigasyonbar extends Component {
                                   GonderilenVeriler: this.state.YonetimListesi,
                                 });
                               }}
-                              to={`/GenelTanitim/${YonetimListesi.id}`}
+                              to={`/Yonetim/${YonetimListesi.id}`}
                             >
                               <li>
                                 &nbsp;
@@ -293,7 +296,6 @@ class Navigasyonbar extends Component {
                         <div>
                           <h1
                             className="DahiliButton"
-                            role="Button"
                             onMouseEnter={() =>
                               this.setState({ showDahiliList: true })
                             }
@@ -343,7 +345,6 @@ class Navigasyonbar extends Component {
                           {" "}
                           <h1
                             className="CerrahiButton"
-                            role="Button"
                             onMouseEnter={() =>
                               this.setState({ showCerrahiList: true })
                             }
@@ -392,7 +393,6 @@ class Navigasyonbar extends Component {
                           {" "}
                           <h1
                             className="TemelButton"
-                            role="Button"
                             onMouseEnter={() =>
                               this.setState({ showTemelList: true })
                             }
@@ -441,7 +441,6 @@ class Navigasyonbar extends Component {
                         <div>
                           <h1
                             className="DigerButton"
-                            role="Button"
                             onMouseEnter={() =>
                               this.setState({ showDigerTedavilist: true })
                             }
@@ -679,6 +678,7 @@ class Navigasyonbar extends Component {
                       }
                     >
                       <iframe
+                        title="GoogleHarita"
                         className="harita"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3114.6093589334732!2d39.20330651580714!3d38.68084487960478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4076c0895a19c2a3%3A0x56a2b23e62945af6!2sF%C4%B1rat+%C3%9Cniversitesi+Hastanesi!5e0!3m2!1str!2str!4v1515742266104"
                       >
@@ -719,18 +719,16 @@ class Navigasyonbar extends Component {
                   placeholder="Arama Yap"
                 ></input>
               </div>
-              <button className="RandevuAlButton">
-                <Link
-                  to={{
-                    pathname:
-                      "https://ftmhbys.mergentech.com.tr/mergenTechSbsHastaPortaliIstemci/giris",
-                  }}
-                  target="_blank"
-                >
-                  {" "}
-                  RANDEVU AL{" "}
-                </Link>
-              </button>
+              <Link
+                to={{
+                  pathname:
+                    "https://ftmhbys.mergentech.com.tr/mergenTechSbsHastaPortaliIstemci/giris",
+                }}
+                target="_blank"
+              >
+                {" "}
+                <button className="RandevuAlButton"> RANDEVU AL </button>{" "}
+              </Link>
               <button
                 className="MenüButton"
                 onClick={() =>
