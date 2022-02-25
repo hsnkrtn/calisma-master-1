@@ -1,12 +1,6 @@
 .GenelTanitimComponent {
   display: none;
 }
-.RouterSayfasiFotograf{
-position: relative;
-height: auto;
-width: 100%;
-
-}
 
 .Home {
   height: 2400px;
@@ -107,7 +101,7 @@ a:hover {
   top: 0px;
   display: flex;
 }
-.RouterSayfari{
+.RouterSayfasi {
   margin-top: 200px;
   min-height: 200px;
   height: fit-content;
@@ -116,12 +110,17 @@ a:hover {
   justify-content: center;
 }
 
-.RouterSayfariIcerik {
+.RouterSayfasiIcerik {
   position: relative;
   height: 100%;
   width: 80%;
   background-color: #850432;
   overflow-wrap: break-word;
+}
+.RouterSayfasiFotograf {
+  position: relative;
+  height: auto;
+  width: 100%;
 }
 
 .Links {
@@ -266,10 +265,9 @@ a:hover {
   text-decoration: none;
   color: #ffffff;
 }
-.RandevuAlButton a:hover  {
-
+.RandevuAlButton a:hover {
   color: white;
-} 
+}
 .RandevuAlButton:hover {
   background-color: #850432;
   color: white;
