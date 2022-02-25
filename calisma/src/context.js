@@ -142,6 +142,16 @@ export class ContextProvider extends Component {
         { id: "5", Baslik: "Organizasyon Şeması" },
       ],
 
+      BashekimlikKisiler: [
+        { id: "1", unvani: "Prof. Dr.", adi: "İrfan KAYGUSUZ" },
+        { id: "2", unvani: "Prof. Dr.", adi: "Fatih FIRDOLAŞ" },
+        { id: "3", unvani: "Prof. Dr.", adi: "İsmail DEMİREL" },
+        { id: "4", unvani: "Doç. Dr.", adi: "Gökhan ARTAŞ " },
+        { id: "5", unvani: "Doç. Dr.", adi: "Murat GÖNEN " },
+
+ 
+      ],
+
       Haberler: [
         {
           HaberId: 1,

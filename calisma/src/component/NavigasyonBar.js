@@ -22,6 +22,7 @@ class Navigasyonbar extends Component {
       showIletisimItems: false,
       TanıtımListesi: [],
       KurumsalListesi: [],
+      BashekimlikKisiListesi: [],
       Baslik: "",
       Fotograf: "",
       Detay: "",
@@ -30,6 +31,8 @@ class Navigasyonbar extends Component {
 
   componentDidMount() {
     window.addEventListener("scroll", this.changeNavbar);
+
+    console.log(this.state.BashekimlikKisiListesi);
   }
 
   changeNavbar = () => {
@@ -47,11 +50,13 @@ class Navigasyonbar extends Component {
         {(value) => {
           this.state.TanıtımListesi = value.Tanitim;
           this.state.KurumsalListesi = value.Kurumsal;
+          this.state.BashekimlikKisiListesi = value.BashekimlikKisiler;
           let YonetimListesi = value.Yonetim;
           let DahiliListesi = value.DahiliTıpBilimleri;
           let CerrahiListesi = value.CerrahiTipBilimleri;
           let TemelListesi = value.TemelTipBilimleri;
           let DigerTedaviListesi = value.DigerTedaviUniteleri;
+          
           return (
             <nav
               className={
@@ -61,7 +66,6 @@ class Navigasyonbar extends Component {
               <div></div>
               <Link className="logolink" to={`/`}>
                 <img
-                  
                   title="Hastane Logo "
                   className={this.state.showNavbar ? "brand1" : "brand"}
                   src={logo}
@@ -237,12 +241,13 @@ class Navigasyonbar extends Component {
                         {YonetimListesi.map((YonetimListesi, index) => {
                           return (
                             <Link
-                              onClick={() => {
-                                this.setState({
-                                  GonderilenVeriler: this.state.YonetimListesi,
-                                });
-                              }}
-                              to={`/Yonetim/${YonetimListesi.id}`}
+                              
+                            to={{
+                              pathname: `/Yonetim/${YonetimListesi.id} `,
+                              state: {
+                                BashekimlikKisiListesi:this.state.BashekimlikKisiListesi
+                              },
+                            }}
                             >
                               <li>
                                 &nbsp;
