@@ -13,9 +13,10 @@ function GenelTanitim(props) {
     <div className="RouterSayfasi">
       <div className="RouterSayfasiIcerik">
         <img className="RouterSayfasiFotograf" src={f}></img>
+        <section  className="RouterSayfasiDetay" > 
           <h1> {Baslik}</h1>
           <p1> {Detay}</p1>
-        
+        </section>
         
       </div>
     </div>

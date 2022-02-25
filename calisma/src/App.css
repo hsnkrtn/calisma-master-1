@@ -114,15 +114,30 @@ a:hover {
   position: relative;
   height: 100%;
   width: 80%;
-  background-color: #850432;
-  overflow-wrap: break-word;
-}
+ }
 .RouterSayfasiFotograf {
-  position: relative;
-  height: auto;
+  height: 44s0px;
   width: 100%;
 }
+.RouterSayfasiDetay{
+  width: 100%;
+  overflow-wrap: break-word;
 
+}
+
+.RouterSayfasiDetay h1{
+  margin-top: 50px;
+font-size: 28px;
+font-weight: bold;
+color: #850432;
+font-family: Arial, Helvetica, sans-serif;
+
+} 
+.RouterSayfasiDetay p1{
+  margin-top: 150px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
 .Links {
   position: absolute;
   left: 65%;
