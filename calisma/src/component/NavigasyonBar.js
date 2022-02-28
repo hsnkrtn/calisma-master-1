@@ -34,8 +34,6 @@ class Navigasyonbar extends Component {
 
   componentDidMount() {
     window.addEventListener("scroll", this.changeNavbar);
-
-
   }
 
   changeNavbar = () => {
@@ -55,15 +53,16 @@ class Navigasyonbar extends Component {
           this.state.KurumsalListesi = value.Kurumsal;
           this.state.Mudurler = value.Mudurler;
           this.state.Hemsirelik = value.Hemsirelik;
-          this.state.BilgiIslemKoordinatorlugu = value.BilgiIslemKoordinatorlugu;
+          this.state.BilgiIslemKoordinatorlugu =
+            value.BilgiIslemKoordinatorlugu;
           this.state.BashekimlikKisiListesi = value.BashekimlikKisiler;
           this.state.YonetimListesi = value.Yonetim;
           let DahiliListesi = value.DahiliTıpBilimleri;
           let CerrahiListesi = value.CerrahiTipBilimleri;
           let TemelListesi = value.TemelTipBilimleri;
           let DigerTedaviListesi = value.DigerTedaviUniteleri;
-        
-console.log (this.state.YonetimListesi[0].Kisiler)
+
+          console.log(this.state.YonetimListesi[0].Kisiler);
           return (
             <nav
               className={
@@ -87,7 +86,9 @@ console.log (this.state.YonetimListesi[0].Kisiler)
                     }}
                   >
                     <li
-                      className="btn-13 "
+                      className={
+                        this.state.showTanitimList ? " butonrengi" : null
+                      }
                       onMouseEnter={() => {
                         this.setState({ showTanitimList: true });
                       }}
@@ -157,7 +158,9 @@ console.log (this.state.YonetimListesi[0].Kisiler)
                     }}
                   >
                     <li
-                      className="btn-13 "
+                      className={
+                        this.state.showKurumsalList ? " butonrengi" : null
+                      }
                       onMouseEnter={() => {
                         this.setState({ showKurumsalList: true });
                       }}
@@ -231,7 +234,9 @@ console.log (this.state.YonetimListesi[0].Kisiler)
                     }}
                   >
                     <li
-                      className="btn-13 "
+                      className={
+                        this.state.showYonetimList ? " butonrengi" : null
+                      }
                       onMouseEnter={() => {
                         this.setState({ showYonetimList: true });
                       }}
@@ -245,34 +250,36 @@ console.log (this.state.YonetimListesi[0].Kisiler)
                       }
                     >
                       <ul>
-                        {this.state.YonetimListesi.map((YonetimListesi, index) => {
-                          return (
-                            <Link
-                              onMouseEnter={() => {
-                                this.setState({
-                                  Baslik: YonetimListesi.Baslik,
-                                });
-                              }}
-                              to={{
-                                pathname: `/Yonetim/${YonetimListesi.id} `,
-                                state: {
-                                  Baslik: this.state.Baslik,
-                                  Gonderilenveriler:this.state.YonetimListesi[index].Kisiler
-
-                                },
-                              }}
-                            >
-                              <li>
-                                &nbsp;
-                                <span>
-                                  <i className="fa fa-chevron-right"></i>
-                                </span>
-                                &nbsp;
-                                {YonetimListesi.Baslik}
-                              </li>
-                            </Link>
-                          );
-                        })}
+                        {this.state.YonetimListesi.map(
+                          (YonetimListesi, index) => {
+                            return (
+                              <Link
+                                onMouseEnter={() => {
+                                  this.setState({
+                                    Baslik: YonetimListesi.Baslik,
+                                  });
+                                }}
+                                to={{
+                                  pathname: `/Yonetim/${YonetimListesi.id} `,
+                                  state: {
+                                    Baslik: this.state.Baslik,
+                                    Gonderilenveriler:
+                                      this.state.YonetimListesi[index].Kisiler,
+                                  },
+                                }}
+                              >
+                                <li>
+                                  &nbsp;
+                                  <span>
+                                    <i className="fa fa-chevron-right"></i>
+                                  </span>
+                                  &nbsp;
+                                  {YonetimListesi.Baslik}
+                                </li>
+                              </Link>
+                            );
+                          }
+                        )}
                       </ul>
 
                       <button
@@ -295,7 +302,9 @@ console.log (this.state.YonetimListesi[0].Kisiler)
                     }}
                   >
                     <li
-                      className="btn-13 "
+                      className={
+                        this.state.showBolumlerList ? " butonrengi" : null
+                      }
                       onMouseEnter={() => {
                         this.setState({ showBolumlerList: true });
                       }}
@@ -527,9 +536,8 @@ console.log (this.state.YonetimListesi[0].Kisiler)
                     }}
                   >
                     <li
-                      className={
-                        this.state.showDoktorlarList ? "ButtonColor" : null
-                      }
+                                                             className= {this.state.showDoktorlarList ? " butonrengi":null}
+
                       onMouseEnter={() => {
                         this.setState({ showDoktorlarList: true });
                       }}
@@ -677,9 +685,7 @@ console.log (this.state.YonetimListesi[0].Kisiler)
                   >
                     <li
                       className={
-                        this.state.showIletisimItems
-                          ? "btn-13 ButtonColor"
-                          : null
+                        this.state.showIletisimItems ? " butonrengi" : null
                       }
                       onMouseEnter={() => {
                         this.setState({ showIletisimItems: true });

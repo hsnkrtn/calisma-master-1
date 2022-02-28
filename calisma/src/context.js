@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import  fatihfirdolasfotografi from "../src/component/Resimler/KisiFotografları/fatihfirdolasfotografi.jpg"
+import fatihfirdolasfotografi from "../src/component/Resimler/KisiFotografları/fatihfirdolasfotografi.jpg";
 
 const DataContext = React.createContext();
 
@@ -22,7 +22,7 @@ export class ContextProvider extends Component {
           Baslik: "Tarihçe",
           Fotograf: "bga2.jpg ",
           Detay:
-            "  tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacaktanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacaktanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacaktanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacaktanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacaktanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacaktanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacaktanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacaktanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacaktanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacaktanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacaktanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacaktanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacaktanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacaktanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacaktanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacaktanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacaktanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacaktanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacaktanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacaktanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak ",
+            "Fırat Üniversitesi Hastanesi, T.C. Sağlık Bakanlığı ile Üniversite Rektörlüğü arasında yapılan ve 24.12.1984 tarihinden itibaren yürürlüğe giren bir protokole binaen Elazığ doğumevinin üniversitemize devredilmesi ile Ocak1985 'ten itibaren faaliyetlerine başlamıştır. Önceleri adı F.Ü. Araştırma ve Uygulama Hastanesi iken 1997' de Senato kararıyla F.Ü. Fırat Tıp Merkezi olarak adlandırılmıştır. 2008 yılı içerisinde hastanenin ismi son kez “Fırat Üniversitesi Hastanesi” olarak değiştirilmiştir. Fırat Üniversitesi Hastanesi bugün üçüncü basamak sağlık hizmeti veren bölge hastanesi konumundadır. Hastanemiz; 1053 yatak kapasiteli 125000 metrekare kapalı alana sahip, 3 bloktan oluşmaktadır. P Blokta; İç Hastalıkları (Genel Dahiliye, Romatoloji, Nefroloji, Hematoloji, Endokrinoloji, Gastoroentoroloji, Onkoloji Bilim Dalı), Dermatoloji, Enfeksiyon Hastalıkları, Kardiyoloji, Koroner Anjiografi ve Koroner Yoğun Bakım, Fiziksel Tıp ve Rehabilitasyon, Çocuk Sağlığı ve Hastalıkları (Allerji, Endokrinoloji, Gastroentroloji, Hematoloji, Kardiyoloji, Nöroloji, Yeni Doğan, Nefroloji, Beslenme ve Metabolizma, Enfeksiyon Bilim Dalı), Nöroloji, Halk Sağlığı, Aile Hekimliği, Psikiyatri, Göğüs Hastalıkları, Genel Cerrahi, Göz Hastalıkları, Kulak-Burun-Boğaz Hastalıkları, Kadın Hastalıkları ve Doğum, Ortopedi ve Travmatoloji, Üroloji, Nöroşirürji, Kalp ve Damar Cerrahisi, Göğüs Cerrahisi, Anestezi ve Reanimasyon, Çocuk Cerrahisi, Plastik ve Rekonstrüktif Cerrahi, Algoloji, Ruh Sağlığı, Yeni Doğan Yoğun Bakım Ünitesi, Çocuk Yoğun Bakım Ünitesi, Yara ve Yanık Merkezi, Uyku Bozuklukları Tedavi Ünitesi, Total Parenteral Beslenme Ünitesi (TPN) birimler ve klinikler hizmet vermektedir. O Blokta; Poliklinikler, Hemodiyaliz, Radyasyon Onkolojisi, Onkoloji Gündüz Tedavi Ünitesi, Ameliyathane, Merkez Laboratuvarı, Öğretim Üyeleri Odaları, İdari Birimler, Radyoloji, Nükleer Tıp, Genetik, G.E.T.A.T (Geleneksel ve Tamamlayıcı Tıp),Arşiv hizmet vermektedir. ",
         },
         {
           id: "2",
@@ -60,8 +60,7 @@ export class ContextProvider extends Component {
           id: "2",
           Baslik: "Misyon Ve Vizyon",
           Detay:
-            "  tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak ",
-        },
+"Misyonumuz: İnsanların temel hak ve özgürlükleri arasında yer alan sağlık hizmetlerini; etik ilkeler çerçevesinde, kaliteli, özgün, güvenilir ve evrensel değerler ölçeğinde, bilgi ve beceri ile donatılmış alanında uzman kadromuz ile ileri bilim ve teknoloji kaynaklarını etkin kullanarak nitelikli bir şekilde vermek ve hasta, hasta yakını ve çalışan memnuniyetini en üst seviyeye çıkarmaktır. <br></br> Vizyonumuz: Kaliteli hizmet anlayışını, güveni, hasta mahremiyetini ve memnuniyetini ilke edinmiş, ileri teknoloji ile donatılmış, çalışanları ile ekip ruhunu oluşturan, kurumsal kimliği ön plana çıkaran, ulusal ve uluslararası alanda tıpta yaşanan gelişmeleri yakından takip eden, araştırmacı ve sorgulayıcı bir anlayışla dünya standartlarında kaliteli sağlık hizmeti sunmak."        },
         {
           id: "3",
           Baslik: "Değerlerimiz",
@@ -136,45 +135,46 @@ export class ContextProvider extends Component {
       ],
 
       Yonetim: [
-        { id: "1", Baslik: "Hastane Başhekimliği", 
-        Kisiler: [
-      
-          {
-            id: "1",
-            unvan: "Prof. Dr.",
-            Adi: "Fatih FIRDOLAŞ",
-            Hakkinda:
-              "1976 yılında Elazığ’ da doğdu. İlk, orta ve lise eğitimini Elazığ’ da tamamladı.2000 yılında Fırat Üniversitesi Tıp Fakültesinden mezun oldu.2000-2002 Van Askeri Hastanesinde Yedek Subay olarak görev yaptı.2002-2008 yılları arasında Fırat Üniversitesi Üroloji Anabilim Dalında uzmanlık eğitimini tamamladı. 2008-2009 yılları arasında Diyarbakır Bismil Devlet Hastanesinde mecburi hizmetini tamamladı.2009 yılında Fırat Üniversitesi Üroloji Anabilim Dalına Yardımcı Doçent olarak atandı. 2014 yılında Doçent unvanını, 2019 yılında ise Profesör unvanını aldı. 2015 yılından itibaren Fırat Üniversitesi Hastanesi Başhekim Yardımcısı olarak görevlendirildi. 2020 yılı içerisinde Fırat Üniversitesi Tıp Fakültesi Dekan Yardımcısı olarak görev yaptı. Ulusal ve uluslararası makale ve bildirileri bulunmakta olup evli ve iki çocuk babasıdır.        ",
-              Fotograf : {fatihfirdolasfotografi}
+        {
+          id: "1",
+          Baslik: "Hastane Başhekimliği",
+          Kisiler: [
+            {
+              id: "1",
+              unvan: "Prof. Dr.",
+              Adi: "Fatih FIRDOLAŞ",
+              Hakkinda:
+                "1976 yılında Elazığ’ da doğdu. İlk, orta ve lise eğitimini Elazığ’ da tamamladı.2000 yılında Fırat Üniversitesi Tıp Fakültesinden mezun oldu.2000-2002 Van Askeri Hastanesinde Yedek Subay olarak görev yaptı.2002-2008 yılları arasında Fırat Üniversitesi Üroloji Anabilim Dalında uzmanlık eğitimini tamamladı. 2008-2009 yılları arasında Diyarbakır Bismil Devlet Hastanesinde mecburi hizmetini tamamladı.2009 yılında Fırat Üniversitesi Üroloji Anabilim Dalına Yardımcı Doçent olarak atandı. 2014 yılında Doçent unvanını, 2019 yılında ise Profesör unvanını aldı. 2015 yılından itibaren Fırat Üniversitesi Hastanesi Başhekim Yardımcısı olarak görevlendirildi. 2020 yılı içerisinde Fırat Üniversitesi Tıp Fakültesi Dekan Yardımcısı olarak görev yaptı. Ulusal ve uluslararası makale ve bildirileri bulunmakta olup evli ve iki çocuk babasıdır.        ",
+              Fotograf: { fatihfirdolasfotografi },
             },
-          {
-            id: "2",
-            unvan: "Prof. Dr.",
-            Adi: "İsmail DEMİREL",
-            Hakkinda:
-              "1968 yılında doğdu. 1994 yılında Uludağ Üniversitesi Tıp Fakültesinden mezun oldu. 1994-1995 yılları arasında Kovancılar Çaybağı Sağlık Ocağında, 1995-1997 yılları arasında Kovancılar Sağlık Ocağında, 1997-2002 yılları arasında Elazığ Abdullahpaşa Sağlık Ocağında Pratisyen Doktor olarak görev yapmıştır. 2002-2007 yılında Fırat Üniversitesi Anesteziyoloji ve Reanimasyon Anabilim Dalında uzmanlık eğitimini tamamladı. 2007-2009 yılları arasında Elazığ Harput Devlet Hastanesinde, 2009-2011 yılları arasında Elazığ Eğitim ve Araştırma Hastanesinde Uzman Doktor olarak görev yapmıştır. 2011 yılında Fırat Üniversitesi Hastanesi Anesteziyoloji ve Reanimasyon Anabilim Dalı Başkanlığında Doktor Öğretim Üyesi olarak göreve başladı. 2015 yılından itibaren Doçentlik unvanını aldı. 2018 yılında Yoğun Bakımda yan dalını tamamladı. 2020 yılında Profesör unvanını aldı. Evli ve iki çocuk babasıdır.",
-          },
-          {
-            id: "3",
-            unvan: "Doç. Dr.",
-            Adi: "Gökhan ARTAŞ ",
-            Hakkinda:
-              "1979 yılında Elazığ’ da doğdu. İlk, orta ve lise eğitimini Elazığ’ da tamamladı. 1997 yılında Fırat Üniversitesi Tıp Fakültesi’ ne girdi. 2003 yılında mezun oldu ve aynı yıl Elazığ Karakoçan ilçesine atandı. 2003-2004 yılları arasında İzmir Hava Lisan Okul Komutanlığı’nda askerlik hizmetini yaptı. 2004-2009 yılları arasında Karakoçan ilçesinde başhekim yardımcılığı, başhekimlik ve sağlık grup başkanlığı görevlerini icra etti. 2009 yılında Fırat Üniversitesi Hastanesi’ nde Patoloji Anabilim Dalı’ nda uzmanlık eğitime başlayıp 2013 senesinde Uzman unvanını aldı. 2018 yılında Doçentlik sınavını kazanarak doçent oldu. 100’ ün üzerinde uluslarası - ulusal makale ve bildirisi bulunmaktadır. İyi derecede İngilizce ve Almanca bilmektedir. Evli ve iki çocuk babasıdır.",
-          },
-          {
-            id: "4",
-            unvan: "Doç. Dr.",
-            Adi: "Murat GÖNEN ",
-            Hakkinda:
-              "1972 yılında Elbistan’ da doğdu. İlk, orta ve lise eğitimini Elbistan’ da tamamladı. 1996 yılında Erciyes Üniversitesi Tıp Fakültesinden mezun oldu. 2000-2004 yılları arasında Fırat Üniversitesi Nöroloji Anabilim Dalında uzmanlık eğitimini tamamladı. 2004-2006 yılları arasında Sivas Devlet Hastanesinde mecburi hizmetini tamamladı. 2006-2013 yılında Elbistan Devlet Hastanesinde görev yaptı. 2007-2012 yılında Elbistan Devlet Hastanesinde Başhekimlik görevi yaptı. 2013 yılında Fırat Üniversitesi Hastanesi Nöroloji Anabilim Dalında Öğretim Üyesi olarak göreve başladı. 2020 yılından itibaren Fırat Üniversitesi Hastanesi Başhekim Yardımcısı olarak görevlendirildi. Ulusal ve uluslararası makale ve bildirileri bulunmakta olup evli ve üç çocuk babasıdır.  ",
-          },
-        ],},
+            {
+              id: "2",
+              unvan: "Prof. Dr.",
+              Adi: "İsmail DEMİREL",
+              Hakkinda:
+                "1968 yılında doğdu. 1994 yılında Uludağ Üniversitesi Tıp Fakültesinden mezun oldu. 1994-1995 yılları arasında Kovancılar Çaybağı Sağlık Ocağında, 1995-1997 yılları arasında Kovancılar Sağlık Ocağında, 1997-2002 yılları arasında Elazığ Abdullahpaşa Sağlık Ocağında Pratisyen Doktor olarak görev yapmıştır. 2002-2007 yılında Fırat Üniversitesi Anesteziyoloji ve Reanimasyon Anabilim Dalında uzmanlık eğitimini tamamladı. 2007-2009 yılları arasında Elazığ Harput Devlet Hastanesinde, 2009-2011 yılları arasında Elazığ Eğitim ve Araştırma Hastanesinde Uzman Doktor olarak görev yapmıştır. 2011 yılında Fırat Üniversitesi Hastanesi Anesteziyoloji ve Reanimasyon Anabilim Dalı Başkanlığında Doktor Öğretim Üyesi olarak göreve başladı. 2015 yılından itibaren Doçentlik unvanını aldı. 2018 yılında Yoğun Bakımda yan dalını tamamladı. 2020 yılında Profesör unvanını aldı. Evli ve iki çocuk babasıdır.",
+            },
+            {
+              id: "3",
+              unvan: "Doç. Dr.",
+              Adi: "Gökhan ARTAŞ ",
+              Hakkinda:
+                "1979 yılında Elazığ’ da doğdu. İlk, orta ve lise eğitimini Elazığ’ da tamamladı. 1997 yılında Fırat Üniversitesi Tıp Fakültesi’ ne girdi. 2003 yılında mezun oldu ve aynı yıl Elazığ Karakoçan ilçesine atandı. 2003-2004 yılları arasında İzmir Hava Lisan Okul Komutanlığı’nda askerlik hizmetini yaptı. 2004-2009 yılları arasında Karakoçan ilçesinde başhekim yardımcılığı, başhekimlik ve sağlık grup başkanlığı görevlerini icra etti. 2009 yılında Fırat Üniversitesi Hastanesi’ nde Patoloji Anabilim Dalı’ nda uzmanlık eğitime başlayıp 2013 senesinde Uzman unvanını aldı. 2018 yılında Doçentlik sınavını kazanarak doçent oldu. 100’ ün üzerinde uluslarası - ulusal makale ve bildirisi bulunmaktadır. İyi derecede İngilizce ve Almanca bilmektedir. Evli ve iki çocuk babasıdır.",
+            },
+            {
+              id: "4",
+              unvan: "Doç. Dr.",
+              Adi: "Murat GÖNEN ",
+              Hakkinda:
+                "1972 yılında Elbistan’ da doğdu. İlk, orta ve lise eğitimini Elbistan’ da tamamladı. 1996 yılında Erciyes Üniversitesi Tıp Fakültesinden mezun oldu. 2000-2004 yılları arasında Fırat Üniversitesi Nöroloji Anabilim Dalında uzmanlık eğitimini tamamladı. 2004-2006 yılları arasında Sivas Devlet Hastanesinde mecburi hizmetini tamamladı. 2006-2013 yılında Elbistan Devlet Hastanesinde görev yaptı. 2007-2012 yılında Elbistan Devlet Hastanesinde Başhekimlik görevi yaptı. 2013 yılında Fırat Üniversitesi Hastanesi Nöroloji Anabilim Dalında Öğretim Üyesi olarak göreve başladı. 2020 yılından itibaren Fırat Üniversitesi Hastanesi Başhekim Yardımcısı olarak görevlendirildi. Ulusal ve uluslararası makale ve bildirileri bulunmakta olup evli ve üç çocuk babasıdır.  ",
+            },
+          ],
+        },
         { id: "2", Baslik: "Müdür ve Müdür Yardımcıları" },
         { id: "3", Baslik: "Bilgi İşlem Koordinatörlüğü" },
         { id: "4", Baslik: "Hemşirelik Hizmetleri" },
         { id: "5", Baslik: "Organizasyon Şeması" },
       ],
-
 
       Mudurler: [
         { id: "1", unvan: "Başmüdür", Adi: "İlyas TÜRK" },
