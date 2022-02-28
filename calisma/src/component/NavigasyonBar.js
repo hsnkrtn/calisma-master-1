@@ -22,7 +22,10 @@ class Navigasyonbar extends Component {
       showIletisimItems: false,
       TanıtımListesi: [],
       KurumsalListesi: [],
-      BashekimlikKisiListesi: [],
+      YonetimListesi: [],
+      BilgiIslemKoordinatorlugu: [],
+      Hemsirelik: [],
+      Mudurler: [],
       Baslik: "",
       Fotograf: "",
       Detay: "",
@@ -32,7 +35,7 @@ class Navigasyonbar extends Component {
   componentDidMount() {
     window.addEventListener("scroll", this.changeNavbar);
 
-    console.log(this.state.BashekimlikKisiListesi);
+
   }
 
   changeNavbar = () => {
@@ -50,13 +53,17 @@ class Navigasyonbar extends Component {
         {(value) => {
           this.state.TanıtımListesi = value.Tanitim;
           this.state.KurumsalListesi = value.Kurumsal;
+          this.state.Mudurler = value.Mudurler;
+          this.state.Hemsirelik = value.Hemsirelik;
+          this.state.BilgiIslemKoordinatorlugu = value.BilgiIslemKoordinatorlugu;
           this.state.BashekimlikKisiListesi = value.BashekimlikKisiler;
-          let YonetimListesi = value.Yonetim;
+          this.state.YonetimListesi = value.Yonetim;
           let DahiliListesi = value.DahiliTıpBilimleri;
           let CerrahiListesi = value.CerrahiTipBilimleri;
           let TemelListesi = value.TemelTipBilimleri;
           let DigerTedaviListesi = value.DigerTedaviUniteleri;
-          
+        
+console.log (this.state.YonetimListesi[0].Kisiler)
           return (
             <nav
               className={
@@ -238,16 +245,22 @@ class Navigasyonbar extends Component {
                       }
                     >
                       <ul>
-                        {YonetimListesi.map((YonetimListesi, index) => {
+                        {this.state.YonetimListesi.map((YonetimListesi, index) => {
                           return (
                             <Link
-                              
-                            to={{
-                              pathname: `/Yonetim/${YonetimListesi.id} `,
-                              state: {
-                                BashekimlikKisiListesi:this.state.BashekimlikKisiListesi
-                              },
-                            }}
+                              onMouseEnter={() => {
+                                this.setState({
+                                  Baslik: YonetimListesi.Baslik,
+                                });
+                              }}
+                              to={{
+                                pathname: `/Yonetim/${YonetimListesi.id} `,
+                                state: {
+                                  Baslik: this.state.Baslik,
+                                  Gonderilenveriler:this.state.YonetimListesi[index].Kisiler
+
+                                },
+                              }}
                             >
                               <li>
                                 &nbsp;

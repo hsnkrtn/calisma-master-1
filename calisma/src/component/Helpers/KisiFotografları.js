@@ -1,109 +1,112 @@
-import ayhanakbal from "../Resimler/KısıFotografları/ayhanakbal.jpg"
-import aysealbay from "../Resimler/KısıFotografları/aysealbay.jpeg"
-import azperilioglu from "../Resimler/KısıFotografları/azperilioglu.jpg"
-import bashekim from "../Resimler/KısıFotografları/bashekim.jpg"
-import birginbidav from "../Resimler/KısıFotografları/birginbidav.jpg"
-import cevatgun from "../Resimler/KısıFotografları/cevatgun.jpg"
-import enginozkaya from "../Resimler/KısıFotografları/enginozkaya.jpg"
-import fatihfirdolas from "../Resimler/KısıFotografları/fatihfirdolas.jpg"
-import feritgunes from "../Resimler/KısıFotografları/feritgunes.jpg"
-import gokhanartas from "../Resimler/KısıFotografları/gokhanartas.jpg"
-import gulizarozturk from "../Resimler/KısıFotografları/gulizarozturk.jpg"
-import ibrahimaslan from "../Resimler/KısıFotografları/ibrahimaslan.jpg"
-import ilyasturk from "../Resimler/KısıFotografları/ilyasturk.jpeg"
-import ismaildemirel from "../Resimler/KısıFotografları/ismaildemirel.jpg"
-import meltemyildiz from "../Resimler/KısıFotografları/meltemyildiz.jpeg"
-import metincebeci from "../Resimler/KısıFotografları/metincebeci.jpg"
-import muratgonen from "../Resimler/KısıFotografları/muratgonen.jpg"
-import mustafayildiz from "../Resimler/KısıFotografları/mustafayildiz.jpeg"
-import nurcanince from "../Resimler/KısıFotografları/nurcanince.png"
-import selcenozkaya from "../Resimler/KısıFotografları/selcenozkaya.jpeg"
-import talatceylan from "../Resimler/KısıFotografları/talatceylan.jpg"
+import ayhanakbalfotografi from "../Resimler/KısıFotografları/ayhanakbal.jpg"
+import aysealbayfotografi from "../Resimler/KısıFotografları/aysealbay.jpeg"
+import azperilioglufotografi from "../Resimler/KısıFotografları/azperilioglu.jpg"
+import bashekimfotografi from "../Resimler/KısıFotografları/bashekim.jpg"
+import birginbidavfotografi from "../Resimler/KısıFotografları/birginbidav.jpg"
+import cevatgunfotografi from "../Resimler/KısıFotografları/cevatgun.jpg"
+import enginozkayafotografi from "../Resimler/KısıFotografları/enginozkaya.jpg"
+import fatihfirdolasfotografi from "../Resimler/KısıFotografları/fatihfirdolas.jpg"
+import feritgunesfotografi from "../Resimler/KısıFotografları/feritgunes.jpg"
+import gokhanartasfotografi from "../Resimler/KısıFotografları/gokhanartas.jpg"
+import gulizarozturkfotografi from "../Resimler/KısıFotografları/gulizarozturk.jpg"
+import ibrahimaslanfotografi from "../Resimler/KısıFotografları/ibrahimaslan.jpg"
+import ilyasturkfotografi from "../Resimler/KısıFotografları/ilyasturk.jpeg"
+import ismaildemirelfotografi from "../Resimler/KısıFotografları/ismaildemirel.jpg"
+import meltemyildizfotografi from "../Resimler/KısıFotografları/meltemyildiz.jpeg"
+import metincebecifotografi from "../Resimler/KısıFotografları/metincebeci.jpg"
+import muratgonenfotografi from "../Resimler/KısıFotografları/muratgonen.jpg"
+import mustafayildizfotografi from "../Resimler/KısıFotografları/mustafayildiz.jpeg"
+import nurcanincefotografi from "../Resimler/KısıFotografları/nurcanince.png"
+import selcenozkayafotografi from "../Resimler/KısıFotografları/selcenozkaya.jpeg"
+import talatceylanfotografi from "../Resimler/KısıFotografları/talatceylan.jpg"
+
+export const ayhanakbalfotografi;
+
 
 export const  HastaneKisiFotograflari = [
     {
-        Fotograf: ayhanakbal,
+        Fotograf: ayhanakbalfotografi,
 
     },
     {
-        Fotograf: aysealbay,
+        Fotograf: aysealbayfotografi,
 
     },
     {
-        Fotograf: azperilioglu,
+        Fotograf: azperilioglufotografi,
 
     },
     {
-        Fotograf: bashekim,
+        Fotograf: bashekimfotografi,
 
     },
     {
-        Fotograf: birginbidav,
+        Fotograf: birginbidavfotografi,
 
     },
     {
-        Fotograf: cevatgun,
+        Fotograf: cevatgunfotografi,
 
     },
     {
-        Fotograf: enginozkaya,
+        Fotograf: enginozkayafotografi,
 
     },
     {
-        Fotograf: fatihfirdolas,
+        Fotograf: fatihfirdolasfotografi,
 
     },
     {
-        Fotograf: feritgunes,
+        Fotograf: feritgunesfotografi,
 
     },
     {
-        Fotograf: gokhanartas,
+        Fotograf: gokhanartasfotografi,
 
     },
     {
-        Fotograf: gulizarozturk,
+        Fotograf: gulizarozturkfotografi,
 
     },
     {
-        Fotograf: ibrahimaslan,
+        Fotograf: ibrahimaslanfotografi,
 
     },
     {
-        Fotograf: ilyasturk,
+        Fotograf: ilyasturkfotografi,
 
     },
     {
-        Fotograf: ismaildemirel,
+        Fotograf: ismaildemirelfotografi,
 
     },
     {
-        Fotograf: meltemyildiz,
+        Fotograf: meltemyildizfotografi,
 
     },
     {
-        Fotograf: metincebeci,
+        Fotograf: metincebecifotografi,
 
     },
     {
-        Fotograf: muratgonen,
+        Fotograf: muratgonenfotografi,
 
     },
     {
-        Fotograf: mustafayildiz,
+        Fotograf: mustafayildizfotografi,
 
     },
     {
-        Fotograf: nurcanince,
+        Fotograf: nurcanincefotografi,
 
     },
     {
-        Fotograf: selcenozkaya,
+        Fotograf: selcenozkayafotografi,
 
     },
 
     {
-        Fotograf: talatceylan,
+        Fotograf: talatceylanfotografi,
 
     },
 

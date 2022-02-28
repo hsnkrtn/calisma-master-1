@@ -144,6 +144,9 @@ a:hover {
 .RouterYonetimSayfasiIcerik {
   width: 1000px;
 }
+.RouterYonetimSayfasiIcerik h1 {
+  color: #850432;
+}
 .YonetimCard {
   position: relative;
   border: solid 2px #4f647f;
@@ -182,6 +185,7 @@ color: #000;
   overflow-wrap: break-word;
 }
 .YonetimDetay h1 {
+  font-size: 16px;
   color: #850432;
 }
 .YonetimDetay h2 {
