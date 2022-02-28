@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import { HastaneFotograflari } from "./Helpers/HastaneResimlerData";
 
 function GenelTanitim(props) {
-  const fotograflar = HastaneFotograflari[7].a;
+  const fotograflar = HastaneFotograflari[5].a;
 
   const location = useLocation();
   const Baslik = location.state.Baslik;
