@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import fatihfirdolasfotografi from "../src/component/Resimler/KisiFotografları/fatihfirdolasfotografi.jpg";
 import ayhanakbalfotografi from "../src/component/Resimler/KisiFotografları/ayhanakbalfotografi.jpg";
-import aysealbayfotografi from "../src/component/Resimler/KisiFotografları/aysealbayfotografi.jpeg"
+import aysealbayfotografi from "../src/component/Resimler/KisiFotografları/aysealbayfotografi.jpeg";
 import azperilioglufotografi from "../src/component/Resimler/KisiFotografları/azperilioglufotografi.jpg";
 import bashekimfotografi from "../src/component/Resimler/KisiFotografları/bashekimfotografi.jpg";
 import birginbidavfotografi from "../src/component/Resimler/KisiFotografları/birginbidavfotografi.jpg";
@@ -162,12 +162,12 @@ export class ContextProvider extends Component {
           Kisiler: [
             {
               id: "1",
-              unvan: "Prof. Dr.",
+              unvan: "Başhekim Prof. Dr.",
               Adi: "İrfan KAYGUSUZ",
               Hakkinda:
                 "Elazığ’da 1967 yılında doğdu. 1991 yılında İstanbul Üniversitesi İstanbul Tıp Fakültesi’nden mezun oldu. 1994 Nisan dönemi Tıpta Uzmanlık Sınavını kazanarak Fırat Üniversitesi Tıp Fakültesi Kulak Burun Boğaz Anabilim Dalı’nda araştırma görevlisi olarak akademik hayatına başladı. 1998 yılında “Özefagus Koroziv Yanıklarının İyileşmesinde Interferon–alfa-2b ve Octreotide Etkinliği” adlı tez ile ihtisasını tamamladı ve Kulak Burun Boğaz Hastalıkları Uzmanı oldu. Daha sonra 1999 yılında aynı anabilim dalına yardımcı doçent doktor olarak atandı. 14.04.2004 tarihinde girdiği doçentlik sınavını başarı ile geçerek Doçent unvanını aldı. 18.09.2009 tarihinde Fırat Üniversitesi Tıp Fakültesi Kulak Burun Boğaz Anabilim Dalı’nda Profesör kadrosuna atandı. 13.09.2012 tarihinde Ağız Yüz ve Çene Cerrahisi Uzmanı unvanını aldı. 2018 yılından beri Türk Kulak Burun Boğaz ve Baş Boyun Cerrahisi Yeterlik Yürütme Kurulu Başkanlığı görevini sürdürmektedir. Bugüne kadar akademik ve idari olarak almış olduğu görevler; Fırat Üniversitesi Hastanesi Başhekimliği (2004–2008), F.Ü. Tıp Fakültesi KBB Anabilim Dalı Başkanlığı (2004–2007),F.Ü. Tıp Fakültesi Dekan Yardımcılığı (2004–2008),F.Ü. Tıp Fakültesi Yönetim Kurulu Üyeliği (2004–2012),F.Ü. Tıp Fakültesi Fakülte Kurulu Üyeliği (2009–2012/2018-……),F.Ü. Sağlık Bilimleri Enstitüsü Kurulu Üyeliği (2004–2007),F.Ü. Tıp Fakültesi Dönem III Eğitim Koordinatörlüğü (2017-2020),F.Ü. Tıp Fakültesi Eğitim Baş Koordinatörlüğü (2017-2020),F.Ü. Tıp Fakültesi Cerrahi Tıp Bilimleri Bölüm Başkanlığı (2018-….),Fırat Üniversitesi Hastanesi Yönetim Kurulu Üyeliği (2018-…..),F.Ü. Tıp Fakültesi Dekan Yardımcılığı (2020-2020),Türk KBB ve BBC Yeterlik Kurulu Eğitim Komisyonu Üyeliği (2008-2010) ve Başkanlığı (2010-2012),Türk KBB ve BBC Yeterlik Kurulu Akreditasyon Komisyonu Üyeliği (2014-2016) ve Başkanlığı (2016-2018),Türk KBB ve BBC Derneği Yönetim Kurulu Üyeliği (2016-2018),Türk KBB ve BBC Derneği Danışma Kurulu Üyeliği (2016-……),Fırat-Dicle Havzası KBB ve BBC Derneği Başkanlığı (2015-2018),Sağlık Bakanlığı Ağız, Yüz ve Çene Cerrahisi II. Dönem (2012-2013) ve III. Dönem (2014-…..) TUKMOS Komisyon Üyeliği görevlerinde bulunmuştur. Mesleği ile ilgili çok sayıda bilimsel dernek üyeliğine sahiptir. Ayrıca ülkemizde yayınlanan 10’ dan fazla derginin de danışma kurulu üyeliğini yapmaktadır. Halen Fırat Tıp Dergisi Editörlüğünü sürdürmektedir. Bugüne kadar ülkemizde düzenlenen 16 sempozyum, kongre veya kursta düzenleme komitesinde veya sekreteryasında; 47 kongre ve sempozyuma da ise moderatör, oturum başkanı, konuşmacı veya panelist olarak görev almıştır. Ayrıca 41 kongre ve sempozyuma da dinleyici olarak katılmıştır. Bu toplantılarda çok sayıda kurs düzenlemiştir. Bugüne kadar 10 doktora tezi yönetmiş ve ülkemizde yapılan farklı sempozyum ve kongrelerde 8 bilimsel çalışma ile (üçü birincilik) ödül almıştır. Ayrıca ülkemizde yayınlanan iki tıp dergisi tarafından da yılın en iyi bilimsel danışman (hakem) ödülüne layık görülmüştür. 58’i uluslararası, 93’ü ulusal olmak üzere toplam 151 bilimsel yayını (makale) ve 13’ü uluslararası, 93’ü ulusal olmak üzere 106 bilimsel bidirisi bulunmaktadır. Makalelerine bugüne kadar Web of Science portalında 636 atıf yapılmıştır. Kulak burun boğaz alanında yayınlanan 7 bilimsel kitapta bölüm yazarlığı ve yine bu alanda İngilizce olarak yayınlanan 5 bilimsel kitabın Türkçeye çevrilmesinde bölüm çeviriciliği bulunmaktadır. Halen Fırat Üniversitesi Tıp Fakültesi Kulak Burun Boğaz Anabilim Dalı’nda profesör doktor olarak çalışmaktadır. Yabancı dil olarak ingilizce bilmektedir. Evli ve iki çocuk babasıdır.",
-           Fotograf:bashekimfotografi,
-              },
+              Fotograf: bashekimfotografi,
+            },
             {
               id: "2",
               unvan: "Prof. Dr.",
@@ -182,24 +182,24 @@ export class ContextProvider extends Component {
               Adi: "İsmail DEMİREL",
               Hakkinda:
                 "1968 yılında doğdu. 1994 yılında Uludağ Üniversitesi Tıp Fakültesinden mezun oldu. 1994-1995 yılları arasında Kovancılar Çaybağı Sağlık Ocağında, 1995-1997 yılları arasında Kovancılar Sağlık Ocağında, 1997-2002 yılları arasında Elazığ Abdullahpaşa Sağlık Ocağında Pratisyen Doktor olarak görev yapmıştır. 2002-2007 yılında Fırat Üniversitesi Anesteziyoloji ve Reanimasyon Anabilim Dalında uzmanlık eğitimini tamamladı. 2007-2009 yılları arasında Elazığ Harput Devlet Hastanesinde, 2009-2011 yılları arasında Elazığ Eğitim ve Araştırma Hastanesinde Uzman Doktor olarak görev yapmıştır. 2011 yılında Fırat Üniversitesi Hastanesi Anesteziyoloji ve Reanimasyon Anabilim Dalı Başkanlığında Doktor Öğretim Üyesi olarak göreve başladı. 2015 yılından itibaren Doçentlik unvanını aldı. 2018 yılında Yoğun Bakımda yan dalını tamamladı. 2020 yılında Profesör unvanını aldı. Evli ve iki çocuk babasıdır.",
-                Fotograf: ismaildemirelfotografi,
-              },
+              Fotograf: ismaildemirelfotografi,
+            },
             {
               id: "4",
               unvan: "Doç. Dr.",
               Adi: "Gökhan ARTAŞ ",
               Hakkinda:
                 "1979 yılında Elazığ’ da doğdu. İlk, orta ve lise eğitimini Elazığ’ da tamamladı. 1997 yılında Fırat Üniversitesi Tıp Fakültesi’ ne girdi. 2003 yılında mezun oldu ve aynı yıl Elazığ Karakoçan ilçesine atandı. 2003-2004 yılları arasında İzmir Hava Lisan Okul Komutanlığı’nda askerlik hizmetini yaptı. 2004-2009 yılları arasında Karakoçan ilçesinde başhekim yardımcılığı, başhekimlik ve sağlık grup başkanlığı görevlerini icra etti. 2009 yılında Fırat Üniversitesi Hastanesi’ nde Patoloji Anabilim Dalı’ nda uzmanlık eğitime başlayıp 2013 senesinde Uzman unvanını aldı. 2018 yılında Doçentlik sınavını kazanarak doçent oldu. 100’ ün üzerinde uluslarası - ulusal makale ve bildirisi bulunmaktadır. İyi derecede İngilizce ve Almanca bilmektedir. Evli ve iki çocuk babasıdır.",
-                Fotograf: gokhanartasfotografi,
-              },
+              Fotograf: gokhanartasfotografi,
+            },
             {
               id: "5",
               unvan: "Doç. Dr.",
               Adi: "Murat GÖNEN ",
               Hakkinda:
                 "1972 yılında Elbistan’ da doğdu. İlk, orta ve lise eğitimini Elbistan’ da tamamladı. 1996 yılında Erciyes Üniversitesi Tıp Fakültesinden mezun oldu. 2000-2004 yılları arasında Fırat Üniversitesi Nöroloji Anabilim Dalında uzmanlık eğitimini tamamladı. 2004-2006 yılları arasında Sivas Devlet Hastanesinde mecburi hizmetini tamamladı. 2006-2013 yılında Elbistan Devlet Hastanesinde görev yaptı. 2007-2012 yılında Elbistan Devlet Hastanesinde Başhekimlik görevi yaptı. 2013 yılında Fırat Üniversitesi Hastanesi Nöroloji Anabilim Dalında Öğretim Üyesi olarak göreve başladı. 2020 yılından itibaren Fırat Üniversitesi Hastanesi Başhekim Yardımcısı olarak görevlendirildi. Ulusal ve uluslararası makale ve bildirileri bulunmakta olup evli ve üç çocuk babasıdır.  ",
-                Fotograf: muratgonenfotografi,
-              },
+              Fotograf: muratgonenfotografi,
+            },
           ],
         },
         { id: "2", Baslik: "Müdür ve Müdür Yardımcıları" },

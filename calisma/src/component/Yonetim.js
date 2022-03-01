@@ -1,12 +1,11 @@
 import React, { Component } from "react";
 import { useLocation } from "react-router-dom";
 
-
 function Yonetim(props) {
   const location = useLocation();
   const Gelenveriler = location.state.Gonderilenveriler;
   const Baslik = location.state.Baslik;
-  
+
   return (
     <div className="RouterSayfasi">
       <div className="RouterYonetimSayfasiIcerik">
@@ -15,13 +14,15 @@ function Yonetim(props) {
         <ul className="YonetimCards">
           {Gelenveriler.map((Gelenveriler, index) => {
             return (
-              <li class="cardyonetim"  style={{ backgroundImage: `url(${Gelenveriler.Fotograf})`,
-              backgroundSize: 'cover', 
-              backgroundRepeat: 'no-repeat',
-              backgroundPosition: 'center',
-             
-             
-             }}  >
+              <li
+                class="cardyonetim"
+                style={{
+                  backgroundImage: `url(${Gelenveriler.Fotograf})`,
+                  backgroundSize: "cover",
+                  backgroundRepeat: "no-repeat",
+                  backgroundPosition: "center",
+                }}
+              >
                 <div class="infoyonetim">
                   <h1 class="title">
                     {Gelenveriler.unvan} {Gelenveriler.Adi}{" "}
