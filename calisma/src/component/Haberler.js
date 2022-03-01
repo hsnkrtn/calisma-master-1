@@ -70,24 +70,17 @@ class Haberler extends Component {
                     (GosterilecekHaberlerson, index) => {
                       return (
                         <div
-                          className="Haber"
+                          class="Haber"
                           key={index}
                           id={GosterilecekHaberlerson.HaberId}
                         >
-                          <div className="Htarih">
-                            {" "}
-                            <p>Tarih</p>{" "}
+                          <div >
+                            <img class="Hfotograf"src={GosterilecekHaberlerson.HaberFotografi} />
                           </div>
-                          <img
-                            className="Hfotograf"
-                            src={GosterilecekHaberlerson.HaberFotografi}
-                          ></img>
-                          <h1 className="HBaslik">
-                            {GosterilecekHaberlerson.HaberBasligi}
-                          </h1>{" "}
-                          <p1 className="Hdetay">
-                            {GosterilecekHaberlerson.HaberDetayi}
-                          </p1>
+                          <div class="Haberbody">
+                            <h4>{GosterilecekHaberlerson.HaberBasligi}</h4>
+                            <p>{GosterilecekHaberlerson.HaberDetayi}</p>
+                          </div>
                         </div>
                       );
                     }
