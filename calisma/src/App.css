@@ -1470,6 +1470,7 @@ a:hover {
   }
   .RouterYonetimSayfasiIcerik li:first-child {
     width: 400px;
+    height: 500px;
 
     border-radius: 5px;
   }
