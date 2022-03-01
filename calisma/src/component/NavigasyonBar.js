@@ -64,9 +64,7 @@ class Navigasyonbar extends Component {
 
           console.log(this.state.YonetimListesi[0].Kisiler);
           return (
-            <nav
-              className="NavigasyonBar"
-            >
+            <nav className="NavigasyonBar">
               <div></div>
               <Link className="logolink" to={`/`}>
                 <img
@@ -79,14 +77,13 @@ class Navigasyonbar extends Component {
               <div className="Links" id={this.state.showLinks ? "hidden" : ""}>
                 <ul className="LinksList">
                   <div
+                    className="butonrengi"
                     onMouseLeave={() => {
                       this.setState({ showTanitimList: false });
                     }}
                   >
                     <li
-                      className={
-                        this.state.showTanitimList ? " butonrengi" : null
-                      }
+                      className="LinksListItem"
                       onMouseEnter={() => {
                         this.setState({ showTanitimList: true });
                       }}
@@ -151,14 +148,13 @@ class Navigasyonbar extends Component {
                   </div>
 
                   <div
+                    className="butonrengi"
                     onMouseLeave={() => {
                       this.setState({ showKurumsalList: false });
                     }}
                   >
                     <li
-                      className={
-                        this.state.showKurumsalList ? " butonrengi" : null
-                      }
+                      className="LinksListItem"
                       onMouseEnter={() => {
                         this.setState({ showKurumsalList: true });
                       }}
@@ -226,14 +222,13 @@ class Navigasyonbar extends Component {
                   </div>
 
                   <div
+                    className="butonrengi"
                     onMouseLeave={() => {
                       this.setState({ showYonetimList: false });
                     }}
                   >
                     <li
-                      className={
-                        this.state.showYonetimList ? " butonrengi" : null
-                      }
+                      className="LinksListItem"
                       onMouseEnter={() => {
                         this.setState({ showYonetimList: true });
                       }}
@@ -294,14 +289,13 @@ class Navigasyonbar extends Component {
                   </div>
 
                   <div
+                    className="butonrengi"
                     onMouseLeave={() => {
                       this.setState({ showBolumlerList: false });
                     }}
                   >
                     <li
-                      className={
-                        this.state.showBolumlerList ? " butonrengi" : null
-                      }
+                      className="LinksListItem"
                       onMouseEnter={() => {
                         this.setState({ showBolumlerList: true });
                       }}
@@ -520,21 +514,21 @@ class Navigasyonbar extends Component {
                       >
                         <span>
                           <i class="fa fa-reply"></i>
-                        </span>{" "}  
+                        </span>{" "}
                         &nbsp; Geri
                       </button>
                     </div>
                   </div>
 
                   {/* 
-                  <div
+                  <div  className="butonrengi"  
                     onMouseLeave={() => {
                       this.setState({ showDoktorlarList: false });
                     }}
                   >
                     <li
- className= {this.state.showDoktorlarList ? " butonrengi":null}
 
+              className="LinksListItem"
                       onMouseEnter={() => {
                         this.setState({ showDoktorlarList: true });
                       }}
@@ -674,16 +668,15 @@ class Navigasyonbar extends Component {
                       </div>
                     </div>
                   </div> */}
-                  <li className="btn-13 ">Doktorlar</li>
+                  <li className="LinksListItem ">Doktorlar</li>
                   <div
+                    className="butonrengi"
                     onMouseLeave={() => {
                       this.setState({ showIletisimItems: false });
                     }}
                   >
                     <li
-                      className={
-                        this.state.showIletisimItems ? " butonrengi" : null
-                      }
+                      className="LinksListItem"
                       onMouseEnter={() => {
                         this.setState({ showIletisimItems: true });
                       }}
