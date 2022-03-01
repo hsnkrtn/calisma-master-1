@@ -147,7 +147,7 @@ a:hover {
   width: 100%;
   min-height: 500px;
   height: fit-content;
-  background-color: rgb(250, 250, 250, 0.8);
+  background-color: rgb(250, 250, 250, 0.9);
 
   transform: translateY(100%) translateY(-70px) translateZ(0);
   transition: transform 0.5s ease-out;
@@ -163,6 +163,12 @@ a:hover {
   padding: 24px;
   font-size: 20px;
   line-height: 1;
+}
+.titlemetin {
+
+  margin-left: 20px;
+ margin-right: 20px;
+
 }
 
 .RouterYonetimSayfasiIcerik {
@@ -736,8 +742,8 @@ a:hover {
 .Hfotograf {
   z-index: 0;
   position: relative;
-  top: -30px;
-  height: 225px;
+  top: 0px;
+  height: 50%;
   width: 100%;
   border-radius: 5px 5px 0px 0px;
   transition: 0.3s ease-in-out;
@@ -772,14 +778,14 @@ a:hover {
 .Htarih {
   z-index: 1;
   position: relative;
-  bottom: 0px;
+  top: 50%;
   left: 50%;
   margin-left: -75px;
   height: 30px;
   width: 150px;
   background-color: #850432;
   color: #ffffff;
-  border-radius: 0px 0px 10px 10px;
+  border-radius: 10px 10px 0px 0px;
   display: flex;
   justify-content: center;
 }
@@ -990,6 +996,7 @@ a:hover {
 }
 .footerInner li {
   cursor: pointer;
+  text-shadow: 1px 0 0 black;
 }
 
 .footerInner li:hover {
@@ -1052,7 +1059,7 @@ a:hover {
     margin-left: -800px;
   }
 }
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1500px) {
   .Shadow {
     width: 1400px;
     margin-left: -700px;

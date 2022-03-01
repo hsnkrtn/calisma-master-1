@@ -62,17 +62,16 @@ class Navigasyonbar extends Component {
           let TemelListesi = value.TemelTipBilimleri;
           let DigerTedaviListesi = value.DigerTedaviUniteleri;
 
+          console.log(this.state.YonetimListesi[0].Kisiler);
           return (
             <nav
-              className=
-            "NavigasyonBar"
-            
+              className="NavigasyonBar"
             >
               <div></div>
               <Link className="logolink" to={`/`}>
                 <img
+                  className="brand"
                   title="Hastane Logo "
-              className="brand"
                   src={logo}
                   alt="Hastane Logo "
                 ></img>
@@ -189,7 +188,6 @@ class Navigasyonbar extends Component {
                                       this.state.KurumsalListesi[index]
                                         .Fotograf,
                                   });
-                                  console.log(this.state.Baslik);
                                 }}
                                 to={{
                                   pathname: `/GenelTanitim/Kurumsal/${KurumsalListesi.id} `,
@@ -522,7 +520,7 @@ class Navigasyonbar extends Component {
                       >
                         <span>
                           <i class="fa fa-reply"></i>
-                        </span>{" "}
+                        </span>{" "}  
                         &nbsp; Geri
                       </button>
                     </div>
@@ -535,7 +533,7 @@ class Navigasyonbar extends Component {
                     }}
                   >
                     <li
-                                                             className= {this.state.showDoktorlarList ? " butonrengi":null}
+ className= {this.state.showDoktorlarList ? " butonrengi":null}
 
                       onMouseEnter={() => {
                         this.setState({ showDoktorlarList: true });

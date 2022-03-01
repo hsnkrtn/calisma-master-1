@@ -27,7 +27,9 @@ function Yonetim(props) {
                   <h1 class="title">
                     {Gelenveriler.unvan} {Gelenveriler.Adi}{" "}
                   </h1>
-                  <p1> {Gelenveriler.Hakkinda} </p1>
+                  <div className="titlemetin">
+                    <p1 > {Gelenveriler.Hakkinda} </p1>
+                  </div>
                 </div>
               </li>
             );
