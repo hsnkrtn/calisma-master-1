@@ -62,18 +62,17 @@ class Navigasyonbar extends Component {
           let TemelListesi = value.TemelTipBilimleri;
           let DigerTedaviListesi = value.DigerTedaviUniteleri;
 
-          console.log(this.state.YonetimListesi[0].Kisiler);
           return (
             <nav
-              className={
-                this.state.showNavbar ? " Shadow   " : " NavigasyonBar  "
-              }
+              className=
+            "NavigasyonBar"
+            
             >
               <div></div>
               <Link className="logolink" to={`/`}>
                 <img
                   title="Hastane Logo "
-                  className={this.state.showNavbar ? "brand1" : "brand"}
+              className="brand"
                   src={logo}
                   alt="Hastane Logo "
                 ></img>
