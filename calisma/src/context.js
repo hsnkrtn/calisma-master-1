@@ -170,7 +170,7 @@ export class ContextProvider extends Component {
             },
             {
               id: "2",
-              unvan: "Prof. Dr.",
+              unvan: " Başhekim Yardımcısı Prof. Dr.",
               Adi: "Fatih FIRDOLAŞ",
               Hakkinda:
                 "1976 yılında Elazığ’ da doğdu. İlk, orta ve lise eğitimini Elazığ’ da tamamladı.2000 yılında Fırat Üniversitesi Tıp Fakültesinden mezun oldu.2000-2002 Van Askeri Hastanesinde Yedek Subay olarak görev yaptı.2002-2008 yılları arasında Fırat Üniversitesi Üroloji Anabilim Dalında uzmanlık eğitimini tamamladı. 2008-2009 yılları arasında Diyarbakır Bismil Devlet Hastanesinde mecburi hizmetini tamamladı.2009 yılında Fırat Üniversitesi Üroloji Anabilim Dalına Yardımcı Doçent olarak atandı. 2014 yılında Doçent unvanını, 2019 yılında ise Profesör unvanını aldı. 2015 yılından itibaren Fırat Üniversitesi Hastanesi Başhekim Yardımcısı olarak görevlendirildi. 2020 yılı içerisinde Fırat Üniversitesi Tıp Fakültesi Dekan Yardımcısı olarak görev yaptı. Ulusal ve uluslararası makale ve bildirileri bulunmakta olup evli ve iki çocuk babasıdır.        ",
@@ -178,7 +178,7 @@ export class ContextProvider extends Component {
             },
             {
               id: "3",
-              unvan: "Prof. Dr.",
+              unvan: "Başhekim Yardımcısı Prof. Dr.",
               Adi: "İsmail DEMİREL",
               Hakkinda:
                 "1968 yılında doğdu. 1994 yılında Uludağ Üniversitesi Tıp Fakültesinden mezun oldu. 1994-1995 yılları arasında Kovancılar Çaybağı Sağlık Ocağında, 1995-1997 yılları arasında Kovancılar Sağlık Ocağında, 1997-2002 yılları arasında Elazığ Abdullahpaşa Sağlık Ocağında Pratisyen Doktor olarak görev yapmıştır. 2002-2007 yılında Fırat Üniversitesi Anesteziyoloji ve Reanimasyon Anabilim Dalında uzmanlık eğitimini tamamladı. 2007-2009 yılları arasında Elazığ Harput Devlet Hastanesinde, 2009-2011 yılları arasında Elazığ Eğitim ve Araştırma Hastanesinde Uzman Doktor olarak görev yapmıştır. 2011 yılında Fırat Üniversitesi Hastanesi Anesteziyoloji ve Reanimasyon Anabilim Dalı Başkanlığında Doktor Öğretim Üyesi olarak göreve başladı. 2015 yılından itibaren Doçentlik unvanını aldı. 2018 yılında Yoğun Bakımda yan dalını tamamladı. 2020 yılında Profesör unvanını aldı. Evli ve iki çocuk babasıdır.",
@@ -186,7 +186,7 @@ export class ContextProvider extends Component {
             },
             {
               id: "4",
-              unvan: "Doç. Dr.",
+              unvan: "Başhekim Yardımcısı Doç. Dr.",
               Adi: "Gökhan ARTAŞ ",
               Hakkinda:
                 "1979 yılında Elazığ’ da doğdu. İlk, orta ve lise eğitimini Elazığ’ da tamamladı. 1997 yılında Fırat Üniversitesi Tıp Fakültesi’ ne girdi. 2003 yılında mezun oldu ve aynı yıl Elazığ Karakoçan ilçesine atandı. 2003-2004 yılları arasında İzmir Hava Lisan Okul Komutanlığı’nda askerlik hizmetini yaptı. 2004-2009 yılları arasında Karakoçan ilçesinde başhekim yardımcılığı, başhekimlik ve sağlık grup başkanlığı görevlerini icra etti. 2009 yılında Fırat Üniversitesi Hastanesi’ nde Patoloji Anabilim Dalı’ nda uzmanlık eğitime başlayıp 2013 senesinde Uzman unvanını aldı. 2018 yılında Doçentlik sınavını kazanarak doçent oldu. 100’ ün üzerinde uluslarası - ulusal makale ve bildirisi bulunmaktadır. İyi derecede İngilizce ve Almanca bilmektedir. Evli ve iki çocuk babasıdır.",
@@ -202,61 +202,140 @@ export class ContextProvider extends Component {
             },
           ],
         },
-        { id: "2", Baslik: "Müdür ve Müdür Yardımcıları" },
-        { id: "3", Baslik: "Bilgi İşlem Koordinatörlüğü" },
-        { id: "4", Baslik: "Hemşirelik Hizmetleri" },
-        { id: "5", Baslik: "Organizasyon Şeması" },
-      ],
-
-      Mudurler: [
-        { id: "1", unvan: "Başmüdür", Adi: "İlyas TÜRK" },
-        { id: "2", unvan: "Müdür", Adi: "Metin CEBECİ" },
-        { id: "3", unvan: "Müdür Yardımcısı", Adi: "Talet CEYLAN" },
-        { id: "4", unvan: "İnsan Kaynakları Müdürü", Adi: "Birgin BİDAV " },
-        { id: "5", unvan: "Müdür Yardımcısı", Adi: "Ahmet Zafer PERİLİOĞLU " },
-        { id: "6", unvan: "Müdür Yardımcısı", Adi: "Ayşe BALBAN" },
-        { id: "7", unvan: "Müdür Yardımcısı", Adi: "Cevat GÜN " },
-        { id: "8", unvan: "Müdür Yardımcısı", Adi: "Engin ÖZKAYA " },
-        { id: "9", unvan: "Müdür Yardımcısı", Adi: "Ferit GÜNEŞ" },
-        { id: "10", unvan: "Müdür Yardımcısı", Adi: "İbrahim ASLAN" },
-      ],
-      Hemsirelik: [
-        { id: "1", unvan: "Başhemşire", Adi: "Nurcan İNCE" },
         {
           id: "2",
-          unvan: "Hemşirelik Hizmetleri Müdürü",
-          Adi: "Gülizar ÖZTÜRK",
+          Baslik: "Müdür ve Müdür Yardımcıları",
+          Kisiler: [
+            {
+              id: "1",
+              unvan: "Başmüdür",
+              Adi: "İlyas TÜRK",
+              Hakkinda:
+                "1972 yılında Elazığ’ da doğdu. İlk, orta ve lise eğitimini Elazığ’ da tamamladı. 1995 yılında Fırat Üniversitesi Hastanesinde Memur olarak göreve başladı. 2000 yılında Anadolu Üniversitesi İktisat Fakültesi Kamu Yönetimi bölümünden mezun oldu. 2006-2010 yılları arasında hastanede Gece İdarecisi olarak görev yaptı. 2010-2012 yılları arasında Hastane Müdür Yardımcısı olarak görevlendirildi. 2012 yılında Hastane Müdürü unvanını aldı. 2014 yılında Fırat Üniversitesi Sosyal Bilimler Enstitüsü Sağlık Kurumları İşletmeciliğinde yüksek lisansını tamamladı. 2014 yılından itibaren Kalite Koordinatörlüğü yapmaya başladı. 2020 yılında Üniversite Hastaneleri Başmüdürü unvanını almış olup evli ve üç çocuk babasıdır.",
+              Fotograf: ilyasturkfotografi,
+            },
+            {
+              id: "2",
+              unvan: "Müdür",
+              Adi: "Metin CEBECİ",
+              Hakkinda: "",
+              Fotograf: metincebecifotografi,
+            },
+            {
+              id: "3",
+              unvan: "Müdür",
+              Adi: "Talet CEYLAN",
+              Hakkinda: "",
+              Fotograf: talatceylanfotografi,
+            },
+            {
+              id: "4",
+              unvan: "İnsan Kaynakları Müdürü",
+              Adi: "Birgin BİDAV",
+              Hakkinda: "",
+              Fotograf: birginbidavfotografi,
+            },
+            {
+              id: "5",
+              unvan: "Müdür Yardımcısı",
+              Adi: "Ahmet Zafer PERİLİOĞLU ",
+              Hakkinda: "",
+              Fotograf: azperilioglufotografi,
+            },
+            {
+              id: "6",
+              unvan: "Müdür Yardımcısı",
+              Adi: "Ayşe ALBAY ",
+              Hakkinda: "",
+              Fotograf: aysealbayfotografi,
+            },
+            {
+              id: "7",
+              unvan: "Müdür Yardımcısı",
+              Adi: "Cevat GÜN ",
+              Hakkinda: "",
+              Fotograf: cevatgunfotografi,
+            },
+            {
+              id: "8",
+              unvan: "Müdür Yardımcısı",
+              Adi: "Engin ÖZKAYA ",
+              Hakkinda: "",
+              Fotograf: enginozkayafotografi,
+            },
+            {
+              id: "9",
+              unvan: "Müdür Yardımcısı",
+              Adi: "Ferit GÜNEŞ",
+              Hakkinda: "",
+              Fotograf: feritgunesfotografi,
+            },
+            {
+              id: "10",
+              unvan: "Müdür Yardımcısı",
+              Adi: "İbrahim ASLAN",
+              Hakkinda: "",
+              Fotograf: ibrahimaslanfotografi,
+            },
+          ],
         },
         {
           id: "3",
-          unvan: "Hemşirelik Hizmetleri Müdür Yardımcısı",
-          Adi: "Meltem YILDIZ",
+          Baslik: "Bilgi İşlem Koordinatörlüğü",
+          Kisiler: [
+            {
+              id: "1",
+              unvan: "Bilgi İşlem Koordinatörü Yardımcı Doçent Doktor",
+              Adi: "Ayhan AKBAL",
+              Hakkinda:
+                "1977 yılında Elazığ’da doğdu. 1999 yılında Fırat Üniversitesi Elektrik-Elektronik Mühendisliğinden mezun oldu. Aynı yıl İstanbul’da Bilişim Sektöründe çeşitli firmalarda çalıştı. Aynı zamanda Fırat Üniversitesi Elektrik-Elektronik Mühendisliği Telekomünikasyon Anabilim Dalında Yüksek Lisansa başladı. 2001 yılında Elektrik-Elektronik Mühendisliğinde Araştırma Görevlisi olarak göreve başladı. 2003 yılında Yüksek Lisansını tamamlayarak Doktoraya başladı. Bu süreçte Fırat Üniversitesi Bilgi İşlem Daire Başkanlığında Başkan Yardımcısı görevine başlayarak , Enformatik Bölüm Başkan Yardımcılığını, Fırat Üniversitesi Eğitim Genel Koordinatörlüğü, Network Management (Sistem Yöneticisi, ECDL Test Sorumlusu, Bilgi İşlem Dairesinin ( yazılım geliştirme, arıza giderme, sistem konfigürasyonu vs gibi) görevlerini yaptı. 2008 yılında Telekomünikasyon Anabilim Dalında Doktorasını tamamlayarak, Öğretim Üyesi olarak atandı. Aynı yıl Fırat Üniversitesi Hastanesi Bilgi İşlem ve Kalite Koordinatörü olarak atandı. Aynı zamanda Elektrik-Elektronik Mühendisliği Telekomünikasyon Anabilim Dalı Başkanı olarak ta atandı. Alanında birçok altyapı projesi gerçekleştirdi. Bir çok uluslararası ve ulusal konferansta projelerini ve çalışmalarını sundu.",
+              Fotograf: ayhanakbalfotografi,
+            },
+          ],
         },
-        {
-          id: "4",
-          unvan: "Hemşirelik Hizmetleri Müdür Yardımcısı",
-          Adi: "Mustafa YILDIZ ",
-        },
-        {
-          id: "5",
-          unvan: "Hemşirelik Hizmetleri Müdür Yardımcısı",
-          Adi: "Selcen ÖZKAYA ",
-        },
+        { id: "4", Baslik: "Hemşirelik Hizmetleri",  Kisiler: [
+          {
+            id: "1",
+            unvan: "Başhemşire",
+            Adi: "Nurcan İNCE",
+            Hakkinda:
+"",            Fotograf:nurcanincefotografi,
+          },
+          {
+            id: "2",
+            unvan: "Başhemşirelik Hizmetleri Müdür",
+            Adi: "Gülizar ÖZTÜRK",
+            Hakkinda: "",
+            Fotograf: gulizarozturkfotografi,
+          },
+          {
+            id: "3",
+            unvan: "Başhemşirelik Hizmetleri Müdür Yardımcısı",
+            Adi: "Meltem YILDIZ",
+            Hakkinda: "",
+            Fotograf: meltemyildizfotografi,
+          },
+          {
+            id: "4",
+            unvan: "Başhemşirelik Hizmetleri Müdür Yardımcısı",
+            Adi: "Mustafa YILDIZ",
+            Hakkinda: "",
+            Fotograf: mustafayildizfotografi,
+          },
+          {
+            id: "5",
+            unvan: "Başhemşirelik Hizmetleri Müdür Yardımcısı",
+            Adi: "Selcen ÖZKAYA",
+            Hakkinda: "",
+            Fotograf: selcenozkayafotografi,
+          },
+          
+        ], },
+        { id: "5", Baslik: "Organizasyon Şeması" },
       ],
-      BilgiIslemKoordinatorlugu: [
-        {
-          id: "1",
-          unvan: "Bilgi Işlem Koordinatörü",
-          Adi: "Ayhan AKBAL",
-          Hakkinda:
-            " 1977 yılında Elazığ’da doğdu. 1999 yılında Fırat Üniversitesi Elektrik-Elektronik Mühendisliğinden mezun oldu. Aynı yıl İstanbul’da Bilişim Sektöründe çeşitli firmalarda çalıştı. Aynı zamanda Fırat Üniversitesi Elektrik-Elektronik Mühendisliği Telekomünikasyon Anabilim Dalında Yüksek Lisansa başladı. 2001 yılında Elektrik-Elektronik Mühendisliğinde Araştırma Görevlisi olarak göreve başladı. 2003 yılında Yüksek Lisansını tamamlayarak Doktoraya başladı. Bu süreçte Fırat Üniversitesi Bilgi İşlem Daire Başkanlığında Başkan Yardımcısı görevine başlayarak , Enformatik Bölüm Başkan Yardımcılığını, Fırat Üniversitesi Eğitim Genel Koordinatörlüğü, Network Management (Sistem Yöneticisi, ECDL Test Sorumlusu, Bilgi İşlem Dairesinin ( yazılım geliştirme, arıza giderme, sistem konfigürasyonu vs gibi) görevlerini yaptı. 2008 yılında Telekomünikasyon Anabilim Dalında Doktorasını tamamlayarak, Öğretim Üyesi olarak atandı. Aynı yıl Fırat Üniversitesi Hastanesi Bilgi İşlem ve Kalite Koordinatörü olarak atandı. Aynı zamanda Elektrik-Elektronik Mühendisliği Telekomünikasyon Anabilim Dalı Başkanı olarak ta atandı. Alanında birçok altyapı projesi gerçekleştirdi. Bir çok uluslararası ve ulusal konferansta projelerini ve çalışmalarını sundu.",
-        },
-        {
-          id: "2",
-          unvan: "Bilgi Işlem Koordinatör Yardımcısı",
-          Adi: "Kürşat SALMAN",
-        },
-      ],
+
+   
+
 
       Haberler: [
         {
