@@ -20,6 +20,13 @@ import mustafayildizfotografi from "../src/component/Resimler/KisiFotografları/
 import nurcanincefotografi from "../src/component/Resimler/KisiFotografları/nurcanincefotografi.png";
 import selcenozkayafotografi from "../src/component/Resimler/KisiFotografları/selcenozkayafotografi.jpeg";
 import talatceylanfotografi from "../src/component/Resimler/KisiFotografları/talatceylanfotografi.jpg";
+//doktorlarfotograflari
+import evrimgul from "../src/component/Resimler/DoktorlarFotograflari/evrimgul.jpg"
+import mehmetcagrigoktekin from "../src/component/Resimler/DoktorlarFotograflari/mehmetcagrigoktekin.jpg"
+import mustafayilmaz from "../src/component/Resimler/DoktorlarFotograflari/mustafayilmaz.jpg"
+import mehtapgurger from "../src/component/Resimler/DoktorlarFotograflari/mehtapgurger.jpg"
+import metinatescelik from "../src/component/Resimler/DoktorlarFotograflari/metinatescelik.jpg"
+
 
 const DataContext = React.createContext();
 
@@ -102,59 +109,96 @@ export class ContextProvider extends Component {
         },
       ],
       //Bolumler
-      DahiliTıpBilimleri: [
-        { Baslik: "Acil Tıp Anabilim Dalı  " },
-        { Baslik: "Adli Tıp Anabilim Dalı  " },
-        { Baslik: "Aile Hekimliği Anabilim Dalı " },
-        { Baslik: "Çocuk Sağlığı ve Hastalıkları Anabilim Dalı " },
+      Bolumler: [
         {
-          Baslik: "Çocuk ve Ergen Ruh Sağlığı Hastalıkları Anabilim Dalı ",
+          DahiliTıpBilimleri: [
+            {
+              BolumAdi: "Acil Tıp Anabilim Dalı  ",
+              Detay:"detaylarrrr",
+              Doktorlar: [
+                {
+                  unvan: "Doç.Dr.",
+                  Adi: "Mustafa YILMAZ",
+                  Fotograf:mustafayilmaz,
+                },
+                {
+                  unvan: "Doç.Dr.",
+                  Adi: "Mehtap GÜRGER",
+                  Fotograf:mehtapgurger,
+                },
+                {
+                  unvan: "Doç.Dr.",
+                  Adi: "Metin ATEŞÇELİK",
+                  Fotograf:metinatescelik,
+                },
+                {
+                  unvan: "Doç.Dr.",
+                  Adi: "Mehmet Çağrı GÖKTEKİN",
+                  Fotograf:mehmetcagrigoktekin,
+                },
+                {
+                  unvan: "Doç.Dr.",
+                  Adi: "Evrim GÜL",
+                  Fotograf:evrimgul
+                },
+            
+              ],
+            },
+            { BolumAdi: "Adli Tıp Anabilim Dalı  " },
+            { BolumAdi: "Aile Hekimliği Anabilim Dalı " },
+            { BolumAdi: "Çocuk Sağlığı ve Hastalıkları Anabilim Dalı " },
+            {
+              BolumAdi:
+                "Çocuk ve Ergen Ruh Sağlığı Hastalıkları Anabilim Dalı ",
+            },
+            { BolumAdi: "Dermatoloji Anabilim Dalı " },
+            { BolumAdi: "Enfeksiyon Hastalıkları Anabilim Dalı  " },
+            { BolumAdi: "Fiziksel Tıp ve Rehabilitasyon Anabilim Dalı  " },
+            { BolumAdi: "Göğüs Hastalıkları Anabilim Dalı  " },
+            { BolumAdi: "Halk Sağlığı Anabilim Dalı " },
+            { BolumAdi: "İç Hastalıkları Anabilim Dalı " },
+            { BolumAdi: "Kardiyoloji Anabilim Dalı  " },
+            { BolumAdi: "Nörolojii Anabilim Dalı " },
+            { BolumAdi: "Nükleer Tıp Anabilim Dalı " },
+            { BolumAdi: " Psikiyatri Anabilim Dalı" },
+            { BolumAdi: "Radyasyon Onkolojisi Anabilim Dalı" },
+            { BolumAdi: "Radyodiagnostik Anabilim Dalı  " },
+            {
+              BolumAdi:
+                "Tıbbi Genetik Anabilim Dalı - Genetik Hastalıklar Değerlendirme Merkezi",
+            },
+          ],
+          CerrahiTipBilimleri: [
+            { BolumAdi: "Anesteziyoloji ve Reanimasyon Anabilim Dalı  " },
+            { BolumAdi: "Beyin Cerrahisi Anabilim Dalı   " },
+            { BolumAdi: "Çocuk Cerrahisi Anabilim Dalı " },
+            { BolumAdi: "Genel Cerrahi Anabilim Dalı  " },
+            { BolumAdi: "Göğüs Cerrahisi Anabilim Dalı  " },
+            { BolumAdi: "Göz Hastalıkları Anabilim Dalı  " },
+            { BolumAdi: "Kadın Hastalıkları ve Doğum Anabilim Dalı " },
+            { BolumAdi: "Kalp-Damar Cerrahisi Anabilim Dalı " },
+            { BolumAdi: "Kulak Burun Boğaz Hastalıkları Anabilim Dalı   " },
+            { BolumAdi: "Ortopedi ve Travmatoloji Anabilim Dalı   " },
+            { BolumAdi: "Patoloji Anabilim Dalı  " },
+            { BolumAdi: "Plastik ve Rekonstrüktif Cerrahi Anabilim Dalı  " },
+            { BolumAdi: "Üroloji Anabilim Dalı " },
+          ],
+          TemelTipBilimleri: [
+            { BolumAdi: "Biyokimya Anabilim Dalı  " },
+            { BolumAdi: "İmmünoloji Anabilim Dalı " },
+            {
+              BolumAdi: "Mikrobiyoloji ve Klinik Mikrobiyoloji Anabilim Dalı ",
+            },
+            { BolumAdi: "Parazitoloji Anabilim Dalı  " },
+            { BolumAdi: "Tıbbi Biyoloji Anabilim Dalı" },
+          ],
+          DigerTedaviUniteleri: [
+            {
+              BolumAdi: "Geleneksel ve Tamamlayıcı Tıp Uygulama Merkezi(GETAT)",
+            },
+          ],
         },
-        { Baslik: "Dermatoloji Anabilim Dalı " },
-        { Baslik: "Enfeksiyon Hastalıkları Anabilim Dalı  " },
-        { Baslik: "Fiziksel Tıp ve Rehabilitasyon Anabilim Dalı  " },
-        { Baslik: "Göğüs Hastalıkları Anabilim Dalı  " },
-        { Baslik: "Halk Sağlığı Anabilim Dalı " },
-        { Baslik: "İç Hastalıkları Anabilim Dalı " },
-        { Baslik: "Kardiyoloji Anabilim Dalı  " },
-        { Baslik: "Nörolojii Anabilim Dalı " },
-        { Baslik: "Nükleer Tıp Anabilim Dalı " },
-        { Baslik: " Psikiyatri Anabilim Dalı" },
-        { Baslik: "Radyasyon Onkolojisi Anabilim Dalı" },
-        { Baslik: "Radyodiagnostik Anabilim Dalı  " },
-        {
-          Baslik:
-            "Tıbbi Genetik Anabilim Dalı - Genetik Hastalıklar Değerlendirme Merkezi",
-        },
       ],
-      CerrahiTipBilimleri: [
-        { Baslik: "Anesteziyoloji ve Reanimasyon Anabilim Dalı  " },
-        { Baslik: "Beyin Cerrahisi Anabilim Dalı   " },
-        { Baslik: "Çocuk Cerrahisi Anabilim Dalı " },
-        { Baslik: "Genel Cerrahi Anabilim Dalı  " },
-        { Baslik: "Göğüs Cerrahisi Anabilim Dalı  " },
-        { Baslik: "Göz Hastalıkları Anabilim Dalı  " },
-        { Baslik: "Kadın Hastalıkları ve Doğum Anabilim Dalı " },
-        { Baslik: "Kalp-Damar Cerrahisi Anabilim Dalı " },
-        { Baslik: "Kulak Burun Boğaz Hastalıkları Anabilim Dalı   " },
-        { Baslik: "Ortopedi ve Travmatoloji Anabilim Dalı   " },
-        { Baslik: "Patoloji Anabilim Dalı  " },
-        { Baslik: "Plastik ve Rekonstrüktif Cerrahi Anabilim Dalı  " },
-        { Baslik: "Üroloji Anabilim Dalı " },
-      ],
-      TemelTipBilimleri: [
-        { Baslik: "Biyokimya Anabilim Dalı  " },
-        { Baslik: "İmmünoloji Anabilim Dalı " },
-        { Baslik: "Mikrobiyoloji ve Klinik Mikrobiyoloji Anabilim Dalı " },
-        { Baslik: "Parazitoloji Anabilim Dalı  " },
-        { Baslik: "Tıbbi Biyoloji Anabilim Dalı" },
-      ],
-      DigerTedaviUniteleri: [
-        {
-          Baslik: "Geleneksel ve Tamamlayıcı Tıp Uygulama Merkezi(GETAT)",
-        },
-      ],
-
       Yonetim: [
         {
           id: "1",
@@ -293,49 +337,49 @@ export class ContextProvider extends Component {
             },
           ],
         },
-        { id: "4", Baslik: "Hemşirelik Hizmetleri",  Kisiler: [
-          {
-            id: "1",
-            unvan: "Başhemşire",
-            Adi: "Nurcan İNCE",
-            Hakkinda:
-"",            Fotograf:nurcanincefotografi,
-          },
-          {
-            id: "2",
-            unvan: "Başhemşirelik Hizmetleri Müdür",
-            Adi: "Gülizar ÖZTÜRK",
-            Hakkinda: "",
-            Fotograf: gulizarozturkfotografi,
-          },
-          {
-            id: "3",
-            unvan: "Başhemşirelik Hizmetleri Müdür Yardımcısı",
-            Adi: "Meltem YILDIZ",
-            Hakkinda: "",
-            Fotograf: meltemyildizfotografi,
-          },
-          {
-            id: "4",
-            unvan: "Başhemşirelik Hizmetleri Müdür Yardımcısı",
-            Adi: "Mustafa YILDIZ",
-            Hakkinda: "",
-            Fotograf: mustafayildizfotografi,
-          },
-          {
-            id: "5",
-            unvan: "Başhemşirelik Hizmetleri Müdür Yardımcısı",
-            Adi: "Selcen ÖZKAYA",
-            Hakkinda: "",
-            Fotograf: selcenozkayafotografi,
-          },
-          
-        ], },
+        {
+          id: "4",
+          Baslik: "Hemşirelik Hizmetleri",
+          Kisiler: [
+            {
+              id: "1",
+              unvan: "Başhemşire",
+              Adi: "Nurcan İNCE",
+              Hakkinda: "",
+              Fotograf: nurcanincefotografi,
+            },
+            {
+              id: "2",
+              unvan: "Başhemşirelik Hizmetleri Müdür",
+              Adi: "Gülizar ÖZTÜRK",
+              Hakkinda: "",
+              Fotograf: gulizarozturkfotografi,
+            },
+            {
+              id: "3",
+              unvan: "Başhemşirelik Hizmetleri Müdür Yardımcısı",
+              Adi: "Meltem YILDIZ",
+              Hakkinda: "",
+              Fotograf: meltemyildizfotografi,
+            },
+            {
+              id: "4",
+              unvan: "Başhemşirelik Hizmetleri Müdür Yardımcısı",
+              Adi: "Mustafa YILDIZ",
+              Hakkinda: "",
+              Fotograf: mustafayildizfotografi,
+            },
+            {
+              id: "5",
+              unvan: "Başhemşirelik Hizmetleri Müdür Yardımcısı",
+              Adi: "Selcen ÖZKAYA",
+              Hakkinda: "",
+              Fotograf: selcenozkayafotografi,
+            },
+          ],
+        },
         { id: "5", Baslik: "Organizasyon Şeması" },
       ],
-
-   
-
 
       Haberler: [
         {
