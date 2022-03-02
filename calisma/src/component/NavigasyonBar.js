@@ -24,6 +24,11 @@ class Navigasyonbar extends Component {
       KurumsalListesi: [],
       YonetimListesi: [],
       BolumlerListesi: [],
+      DahiliListesi: [],
+      CerrahiListesi: [],
+      TemelListesi: [],
+      DigerTedaviListesi: [],
+
       BilgiIslemKoordinatorlugu: [],
       Hemsirelik: [],
       Mudurler: [],
@@ -64,7 +69,8 @@ class Navigasyonbar extends Component {
           this.state.DahiliListesi = value.Bolumler[0].DahiliTıpBilimleri;
           this.state.CerrahiListesi = value.Bolumler[0].CerrahiTipBilimleri;
           this.state.TemelListesi = value.Bolumler[0].TemelTipBilimleri;
-          this.state.DigerTedaviListesi = value.Bolumler[0].DigerTedaviUniteleri;
+          this.state.DigerTedaviListesi =
+            value.Bolumler[0].DigerTedaviUniteleri;
 
           console.log(this.state.TemelListesi);
           return (
@@ -340,16 +346,12 @@ class Navigasyonbar extends Component {
                               (DahiliListesi, index) => {
                                 return (
                                   <Link
-                                    onMouseEnter={() => {
-                                      this.setState({
-                                        Baslik: this.state.DahiliListesi.Baslik,
-                                      });
-                                    }}
                                     to={{
                                       pathname: `/Bolumler/${DahiliListesi.id} `,
                                       state: {
                                         Baslik: this.state.Baslik,
-                                        Gonderilenveriler: DahiliListesi[index],
+                                        Gonderilenveriler:
+                                          this.state.DahiliListesi[index],
                                       },
                                     }}
                                   >
@@ -405,27 +407,23 @@ class Navigasyonbar extends Component {
                               (CerrahiListesi, index) => {
                                 return (
                                   <Link
-                                  onMouseEnter={() => {
-                                    this.setState({
-                                      Baslik: this.state.CerrahiListesi.Baslik,
-                                    });
-                                  }}
-                                  to={{
-                                    pathname: `/Bolumler/${CerrahiListesi.id} `,
-                                    state: {
-                                      Baslik: this.state.Baslik,
-                                      Gonderilenveriler: CerrahiListesi[index],
-                                    },
-                                  }}
-                                >
-                                  <li>
-                                    &nbsp;
-                                    <span>
-                                      <i className="fa fa-chevron-right"></i>
-                                    </span>
-                                    &nbsp;
-                                    {CerrahiListesi.BolumAdi}
-                                  </li>
+                                    to={{
+                                      pathname: `/Bolumler/${CerrahiListesi.id} `,
+                                      state: {
+                                        Baslik: this.state.Baslik,
+                                        Gonderilenveriler:
+                                          this.state.CerrahiListesi[index],
+                                      },
+                                    }}
+                                  >
+                                    <li>
+                                      &nbsp;
+                                      <span>
+                                        <i className="fa fa-chevron-right"></i>
+                                      </span>
+                                      &nbsp;
+                                      {CerrahiListesi.BolumAdi}
+                                    </li>
                                   </Link>
                                 );
                               }
@@ -471,27 +469,23 @@ class Navigasyonbar extends Component {
                               (TemelListesi, index) => {
                                 return (
                                   <Link
-                                  onMouseEnter={() => {
-                                    this.setState({
-                                      Baslik: this.state.TemelListesi.Baslik,
-                                    });
-                                  }}
-                                  to={{
-                                    pathname: `/Bolumler/${TemelListesi.id} `,
-                                    state: {
-                                      Baslik: this.state.Baslik,
-                                      Gonderilenveriler: TemelListesi[index],
-                                    },
-                                  }}
-                                >
-                                  <li>
-                                    &nbsp;
-                                    <span>
-                                      <i className="fa fa-chevron-right"></i>
-                                    </span>
-                                    &nbsp;
-                                    {TemelListesi.BolumAdi}
-                                  </li>
+                                    to={{
+                                      pathname: `/Bolumler/${TemelListesi.id} `,
+                                      state: {
+                                        Baslik: this.state.Baslik,
+                                        Gonderilenveriler:
+                                          this.state.TemelListesi[index],
+                                      },
+                                    }}
+                                  >
+                                    <li>
+                                      &nbsp;
+                                      <span>
+                                        <i className="fa fa-chevron-right"></i>
+                                      </span>
+                                      &nbsp;
+                                      {TemelListesi.BolumAdi}
+                                    </li>
                                   </Link>
                                 );
                               }
@@ -536,27 +530,23 @@ class Navigasyonbar extends Component {
                               (DigerTedaviListesi, index) => {
                                 return (
                                   <Link
-                                  onMouseEnter={() => {
-                                    this.setState({
-                                      Baslik: this.state.DigerTedaviListesi.Baslik,
-                                    });
-                                  }}
-                                  to={{
-                                    pathname: `/Bolumler/${DigerTedaviListesi.id} `,
-                                    state: {
-                                      Baslik: this.state.Baslik,
-                                      Gonderilenveriler: DigerTedaviListesi[index],
-                                    },
-                                  }}
-                                >
-                                  <li>
-                                    &nbsp;
-                                    <span>
-                                      <i className="fa fa-chevron-right"></i>
-                                    </span>
-                                    &nbsp;
-                                    {DigerTedaviListesi.BolumAdi}
-                                  </li>
+                                    to={{
+                                      pathname: `/Bolumler/${DigerTedaviListesi.id} `,
+                                      state: {
+                                        Baslik: this.state.Baslik,
+                                        Gonderilenveriler:
+                                          this.state.DigerTedaviListesi[index],
+                                      },
+                                    }}
+                                  >
+                                    <li>
+                                      &nbsp;
+                                      <span>
+                                        <i className="fa fa-chevron-right"></i>
+                                      </span>
+                                      &nbsp;
+                                      {DigerTedaviListesi.BolumAdi}
+                                    </li>
                                   </Link>
                                 );
                               }

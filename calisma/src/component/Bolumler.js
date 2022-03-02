@@ -6,17 +6,16 @@ function Bolumler(props) {
   const fotograflar = HastaneFotograflari[5].a;
 
   const location = useLocation();
-  const Baslik = location.state.Baslik;
-  const Detay = location.state.Detay;
-console.log(Detay)
+  const Gonderilenveriler = location.state.Gonderilenveriler;
+const Baslik=  Gonderilenveriler.BolumAdi;
   return (
     <div className="RouterSayfasi">
       <div className="RouterSayfasiIcerik">
         <img className="RouterSayfasiFotograf" src={fotograflar}></img>
         <section  className="RouterSayfasiDetay" > 
-          <h1> {Baslik}</h1>
+          <h1>{Baslik}</h1>
           <hr></hr>
-          <p1> {Detay}</p1>
+          <p1> </p1>
         </section>
         
       </div>
