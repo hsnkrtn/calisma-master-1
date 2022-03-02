@@ -23,6 +23,7 @@ class Navigasyonbar extends Component {
       TanıtımListesi: [],
       KurumsalListesi: [],
       YonetimListesi: [],
+      BolumlerListesi: [],
       BilgiIslemKoordinatorlugu: [],
       Hemsirelik: [],
       Mudurler: [],
@@ -55,14 +56,17 @@ class Navigasyonbar extends Component {
           this.state.Hemsirelik = value.Hemsirelik;
           this.state.BilgiIslemKoordinatorlugu =
             value.BilgiIslemKoordinatorlugu;
+
+          this.state.BolumlerListesi = value.Bolumler;
+
           this.state.BashekimlikKisiListesi = value.BashekimlikKisiler;
           this.state.YonetimListesi = value.Yonetim;
-          let DahiliListesi = value.DahiliTıpBilimleri;
-          let CerrahiListesi = value.CerrahiTipBilimleri;
-          let TemelListesi = value.TemelTipBilimleri;
-          let DigerTedaviListesi = value.DigerTedaviUniteleri;
+          this.state.DahiliListesi = value.Bolumler[0].DahiliTıpBilimleri;
+          this.state.CerrahiListesi = value.Bolumler[0].CerrahiTipBilimleri;
+          this.state.TemelListesi = value.Bolumler[0].TemelTipBilimleri;
+          this.state.DigerTedaviListesi = value.Bolumler[0].DigerTedaviUniteleri;
 
-          console.log(this.state.YonetimListesi[0].Kisiler);
+          console.log(this.state.TemelListesi);
           return (
             <nav className="NavigasyonBar">
               <div></div>
@@ -318,7 +322,6 @@ class Navigasyonbar extends Component {
                               this.setState({ showDahiliList: true })
                             }
                           >
-                            {" "}
                             DAHİLİ TIP BİLİMLERİ{" "}
                           </h1>
                           <ul
@@ -333,18 +336,35 @@ class Navigasyonbar extends Component {
                                 : null
                             }
                           >
-                            {DahiliListesi.map((DahiliListesi, index) => {
-                              return (
-                                <li>
-                                  &nbsp;
-                                  <span>
-                                    <i className="fa fa-chevron-right"></i>
-                                  </span>
-                                  &nbsp;
-                                  {DahiliListesi.Baslik}
-                                </li>
-                              );
-                            })}{" "}
+                            {this.state.DahiliListesi.map(
+                              (DahiliListesi, index) => {
+                                return (
+                                  <Link
+                                    onMouseEnter={() => {
+                                      this.setState({
+                                        Baslik: this.state.DahiliListesi.Baslik,
+                                      });
+                                    }}
+                                    to={{
+                                      pathname: `/Bolumler/${DahiliListesi.id} `,
+                                      state: {
+                                        Baslik: this.state.Baslik,
+                                        Gonderilenveriler: DahiliListesi[index],
+                                      },
+                                    }}
+                                  >
+                                    <li>
+                                      &nbsp;
+                                      <span>
+                                        <i className="fa fa-chevron-right"></i>
+                                      </span>
+                                      &nbsp;
+                                      {DahiliListesi.BolumAdi}
+                                    </li>
+                                  </Link>
+                                );
+                              }
+                            )}{" "}
                             <button
                               className="GeriButton"
                               onMouseEnter={() =>
@@ -381,18 +401,35 @@ class Navigasyonbar extends Component {
                                 : null
                             }
                           >
-                            {CerrahiListesi.map((CerrahiListesi, index) => {
-                              return (
-                                <li>
-                                  &nbsp;
-                                  <span>
-                                    <i className="fa fa-chevron-right"></i>
-                                  </span>
-                                  &nbsp;
-                                  {CerrahiListesi.Baslik}
-                                </li>
-                              );
-                            })}{" "}
+                            {this.state.CerrahiListesi.map(
+                              (CerrahiListesi, index) => {
+                                return (
+                                  <Link
+                                  onMouseEnter={() => {
+                                    this.setState({
+                                      Baslik: this.state.CerrahiListesi.Baslik,
+                                    });
+                                  }}
+                                  to={{
+                                    pathname: `/Bolumler/${CerrahiListesi.id} `,
+                                    state: {
+                                      Baslik: this.state.Baslik,
+                                      Gonderilenveriler: CerrahiListesi[index],
+                                    },
+                                  }}
+                                >
+                                  <li>
+                                    &nbsp;
+                                    <span>
+                                      <i className="fa fa-chevron-right"></i>
+                                    </span>
+                                    &nbsp;
+                                    {CerrahiListesi.BolumAdi}
+                                  </li>
+                                  </Link>
+                                );
+                              }
+                            )}{" "}
                             <button
                               className="GeriButton"
                               onMouseEnter={() =>
@@ -430,18 +467,35 @@ class Navigasyonbar extends Component {
                                 : null
                             }
                           >
-                            {TemelListesi.map((TemelListesi, index) => {
-                              return (
-                                <li>
-                                  &nbsp;
-                                  <span>
-                                    <i className="fa fa-chevron-right"></i>
-                                  </span>
-                                  &nbsp;
-                                  {TemelListesi.Baslik}
-                                </li>
-                              );
-                            })}
+                            {this.state.TemelListesi.map(
+                              (TemelListesi, index) => {
+                                return (
+                                  <Link
+                                  onMouseEnter={() => {
+                                    this.setState({
+                                      Baslik: this.state.TemelListesi.Baslik,
+                                    });
+                                  }}
+                                  to={{
+                                    pathname: `/Bolumler/${TemelListesi.id} `,
+                                    state: {
+                                      Baslik: this.state.Baslik,
+                                      Gonderilenveriler: TemelListesi[index],
+                                    },
+                                  }}
+                                >
+                                  <li>
+                                    &nbsp;
+                                    <span>
+                                      <i className="fa fa-chevron-right"></i>
+                                    </span>
+                                    &nbsp;
+                                    {TemelListesi.BolumAdi}
+                                  </li>
+                                  </Link>
+                                );
+                              }
+                            )}
                             <button
                               className="GeriButton"
                               onMouseEnter={() =>
@@ -478,17 +532,32 @@ class Navigasyonbar extends Component {
                                 : null
                             }
                           >
-                            {DigerTedaviListesi.map(
+                            {this.state.DigerTedaviListesi.map(
                               (DigerTedaviListesi, index) => {
                                 return (
+                                  <Link
+                                  onMouseEnter={() => {
+                                    this.setState({
+                                      Baslik: this.state.DigerTedaviListesi.Baslik,
+                                    });
+                                  }}
+                                  to={{
+                                    pathname: `/Bolumler/${DigerTedaviListesi.id} `,
+                                    state: {
+                                      Baslik: this.state.Baslik,
+                                      Gonderilenveriler: DigerTedaviListesi[index],
+                                    },
+                                  }}
+                                >
                                   <li>
                                     &nbsp;
                                     <span>
                                       <i className="fa fa-chevron-right"></i>
                                     </span>
                                     &nbsp;
-                                    {DigerTedaviListesi.Baslik}
+                                    {DigerTedaviListesi.BolumAdi}
                                   </li>
+                                  </Link>
                                 );
                               }
                             )}{" "}

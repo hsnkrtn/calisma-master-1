@@ -5,7 +5,8 @@ import Home from "./component/Home";
 import Footer from "./component/Footer";
 import GenelTanitim from "./component/GenelTanitim";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Yonetim from "./component/Yonetim";
+import Yonetim from "./component/Yonetim"; 
+import Bolumler from "./component/Bolumler"; 
 
 class App extends Component {
   render() {
@@ -22,6 +23,9 @@ class App extends Component {
             </Route>
             <Route path="/Yonetim/:Id">
               <Yonetim/>
+            </Route>
+            <Route path="/Bolumler/:Id">
+              <Bolumler/>
             </Route>
           </Switch>
           <Footer />
