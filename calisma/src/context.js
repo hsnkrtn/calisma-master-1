@@ -340,7 +340,7 @@ export class ContextProvider extends Component {
       Haberler: [
         {
           HaberId: 1,
-          HaberFotografi: " bga1.jpg",
+          HaberFotografi: " bga2.jpg",
           HaberBasligi:
             "Firat Universitesi Hastanesi1 haberleri burada gösterilecek",
           HaberDetayi: " detay1",
