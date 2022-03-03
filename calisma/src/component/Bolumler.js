@@ -1,6 +1,7 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 import { HastaneFotograflari } from "./Helpers/HastaneResimlerData";
+import DoktorlarCards from "../component/DoktorlarCards";
 
 function Bolumler(props) {
   const fotograflar = HastaneFotograflari[5].a;
@@ -10,7 +11,6 @@ function Bolumler(props) {
   const Baslik = Gelenveriler.BolumAdi;
   const Detay = Gelenveriler.Detay;
   const Doktorlar = Gelenveriler.Doktorlar;
-
 
   console.log(Doktorlar);
 
@@ -23,13 +23,10 @@ function Bolumler(props) {
           <p1>{Detay} </p1>
         </section>
         <div className="BolumlerDoktorlar">
-
-            
-
-
-
-
-
+        {Doktorlar.map((Doktor)=>{
+       return (
+       <DoktorlarCards unvan={Doktor.unvan} Adi={Doktor.Adi} Fotograf={Doktor.Fotograf} />
+     );})}
         </div>
       </div>
     </div>
