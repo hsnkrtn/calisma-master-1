@@ -21,12 +21,99 @@ import nurcanincefotografi from "../src/component/Resimler/KisiFotografları/nur
 import selcenozkayafotografi from "../src/component/Resimler/KisiFotografları/selcenozkayafotografi.jpeg";
 import talatceylanfotografi from "../src/component/Resimler/KisiFotografları/talatceylanfotografi.jpg";
 //doktorlarfotograflari
-import evrimgul from "../src/component/Resimler/DoktorlarFotograflari/evrimgul.jpg"
-import mehmetcagrigoktekin from "../src/component/Resimler/DoktorlarFotograflari/mehmetcagrigoktekin.jpg"
-import mustafayilmaz from "../src/component/Resimler/DoktorlarFotograflari/mustafayilmaz.jpg"
-import mehtapgurger from "../src/component/Resimler/DoktorlarFotograflari/mehtapgurger.jpg"
-import metinatescelik from "../src/component/Resimler/DoktorlarFotograflari/metinatescelik.jpg"
-
+import defaultImage from "../src/component/Resimler/DoktorlarFotograflari/defaultImage.png";
+import evrimgul from "../src/component/Resimler/DoktorlarFotograflari/evrimgul.jpg";
+import mehmetcagrigoktekin from "../src/component/Resimler/DoktorlarFotograflari/mehmetcagrigoktekin.jpg";
+import mustafayilmaz from "../src/component/Resimler/DoktorlarFotograflari/mustafayilmaz.jpg";
+import mehtapgurger from "../src/component/Resimler/DoktorlarFotograflari/mehtapgurger.jpg";
+import metinatescelik from "../src/component/Resimler/DoktorlarFotograflari/metinatescelik.jpg";
+import abdurrahimturkoglu from "../src/component/Resimler/DoktorlarFotograflari/abdurrahimturkoglu.jpg";
+import turgaybork from "../src/component/Resimler/DoktorlarFotograflari/turgaybork.jpg";
+import burkayyakar from "../src/component/Resimler/DoktorlarFotograflari/burkayyakar.jpg";
+import Ayldz from "../src/component/Resimler/DoktorlarFotograflari/Ayldz.jpg";
+import azizebestas from "../src/component/Resimler/DoktorlarFotograflari/azizebestas.jpg";
+import ismaildemirel from "../src/component/Resimler/DoktorlarFotograflari/ismaildemirel.jpg";
+import erdaltaskin from "../src/component/Resimler/DoktorlarFotograflari/erdaltaskin.jpg";
+import erdalyilmaz from "../src/component/Resimler/DoktorlarFotograflari/erdalyilmaz.jpg";
+import ihsanesen from "../src/component/Resimler/DoktorlarFotograflari/ihsanesen.jpg";
+import mehmetkilic from "../src/component/Resimler/DoktorlarFotograflari/mehmetkilic.jpg";
+import metinkayagugoze from "../src/component/Resimler/DoktorlarFotograflari/metinkayagugoze.jpg";
+import mustafaaydin from "../src/component/Resimler/DoktorlarFotograflari/mustafaaydin.jpg";
+import sadetakarsu from "../src/component/Resimler/DoktorlarFotograflari/sadetakarsu.jpg";
+import yasardogan from "../src/component/Resimler/DoktorlarFotograflari/yasardogan.jpg";
+import ipekpercinel from "../src/component/Resimler/DoktorlarFotograflari/ipekpercinel.jpg";
+import kemalutkuyazici from "../src/component/Resimler/DoktorlarFotograflari/kemalutkuyazici.jpg";
+import demetcicek from "../src/component/Resimler/DoktorlarFotograflari/demetcicek.jpg";
+import betuldemir from "../src/component/Resimler/DoktorlarFotograflari/betuldemir.jpg";
+import ayhanakbulut from "../src/component/Resimler/DoktorlarFotograflari/ayhanakbulut.jpg";
+import aysesagmaktartar from "../src/component/Resimler/DoktorlarFotograflari/aysesagmaktartar.jpg";
+import safakozerbalin from "../src/component/Resimler/DoktorlarFotograflari/safakozerbalin.jpg";
+import kutbettindemirdag from "../src/component/Resimler/DoktorlarFotograflari/kutbettindemirdag.jpg";
+import arzukaya from "../src/component/Resimler/DoktorlarFotograflari/arzukaya.jpg";
+import ahmetkavakli from "../src/component/Resimler/DoktorlarFotograflari/ahmetkavakli.jpg";
+import teyfikturgut from "../src/component/Resimler/DoktorlarFotograflari/teyfikturgut.jpg";
+import gamzekirkil from "../src/component/Resimler/DoktorlarFotograflari/gamzekirkil.jpg";
+import figendeveci from "../src/component/Resimler/DoktorlarFotograflari/figendeveci.jpg";
+import ferdaneoguzoncul from "../src/component/Resimler/DoktorlarFotograflari/ferdaneoguzoncul.jpg";
+import edibepirincci from "../src/component/Resimler/DoktorlarFotograflari/edibepirincci.jpg";
+import Ali_GUREL from "../src/component/Resimler/DoktorlarFotograflari/Ali_GUREL.jpg";
+import ayhandogukan from "../src/component/Resimler/DoktorlarFotograflari/ayhandogukan.jpg";
+import emirdonder from "../src/component/Resimler/DoktorlarFotograflari/emirdonder.jpg";
+import ibrahimhalilbahcecioglu from "../src/component/Resimler/DoktorlarFotograflari/ibrahimhalilbahcecioglu.jpg";
+import mehmetyalniz from "../src/component/Resimler/DoktorlarFotograflari/mehmetyalniz.jpg";
+import suleymanserdarkoca from "../src/component/Resimler/DoktorlarFotograflari/suleymanserdarkoca.jpg";
+import Hasan_Ata_BOLAYIR from "../src/component/Resimler/DoktorlarFotograflari/Hasan_Ata_BOLAYIR.jpg";
+import hasankorkmaz from "../src/component/Resimler/DoktorlarFotograflari/hasankorkmaz.png";
+import mnecati_dagli from "../src/component/Resimler/DoktorlarFotograflari/mnecati_dagli.jpg";
+import mustafayavuzkir from "../src/component/Resimler/DoktorlarFotograflari/mustafayavuzkir.png";
+import makbulut from "../src/component/Resimler/DoktorlarFotograflari/makbulut.jpg";
+import murat_gonen from "../src/component/Resimler/DoktorlarFotograflari/murat_gonen.jpg";
+import canerfdemir from "../src/component/Resimler/DoktorlarFotograflari/canerfdemir.jpg";
+import tanselbalci from "../src/component/Resimler/DoktorlarFotograflari/tanselbalci.jpg";
+import muradatmaca from "../src/component/Resimler/DoktorlarFotograflari/muradatmaca.jpg";
+import osmanmermi from "../src/component/Resimler/DoktorlarFotograflari/osmanmermi.jpg";
+import sevdakorkmaz from "../src/component/Resimler/DoktorlarFotograflari/sevdakorkmaz.jpg";
+import aysemurat from "../src/component/Resimler/DoktorlarFotograflari/aysemurat.jpg";
+import hakan_artas from "../src/component/Resimler/DoktorlarFotograflari/hakan_artas.jpg";
+import hanifiyildirim from "../src/component/Resimler/DoktorlarFotograflari/hanifiyildirim.jpg";
+import mustafakoc from "../src/component/Resimler/DoktorlarFotograflari/mustafakoc.jpg";
+import serpilaglamis from "../src/component/Resimler/DoktorlarFotograflari/serpilaglamis.jpg";
+import derol from "../src/component/Resimler/DoktorlarFotograflari/derol.jpg";
+import askinsen from "../src/component/Resimler/DoktorlarFotograflari/askinsen.jpg";
+import fserhaterol from "../src/component/Resimler/DoktorlarFotograflari/fserhaterol.jpg";
+import ahmetkazez from "../src/component/Resimler/DoktorlarFotograflari/ahmetkazez.jpg";
+import cuneytkirkil from "../src/component/Resimler/DoktorlarFotograflari/cuneytkirkil.jpg";
+import erhanaygen from "../src/component/Resimler/DoktorlarFotograflari/erhanaygen.jpg";
+import yavuzselimilhan from "../src/component/Resimler/DoktorlarFotograflari/yavuzselimilhan.jpg";
+import Siyami_Aydin from "../src/component/Resimler/DoktorlarFotograflari/Siyami_Aydin.jpg";
+import aeraslanbalci from "../src/component/Resimler/DoktorlarFotograflari/aeraslanbalci.jpg";
+import ulkuceliker from "../src/component/Resimler/DoktorlarFotograflari/ulkuceliker.jpg";
+import erolkeles from "../src/component/Resimler/DoktorlarFotograflari/erolkeles.jpg";
+import irfankaygusuz from "../src/component/Resimler/DoktorlarFotograflari/irfankaygusuz.jpg";
+import turgutkarlidag from "../src/component/Resimler/DoktorlarFotograflari/turgutkarlidag.jpg";
+import erhanyilmaz from "../src/component/Resimler/DoktorlarFotograflari/erhanyilmaz.jpg";
+import oktaybelhan from "../src/component/Resimler/DoktorlarFotograflari/oktaybelhan.jpg";
+import gokhanartas from "../src/component/Resimler/DoktorlarFotograflari/gokhanartas.jpg";
+import hanifiozercan from "../src/component/Resimler/DoktorlarFotograflari/hanifiozercan.jpg";
+import Hilal_BALTA from "../src/component/Resimler/DoktorlarFotograflari/Hilal_BALTA.jpg";
+import mihsanokur from "../src/component/Resimler/DoktorlarFotograflari/mihsanokur.jpg";
+import ahmetkarakeci from "../src/component/Resimler/DoktorlarFotograflari/ahmetkarakeci.jpg";
+import fatihosmanlioglu from "../src/component/Resimler/DoktorlarFotograflari/fatihosmanlioglu.jpg";
+import irfanorhan from "../src/component/Resimler/DoktorlarFotograflari/irfanorhan.jpg";
+import necippirincci from "../src/component/Resimler/DoktorlarFotograflari/necippirincci.jpg";
+import tuncozan from "../src/component/Resimler/DoktorlarFotograflari/tuncozan.jpg";
+import bilalustundag from "../src/component/Resimler/DoktorlarFotograflari/bilalustundag.jpg";
+import dilarakaman from "../src/component/Resimler/DoktorlarFotograflari/dilarakaman.jpg";
+import feritgursoy from "../src/component/Resimler/DoktorlarFotograflari/feritgursoy.jpg";
+import ihsanhalfetioglu from "../src/component/Resimler/DoktorlarFotograflari/ihsanhalfetioglu.jpg";
+import necipilhan from "../src/component/Resimler/DoktorlarFotograflari/necipilhan.jpg";
+import nevinilhan from "../src/component/Resimler/DoktorlarFotograflari/nevinilhan.jpg";
+import suleymanaydin from "../src/component/Resimler/DoktorlarFotograflari/suleymanaydin.jpg";
+import fulyailhan from "../src/component/Resimler/DoktorlarFotograflari/fulyailhan.jpg";
+import yaseminbulut from "../src/component/Resimler/DoktorlarFotograflari/yaseminbulut.jpg";
+import adnanseyrek from "../src/component/Resimler/DoktorlarFotograflari/adnanseyrek.jpg";
+import ahmeterensoy from "../src/component/Resimler/DoktorlarFotograflari/ahmeterensoy.jpg";
+import mustafakaplan from "../src/component/Resimler/DoktorlarFotograflari/mustafakaplan.jpg";
 
 const DataContext = React.createContext();
 
@@ -114,87 +201,1059 @@ export class ContextProvider extends Component {
           DahiliTıpBilimleri: [
             {
               BolumAdi: "Acil Tıp Anabilim Dalı  ",
-              Detay:"detaylarrrr",
+              Detay: "detaylarrrr",
               Doktorlar: [
                 {
                   unvan: "Doç.Dr.",
                   Adi: "Mustafa YILMAZ",
-                  Fotograf:mustafayilmaz,
+                  Fotograf: mustafayilmaz,
                 },
                 {
                   unvan: "Doç.Dr.",
                   Adi: "Mehtap GÜRGER",
-                  Fotograf:mehtapgurger,
+                  Fotograf: mehtapgurger,
                 },
                 {
                   unvan: "Doç.Dr.",
                   Adi: "Metin ATEŞÇELİK",
-                  Fotograf:metinatescelik,
+                  Fotograf: metinatescelik,
                 },
                 {
                   unvan: "Doç.Dr.",
                   Adi: "Mehmet Çağrı GÖKTEKİN",
-                  Fotograf:mehmetcagrigoktekin,
+                  Fotograf: mehmetcagrigoktekin,
                 },
                 {
                   unvan: "Doç.Dr.",
                   Adi: "Evrim GÜL",
-                  Fotograf:evrimgul
+                  Fotograf: evrimgul,
                 },
-            
               ],
             },
-            { BolumAdi: "Adli Tıp Anabilim Dalı  " },
-            { BolumAdi: "Aile Hekimliği Anabilim Dalı " },
-            { BolumAdi: "Çocuk Sağlığı ve Hastalıkları Anabilim Dalı " },
+            {
+              BolumAdi: "Adli Tıp Anabilim Dalı  ",
+              Doktorlar: [
+                {
+                  unvan: "Doç.Dr.",
+                  Adi: "Abdurrahim TÜRKOĞLU",
+                  Fotograf: abdurrahimturkoglu,
+                },
+                {
+                  unvan: "Dr. Öğretim Üyesi",
+                  Adi: "Turgay BÖRK",
+                  Fotograf: turgaybork,
+                },
+              ],
+            },
+            {
+              BolumAdi: "Aile Hekimliği Anabilim Dalı ",
+              Doktorlar: [
+                {
+                  unvan: "Dr.Öğretim Üyesi ",
+                  Adi: "Burkay YAKAR",
+                  Fotograf: burkayyakar,
+                },
+              ],
+            },
+            {
+              BolumAdi: "Çocuk Sağlığı ve Hastalıkları Anabilim Dalı ",
+              Doktorlar: [
+                {
+                  unvan: "Doç.Dr.",
+                  Adi: "Aslıhan KARA",
+                  Fotograf: defaultImage,
+                },
+                {
+                  unvan: "Dr. Öğretim Üyesi",
+                  Adi: "Osman AKDENİZ",
+                  Fotograf: defaultImage,
+                },
+                {
+                  unvan: "Doç.Dr.",
+                  Adi: "Serkan KIRIK",
+                  Fotograf: defaultImage,
+                },
+
+                {
+                  unvan: "Prof. Dr.",
+                  Adi: "Mustafa AYDIN",
+                  Fotograf: mustafaaydin,
+                },
+                {
+                  unvan: "Prof. Dr.",
+                  Adi: "İhsan ESEN",
+                  Fotograf: ihsanesen,
+                },
+
+                {
+                  unvan: "Dr. Öğretim Üyesi",
+                  Adi: "Deniz ÖKDEMİR",
+                  Fotograf: defaultImage,
+                },
+
+                {
+                  unvan: "Prof. Dr.",
+                  Adi: "Yaşar DOĞAN",
+                  Fotograf: yasardogan,
+                },
+
+                {
+                  unvan: "Doç. Dr.",
+                  Adi: "Uğur DEVECİ",
+                  Fotograf: defaultImage,
+                },
+                {
+                  unvan: "Prof. Dr.",
+                  Adi: "Saadet AKARSU",
+                  Fotograf: sadetakarsu,
+                },
+                {
+                  unvan: "Prof. Dr.",
+                  Adi: "Mehmet KILIÇ",
+                  Fotograf: mehmetkilic,
+                },
+                {
+                  unvan: "Prof. Dr.",
+                  Adi: "Erdal YILMAZ",
+                  Fotograf: erdalyilmaz,
+                },
+
+                {
+                  unvan: "Dr. Öğretim Üyesi",
+                  Adi: "Abdurrahman AKGÜN",
+                  Fotograf: defaultImage,
+                },
+                {
+                  unvan: "Prof. Dr.",
+                  Adi: "Metin Kaya GÜRGÖZE",
+                  Fotograf: metinkayagugoze,
+                },
+                {
+                  unvan: "Prof. Dr.",
+                  Adi: "Erdal Taşkın",
+                  Fotograf: erdaltaskin,
+                },
+              ],
+            },
             {
               BolumAdi:
                 "Çocuk ve Ergen Ruh Sağlığı Hastalıkları Anabilim Dalı ",
+              Doktorlar: [
+                {
+                  unvan: "Doç.Dr.",
+                  Adi: "İpek PERÇİNEL YAZICI",
+                  Fotograf: ipekpercinel,
+                },
+                {
+                  unvan: "Doç.Dr.",
+                  Adi: "Kemal Utku YAZICI",
+                  Fotograf: kemalutkuyazici,
+                },
+              ],
             },
-            { BolumAdi: "Dermatoloji Anabilim Dalı " },
-            { BolumAdi: "Enfeksiyon Hastalıkları Anabilim Dalı  " },
-            { BolumAdi: "Fiziksel Tıp ve Rehabilitasyon Anabilim Dalı  " },
-            { BolumAdi: "Göğüs Hastalıkları Anabilim Dalı  " },
-            { BolumAdi: "Halk Sağlığı Anabilim Dalı " },
-            { BolumAdi: "İç Hastalıkları Anabilim Dalı " },
-            { BolumAdi: "Kardiyoloji Anabilim Dalı  " },
-            { BolumAdi: "Nörolojii Anabilim Dalı " },
-            { BolumAdi: "Nükleer Tıp Anabilim Dalı " },
-            { BolumAdi: " Psikiyatri Anabilim Dalı" },
+            {
+              BolumAdi: "Dermatoloji Anabilim Dalı ",
+              Doktorlar: [
+                {
+                  unvan: "Prof. Dr.",
+                  Adi: "Demet ÇİÇEK",
+                  Fotograf: demetcicek,
+                },
+                {
+                  unvan: "Doç.Dr.",
+                  Adi: "Betül DEMİR",
+                  Fotograf: betuldemir,
+                },
+              ],
+            },
+            {
+              BolumAdi: "Enfeksiyon Hastalıkları Anabilim Dalı  ",
+              Doktorlar: [
+                {
+                  unvan: "Prof. Dr.",
+                  Adi: "Ayhan AKBULUT",
+                  Fotograf: ayhanakbulut,
+                },
+                {
+                  unvan: "Prof. Dr.",
+                  Adi: "Kutbeddin DEMİRDAĞ",
+                  Fotograf: kutbettindemirdag,
+                },
+                {
+                  unvan: "Doç.Dr.",
+                  Adi: "Ayşe SAĞMAK TARTAR",
+                  Fotograf: aysesagmaktartar,
+                },
+                {
+                  unvan: "Doç.Dr.",
+                  Adi: "Şafak ÖZER BALİN",
+                  Fotograf: safakozerbalin,
+                },
+                {
+                  unvan: "Dr. Öğretim Üyesi",
+                  Adi: "Serhat UYSAL",
+                  Fotograf: defaultImage,
+                },
+                {
+                  unvan: "Dr. Öğretim Üyesi",
+                  Adi: "Türkkan ÖZTÜRK KAYGUSUZ",
+                  Fotograf: defaultImage,
+                },
+              ],
+            },
+            {
+              BolumAdi: "Fiziksel Tıp ve Rehabilitasyon Anabilim Dalı  ",
+              Doktorlar: [
+                {
+                  unvan: "Prof. Dr.",
+                  Adi: "Arzu KAYA",
+                  Fotograf: arzukaya,
+                },
+                {
+                  unvan: "Doç.Dr.",
+                  Adi: "Arif GÜLKESEN",
+                  Fotograf: defaultImage,
+                },
+                {
+                  unvan: "Doç.Dr.",
+                  Adi: "Gürkan AKGÖL",
+                  Fotograf: defaultImage,
+                },
+                {
+                  unvan: "Dr. Öğretim Üyesi",
+                  Adi: "Gökhan ALKAN",
+                  Fotograf: defaultImage,
+                },
+              ],
+            },
+            {
+              BolumAdi: "Göğüs Hastalıkları Anabilim Dalı  ",
+              Doktorlar: [
+                {
+                  unvan: "Prof. Dr.",
+                  Adi: "Figen DEVECİ",
+                  Fotograf: figendeveci,
+                },
+                {
+                  unvan: "Prof. Dr.",
+                  Adi: "Gamze KIRKIL",
+                  Fotograf: gamzekirkil,
+                },
+                {
+                  unvan: "Prof. Dr.",
+                  Adi: "Teyfik TURGUT",
+                  Fotograf: teyfikturgut,
+                },
+
+                {
+                  unvan: "Dr. Öğretim Üyesi",
+                  Adi: "Mutlu KULUÖZTÜRK",
+                  Fotograf: defaultImage,
+                },
+              ],
+            },
+            {
+              BolumAdi: "Halk Sağlığı Anabilim Dalı ",
+              Doktorlar: [
+                {
+                  unvan: "Prof. Dr.",
+                  Adi: "Edibe PRİNÇÇİ",
+                  Fotograf: edibepirincci,
+                },
+                {
+                  unvan: "Prof. Dr.",
+                  Adi: "Süleyman Erhan DEVECİ",
+                  Fotograf: defaultImage,
+                },
+                {
+                  unvan: "Prof. Dr.",
+                  Adi: "A.Ferdane OĞUZÖNCÜL",
+                  Fotograf: ferdaneoguzoncul,
+                },
+
+                {
+                  unvan: "Dr. Öğretim Üyesi",
+                  Adi: "İrem BULUT",
+                  Fotograf: defaultImage,
+                },
+              ],
+            },
+            {
+              BolumAdi: "İç Hastalıkları Anabilim Dalı ",
+
+              Doktorlar: [
+                {
+                  unvan: "Prof. Dr.",
+                  Adi: "Emir DÖNDER",
+                  Fotograf: emirdonder,
+                },
+                {
+                  unvan: "Prof. Dr.",
+                  Adi: "İbrahim Halil BAHÇECİOĞLU",
+                  Fotograf: ibrahimhalilbahcecioglu,
+                },
+                {
+                  unvan: "Prof. Dr.",
+                  Adi: "Ayhan DOĞUKAN",
+                  Fotograf: ayhandogukan,
+                },
+                {
+                  unvan: "Prof. Dr.",
+                  Adi: "Süleyman Serdar KOCA",
+                  Fotograf: suleymanserdarkoca,
+                },
+
+                {
+                  unvan: "Prof. Dr.",
+                  Adi: "Mehmet Yalnız",
+                  Fotograf: mehmetyalniz,
+                },
+                {
+                  unvan: "Prof. Dr.",
+                  Adi: "Bilge Elkıran Aygen",
+                  Fotograf: defaultImage,
+                },
+
+                {
+                  unvan: "Doç.Dr.",
+                  Adi: "Faruk Kılınç",
+                  Fotograf: defaultImage,
+                },
+                {
+                  unvan: "Doç.Dr.",
+                  Adi: "Nevzat GÖZEL",
+                  Fotograf: defaultImage,
+                },
+                {
+                  unvan: "Doç.Dr.",
+                  Adi: "Ali GÜREL",
+                  Fotograf: Ali_GUREL,
+                },
+
+                {
+                  unvan: "Doç.Dr.",
+                  Adi: "Kader Uğur",
+                  Fotograf: defaultImage,
+                },
+
+                {
+                  unvan: "Dr. Öğretim Üyesi",
+                  Adi: " Erhan Önalan",
+                  Fotograf: defaultImage,
+                },
+
+                {
+                  unvan: "Dr. Öğretim Üyesi",
+                  Adi: " Mustafa Merter",
+                  Fotograf: defaultImage,
+                },
+                {
+                  unvan: "Dr. Öğretim Üyesi",
+                  Adi: "Nilgün Yıldırım",
+                  Fotograf: defaultImage,
+                },
+
+                {
+                  unvan: "Dr. Öğretim Üyesi",
+                  Adi: "Ahmet Karataş",
+                  Fotograf: defaultImage,
+                },
+                {
+                  unvan: "Dr. Öğretim Üyesi",
+                  Adi: " Ayşe Uysal",
+                  Fotograf: defaultImage,
+                },
+              ],
+            },
+            {
+              BolumAdi: "Kardiyoloji Anabilim Dalı  ",
+              Doktorlar: [
+                {
+                  unvan: "Prof. Dr.",
+                  Adi: "Mehmet AKBULUT",
+                  Fotograf: makbulut,
+                },
+                {
+                  unvan: "Prof. Dr.",
+                  Adi: "M. Ferzeyn YAVUZKIR",
+                  Fotograf: mustafayavuzkir,
+                },
+                {
+                  unvan: "Prof. Dr.",
+                  Adi: "Hasan KORKMAZ",
+                  Fotograf: hasankorkmaz,
+                },
+
+                {
+                  unvan: "Prof. Dr.",
+                  Adi: "Mehmet BALİN",
+                  Fotograf: hasankorkmaz,
+                },
+
+                {
+                  unvan: "Prof. Dr.",
+                  Adi: "Mustafa Necati DAĞLI",
+                  Fotograf: mnecati_dagli,
+                },
+
+                {
+                  unvan: "Prof. Dr.",
+                  Adi: "Hasan Ata BOLAYIR",
+                  Fotograf: Hasan_Ata_BOLAYIR,
+                },
+                {
+                  unvan: "Prof. Dr.",
+                  Adi: "Mehmet Ali KOBAT",
+                  Fotograf: defaultImage,
+                },
+
+                {
+                  unvan: "Prof. Dr.",
+                  Adi: "Tarık KIVRAK",
+                  Fotograf: defaultImage,
+                },
+              ],
+            },
+            {
+              BolumAdi: "Nörolojii Anabilim Dalı ",
+              Doktorlar: [
+                {
+                  unvan: "Prof. Dr.",
+                  Adi: "Caner Feyzi Demir",
+                  Fotograf: canerfdemir,
+                },
+                {
+                  unvan: "Doç.Dr.",
+                  Adi: "Murat GÖNEN",
+                  Fotograf: murat_gonen,
+                },
+                {
+                  unvan: "Doç.Dr.",
+                  Adi: "Emrah AYTAÇ",
+                  Fotograf: defaultImage,
+                },
+
+                {
+                  unvan: "Dr. Öğretim Üyesi",
+                  Adi: "Ferhat BALGETİR",
+                  Fotograf: defaultImage,
+                },
+              ],
+            },
+            {
+              BolumAdi: "Nükleer Tıp Anabilim Dalı ",
+              Doktorlar: [
+                {
+                  unvan: "Prof. Dr.",
+                  Adi: "Tansel Ansal BALCI",
+                  Fotograf: tanselbalci,
+                },
+              ],
+            },
+            {
+              BolumAdi: " Psikiyatri Anabilim Dalı",
+              Doktorlar: [
+                {
+                  unvan: "Prof. Dr.",
+                  Adi: "Murad ATMACA",
+                  Fotograf: muradatmaca,
+                },
+                {
+                  unvan: "Prof. Dr.",
+                  Adi: "Osman MERMİ",
+                  Fotograf: osmanmermi,
+                },
+
+                {
+                  unvan: "Doç.Dr.",
+                  Adi: "Sevda KORKMAZ",
+                  Fotograf: sevdakorkmaz,
+                },
+
+                {
+                  unvan: "Doç.Dr.",
+                  Adi: " Mehmet Gürkan GÜROK",
+                  Fotograf: defaultImage,
+                },
+
+                {
+                  unvan: "Doç.Dr.",
+                  Adi: "Sema BAYKARA",
+                  Fotograf: defaultImage,
+                },
+              ],
+            },
             { BolumAdi: "Radyasyon Onkolojisi Anabilim Dalı" },
-            { BolumAdi: "Radyodiagnostik Anabilim Dalı  " },
+            {
+              BolumAdi: "Radyodiagnostik Anabilim Dalı  ",
+              Doktorlar: [
+                {
+                  unvan: "Prof. Dr. ",
+                  Adi: "Hanifi YILDIRIM",
+                  Fotograf: hanifiyildirim,
+                },
+                {
+                  unvan: "Prof. Dr. ",
+                  Adi: "Ayşe MURAT AYDIN",
+                  Fotograf: aysemurat,
+                },
+                {
+                  unvan: "Prof. Dr. ",
+                  Adi: "Hakan ARTAŞ",
+                  Fotograf: hakan_artas,
+                },
+                {
+                  unvan: "Prof. Dr. ",
+                  Adi: "A. Kürşad POYRAZ",
+                  Fotograf: defaultImage,
+                },
+
+                {
+                  unvan: "Doç. Dr.",
+                  Adi: "Mustafa KOÇ",
+                  Fotograf: mustafakoc,
+                },
+
+                {
+                  unvan: "Doç. Dr.",
+                  Adi: "Murat BAYKARA",
+                  Fotograf: defaultImage,
+                },
+
+                {
+                  unvan: "Dr. Öğretim Üyesi",
+                  Adi: "Serpil AĞLAMIŞ",
+                  Fotograf: serpilaglamis,
+                },
+              ],
+            },
             {
               BolumAdi:
                 "Tıbbi Genetik Anabilim Dalı - Genetik Hastalıklar Değerlendirme Merkezi",
+              Doktorlar: [
+                {
+                  unvan: "Dr. Öğretim Üyesi",
+                  Adi: "Aşkın ŞEN",
+                  Fotograf: askinsen,
+                },
+                {
+                  unvan: "Dr. Öğretim Üyesi",
+                  Adi: "Deniz EROL",
+                  Fotograf: derol,
+                },
+              ],
             },
           ],
           CerrahiTipBilimleri: [
-            { BolumAdi: "Anesteziyoloji ve Reanimasyon Anabilim Dalı  " },
-            { BolumAdi: "Beyin Cerrahisi Anabilim Dalı   " },
-            { BolumAdi: "Çocuk Cerrahisi Anabilim Dalı " },
-            { BolumAdi: "Genel Cerrahi Anabilim Dalı  " },
-            { BolumAdi: "Göğüs Cerrahisi Anabilim Dalı  " },
-            { BolumAdi: "Göz Hastalıkları Anabilim Dalı  " },
-            { BolumAdi: "Kadın Hastalıkları ve Doğum Anabilim Dalı " },
-            { BolumAdi: "Kalp-Damar Cerrahisi Anabilim Dalı " },
-            { BolumAdi: "Kulak Burun Boğaz Hastalıkları Anabilim Dalı   " },
-            { BolumAdi: "Ortopedi ve Travmatoloji Anabilim Dalı   " },
-            { BolumAdi: "Patoloji Anabilim Dalı  " },
-            { BolumAdi: "Plastik ve Rekonstrüktif Cerrahi Anabilim Dalı  " },
-            { BolumAdi: "Üroloji Anabilim Dalı " },
+            {
+              BolumAdi: "Anesteziyoloji ve Reanimasyon Anabilim Dalı ",
+              Doktorlar: [
+                {
+                  unvan: "Prof. Dr. ",
+                  Adi: "İsmail DEMİREL",
+                  Fotograf: ismaildemirel,
+                },
+                {
+                  unvan: "Prof. Dr. ",
+                  Adi: "Azize BEŞTAŞ",
+                  Fotograf: azizebestas,
+                },
+
+                {
+                  unvan: "Doç. Dr.",
+                  Adi: "Aysun YILDIZ ALTUN",
+                  Fotograf: Ayldz,
+                },
+
+                {
+                  unvan: "Doç. Dr.",
+                  Adi: "Sibel ÖZCAN",
+                  Fotograf: defaultImage,
+                },
+
+                {
+                  unvan: "Dr. Öğretim Üyesi",
+                  Adi: "Ahmet AKSU",
+                  Fotograf: defaultImage,
+                },
+              ],
+            },
+            {
+              BolumAdi: "Beyin Cerrahisi Anabilim Dalı ",
+              Doktorlar: [
+                {
+                  unvan: "Prof. Dr. ",
+                  Adi: "Fatih Serhat EROL",
+                  Fotograf: fserhaterol,
+                },
+                {
+                  unvan: "Prof. Dr. ",
+                  Adi: "Metin KAPLAN",
+                  Fotograf: defaultImage,
+                },
+                {
+                  unvan: "Doç. Dr.",
+                  Adi: "Bekir AKGÜN",
+                  Fotograf: defaultImage,
+                },
+              ],
+            },
+            {
+              BolumAdi: "Çocuk Cerrahisi Anabilim Dalı ",
+              Doktorlar: [
+                {
+                  unvan: "Prof. Dr. ",
+                  Adi: "Ahmet KAZEZ",
+                  Fotograf: ahmetkazez,
+                },
+
+                {
+                  unvan: "Doç. Dr.",
+                  Adi: "Ünal BAKAL",
+                  Fotograf: defaultImage,
+                },
+                {
+                  unvan: "Doç. Dr.",
+                  Adi: "Tugay TARTAR",
+                  Fotograf: defaultImage,
+                },
+              ],
+            },
+            {
+              BolumAdi: "Genel Cerrahi Anabilim Dalı  ",
+
+              Doktorlar: [
+                {
+                  unvan: "Prof. Dr. ",
+                  Adi: "Yavuz Selim İLHAN",
+                  Fotograf: yavuzselimilhan,
+                },
+
+                {
+                  unvan: "Prof. Dr. ",
+                  Adi: "Erhan AYGEN",
+                  Fotograf: erhanaygen,
+                },
+
+                {
+                  unvan: "Prof. Dr. ",
+                  Adi: "Cüneyt KIRKIL",
+                  Fotograf: cuneytkirkil,
+                },
+
+                {
+                  unvan: "Doç. Dr.",
+                  Adi: " Mürşit DİNÇER",
+                  Fotograf: defaultImage,
+                },
+                {
+                  unvan: "Dr. Öğretim Üyesi",
+                  Adi: "Mesut YUR ",
+                  Fotograf: defaultImage,
+                },
+                {
+                  unvan: "Dr. Öğretim Üyesi",
+                  Adi: "Ahmet BOZDAĞ ",
+                  Fotograf: defaultImage,
+                },
+              ],
+            },
+            {
+              BolumAdi: "Göğüs Cerrahisi Anabilim Dalı  ",
+
+              Doktorlar: [
+                {
+                  unvan: "Prof. Dr. ",
+                  Adi: "Akın Eraslan BALCI",
+                  Fotograf: aeraslanbalci,
+                },
+
+                {
+                  unvan: "Doç. Dr.",
+                  Adi: " Muharrem ÇAKMAK",
+                  Fotograf: defaultImage,
+                },
+
+                {
+                  unvan: "Dr. Öğretim Üyesi",
+                  Adi: "Siyami AYDIN",
+                  Fotograf: Siyami_Aydin,
+                },
+              ],
+            },
+            {
+              BolumAdi: "Göz Hastalıkları Anabilim Dalı  ",
+
+              Doktorlar: [
+                {
+                  unvan: "Prof. Dr. ",
+                  Adi: "Fatma Ülkü ÇELİKER",
+                  Fotograf: ulkuceliker,
+                },
+
+                {
+                  unvan: "Doç. Dr.",
+                  Adi: "  Mehmet BALBABA",
+                  Fotograf: defaultImage,
+                },
+
+                {
+                  unvan: "Dr. Öğretim Üyesi",
+                  Adi: "Hakan YILDIRIM",
+                  Fotograf: defaultImage,
+                },
+
+                {
+                  unvan: "Dr. Öğretim Üyesi",
+                  Adi: "Onur ÇATAK",
+                  Fotograf: defaultImage,
+                },
+              ],
+            },
+            {
+              BolumAdi: "Kadın Hastalıkları ve Doğum Anabilim Dalı ",
+              Doktorlar: [
+                {
+                  unvan: "Prof. Dr. ",
+                  Adi: "Salih Burçin KAVAK",
+                  Fotograf: defaultImage,
+                },
+                {
+                  unvan: "Prof. Dr. ",
+                  Adi: " Alpaslan AKYOL",
+                  Fotograf: defaultImage,
+                },
+                {
+                  unvan: "Prof. Dr. ",
+                  Adi: " Remzi ATILGAN",
+                  Fotograf: defaultImage,
+                },
+
+                {
+                  unvan: "Doç. Dr.",
+                  Adi: "  Şehmus PALA",
+                  Fotograf: defaultImage,
+                },
+
+                {
+                  unvan: "Dr. Öğretim Üyesi",
+                  Adi: " Şeyda YAVUZKIR",
+                  Fotograf: defaultImage,
+                },
+
+                {
+                  unvan: "Dr. Öğretim Üyesi",
+                  Adi: "Melike BAŞPINAR",
+                  Fotograf: defaultImage,
+                },
+              ],
+            },
+            {
+              BolumAdi: "Kalp-Damar Cerrahisi Anabilim Dalı ",
+              Doktorlar: [
+                {
+                  unvan: "Prof. Dr. ",
+                  Adi: "Oktay BURMA",
+                  Fotograf: defaultImage,
+                },
+                {
+                  unvan: "Prof. Dr. ",
+                  Adi: "Ayhan UYSAL",
+                  Fotograf: defaultImage,
+                },
+
+                {
+                  unvan: "Dr. Öğretim Üyesi",
+                  Adi: "Murat ÖZGÜLER",
+                  Fotograf: defaultImage,
+                },
+
+                {
+                  unvan: "Dr. Öğretim Üyesi",
+                  Adi: "Latif ÜSTÜNEL",
+                  Fotograf: defaultImage,
+                },
+              ],
+            },
+            {
+              BolumAdi: "Kulak Burun Boğaz Hastalıkları Anabilim Dalı  ",
+              Doktorlar: [
+                {
+                  unvan: "Prof. Dr. ",
+                  Adi: "İrfan KAYGUSUZ",
+                  Fotograf: irfankaygusuz,
+                },
+                {
+                  unvan: "Prof. Dr. ",
+                  Adi: "Turgut KARLIDAĞ",
+                  Fotograf: turgutkarlidag,
+                },
+
+                {
+                  unvan: "Prof. Dr. ",
+                  Adi: " Erol KELEŞ",
+                  Fotograf: erolkeles,
+                },
+
+                {
+                  unvan: "Doç. Dr. ",
+                  Adi: "Abdulvahap AKYİĞİT",
+                  Fotograf: defaultImage,
+                },
+
+                {
+                  unvan: "Dr. Öğretim Üyesi",
+                  Adi: "Orkun EROĞLU",
+                  Fotograf: defaultImage,
+                },
+              ],
+            },
+            {
+              BolumAdi: "Ortopedi ve Travmatoloji Anabilim Dalı   ",
+              Doktorlar: [
+                {
+                  unvan: "Prof. Dr. ",
+                  Adi: " Erhan YILMAZ",
+                  Fotograf: erhanyilmaz,
+                },
+                {
+                  unvan: "Prof. Dr. ",
+                  Adi: " Oktay BELHAN",
+                  Fotograf: oktaybelhan,
+                },
+
+                {
+                  unvan: "Doç. Dr. ",
+                  Adi: "Murat GÜRGER",
+                  Fotograf: defaultImage,
+                },
+
+                {
+                  unvan: "Dr. Öğretim Üyesi",
+                  Adi: "Şükrü DEMİR",
+                  Fotograf: defaultImage,
+                },
+              ],
+            },
+            {
+              BolumAdi: "Patoloji Anabilim Dalı  ",
+              Doktorlar: [
+                {
+                  unvan: "Prof. Dr. ",
+                  Adi: " İ. Hanifi ÖZERCAN",
+                  Fotograf: hanifiozercan,
+                },
+
+                {
+                  unvan: "Doç. Dr. ",
+                  Adi: "Muhammet ÇALIK",
+                  Fotograf: defaultImage,
+                },
+                {
+                  unvan: "Doç. Dr. ",
+                  Adi: "Gökhan ARTAŞ",
+                  Fotograf: gokhanartas,
+                },
+                {
+                  unvan: "Doç. Dr. ",
+                  Adi: " İlknur ÇALIK",
+                  Fotograf: defaultImage,
+                },
+
+                {
+                  unvan: "Dr. Öğretim Üyesi",
+                  Adi: "Özlem ÜÇER",
+                  Fotograf: defaultImage,
+                },
+                {
+                  unvan: "Dr. Öğretim Üyesi",
+                  Adi: "Hilal BALTA",
+                  Fotograf: Hilal_BALTA,
+                },
+              ],
+            },
+            {
+              BolumAdi: "Plastik ve Rekonstrüktif Cerrahi Anabilim Dalı  ",
+              Doktorlar: [
+                {
+                  unvan: "Doç. Dr. ",
+                  Adi: "Mehmet İhsan OKUR",
+                  Fotograf: mihsanokur,
+                },
+                {
+                  unvan: "Uzm. Dr.",
+                  Adi: " Erhan Cahit ÖZCAN",
+                  Fotograf: defaultImage,
+                },
+              ],
+            },
+            {
+              BolumAdi: "Üroloji Anabilim Dalı ",
+              Doktorlar: [
+                {
+                  unvan: "Prof. Dr. ",
+                  Adi: " İrfan ORHAN",
+                  Fotograf: irfanorhan,
+                },
+                {
+                  unvan: "Prof. Dr. ",
+                  Adi: " Fatih OSMANLIOĞLU",
+                  Fotograf: fatihosmanlioglu,
+                },
+
+                {
+                  unvan: "Prof. Dr. ",
+                  Adi: " Necip PİRİNÇCİ",
+                  Fotograf: necippirincci,
+                },
+
+                {
+                  unvan: "Doç. Dr. ",
+                  Adi: "Tunç OZAN",
+                  Fotograf: tuncozan,
+                },
+                {
+                  unvan: "Doç. Dr. ",
+                  Adi: "Ahmet KARAKEÇİ",
+                  Fotograf: ahmetkarakeci,
+                },
+              ],
+            },
           ],
           TemelTipBilimleri: [
-            { BolumAdi: "Biyokimya Anabilim Dalı  " },
-            { BolumAdi: "İmmünoloji Anabilim Dalı " },
+            { BolumAdi: "Biyokimya Anabilim Dalı  ",
+            Doktorlar: [
+              {
+                unvan: "Prof. Dr. ",
+                Adi: " Nevin İLHAN",
+                Fotograf: nevinilhan,
+              },
+              {
+                unvan: "Prof. Dr. ",
+                Adi: "Dilara KAMAN",
+                Fotograf: dilarakaman,
+              },
+
+              {
+                unvan: "Prof. Dr. ",
+                Adi: " İhsan HALİFEOĞLU",
+                Fotograf: ihsanhalfetioglu,
+              },
+              {
+                unvan: "Prof. Dr. ",
+                Adi: " Bilal ÜSTÜNDAĞ",
+                Fotograf: bilalustundag,
+              },
+              {
+                unvan: "Prof. Dr. ",
+                Adi: "  Mehmet Ferit GÜRSU",
+                Fotograf: feritgursoy,
+              },
+
+              {
+                unvan: "Prof. Dr. ",
+                Adi: " Necip İLHAN",
+                Fotograf: necipilhan,
+              },
+              {
+                unvan: "Prof. Dr. ",
+                Adi: "Süleyman AYDIN",
+                Fotograf: suleymanaydin,
+              },
+
+      
+            ],
+           },
+            { BolumAdi: "İmmünoloji Anabilim Dalı ",
+            Doktorlar: [
+              {
+                unvan: "Prof. Dr. ",
+                Adi: " Fulya İLHAN",
+                Fotograf: fulyailhan,
+              },
+              {
+                unvan: "Prof. Dr. ",
+                Adi: "H. Handan AKBULUT",
+                Fotograf: defaultImage,
+              },
+
+     
+
+      
+            ], },
             {
               BolumAdi: "Mikrobiyoloji ve Klinik Mikrobiyoloji Anabilim Dalı ",
+              Doktorlar: [
+                {
+                  unvan: "Prof. Dr. ",
+                  Adi: "  Adnan SEYREK",
+                  Fotograf: adnanseyrek,
+                },
+                {
+                  unvan: "Prof. Dr. ",
+                  Adi: "Zülal AŞÇI TOROMAN",
+                  Fotograf: defaultImage,
+                },
+                {
+                  unvan: "Prof. Dr. ",
+                  Adi: "Yasemin BULUT",
+                  Fotograf: yaseminbulut,
+                },
+  
+       
+  
+        
+              ], 
+
+
+
+
             },
-            { BolumAdi: "Parazitoloji Anabilim Dalı  " },
-            { BolumAdi: "Tıbbi Biyoloji Anabilim Dalı" },
+            { BolumAdi: "Parazitoloji Anabilim Dalı  ",
+          
+            Doktorlar: [
+              {
+                unvan: "Prof. Dr. ",
+                Adi: " Mustafa KAPLAN",
+                Fotograf: mustafakaplan,
+              },
+              {
+                unvan: "Doç. Dr. ",
+                Adi: "Ahmet ERENSOY",
+                Fotograf: ahmeterensoy,
+              },
+         
+
+     
+
+      
+            ], },
+            { BolumAdi: "Tıbbi Biyoloji Anabilim Dalı",
+            Doktorlar: [
+         
+              {
+                unvan: "Doç. Dr. ",
+                Adi: "Ebru ÖNALAN",
+                Fotograf: defaultImage,
+              },
+         
+
+     
+
+      
+            ], },
           ],
           DigerTedaviUniteleri: [
             {
               BolumAdi: "Geleneksel ve Tamamlayıcı Tıp Uygulama Merkezi(GETAT)",
+              Doktorlar: [
+                {
+                  unvan: "Prof. Dr. ",
+                  Adi: " Ahmet KAVAKLI",
+                  Fotograf: ahmetkavakli,
+                },
+
+              ],
             },
           ],
         },
@@ -215,7 +1274,7 @@ export class ContextProvider extends Component {
             {
               id: "2",
               unvan: " Başhekim Yardımcısı Prof. Dr.",
-              Adi: "Fatih OSMANLIĞLU",
+              Adi: "Fatih OSMANLIOĞLU",
               Hakkinda:
                 "1976 yılında Elazığ’ da doğdu. İlk, orta ve lise eğitimini Elazığ’ da tamamladı.2000 yılında Fırat Üniversitesi Tıp Fakültesinden mezun oldu.2000-2002 Van Askeri Hastanesinde Yedek Subay olarak görev yaptı.2002-2008 yılları arasında Fırat Üniversitesi Üroloji Anabilim Dalında uzmanlık eğitimini tamamladı. 2008-2009 yılları arasında Diyarbakır Bismil Devlet Hastanesinde mecburi hizmetini tamamladı.2009 yılında Fırat Üniversitesi Üroloji Anabilim Dalına Yardımcı Doçent olarak atandı. 2014 yılında Doçent unvanını, 2019 yılında ise Profesör unvanını aldı. 2015 yılından itibaren Fırat Üniversitesi Hastanesi Başhekim Yardımcısı olarak görevlendirildi. 2020 yılı içerisinde Fırat Üniversitesi Tıp Fakültesi Dekan Yardımcısı olarak görev yaptı. Ulusal ve uluslararası makale ve bildirileri bulunmakta olup evli ve iki çocuk babasıdır.        ",
               Fotograf: fatihfirdolasfotografi,

@@ -9,7 +9,6 @@ function DoktorlarCards(props) {
 
       <div className="DoktorlarCardsDetay">
         <h4>{props.Adi}</h4>
-
         <hr></hr>
         <p1>{props.unvan} </p1>
       </div>

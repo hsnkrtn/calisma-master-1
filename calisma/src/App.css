@@ -212,6 +212,8 @@ a:hover {
   cursor: pointer;
   transition: all 0.5s ease-out;
   background-color:white;
+  white-space: normal;
+  
 }
 .DoktorlarCards:hover{
 transform: scale(1.1);
@@ -248,7 +250,11 @@ font-size: 15px;
 
   font-size: 18px;
 }
+.DoktolarBaslığı {
+font-size: 30px;
+color: #850432;
 
+}
 
 
 
