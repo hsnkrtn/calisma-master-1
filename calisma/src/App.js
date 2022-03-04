@@ -7,6 +7,8 @@ import GenelTanitim from "./component/GenelTanitim";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Yonetim from "./component/Yonetim"; 
 import Bolumler from "./component/Bolumler"; 
+import Doktorlar from "./component/Doktorlar"; 
+import HaberSayfası from "./component/HaberSayfası"; 
 
 class App extends Component {
   render() {
@@ -26,6 +28,12 @@ class App extends Component {
             </Route>
             <Route path="/Bolumler/:Id">
               <Bolumler/>
+            </Route>
+            <Route path="/Doktorlar/:Id">
+              <Doktorlar/>
+            </Route>
+            <Route path="/HaberSayfası/:Id">
+              <HaberSayfası/>
             </Route>
           </Switch>
           <Footer />

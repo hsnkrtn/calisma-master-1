@@ -579,20 +579,19 @@ class Navigasyonbar extends Component {
                     </div>
                   </div>
 
-                  {/* 
-                  <div  className="butonrengi"  
+                  <div
+                    className="butonrengi"
                     onMouseLeave={() => {
                       this.setState({ showDoktorlarList: false });
                     }}
                   >
                     <li
-
-              className="LinksListItem"
+                      className="LinksListItem"
                       onMouseEnter={() => {
                         this.setState({ showDoktorlarList: true });
                       }}
                     >
-                      Doktorlar
+                      Doktorlar{" "}
                     </li>
 
                     <div
@@ -603,131 +602,264 @@ class Navigasyonbar extends Component {
                       }
                     >
                       <div className="Bolumler">
-                        <div
-                          className={
-                            this.state.showDoktorlarList
-                              ? "DahiliListesi"
-                              : "ListeyiGizle"
-                          }
-                        >
-                          <ul>
-                            <h1 role="Button"> DAHİLİ TIP BİLİMLERİ </h1>
-                            {DahiliListesi.map((DahiliListesi, index) => {
-                              return (
-                                <li>
-                                  &nbsp;
-                                  <span>
-                                    <i className="fa fa-chevron-right"></i>
-                                  </span>
-                                  &nbsp;
-                                  {DahiliListesi.DahiliBaslik}
-                                </li>
-                              );
-                            })}
-                          </ul>
-                        </div>
-
-                        <div
-                          className={
-                            this.state.showDoktorlarList
-                              ? "CerrahiListesi"
-                              : "ListeyiGizle"
-                          }
-                        >
-                          <ul>
-                            <h1 role="Button"> CERRAHİ TIP BİLİMLERİ</h1>
-                            {CerrahiListesi.map((CerrahiListesi, index) => {
-                              return (
-                                <li>
-                                  &nbsp;
-                                  <span>
-                                    <i className="fa fa-chevron-right"></i>
-                                  </span>
-                                  &nbsp;
-                                  {CerrahiListesi.CerrahiBaslik}
-                                </li>
-                              );
-                            })}
-                          </ul>
-                        </div>
-
-                        <div
-                          className={
-                            this.state.showDoktorlarList
-                              ? "CerrahiListesi"
-                              : "ListeyiGizle"
-                          }
-                        >
-                          <ul>
-                            <h1 role="Button"> CERRAHİ TIP BİLİMLERİ</h1>
-                            {CerrahiListesi.map((CerrahiListesi, index) => {
-                              return (
-                                <li>
-                                  &nbsp;
-                                  <span>
-                                    <i className="fa fa-chevron-right"></i>
-                                  </span>
-                                  &nbsp;
-                                  {CerrahiListesi.CerrahiBaslik}
-                                </li>
-                              );
-                            })}
-                          </ul>
-                        </div>
-
-                        <div
-                          className={
-                            this.state.showDoktorlarList
-                              ? "TemelListesi"
-                              : "ListeyiGizle"
-                          }
-                        >
-                          <ul>
-                            <h1 role="Button"> TEMEL TIP BİLİMLERİ </h1>
-                            {TemelListesi.map((TemelListesi, index) => {
-                              return (
-                                <li>
-                                  &nbsp;
-                                  <span>
-                                    <i className="fa fa-chevron-right"></i>
-                                  </span>
-                                  &nbsp;
-                                  {TemelListesi.TemelBaslik}
-                                </li>
-                              );
-                            })}
-                          </ul>
-                        </div>
-
-                        <div
-                          className={
-                            this.state.showDoktorlarList
-                              ? "DigerTedaviListesi"
-                              : "ListeyiGizle"
-                          }
-                        >
-                          <ul>
-                            <h1 role="Button"> DİĞER TEDAVİ ÜNİTELERİ </h1>
-                            {DigerTedaviListesi.map(
-                              (DigerTedaviListesi, index) => {
+                        <div>
+                          <h1
+                            className="DahiliButton"
+                            onMouseEnter={() =>
+                              this.setState({ showDahiliList: true })
+                            }
+                          >
+                            DAHİLİ TIP BİLİMLERİ{" "}
+                          </h1>
+                          <ul
+                            className={
+                              this.state.showDoktorlarList
+                                ? "DahiliListesi"
+                                : "ListeyiGizle"
+                            }
+                            id={
+                              this.state.showDahiliList
+                                ? "Bolumlistelerinigoster"
+                                : null
+                            }
+                          >
+                            {this.state.DahiliListesi.map(
+                              (DahiliListesi, index) => {
                                 return (
-                                  <li>
-                                    &nbsp;
-                                    <span>
-                                      <i className="fa fa-chevron-right"></i>
-                                    </span>
-                                    &nbsp;
-                                    {DigerTedaviListesi.DigerTedaviBaslik}
-                                  </li>
+                                  <Link
+                                    to={{
+                                      pathname: `/Doktorlar/${DahiliListesi.id} `,
+                                      state: {
+                                        Baslik: this.state.Baslik,
+                                        Gonderilenveriler:
+                                          this.state.DahiliListesi[index],
+                                      },
+                                    }}
+                                  >
+                                    <li>
+                                      &nbsp;
+                                      <span>
+                                        <i className="fa fa-chevron-right"></i>
+                                      </span>
+                                      &nbsp;
+                                      {DahiliListesi.BolumAdi}
+                                    </li>
+                                  </Link>
+                                );
+                              }
+                            )}{" "}
+                            <button
+                              className="GeriButton"
+                              onMouseEnter={() =>
+                                this.setState({ showDahiliList: false })
+                              }
+                            >
+                              <span>
+                                <i class="fa fa-reply"></i>
+                              </span>{" "}
+                              &nbsp; Geri
+                            </button>
+                          </ul>
+                        </div>
+
+                        <div>
+                          {" "}
+                          <h1
+                            className="CerrahiButton"
+                            onMouseEnter={() =>
+                              this.setState({ showCerrahiList: true })
+                            }
+                          >
+                            CERRAHİ TIP BİLİMLERİ
+                          </h1>
+                          <ul
+                            className={
+                              this.state.showDoktorlarList
+                                ? "CerrahiListesi"
+                                : "ListeyiGizle"
+                            }
+                            id={
+                              this.state.showCerrahiList
+                                ? "Bolumlistelerinigoster"
+                                : null
+                            }
+                          >
+                            {this.state.CerrahiListesi.map(
+                              (CerrahiListesi, index) => {
+                                return (
+                                  <Link
+                                    to={{
+                                      pathname: `/Doktorlar/${CerrahiListesi.id} `,
+                                      state: {
+                                        Baslik: this.state.Baslik,
+                                        Gonderilenveriler:
+                                          this.state.CerrahiListesi[index],
+                                      },
+                                    }}
+                                  >
+                                    <li>
+                                      &nbsp;
+                                      <span>
+                                        <i className="fa fa-chevron-right"></i>
+                                      </span>
+                                      &nbsp;
+                                      {CerrahiListesi.BolumAdi}
+                                    </li>
+                                  </Link>
+                                );
+                              }
+                            )}{" "}
+                            <button
+                              className="GeriButton"
+                              onMouseEnter={() =>
+                                this.setState({ showCerrahiList: false })
+                              }
+                            >
+                              <span>
+                                <i class="fa fa-reply"></i>
+                              </span>{" "}
+                              &nbsp; Geri
+                            </button>
+                          </ul>
+                        </div>
+
+                        <div>
+                          {" "}
+                          <h1
+                            className="TemelButton"
+                            onMouseEnter={() =>
+                              this.setState({ showTemelList: true })
+                            }
+                          >
+                            {" "}
+                            TEMEL TIP BİLİMLERİ{" "}
+                          </h1>
+                          <ul
+                            className={
+                              this.state.showDoktorlarList
+                                ? "TemelListesi"
+                                : "ListeyiGizle"
+                            }
+                            id={
+                              this.state.showTemelList
+                                ? "Bolumlistelerinigoster"
+                                : null
+                            }
+                          >
+                            {this.state.TemelListesi.map(
+                              (TemelListesi, index) => {
+                                return (
+                                  <Link
+                                    to={{
+                                      pathname: `/Doktorlar/${TemelListesi.id} `,
+                                      state: {
+                                        Baslik: this.state.Baslik,
+                                        Gonderilenveriler:
+                                          this.state.TemelListesi[index],
+                                      },
+                                    }}
+                                  >
+                                    <li>
+                                      &nbsp;
+                                      <span>
+                                        <i className="fa fa-chevron-right"></i>
+                                      </span>
+                                      &nbsp;
+                                      {TemelListesi.BolumAdi}
+                                    </li>
+                                  </Link>
                                 );
                               }
                             )}
+                            <button
+                              className="GeriButton"
+                              onMouseEnter={() =>
+                                this.setState({ showTemelList: false })
+                              }
+                            >
+                              <span>
+                                <i class="fa fa-reply"></i>
+                              </span>{" "}
+                              &nbsp; Geri
+                            </button>
+                          </ul>
+                        </div>
+
+                        <div>
+                          <h1
+                            className="DigerButton"
+                            onMouseEnter={() =>
+                              this.setState({ showDigerTedavilist: true })
+                            }
+                          >
+                            {" "}
+                            DİĞER TEDAVİ ÜNİTELERİ{" "}
+                          </h1>
+                          <ul
+                            className={
+                              this.state.showDoktorlarList
+                                ? "DigerTedaviListesi"
+                                : "ListeyiGizle"
+                            }
+                            id={
+                              this.state.showDigerTedavilist
+                                ? "Bolumlistelerinigoster"
+                                : null
+                            }
+                          >
+                            {this.state.DigerTedaviListesi.map(
+                              (DigerTedaviListesi, index) => {
+                                return (
+                                  <Link
+                                    to={{
+                                      pathname: `/Doktorlar/${DigerTedaviListesi.id} `,
+                                      state: {
+                                        Baslik: this.state.Baslik,
+                                        Gonderilenveriler:
+                                          this.state.DigerTedaviListesi[index],
+                                      },
+                                    }}
+                                  >
+                                    <li>
+                                      &nbsp;
+                                      <span>
+                                        <i className="fa fa-chevron-right"></i>
+                                      </span>
+                                      &nbsp;
+                                      {DigerTedaviListesi.BolumAdi}
+                                    </li>
+                                  </Link>
+                                );
+                              }
+                            )}{" "}
+                            <button
+                              className="GeriButton"
+                              onMouseEnter={() =>
+                                this.setState({ showDigerTedavilist: false })
+                              }
+                            >
+                              <span>
+                                <i class="fa fa-reply"></i>
+                              </span>{" "}
+                              &nbsp; Geri
+                            </button>
                           </ul>
                         </div>
                       </div>
+                      <button
+                        className="GeriButtonBolumler"
+                        onMouseEnter={() =>
+                          this.setState({ showBolumlerList: false })
+                        }
+                      >
+                        <span>
+                          <i class="fa fa-reply"></i>
+                        </span>{" "}
+                        &nbsp; Geri
+                      </button>
                     </div>
-                  </div> */}
-                  <li className="LinksListItem ">Doktorlar</li>
+                  </div>
+
                   <div
                     className="butonrengi"
                     onMouseLeave={() => {
@@ -762,9 +894,12 @@ class Navigasyonbar extends Component {
                         No:25 MERKEZ/ELAZIĞ <br></br>
                         <h>Telefon </h>: 0424 233 35 55<br></br>
                         <h>E-mail </h>: hastane@firat.edu.tr<br></br>
-                        <h> Hesap Bilgileri</h>: Fırat Üniversitesi Hastanesi
-                        Döner Sermaye İşletme Müdürlüğü
-                        TR860001001561135354675057
+                        <h> Hesap Bilgileri:</h>
+                        <br></br>
+                        <h>Banka adı : </h>T.C. Ziraat Bankasi <br></br>
+                        <h> Fırat Şubesi Hesap adı : </h> Fırat Üniversitesi
+                        Döner Sermaye İşletme Müdürlüğü <br></br>
+                        <h>İban no : </h> TR860001001561135354675057
                         <button
                           className="GeriButtonBolumler"
                           onMouseEnter={() =>

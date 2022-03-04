@@ -123,6 +123,7 @@ a:hover {
 
 .RouterSayfasiDetay h1 {
   padding-top: 20px;
+  padding-bottom: 20px;
   font-size: 28px;
   font-weight: bold;
   color: #850432;
@@ -197,9 +198,6 @@ a:hover {
   color: #850432;
 }
 
-
-
-
 .DoktorlarCards {
   height: 300px;
   width: 200px;
@@ -211,14 +209,12 @@ a:hover {
   display: inline-block;
   cursor: pointer;
   transition: all 0.5s ease-out;
-  background-color:white;
+  background-color: white;
   white-space: normal;
-  
 }
-.DoktorlarCards:hover{
-transform: scale(1.1);
-transition: all 0.5s ease-out;
-
+.DoktorlarCards:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease-out;
 }
 .DoktorlarCardsFotograf {
   height: 50%;
@@ -237,30 +233,21 @@ transition: all 0.5s ease-out;
 }
 
 .DoktorlarCardsDetay {
-text-align: center;
+  text-align: center;
   height: 50%;
   width: 100%;
   padding-top: 15%;
 }
 .DoktorlarCardsDetay h4 {
-font-size: 15px;
-
+  font-size: 15px;
 }
-.DoktorlarCardsDetay p1{
-
+.DoktorlarCardsDetay p1 {
   font-size: 18px;
 }
 .DoktolarBaslığı {
-font-size: 30px;
-color: #850432;
-
+  font-size: 30px;
+  color: #850432;
 }
-
-
-
-
-
-
 
 .Links {
   position: absolute;
@@ -465,7 +452,9 @@ color: #850432;
 .HastaneIletisim {
   position: relative;
   bottom: 0px;
-  background-color: #ffffff;
+  background-color:#4f647f;
+  color: white;
+  font-weight: 100;
 }
 
 .harita {
@@ -521,7 +510,7 @@ color: #850432;
 }
 .HLeftButton {
   position: relative;
-  width: 100px;
+  width: fit-content;
   height: 100%;
   opacity: 0.7;
   font-size: 100px;
@@ -535,7 +524,7 @@ color: #850432;
 }
 .HRightButton {
   position: relative;
-  width: 100px;
+  width: fit-content;
   height: 100%;
   opacity: 0.7;
   font-size: 100px;
@@ -778,45 +767,75 @@ color: #850432;
 
 .HaberlerVeEtkinlikler {
   height: 100%;
-  width: 100%;
+  width: 960px;
   justify-content: center;
-  display: flex-start;
   background-color: transparent;
   white-space: nowrap;
-  overflow-x: scroll;
   overflow: hidden;
   scroll-behavior: smooth;
   cursor: grabbing;
-  user-select: none;
+  padding-left: 0px;
+  margin-bottom: 0rem;
 }
 
 .Slider-container {
-  position: absolute;
-  width: 1162px;
-  height: 400px;
+  position: relative;
+  width: 1160px;
+  height: 410px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.HLeftButton {
+  position: relative;
+  width: 100px;
+  height: 100%;
+  opacity: 0.7;
+  font-size: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.HLeftButton:hover {
+  color: #850432;
+}
+.HRightButton {
+  position: relative;
+  width: 100px;
+  height: 100%;
+  opacity: 0.7;
+  font-size: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.HRightButton:hover {
+  color: #850432;
+}
 .Haber {
-  z-index: 6;
   margin-left: 15px;
   margin-right: 15px;
   height: 400px;
   background-color: #fafafa;
   border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 1px 5px 5px rgba(0, 0, 0, 0.3);
   display: inline-block;
-  width: 300px;
+  width: 290px;
   white-space: normal;
   border-bottom: 5px solid #4f647f;
+}
+.Haberrrr {
+  display: none;
 }
 
 .Hfotograf {
   width: 100%;
-  height: 50%;
-  object-fit: contain;
+  height: 200px;
+  object-fit: cover;
   border-radius: 10px 10px 0px 0px;
 }
 .Haberbody {
@@ -1340,20 +1359,12 @@ color: #850432;
   }
 
   .HLeftButton {
-    position: relative;
-    width: 50px;
-    height: 100%;
-    left: 0%;
     font-size: 50px;
-    top: 0px;
+    width: 30px;
   }
   .HRightButton {
-    position: relative;
-    height: 100%;
-    width: 50px;
-    right: 0%;
     font-size: 50px;
-    top: 0px;
+    width: 30px;
   }
 
   .MenüButton {
@@ -1362,7 +1373,6 @@ color: #850432;
     position: absolute;
     top: 20px;
     right: 0%;
-
     border: 2px solid white;
   }
 
@@ -1444,7 +1454,6 @@ color: #850432;
     margin-bottom: 15px;
     margin-top: 15px;
     margin-right: 15px;
-
     width: 110px;
 
     left: 0px;
@@ -1458,13 +1467,12 @@ color: #850432;
     top: 0px;
     position: relative;
     display: block;
+    width: 320px;
   }
   .Haber {
-    width: 300px;
+    width: 290px;
   }
-  .Haber :hover {
-    transform: none;
-  }
+
   .Duyuruslider {
     width: 100%;
     height: 360px;

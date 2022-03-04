@@ -1,5 +1,6 @@
 import DataConsumer from "../context";
 import { Component } from "react";
+import HaberSlider from "./HaberSlider";
 
 class Haberler extends Component {
   static contextType = DataConsumer;
@@ -7,18 +8,18 @@ class Haberler extends Component {
     super(props);
 
     this.state = {
-      count: 5,
+
     };
   }
 
   slideLeft = () => {
     var slider = document.getElementById("slider");
-    slider.scrollLeft = slider.scrollLeft + 330;
+    slider.scrollLeft = slider.scrollLeft + 320;
   };
 
   slideRight = () => {
     var slider = document.getElementById("slider");
-    slider.scrollLeft = slider.scrollLeft - 330;
+    slider.scrollLeft = slider.scrollLeft - 320;
   };
 
   componentDidMount() {
@@ -51,51 +52,18 @@ class Haberler extends Component {
   }
 
   render() {
-    return (
-      <DataConsumer>
-        {(value) => {
-          let GosterilecekHaberlerson = value.Haberler;
-
+ 
           return (
             <div className="HVE ">
               <a className=" buyukbaslik"> Haberler & Etkinlikler </a>
-
-              <div className="Slider-container">
-                <div className="HLeftButton" onClick={this.slideRight}>
-                  <i className="fa fa-angle-left"></i>
-                </div>
-
-                <div className="HaberlerVeEtkinlikler" id="slider">
-                  {GosterilecekHaberlerson.map(
-                    (GosterilecekHaberlerson, index) => {
-                      return (
-                        <div
-                          class="Haber"
-                          key={index}
-                          id={GosterilecekHaberlerson.HaberId}
-                        >
-                          <div >
-                            <img class="Hfotograf"src={GosterilecekHaberlerson.HaberFotografi} />
-                          </div>
-                          <div class="Haberbody">
-                            <h4>{GosterilecekHaberlerson.HaberBasligi}</h4>
-                            <p>{GosterilecekHaberlerson.HaberDetayi}</p>
-                          </div>
-                        </div>
-                      );
-                    }
-                  )}
-                </div>
-
-                <div className="HRightButton" onClick={this.slideLeft}>
-                  <i className="fa fa-angle-right"></i>
-                </div>
-              </div>
+<HaberSlider></HaberSlider>
+          
             </div>
           );
-        }}
-      </DataConsumer>
-    );
+
+
+    
+  
   }
 }
 

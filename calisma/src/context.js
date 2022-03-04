@@ -114,6 +114,9 @@ import yaseminbulut from "../src/component/Resimler/DoktorlarFotograflari/yasemi
 import adnanseyrek from "../src/component/Resimler/DoktorlarFotograflari/adnanseyrek.jpg";
 import ahmeterensoy from "../src/component/Resimler/DoktorlarFotograflari/ahmeterensoy.jpg";
 import mustafakaplan from "../src/component/Resimler/DoktorlarFotograflari/mustafakaplan.jpg";
+//Haber
+
+import hstn3 from "../src/component/Resimler/hstn3.jpg"
 
 const DataContext = React.createContext();
 
@@ -1484,70 +1487,70 @@ export class ContextProvider extends Component {
       Haberler: [
         {
           HaberId: 1,
-          HaberFotografi: " bga2.jpg",
+          HaberFotografi:hstn3,
           HaberBasligi:
             "Firat Universitesi Hastanesi1 haberleri burada gösterilecek",
-          HaberDetayi: " detay1",
+          HaberDetayi: "Detayy1",
         },
         {
           HaberId: 2,
-          HaberFotografi: " bga5.jpg",
+          HaberFotografi: hstn3,
           HaberBasligi:
             "Firat Universitesi Hastanesi haberleri burada gösterilecekFirat Universitesi Hastanesi2",
           HaberDetayi: "detay2",
         },
         {
           HaberId: 3,
-          HaberFotografi: " bga2.jpg",
+          HaberFotografi: hstn3,
           HaberBasligi:
             " Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3",
-          HaberDetayi: " detay3",
+          HaberDetayi: "Detayy3",
         },
         {
           HaberId: 4,
-          HaberFotografi: " bga2.jpg",
+          HaberFotografi: hstn3,
           HaberBasligi:
             " Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3",
-          HaberDetayi: " detay4 ",
+          HaberDetayi: "Detayy4",
         },
         {
           HaberId: 5,
-          HaberFotografi: " bga2.jpg",
+          HaberFotografi: hstn3,
           HaberBasligi:
             " Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3",
-          HaberDetayi: " detay5 ",
+          HaberDetayi: "Detayy5",
         },
         {
           HaberId: 6,
-          HaberFotografi: " bga2.jpg",
+          HaberFotografi: hstn3,
           HaberBasligi:
             " Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3",
           HaberDetayi: " detay6 ",
         },
         {
           HaberId: 7,
-          HaberFotografi: " bga2.jpg",
+          HaberFotografi: hstn3,
           HaberBasligi:
             " Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3",
-          HaberDetayi: " detay7 ",
+          HaberDetayi: "Detayy7",
         },
         {
           HaberId: 8,
-          HaberFotografi: " bga2.jpg",
+          HaberFotografi: hstn3,
           HaberBasligi:
             " Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3",
-          HaberDetayi: " detay8 ",
+          HaberDetayi: "Detayy8",
         },
         {
           HaberId: 9,
-          HaberFotografi: " bga2.jpg",
+          HaberFotografi: hstn3,
           HaberBasligi:
             " Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3",
           HaberDetayi: " detay9 ",
         },
         {
           HaberId: 10,
-          HaberFotografi: " bga2.jpg",
+          HaberFotografi: hstn3,
           HaberBasligi:
             " Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3",
           HaberDetayi:
