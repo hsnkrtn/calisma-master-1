@@ -1,9 +1,15 @@
-import React from "react";
+
+  import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { HastaneFotograflari } from "./Helpers/HastaneResimlerData";
 import DoktorlarCards from "../component/DoktorlarCards";
 
 function Bolumler(props) {
+
+useEffect(() => {
+  window.scrollTo(0, 0);
+});
+
   const fotograflar = HastaneFotograflari[5].a;
 
   const location = useLocation();

@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+
 import { useLocation } from "react-router-dom";
 import { HastaneFotograflari } from "./Helpers/HastaneResimlerData";
 
@@ -8,6 +9,9 @@ function GenelTanitim(props) {
   const location = useLocation();
   const Baslik = location.state.Baslik;
   const Detay = location.state.Detay;
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
 console.log(Detay)
   return (
     <div className="RouterSayfasi">

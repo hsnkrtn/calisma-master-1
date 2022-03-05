@@ -40,6 +40,7 @@ class Navigasyonbar extends Component {
 
   componentDidMount() {
     window.addEventListener("scroll", this.changeNavbar);
+    window.scrollTo(0, 0);
   }
 
   changeNavbar = () => {
@@ -261,8 +262,9 @@ class Navigasyonbar extends Component {
                                     Baslik: YonetimListesi.Baslik,
                                   });
                                 }}
+                                    
                                 to={{
-                                  pathname: `/Yonetim/${YonetimListesi.id} `,
+                                  pathname:`/Yonetim/${YonetimListesi.id} `,
                                   state: {
                                     Baslik: this.state.Baslik,
                                     Gonderilenveriler:

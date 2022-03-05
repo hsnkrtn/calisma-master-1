@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component ,useEffect  } from "react";
 import { useLocation } from "react-router-dom";
 
 function Yonetim(props) {
@@ -6,6 +6,9 @@ function Yonetim(props) {
   const Gelenveriler = location.state.Gonderilenveriler;
   const Baslik = location.state.Baslik;
 
+useEffect(() => {
+  window.scrollTo(0, 0);
+});
   return (
     <div className="RouterSayfasi">
       <div className="RouterYonetimSayfasiIcerik">
