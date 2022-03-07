@@ -1504,70 +1504,70 @@ export class ContextProvider extends Component {
       Haberler: [
         {
           HaberId: 1,
-          HaberFotografi:hstn3,
+          Fotograf:[ hstn3,selcenozkayafotografi ],
           HaberBasligi:
             "Firat Universitesi Hastanesi1 haberleri burada gösterilecek",
           HaberDetayi: "Detayy1",
         },
         {
           HaberId: 2,
-          HaberFotografi: hstn3,
+          Fotograf:[ hstn3, ],
           HaberBasligi:
             "Firat Universitesi Hastanesi haberleri burada gösterilecekFirat Universitesi Hastanesi2",
           HaberDetayi: "detay2",
         },
         {
           HaberId: 3,
-          HaberFotografi: hstn3,
+          Fotograf:[ hstn3, ],
           HaberBasligi:
             " Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3",
           HaberDetayi: "Detayy3",
         },
         {
           HaberId: 4,
-          HaberFotografi: hstn3,
+          Fotograf: [ hstn3, ],
           HaberBasligi:
             " Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3",
           HaberDetayi: "Detayy4",
         },
         {
           HaberId: 5,
-          HaberFotografi: hstn3,
+          Fotograf:[ hstn3, ],
           HaberBasligi:
             " Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3",
           HaberDetayi: "Detayy5",
         },
         {
           HaberId: 6,
-          HaberFotografi: hstn3,
+          Fotograf: [ hstn3, ],
           HaberBasligi:
             " Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3",
           HaberDetayi: " detay6 ",
         },
         {
           HaberId: 7,
-          HaberFotografi: hstn3,
+          Fotograf: [ hstn3, ],
           HaberBasligi:
             " Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3",
           HaberDetayi: "Detayy7",
         },
         {
           HaberId: 8,
-          HaberFotografi: hstn3,
+          Fotograf:[ hstn3, ],
           HaberBasligi:
             " Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3",
           HaberDetayi: "Detayy8",
         },
         {
           HaberId: 9,
-          HaberFotografi: hstn3,
+          Fotograf:[ hstn3, ],
           HaberBasligi:
             " Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3",
           HaberDetayi: " detay9 ",
         },
         {
           HaberId: 10,
-          HaberFotografi: hstn3,
+          Fotograf:[ hstn3, ],
           HaberBasligi:
             " Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3",
           HaberDetayi:

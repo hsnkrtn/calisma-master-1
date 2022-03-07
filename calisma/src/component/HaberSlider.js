@@ -75,7 +75,10 @@ class HaberSlider extends Component {
                           pathname: `/HaberSayfası/${GosterilecekHaberlerson.HaberId} `,
                           state: {
                             Baslik: GosterilecekHaberlerson.HaberBasligi,
-                            Detay: GosterilecekHaberlerson.HaberDetayi,
+                           Detay: GosterilecekHaberlerson.HaberDetayi,
+                            Fotograf:  GosterilecekHaberlerson.Fotograf,
+                      
+
                           },
                         }}
                       >
@@ -87,7 +90,7 @@ class HaberSlider extends Component {
                           <div>
                             <img
                               class="Hfotograf"
-                              src={GosterilecekHaberlerson.HaberFotografi}
+                              src={GosterilecekHaberlerson.Fotograf[0]}
                             />
                           </div>
                           <div class="Haberbody">
