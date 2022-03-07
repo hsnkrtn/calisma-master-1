@@ -3,24 +3,23 @@ import { useLocation } from "react-router-dom";
 import Haberler from "./Haberler";
 import { HastaneFotograflari } from "./Helpers/HastaneResimlerData";
 import HaberSlider from "./HaberSlider";
-
+import ResimlerSlider from "./ResimlerSlider";
 
 function HaberSayfası(props) {
-  const fotograflar = HastaneFotograflari[2].a;
-
   const location = useLocation();
   const Baslik = location.state.Baslik;
   const Detay = location.state.Detay;
-
+  const HaberFotograf = location.state.Fotograf;
 
   useEffect(() => {
     window.scrollTo(0, 0);
   });
-
   return (
     <div className="RouterSayfasi">
       <div className="RouterSayfasiIcerik">
-        <img className="RouterSayfasiFotograf" src={fotograflar}></img>
+        <div className="RouterSayfasiFotograf" >
+          <ResimlerSlider Fotograf={HaberFotograf} />
+        </div>
         <section className="RouterSayfasiDetay">
           <h1> {Baslik}</h1>
           <hr></hr>

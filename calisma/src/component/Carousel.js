@@ -10,7 +10,7 @@ function Carousel() {
     <div className="carousel">
       <div
         className="carouselInner"
-        style={{ backgroundImage: `url(${images[imgNumber].a})` }}
+        style={{ backgroundImage: `url(${images[imgNumber].Resim})` }}
       ></div>
 
       <div

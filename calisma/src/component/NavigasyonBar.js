@@ -20,6 +20,7 @@ class Navigasyonbar extends Component {
       showDigerTedavilist: false,
       showDoktorlarList: false,
       showIletisimItems: false,
+      BashekimKey: false,
       TanıtımListesi: [],
       KurumsalListesi: [],
       YonetimListesi: [],
@@ -73,7 +74,6 @@ class Navigasyonbar extends Component {
           this.state.DigerTedaviListesi =
             value.Bolumler[0].DigerTedaviUniteleri;
 
-          console.log(this.state.TemelListesi);
           return (
             <nav className="NavigasyonBar">
               <div></div>
@@ -258,17 +258,28 @@ class Navigasyonbar extends Component {
                             return (
                               <Link
                                 onMouseEnter={() => {
+                                  if (index === 0) {
+                                    this.setState({
+                                      BashekimKey: true,
+                                    });
+                                  }
+
                                   this.setState({
                                     Baslik: YonetimListesi.Baslik,
                                   });
                                 }}
-                                    
+                                onMouseLeave={() => {
+                                  this.setState({
+                                    BashekimKey: false,
+                                  });
+                                }}
                                 to={{
-                                  pathname:`/Yonetim/${YonetimListesi.id} `,
+                                  pathname: `/Yonetim/${YonetimListesi.id} `,
                                   state: {
                                     Baslik: this.state.Baslik,
                                     Gonderilenveriler:
                                       this.state.YonetimListesi[index].Kisiler,
+                                    BashekimKey: this.state.BashekimKey,
                                   },
                                 }}
                               >
