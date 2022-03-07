@@ -4,6 +4,7 @@ import { useState } from "react";
 
 function ResimlerSlider(props) {
   const [ResimNumarasi, setResimNumarasi] = useState(0);
+  const Foto= props.Fotograf;
   return (
     <div className="ResimSlider">
       <div className="ResimSliderFotograf"  > 
@@ -18,7 +19,7 @@ function ResimlerSlider(props) {
         </span>
       </div>
       <div className="ResimSliderFotograf ">
-        <img src={props.Fotograf[ResimNumarasi]}></img>
+        <img src={Foto[ResimNumarasi]}></img>
       </div>
  
       <div
@@ -35,14 +36,15 @@ function ResimlerSlider(props) {
    
       <div className="KucukFotograflar"> 
       <ul >
-        {props.Fotograf.map((Kucukfotograf, index) => {
-          return (
+      {Foto.map((Kucukfotograf, index) => { 
+        return (
             <li className="kucukfotograf">
-                     <img src={Kucukfotograf[ResimNumarasi]}></img>
+                     <img src={Kucukfotograf}></img>
 
             </li>
           );
-        })}
+       })}
+          
       </ul>
 
     </div>  </div>
