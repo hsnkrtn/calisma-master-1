@@ -515,7 +515,7 @@ a:hover {
 .HaberFotografi{
 display: flex;
   height: 800px;
-align-items: center;
+align-items: center ;
 }
 
 .HaberFotografi img {
