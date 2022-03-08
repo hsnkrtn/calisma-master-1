@@ -512,17 +512,16 @@ a:hover {
   width: 100%;
   height: fit-content;
 }
-.HaberFotografi{
-display: flex;
-  height: 800px;
-align-items: center ;
+.HaberFotografi {
+  display: flex;
+  height: 600px;
+  align-items: center;
 }
 
 .HaberFotografi img {
-  height: fit-content;
+  height: 100%;
   width: 100%;
   border-radius: 10px;
-  padding: 20px;
 }
 
 .KucukFotograflar {
@@ -539,8 +538,12 @@ align-items: center ;
 .KucukFotograflar li {
   position: relative;
   display: inline-block;
-
   margin: 20px;
+  transition: all 0.5s ease-out;
+}
+.KucukFotograflar li:hover {
+  transition: all 0.5s ease-out;
+  transform: scale(1.1);
 }
 .ResimSliderFotografCard img {
   width: 300px;
@@ -548,7 +551,8 @@ align-items: center ;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border: 2px solid #850432;
+  padding: 5px;
+  border: 3px solid #4f647f;
 }
 
 .ResimSliderLeftButton {
