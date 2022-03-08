@@ -4,48 +4,32 @@ import { useState } from "react";
 
 function ResimlerSlider(props) {
   const [ResimNumarasi, setResimNumarasi] = useState(0);
+  const Fotograflar = props.Fotograf;
+console.log(Fotograflar)
   return (
     <div className="ResimSlider">
-      <div className="ResimSliderFotograf"  > 
-      <div
-        className="ResimSliderLeftButton"
-        onClick={() => {
-          setResimNumarasi(ResimNumarasi - 1);
-        }}
-      >
-        <span>
-          <i className="fa fa-angle-left"></i>
-        </span>
-      </div>
-      <div className="ResimSliderFotograf ">
-        <img src={props.Fotograf[ResimNumarasi]}></img>
-      </div>
- 
-      <div
-        className="ResimSliderRightButon"
-        onClick={() => {
-          setResimNumarasi(ResimNumarasi + 1);
-        }}
-      >
-        <span>
-          <i className="fa fa-angle-right"></i>
-        </span>
-      </div>
-      </div>
-   
-      <div className="KucukFotograflar"> 
-      <ul >
-        {props.Fotograf.map((Kucukfotograf, index) => {
-          return (
-            <li className="kucukfotograf">
-                     <img src={Kucukfotograf[ResimNumarasi]}></img>
 
-            </li>
+<div className="HaberFotografi" >   
+<img src={ Fotograflar[ResimNumarasi]} ></img>
+
+</div>
+
+<hr></hr>
+      <div  className="KucukFotograflar" >  
+      <ul   >
+        {Fotograflar.map((Fotograf, index) => {
+
+          return (
+          <li  className="ResimSliderFotografCard "
+          onClick={() => setResimNumarasi(ResimNumarasi + 1)}
+          >
+            <img src={Fotograf}></img>
+          </li>
           );
         })}
       </ul>
-
-    </div>  </div>
+      </div>
+    </div>
   );
 }
 

@@ -117,6 +117,7 @@ import mustafakaplan from "../src/component/Resimler/DoktorlarFotograflari/musta
 //Haber
 
 import hstn3 from "../src/component/Resimler/hstn3.jpg"
+import hstn4 from "../src/component/Resimler/hstn4.jpg"
 
 const DataContext = React.createContext();
 
@@ -1511,63 +1512,63 @@ export class ContextProvider extends Component {
         },
         {
           HaberId: 2,
-          Fotograf:[ hstn3, ],
+          Fotograf:[ hstn3,hstn4 ],
           HaberBasligi:
             "Firat Universitesi Hastanesi haberleri burada gösterilecekFirat Universitesi Hastanesi2",
           HaberDetayi: "detay2",
         },
         {
           HaberId: 3,
-          Fotograf:[ hstn3, ],
+          Fotograf:[ hstn3,hstn4 ],
           HaberBasligi:
             " Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3",
           HaberDetayi: "Detayy3",
         },
         {
           HaberId: 4,
-          Fotograf: [ hstn3, ],
+          Fotograf: [ hstn3,hstn4 ],
           HaberBasligi:
             " Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3",
           HaberDetayi: "Detayy4",
         },
         {
           HaberId: 5,
-          Fotograf:[ hstn3, ],
+          Fotograf:[ hstn3, hstn4],
           HaberBasligi:
             " Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3",
           HaberDetayi: "Detayy5",
         },
         {
           HaberId: 6,
-          Fotograf: [ hstn3, ],
+          Fotograf: [ hstn3,hstn4 ],
           HaberBasligi:
             " Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3",
           HaberDetayi: " detay6 ",
         },
         {
           HaberId: 7,
-          Fotograf: [ hstn3, ],
+          Fotograf: [ hstn3, hstn4],
           HaberBasligi:
             " Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3",
           HaberDetayi: "Detayy7",
         },
         {
           HaberId: 8,
-          Fotograf:[ hstn3, ],
+          Fotograf:[ hstn3, hstn4],
           HaberBasligi:
             " Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3",
           HaberDetayi: "Detayy8",
         },
         {
           HaberId: 9,
-          Fotograf:[ hstn3, ],
+          Fotograf:[ hstn3,hstn4 ],
           HaberBasligi:
             " Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3",
           HaberDetayi: " detay9 ",
         },
         {
           HaberId: 10,
-          Fotograf:[ hstn3, ],
+          Fotograf:[ hstn3,hstn4, hstn3,hstn4, hstn3,hstn4 , hstn3,hstn4, hstn3, ],
           HaberBasligi:
             " Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3",
           HaberDetayi:
