@@ -1,14 +1,14 @@
 import React, { useEffect } from "react";
 
 import { useLocation } from "react-router-dom";
-import { HastaneFotograflari } from "./Helpers/HastaneResimlerData";
 
 function GenelTanitim(props) {
-  const fotograflar = HastaneFotograflari[5].a;
 
   const location = useLocation();
   const Baslik = location.state.Baslik;
   const Detay = location.state.Detay;
+  const Fotograf =location.state.Fotograf;
+  console.log(Fotograf)
   useEffect(() => {
     window.scrollTo(0, 0);
   });
@@ -16,7 +16,7 @@ console.log(Detay)
   return (
     <div className="RouterSayfasi">
       <div className="RouterSayfasiIcerik">
-        <img className="RouterSayfasiFotograf" src={fotograflar}></img>
+        <img className="RouterSayfasiFotograf" src={Fotograf}></img>
         <section  className="RouterSayfasiDetay" > 
           <h1> {Baslik}</h1>
           <hr></hr>

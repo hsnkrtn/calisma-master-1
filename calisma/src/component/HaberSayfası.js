@@ -17,20 +17,28 @@ function HaberSayfası(props) {
   return (
     <div className="RouterSayfasi">
       <div className="RouterSayfasiIcerik">
+        
+
         <div className="RouterSayfasiFotograf" >
           {/* <ResimlerSlider Fotograf={HaberFotograf} /> */}
           <img src={ HaberFotograf}  ></img>
         </div>
+
         <section className="RouterSayfasiDetay">
+          
           <h1> {Baslik}</h1>
           <hr></hr>
           <p1> {Detay}</p1>
           <hr></hr>
         </section>{" "}
+        <div className="RouterSayfasiFotograf" >
+          <ResimlerSlider Fotograf={HaberFotograf} />
+        </div>
         <section className="RouterSayfasiDetay">
           <h1> Diger Haberler</h1>
           <HaberSlider></HaberSlider>{" "}
         </section>
+       
       </div>
     </div>
   );
