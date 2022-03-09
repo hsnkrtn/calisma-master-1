@@ -18,6 +18,12 @@ function HaberSayfası(props) {
     <div className="RouterSayfasi">
       <div className="RouterSayfasiIcerik">
         
+
+        <div className="RouterSayfasiFotograf" >
+          {/* <ResimlerSlider Fotograf={HaberFotograf} /> */}
+          <img src={ HaberFotograf}  ></img>
+        </div>
+
         <section className="RouterSayfasiDetay">
           
           <h1> {Baslik}</h1>
