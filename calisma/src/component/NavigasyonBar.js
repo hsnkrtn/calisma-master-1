@@ -34,7 +34,7 @@ class Navigasyonbar extends Component {
       Hemsirelik: [],
       Mudurler: [],
       Baslik: "",
-      Fotograf: "",
+      Fotograf:"",
       Detay: "",
     };
   }
@@ -42,6 +42,7 @@ class Navigasyonbar extends Component {
   componentDidMount() {
     window.addEventListener("scroll", this.changeNavbar);
     window.scrollTo(0, 0);
+   
   }
 
   changeNavbar = () => {
@@ -54,6 +55,7 @@ class Navigasyonbar extends Component {
 
   render() {
     const logo = HastaneFotograflari[0].Logo;
+    console.log(this.state.Fotograf)
     return (
       <DataConsumer>
         {(value) => {
@@ -192,8 +194,7 @@ class Navigasyonbar extends Component {
                                     Detay:
                                       this.state.KurumsalListesi[index].Detay,
                                     Fotograf:
-                                      this.state.KurumsalListesi[index]
-                                        .Fotograf,
+                                      this.state.KurumsalListesi[index].Fotograf,
                                   });
                                 }}
                                 to={{
@@ -201,6 +202,8 @@ class Navigasyonbar extends Component {
                                   state: {
                                     Baslik: this.state.Baslik,
                                     Detay: this.state.Detay,
+                                    Fotograf:
+                                    this.state.KurumsalListesi[index].Fotograf,
                                   },
                                 }}
                               >

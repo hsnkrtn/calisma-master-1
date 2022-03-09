@@ -20,6 +20,7 @@ import mustafayildizfotografi from "../src/component/Resimler/KisiFotografları/
 import nurcanincefotografi from "../src/component/Resimler/KisiFotografları/nurcanincefotografi.png";
 import selcenozkayafotografi from "../src/component/Resimler/KisiFotografları/selcenozkayafotografi.jpeg";
 import talatceylanfotografi from "../src/component/Resimler/KisiFotografları/talatceylanfotografi.jpg";
+import fahrettingoktas from "../src/component/Resimler/KisiFotografları/fahrettingoktas.jfif";
 //doktorlarfotograflari
 import defaultImage from "../src/component/Resimler/DoktorlarFotograflari/defaultImage.png";
 import evrimgul from "../src/component/Resimler/DoktorlarFotograflari/evrimgul.jpg";
@@ -116,8 +117,8 @@ import ahmeterensoy from "../src/component/Resimler/DoktorlarFotograflari/ahmete
 import mustafakaplan from "../src/component/Resimler/DoktorlarFotograflari/mustafakaplan.jpg";
 //Haber
 
-import hstn3 from "../src/component/Resimler/hstn3.jpg"
-import hstn4 from "../src/component/Resimler/hstn4.jpg"
+import hstn3 from "../src/component/Resimler/hstn3.jpg";
+import hstn4 from "../src/component/Resimler/hstn4.jpg";
 
 const DataContext = React.createContext();
 
@@ -171,32 +172,38 @@ export class ContextProvider extends Component {
         {
           id: "1",
           Baslik: "Rektörümüz",
+          Fotograf: fahrettingoktas,
           Detay:
             "  tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak ",
         },
         {
           id: "2",
           Baslik: "Misyon Ve Vizyon",
+          Fotograf: hstn4,
           Detay:
             "Misyonumuz: İnsanların temel hak ve özgürlükleri arasında yer alan sağlık hizmetlerini; etik ilkeler çerçevesinde, kaliteli, özgün, güvenilir ve evrensel değerler ölçeğinde, bilgi ve beceri ile donatılmış alanında uzman kadromuz ile ileri bilim ve teknoloji kaynaklarını etkin kullanarak nitelikli bir şekilde vermek ve hasta, hasta yakını ve çalışan memnuniyetini en üst seviyeye çıkarmaktır. <br></br> Vizyonumuz: Kaliteli hizmet anlayışını, güveni, hasta mahremiyetini ve memnuniyetini ilke edinmiş, ileri teknoloji ile donatılmış, çalışanları ile ekip ruhunu oluşturan, kurumsal kimliği ön plana çıkaran, ulusal ve uluslararası alanda tıpta yaşanan gelişmeleri yakından takip eden, araştırmacı ve sorgulayıcı bir anlayışla dünya standartlarında kaliteli sağlık hizmeti sunmak.",
         },
         {
           id: "3",
           Baslik: "Değerlerimiz",
+
           Detay:
             "  tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak ",
+          Fotograf: hstn4,
         },
         {
           id: "4",
           Baslik: "Amaç Ve Hedeflerimiz",
           Detay:
             "tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak ",
+          Fotograf: hstn4,
         },
         {
           id: "5",
           Baslik: "Kalite Yönetimi",
           Detay:
             "tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak ",
+          Fotograf: hstn4,
         },
       ],
       //Bolumler
@@ -1005,7 +1012,8 @@ export class ContextProvider extends Component {
             },
             {
               BolumAdi: "Kalp-Damar Cerrahisi Anabilim Dalı ",
-              Detay:"Fırat Üniversitesi Tıp Fakültesi bünyesinde 1992 yılında Göğüs ve Kalp Damar Cerrahisi Anabilim Dalı olarak kurulmuş olan bölüm yıllar içerisinde gelişimini sürdürerek 2002 yılında Kalp ve Damar Cerrahisi Anabilim Dalı olarak ayrılmış ve o tarihten bugüne bölgeye hizmet vermeye devam etmektedir. 2004 yılında Fırat Üniversitesi Hastanesi’nin yeni hizmet binasına taşınması ile birlikte 14 yataklı servisi, 4 yataklı servis içi ara yoğun bakım ünitesi ve 5 yataklı üçüncü basamak yoğun bakım ünitesi ile toplam 23 yatak kapasitesine ulaşmış olan klinik başta Elazığ ili olmak üzere ağırlıklı olarak Bingöl, Tunceli, Muş, Bitlis, Diyarbakır ve Malatya illerinden müracaat eden hastalara güncel tedavi protokolleri ile tedavi imkanı sağlamaktadır. Klinikte bir profesör, bir doçent ve iki dr öğr üyesi olmak üzere dört öğretim üyesi bulunmaktadır. Kurulduğu günden itibaren 20 kalp ve damar cerrahisi uzmanı mezun ederek sağlık sistemi içerisine kazandırılmıştır. Bu uzmanlardan sekizi halen akademisyen olarak çeşitli kurum ve kuruluşlarda çalışmaktadır. Klinikte aort diseksiyonları da dahil olmak üzere tüm aort cerrahisi ameliyatları, koroner bypass, kalp kapak ameliyatları, kronik tıkayıcı arter hastalıkları cerrahileri, varis ve venöz sistem cerrahileri başarılı bir şekilde uygulanabilmektedir. Bunun yanında tıptaki gelişmeler neticesinde güncellik kazanan TAVİ (ameliyatsız aort kapak implantasyonu) ve EVAR-TEVAR (ameliyatsız aort anevrizma tedavisi) işlemleri de multidisipliner yaklaşımla ilgili klinikler ile birlikte planlanarak uygulanmaktadır.",
+              Detay:
+                "Fırat Üniversitesi Tıp Fakültesi bünyesinde 1992 yılında Göğüs ve Kalp Damar Cerrahisi Anabilim Dalı olarak kurulmuş olan bölüm yıllar içerisinde gelişimini sürdürerek 2002 yılında Kalp ve Damar Cerrahisi Anabilim Dalı olarak ayrılmış ve o tarihten bugüne bölgeye hizmet vermeye devam etmektedir. 2004 yılında Fırat Üniversitesi Hastanesi’nin yeni hizmet binasına taşınması ile birlikte 14 yataklı servisi, 4 yataklı servis içi ara yoğun bakım ünitesi ve 5 yataklı üçüncü basamak yoğun bakım ünitesi ile toplam 23 yatak kapasitesine ulaşmış olan klinik başta Elazığ ili olmak üzere ağırlıklı olarak Bingöl, Tunceli, Muş, Bitlis, Diyarbakır ve Malatya illerinden müracaat eden hastalara güncel tedavi protokolleri ile tedavi imkanı sağlamaktadır. Klinikte bir profesör, bir doçent ve iki dr öğr üyesi olmak üzere dört öğretim üyesi bulunmaktadır. Kurulduğu günden itibaren 20 kalp ve damar cerrahisi uzmanı mezun ederek sağlık sistemi içerisine kazandırılmıştır. Bu uzmanlardan sekizi halen akademisyen olarak çeşitli kurum ve kuruluşlarda çalışmaktadır. Klinikte aort diseksiyonları da dahil olmak üzere tüm aort cerrahisi ameliyatları, koroner bypass, kalp kapak ameliyatları, kronik tıkayıcı arter hastalıkları cerrahileri, varis ve venöz sistem cerrahileri başarılı bir şekilde uygulanabilmektedir. Bunun yanında tıptaki gelişmeler neticesinde güncellik kazanan TAVİ (ameliyatsız aort kapak implantasyonu) ve EVAR-TEVAR (ameliyatsız aort anevrizma tedavisi) işlemleri de multidisipliner yaklaşımla ilgili klinikler ile birlikte planlanarak uygulanmaktadır.",
               Doktorlar: [
                 {
                   unvan: "Prof. Dr. ",
@@ -1033,7 +1041,8 @@ export class ContextProvider extends Component {
             },
             {
               BolumAdi: "Kulak Burun Boğaz Hastalıkları Anabilim Dalı  ",
-              Detay:"Kliniğimiz 1986 yılında kurucu öğretim üyesi ve anabilim dalımızın ilk başkanı, Dr. Şinasi YALÇIN tarafından kurulmuştur. Klinik çalışmalara, Fırat Üniversitesi Araştırma ve Uygulama Hastanesi'nde yatak sayısı 10 olan bir servisle başlanmış, Fırat Üniversitesi Hastanesi’nin yeni binasına taşınması ile 28 yataklı modern bir klinik haline gelmiştir. Halen Fırat Üniversitesi Hastanesi binasının yedinci katında hizmetlerine devam etmektedir. Ülkemizin Doğu Anadolu bölgesine KBB alanında hizmet vermekte olan kliniğimizde yılda, yaklaşık olarak 15.000 hasta poliklinikte muayene edilmekte, 2000 hasta yatarak tedavi görmekte ve ortalama 1800 hasta ameliyat edilmektedir. Kliniğimiz 4 Profesör, 1 Doçent, 1 Doktor öğretim üyesi, 6 Araştırma görevlisi, 8 hemşire, 5 hasta bakıcı ve 2 temizlik görevlisi ile şehrimize, bölgemize ve ülkemize hizmet etmektedir. Kulak Burun Boğaz Hastalıkları Anabilim Dalı, alanının alt grupları olan kulak, burun, boğaz, çocuk K.B.B. hastalıkları ve baş-boyun tümörleri ile uğraşısını en üst düzeyde yapma çabası içinde olmuştur. Eğitim ve öğretim alanında da, hedefi, daima ileri gitmektir. Senede ortalama 100 öğrenci anabilim dalımızda staj yapmakta ve uzmanlık eğitimi için öğrenci kabul edilmektedir. Araştırma alanında, klinik ve deneysel çalışmalara yüksek derecede önem verilmektedir. Kliniğimizde kuruluşundan günümüze kadar birçok bilimsel çalışma yapılmış ve halen birçok çalışmada yürütülmektedir. Uluslararası dergilerde yayınlanmış 70 civarında bilimsel dış yayın ve ulusal dergilerde yayınlanmış 100 civarında yerli yayını mevcuttur.Fırat Üniversitesi Tıp Fakültesi Kulak-Burun-Boğaz Hastalıkları Anabilim Dalı, branşıyla ilgili birçok alanda kaliteli sağlık hizmeti vermeyi temel amaç edinmiştir. Poliklinik: Yılda yaklaşık 15000 hasta muayene edilen Kulak Burun Boğaz Anabilim Dalı’nda poliklinik hizmetleri hastanenin poliklinik binasının üçüncü katında sunulmaktadır. Poliklinik hizmetleri hafta içi her gün saat 08:30 ile 16:30 arasında sunulmakta ve günde ortalama 50 hasta muayene edilmektedir. Öğleden sonra poliklinikte bir öğretim üyesi de bulunmakta ve gerek duyulan hastaların konsültasyonu yapılmakta ve ameliyat randevuları verilmektedir. Odyovestibüler Ünite: Anabilim Dalımız’da muayene edilen hastaların odyolojik ve vestibüler incelemelerinin yapıldığı odyovestibüler ünite hafta içi mesai saatleri dâhilinde hizmet sunmaktadır. Yılda ortalama 4.000 hastaya hizmet verilmektedir. Bu ünitede hastalarda mevcut işitme kayıpları subjektif ve objektif olarak teşhis edilmekte ve hasta tedavi açısından yönlendirilmektedir. Burada orta kulak, iç kulak ve denge sistemi ile ilgili testler yapılmakta ve hastalıklar hakkında daha objektif bilgilere ulaşılmaktadır. Servis: Servis hizmetleri hastanemizin 7. katında sunulmaktadır. Yılda ortalama 1800’ü ameliyat edilmiş hasta olmak üzere 2000 hasta yatırılmaktadır. Serviste toplam 28 yatak bulunmaktadır. Odalarımız genellikle tek kişilik, banyolu ve tuvaletlidir. Çoğunda mini buzdolabı, televizyon ve kanepe bulunmaktadır. Yine servis içinde hasta refakatçileri için hazırlanmış dinlenme odamız mevcuttur. Tüm gün serviste bulunan araştırma görevlileri ve hemşireler, hastalarımıza en üst düzeyde yardımcı olabilmek için çaba göstermektedirler. Ameliyat olacak hastaların, yatış ve çıkışları servisimizde yapılmaktadır. Ameliyat olacak hastalar ameliyattan bir gün önce, öğretim üyelerinin bulunduğu konseyde değerlendirilmekte ve ameliyat konusunda fikir birliği oluştuktan sonra hasta ertesi gün ameliyata alınmaktadır. Serviste yatan hastalar her sabah servis doktorları tarafından sabah 08:30 dan önce görülmekte ve pansumanı yapılacak hastaların pansumanları yapılmaktadır. Saat 08:30 da ameliyata girmeyen tüm öğretim üyeleri, doktorlar ve tıp öğrencilerinin katıldığı vizitler (hasta ziyaret ve takipleri) yapılmaktadır. Vizitler sırasında hastaların her türlü sorunlarıyla ilgilenilmekte, tedavi ve pansumanları gözden geçirilmekte, gerekirse diğer kliniklerden konsültasyon istenmektedir. Aynı şekilde aynı gün saat 16:00’ da vizitler tekrarlanmaktadır. Servis katında, çalışanlara ve öğrencilere hizmet veren dershanemiz ve dershanemiz içinde kliniğimize ait kütüphanemiz bulunmaktadır. Burada hem öğrencilere ders anlatılmakta, hem de pazartesi-Perşembe günleri 08:30-09:00 arasında, cuma günleri ise saat 09:00-17:00 arasında asistan eğitim ve seminerleri yapılmaktadır. Servis katında yatan hastaların pansumanlarının ve küçük cerrahi müdahalelerin yapıldığı tam donanımlı bir müdahale odamız mevcuttur. Burada tüm yatan hastaların pansumanları ve küçük cerrahi girişimleri yapılmaktadır. Servis içerisinde tam donanımlı olmasa da birçok ameliyatın yapılabileceği bir ameliyat odamız da mevcuttur. Ameliyathane: Hastanemizin 1. katında, kliniğimizin kullanımına verilmiş haftanın 5 günü toplam 7 masa ameliyat yapabildiğimiz modern bir ameliyathanemiz bulunmaktadır. Yılda ortalama 1800 ameliyat yapılmaktadır. Bugün kliniğimizde hemen hemen dünyada yapılan bütün ameliyatlar yapılmaktadır. 2008 yılı içerisinde ülkemizde çok az merkezde yapılan koklear implant (Hiç işitmeyen hastalara takılan biyonik kulak) ameliyatları da yapılmaya başlanmış, ancak son uygulamalarla bu operasyonlara ara verilmiştir. Çok yakında bu ameliyatlara tekrar başlanacaktır. Dernek: 1997 Yılında Kliniğimiz öğretim üyesi Prof. Dr. Şinasi YALÇIN Başkanlığında Fırat-Dicle Havzası Kulak Burun Boğaz Ve Baş Boyun Cerrahisi Derneği kliniğimiz bünyesinde kurulmuş ve halen faaliyetlerine devam etmektedir. Derneğimiz başlangıçta bölgesel olmak üzere bugüne kadar birçok kongre ve sempozyum düzenlemiştir. Bugün ulusal boyutta toplantılar düzenlemektedir.",
+              Detay:
+                "Kliniğimiz 1986 yılında kurucu öğretim üyesi ve anabilim dalımızın ilk başkanı, Dr. Şinasi YALÇIN tarafından kurulmuştur. Klinik çalışmalara, Fırat Üniversitesi Araştırma ve Uygulama Hastanesi'nde yatak sayısı 10 olan bir servisle başlanmış, Fırat Üniversitesi Hastanesi’nin yeni binasına taşınması ile 28 yataklı modern bir klinik haline gelmiştir. Halen Fırat Üniversitesi Hastanesi binasının yedinci katında hizmetlerine devam etmektedir. Ülkemizin Doğu Anadolu bölgesine KBB alanında hizmet vermekte olan kliniğimizde yılda, yaklaşık olarak 15.000 hasta poliklinikte muayene edilmekte, 2000 hasta yatarak tedavi görmekte ve ortalama 1800 hasta ameliyat edilmektedir. Kliniğimiz 4 Profesör, 1 Doçent, 1 Doktor öğretim üyesi, 6 Araştırma görevlisi, 8 hemşire, 5 hasta bakıcı ve 2 temizlik görevlisi ile şehrimize, bölgemize ve ülkemize hizmet etmektedir. Kulak Burun Boğaz Hastalıkları Anabilim Dalı, alanının alt grupları olan kulak, burun, boğaz, çocuk K.B.B. hastalıkları ve baş-boyun tümörleri ile uğraşısını en üst düzeyde yapma çabası içinde olmuştur. Eğitim ve öğretim alanında da, hedefi, daima ileri gitmektir. Senede ortalama 100 öğrenci anabilim dalımızda staj yapmakta ve uzmanlık eğitimi için öğrenci kabul edilmektedir. Araştırma alanında, klinik ve deneysel çalışmalara yüksek derecede önem verilmektedir. Kliniğimizde kuruluşundan günümüze kadar birçok bilimsel çalışma yapılmış ve halen birçok çalışmada yürütülmektedir. Uluslararası dergilerde yayınlanmış 70 civarında bilimsel dış yayın ve ulusal dergilerde yayınlanmış 100 civarında yerli yayını mevcuttur.Fırat Üniversitesi Tıp Fakültesi Kulak-Burun-Boğaz Hastalıkları Anabilim Dalı, branşıyla ilgili birçok alanda kaliteli sağlık hizmeti vermeyi temel amaç edinmiştir. Poliklinik: Yılda yaklaşık 15000 hasta muayene edilen Kulak Burun Boğaz Anabilim Dalı’nda poliklinik hizmetleri hastanenin poliklinik binasının üçüncü katında sunulmaktadır. Poliklinik hizmetleri hafta içi her gün saat 08:30 ile 16:30 arasında sunulmakta ve günde ortalama 50 hasta muayene edilmektedir. Öğleden sonra poliklinikte bir öğretim üyesi de bulunmakta ve gerek duyulan hastaların konsültasyonu yapılmakta ve ameliyat randevuları verilmektedir. Odyovestibüler Ünite: Anabilim Dalımız’da muayene edilen hastaların odyolojik ve vestibüler incelemelerinin yapıldığı odyovestibüler ünite hafta içi mesai saatleri dâhilinde hizmet sunmaktadır. Yılda ortalama 4.000 hastaya hizmet verilmektedir. Bu ünitede hastalarda mevcut işitme kayıpları subjektif ve objektif olarak teşhis edilmekte ve hasta tedavi açısından yönlendirilmektedir. Burada orta kulak, iç kulak ve denge sistemi ile ilgili testler yapılmakta ve hastalıklar hakkında daha objektif bilgilere ulaşılmaktadır. Servis: Servis hizmetleri hastanemizin 7. katında sunulmaktadır. Yılda ortalama 1800’ü ameliyat edilmiş hasta olmak üzere 2000 hasta yatırılmaktadır. Serviste toplam 28 yatak bulunmaktadır. Odalarımız genellikle tek kişilik, banyolu ve tuvaletlidir. Çoğunda mini buzdolabı, televizyon ve kanepe bulunmaktadır. Yine servis içinde hasta refakatçileri için hazırlanmış dinlenme odamız mevcuttur. Tüm gün serviste bulunan araştırma görevlileri ve hemşireler, hastalarımıza en üst düzeyde yardımcı olabilmek için çaba göstermektedirler. Ameliyat olacak hastaların, yatış ve çıkışları servisimizde yapılmaktadır. Ameliyat olacak hastalar ameliyattan bir gün önce, öğretim üyelerinin bulunduğu konseyde değerlendirilmekte ve ameliyat konusunda fikir birliği oluştuktan sonra hasta ertesi gün ameliyata alınmaktadır. Serviste yatan hastalar her sabah servis doktorları tarafından sabah 08:30 dan önce görülmekte ve pansumanı yapılacak hastaların pansumanları yapılmaktadır. Saat 08:30 da ameliyata girmeyen tüm öğretim üyeleri, doktorlar ve tıp öğrencilerinin katıldığı vizitler (hasta ziyaret ve takipleri) yapılmaktadır. Vizitler sırasında hastaların her türlü sorunlarıyla ilgilenilmekte, tedavi ve pansumanları gözden geçirilmekte, gerekirse diğer kliniklerden konsültasyon istenmektedir. Aynı şekilde aynı gün saat 16:00’ da vizitler tekrarlanmaktadır. Servis katında, çalışanlara ve öğrencilere hizmet veren dershanemiz ve dershanemiz içinde kliniğimize ait kütüphanemiz bulunmaktadır. Burada hem öğrencilere ders anlatılmakta, hem de pazartesi-Perşembe günleri 08:30-09:00 arasında, cuma günleri ise saat 09:00-17:00 arasında asistan eğitim ve seminerleri yapılmaktadır. Servis katında yatan hastaların pansumanlarının ve küçük cerrahi müdahalelerin yapıldığı tam donanımlı bir müdahale odamız mevcuttur. Burada tüm yatan hastaların pansumanları ve küçük cerrahi girişimleri yapılmaktadır. Servis içerisinde tam donanımlı olmasa da birçok ameliyatın yapılabileceği bir ameliyat odamız da mevcuttur. Ameliyathane: Hastanemizin 1. katında, kliniğimizin kullanımına verilmiş haftanın 5 günü toplam 7 masa ameliyat yapabildiğimiz modern bir ameliyathanemiz bulunmaktadır. Yılda ortalama 1800 ameliyat yapılmaktadır. Bugün kliniğimizde hemen hemen dünyada yapılan bütün ameliyatlar yapılmaktadır. 2008 yılı içerisinde ülkemizde çok az merkezde yapılan koklear implant (Hiç işitmeyen hastalara takılan biyonik kulak) ameliyatları da yapılmaya başlanmış, ancak son uygulamalarla bu operasyonlara ara verilmiştir. Çok yakında bu ameliyatlara tekrar başlanacaktır. Dernek: 1997 Yılında Kliniğimiz öğretim üyesi Prof. Dr. Şinasi YALÇIN Başkanlığında Fırat-Dicle Havzası Kulak Burun Boğaz Ve Baş Boyun Cerrahisi Derneği kliniğimiz bünyesinde kurulmuş ve halen faaliyetlerine devam etmektedir. Derneğimiz başlangıçta bölgesel olmak üzere bugüne kadar birçok kongre ve sempozyum düzenlemiştir. Bugün ulusal boyutta toplantılar düzenlemektedir.",
               Doktorlar: [
                 {
                   unvan: "Prof. Dr. ",
@@ -1067,7 +1076,8 @@ export class ContextProvider extends Component {
             },
             {
               BolumAdi: "Ortopedi ve Travmatoloji Anabilim Dalı   ",
-              Detay:"Fırat Ün. Tıp Fak. Ortopedi ve Travmatoloji Kliniği ilk olarak 1987 yılında Tıpta Uzmanlık Sınavını kazanan bir araştırma görevlisi ve akabinde göreve başlayan bir öğretim üyesi ile hizmet vermeye başlamıştır. Fırat Üniversitesi Araştırma ve Uygulama Hastanesinin ilk binasında yatak sayısı 12 olan bir servisle başlanan bu hizmet sunumu, Hastanenin yeni binasına taşınması ile 36 yataklı büyük bir klinikte, modern ortopedi ve travmatolojide geçerli tüm tanı ve tedavi yöntemlerinin uygulandığı bir merkez olarak devam etmektedir. Kurulduğu günden bu yana sadece ilimize değil, çevre illere ve bölgeye de hizmet veren kliniğimizde yılda; yaklaşık olarak 45.000 hasta poliklinikte muayene edilmekte, 3500 hasta yatarak tedavi görmekte ve ortalama 3200 hasta ameliyat edilmektedir. Bölümümüzde iki Profesör, bir Doçent ve bir Dr. Öğretim Üyesi ile 15 araştırma görevlisi çalışmaktadır. Bugüne kadar (2020 yılı) kliniğimizden eğitimini alan ve ülkemizin çeşitli hastanelerinde görev yapan ortopedi uzmanı sayısı 49 dur. Her eğitim – öğretim döneminde ortalama 100 Tıp Fakültesi öğrencisi kliniğimizde staj yapmaktadır. Anabilim dalımızda yapılan klinik ve deneysel çalışmalardan üretilen bilimsel veriler çok sayıda ulusal ve uluslararası dergide yayınlanmıştır.",
+              Detay:
+                "Fırat Ün. Tıp Fak. Ortopedi ve Travmatoloji Kliniği ilk olarak 1987 yılında Tıpta Uzmanlık Sınavını kazanan bir araştırma görevlisi ve akabinde göreve başlayan bir öğretim üyesi ile hizmet vermeye başlamıştır. Fırat Üniversitesi Araştırma ve Uygulama Hastanesinin ilk binasında yatak sayısı 12 olan bir servisle başlanan bu hizmet sunumu, Hastanenin yeni binasına taşınması ile 36 yataklı büyük bir klinikte, modern ortopedi ve travmatolojide geçerli tüm tanı ve tedavi yöntemlerinin uygulandığı bir merkez olarak devam etmektedir. Kurulduğu günden bu yana sadece ilimize değil, çevre illere ve bölgeye de hizmet veren kliniğimizde yılda; yaklaşık olarak 45.000 hasta poliklinikte muayene edilmekte, 3500 hasta yatarak tedavi görmekte ve ortalama 3200 hasta ameliyat edilmektedir. Bölümümüzde iki Profesör, bir Doçent ve bir Dr. Öğretim Üyesi ile 15 araştırma görevlisi çalışmaktadır. Bugüne kadar (2020 yılı) kliniğimizden eğitimini alan ve ülkemizin çeşitli hastanelerinde görev yapan ortopedi uzmanı sayısı 49 dur. Her eğitim – öğretim döneminde ortalama 100 Tıp Fakültesi öğrencisi kliniğimizde staj yapmaktadır. Anabilim dalımızda yapılan klinik ve deneysel çalışmalardan üretilen bilimsel veriler çok sayıda ulusal ve uluslararası dergide yayınlanmıştır.",
               Doktorlar: [
                 {
                   unvan: "Prof. Dr. ",
@@ -1095,7 +1105,8 @@ export class ContextProvider extends Component {
             },
             {
               BolumAdi: "Patoloji Anabilim Dalı  ",
-              Detay:"Anabilim Dalımız 1988 yılında kurularak faaliyete başladı. İlk olarak faaliyetini küçük bir laboratuvar içerisinde 1 Yardımcı Doçent, 2 Araştırma Görevlisi ve 1 teknisyen ile yürütürken bugün sürekli gelişen kendine ait modern bir laboratuvar ve mikroskopi salonlarıyla hizmet vermektedir. Anabilim Dalımız bu hizmetini 2 Profesör, 2 Doçent, 3 Dr. Öğretim Üyesi, 4 Araştırma Görevlisi ve 21 teknisyen ,6 sekreter, 2 Arşiv görevlisi kadrosuyla vermektedir. Anabilim Dalımızda doku örnekleri (Biyopsi ve sitoloji) ile sıvılar incelenerek tanıları verilmektedir. Yıllık biyopsi ve sitoloji sayımız ortalama 25. 000 civarındadır. Laboratuvarımızda rutin işlemleri yanısıra immünohistokimya , histokimya ve moleküler tekniklerden yararlanılmakta ayrıca servikal smearlerde HPV testi uygulanmaktadır.",
+              Detay:
+                "Anabilim Dalımız 1988 yılında kurularak faaliyete başladı. İlk olarak faaliyetini küçük bir laboratuvar içerisinde 1 Yardımcı Doçent, 2 Araştırma Görevlisi ve 1 teknisyen ile yürütürken bugün sürekli gelişen kendine ait modern bir laboratuvar ve mikroskopi salonlarıyla hizmet vermektedir. Anabilim Dalımız bu hizmetini 2 Profesör, 2 Doçent, 3 Dr. Öğretim Üyesi, 4 Araştırma Görevlisi ve 21 teknisyen ,6 sekreter, 2 Arşiv görevlisi kadrosuyla vermektedir. Anabilim Dalımızda doku örnekleri (Biyopsi ve sitoloji) ile sıvılar incelenerek tanıları verilmektedir. Yıllık biyopsi ve sitoloji sayımız ortalama 25. 000 civarındadır. Laboratuvarımızda rutin işlemleri yanısıra immünohistokimya , histokimya ve moleküler tekniklerden yararlanılmakta ayrıca servikal smearlerde HPV testi uygulanmaktadır.",
               Doktorlar: [
                 {
                   unvan: "Prof. Dr. ",
@@ -1133,7 +1144,8 @@ export class ContextProvider extends Component {
             },
             {
               BolumAdi: "Plastik ve Rekonstrüktif Cerrahi Anabilim Dalı  ",
-              Detay:"FÜ Tıp Fakültesi Plastik ve Rekonstrüktif Cerrahi Ana Bilim Dalı, Fırat Üniversitesi Tıp Fakültesi bünyesinde 1996 yılında kurulmuştur. Kuruluşundan bu yana uzmanlık eğitimlerini Ana bilim dalımızda tamamlayanların sayısı 24dur. 24 mezunumuzdan 5’i çeşitli üniversitelerde öğretim üyesi olarak görev yapmaktadırlar. FÜ Tıp Fakültesi Plastik ve Rekonstrüktif Cerrahi Ana Bilim Dalı 40 yatağı ve 6 Yanık Tedavi Merkezi mevcuttur. ",
+              Detay:
+                "FÜ Tıp Fakültesi Plastik ve Rekonstrüktif Cerrahi Ana Bilim Dalı, Fırat Üniversitesi Tıp Fakültesi bünyesinde 1996 yılında kurulmuştur. Kuruluşundan bu yana uzmanlık eğitimlerini Ana bilim dalımızda tamamlayanların sayısı 24dur. 24 mezunumuzdan 5’i çeşitli üniversitelerde öğretim üyesi olarak görev yapmaktadırlar. FÜ Tıp Fakültesi Plastik ve Rekonstrüktif Cerrahi Ana Bilim Dalı 40 yatağı ve 6 Yanık Tedavi Merkezi mevcuttur. ",
               Doktorlar: [
                 {
                   unvan: "Doç. Dr. ",
@@ -1149,7 +1161,8 @@ export class ContextProvider extends Component {
             },
             {
               BolumAdi: "Üroloji Anabilim Dalı ",
-              Detay:"Kliniğimiz 1986 yılında kurucu öğretim üyesi ve Anabilim Dalımızın ilk başkanı, Dr. Yaşar Can BAYDİNÇ tarafından kurulmuştur. Klinik çalışmalara, Fırat Üniversitesi Araştırma ve Uygulama Hastanesi'nde yatak sayısı 9 olan bir servisle başlanmış, Fırat Üniversitesi Hastanesi’nin yeni binasına taşınması ile 37 yataklı modern bir klinik haline gelmiştir. Halen Fırat Üniversitesi Hastanesi binasının sekizinci katında hizmetlerine devam etmektedir.Ülkemizin Doğu Anadolu bölgesine Üroloji alanında hizmet vermekte olan kliniğimizde yılda, yaklaşık olarak 25.000 hasta poliklinikte muayene edilmekte, 3200 hasta yatarak tedavi görmekte ve ortalama 2000 hasta ameliyat edilmektedir.Kliniğimiz 3 Profesör, 2 Doçent, 6 Araştırma görevlisi, 9 hemşire, 5 hasta bakıcı, 2 temizlik görevlisi ve 1 sekreter ile şehrimize, bölgemize ve ülkemize hizmet etmektedir.",
+              Detay:
+                "Kliniğimiz 1986 yılında kurucu öğretim üyesi ve Anabilim Dalımızın ilk başkanı, Dr. Yaşar Can BAYDİNÇ tarafından kurulmuştur. Klinik çalışmalara, Fırat Üniversitesi Araştırma ve Uygulama Hastanesi'nde yatak sayısı 9 olan bir servisle başlanmış, Fırat Üniversitesi Hastanesi’nin yeni binasına taşınması ile 37 yataklı modern bir klinik haline gelmiştir. Halen Fırat Üniversitesi Hastanesi binasının sekizinci katında hizmetlerine devam etmektedir.Ülkemizin Doğu Anadolu bölgesine Üroloji alanında hizmet vermekte olan kliniğimizde yılda, yaklaşık olarak 25.000 hasta poliklinikte muayene edilmekte, 3200 hasta yatarak tedavi görmekte ve ortalama 2000 hasta ameliyat edilmektedir.Kliniğimiz 3 Profesör, 2 Doçent, 6 Araştırma görevlisi, 9 hemşire, 5 hasta bakıcı, 2 temizlik görevlisi ve 1 sekreter ile şehrimize, bölgemize ve ülkemize hizmet etmektedir.",
               Doktorlar: [
                 {
                   unvan: "Prof. Dr. ",
@@ -1184,7 +1197,8 @@ export class ContextProvider extends Component {
           TemelTipBilimleri: [
             {
               BolumAdi: "Biyokimya Anabilim Dalı  ",
-              Detay:"Anabilim dalımız 1993 yılında kurulmuştur.Anabilim dalımız; Tıpfakültesi ve Sağlık ile ilgili okullarda lisasn düzeyinde Sağlık Bilimleri Enstitüsüne bağlı olarak ve Tıpta Uzmanlık Tüzüğü esaslarına göre ise lisans üstü düzeyde eğitim vermektedir.Anabilim Dalımız bu hizmetlerinin yanında bilimsel araştırma faaliyetlerini de sürdürmekte ve üniversite hastanemizde de klinik laboratuar amaçlı olarak hizmet vermektedir.Laboratuarmızda;hematolojik analizler kullanılan klinik biyokimya ve hormon testleri,hematolojik analizler ile spesifik testlerin düzeylerinin tayini ve moleküler tarama testleri yapılmaktadır.",
+              Detay:
+                "Anabilim dalımız 1993 yılında kurulmuştur.Anabilim dalımız; Tıpfakültesi ve Sağlık ile ilgili okullarda lisasn düzeyinde Sağlık Bilimleri Enstitüsüne bağlı olarak ve Tıpta Uzmanlık Tüzüğü esaslarına göre ise lisans üstü düzeyde eğitim vermektedir.Anabilim Dalımız bu hizmetlerinin yanında bilimsel araştırma faaliyetlerini de sürdürmekte ve üniversite hastanemizde de klinik laboratuar amaçlı olarak hizmet vermektedir.Laboratuarmızda;hematolojik analizler kullanılan klinik biyokimya ve hormon testleri,hematolojik analizler ile spesifik testlerin düzeylerinin tayini ve moleküler tarama testleri yapılmaktadır.",
               Doktorlar: [
                 {
                   unvan: "Prof. Dr. ",
@@ -1227,7 +1241,8 @@ export class ContextProvider extends Component {
             },
             {
               BolumAdi: "İmmünoloji Anabilim Dalı ",
-              Detay:"Anabilim Dalımızda rutin tanı hizmeti ve araştırmalar; Bakteriyoloji, Mikobakteriyoloji, Viroloji ve Hücre Kültürü, Mikoloji, Parazitoloji, Moleküler Biyoloji laboratuvarlarında yürütülmektedir. Anabilim Dalımızda 24 saat kesintisiz hizmet verilmektedir. Bir Araştırma Görevlisi, bir teknisyen ve icapçı bir öğretim üyesinin görev aldığı nöbet koşullarında bakteriyolojik, mikobakteriyolojik, mikolojik kültürler ve moleküler mikrobiyoloji için örnek kabul edilerek hizmet verilmektedir. Moleküler tekniklerden; Kalitatif PCR, Real-Time PCR, RFLP, Ticari Strip Testler, DNA Dizi Analizi, SDS-PAGE ile çalışmalar yürütülmektedir. Laboratuvarlarımızda yapılan testler; hastanemizin gereksinimlerine göre geliştirilmektedir. İmmünosüpresyondaki diğer hastalarda enfeksiyon tanı ve izlemine yönelik bakteriyolojik ve mikolojik ileri testler, viral hepatit, diğer viral etkenler ve HIV tanı ve izlem testleri, hücre kültürü ve moleküler tanı testleri gibi geniş bir yelpazede hizmet verilmektedir. Bu hizmet, kaliteli ve etkin hizmet anlayışı, eğitimli ve deneyimli personelimizle en üst düzeyde verilmeye çalışılmaktadır. Anabilim Dalımız, uzmanlık öğrencilerinin eğitimi için zengin materyale sahiptir. Uzmanlık öğrencileri rutin hizmet ve nöbet uygulamaları ile yeterli deneyimi kazanabilecekleri, ayrıca araştırma yapabilecekleri uygun bir ortamda çalışır. Uzmanlık eğitiminde ulusal ve uluslararası eğitim standardının sağlanmasına çalışılmaktadır. Eğitim kadromuz, Klinik Mikrobiyoloji Laboratuvarını yönetebilecek donanıma sahip, uygun becerileri kazanmış, yetkin uzmanlık öğrencileri yetiştirmeyi hedefler. Ayrıca öğretim üyesi sayısı, kalitesi ve yeterli teknik altyapı ile istenilen araştırmaların yapılması için uygun ortam mevcuttur. Anabilim dalımızda planlanan araştırmalarda, evrensel bilimsel temellere dayanan, ancak toplumun ve kurumun gereksinimi karşılayacak konulara ağırlık verilmektedir. Anabilim Dalımız geleneksel olarak eğitime önem veren bir bölümdür. Öğretim üyelerimizin Fakülte eğitim çalışmalarına katılma oranının yüksek olması nedeniyle, deneyim ve bilgi birikimleri yüksektir. Tıp Fakültesi öğrencilerinin eğitiminde gerekli Klinik Mikrobiyoloji kuramsal bilgilerinin uygulamalar desteği ile aktarılması ve pratisyen hekime gerekli becerilerin kazandırılması amaçlanmıştır.",
+              Detay:
+                "Anabilim Dalımızda rutin tanı hizmeti ve araştırmalar; Bakteriyoloji, Mikobakteriyoloji, Viroloji ve Hücre Kültürü, Mikoloji, Parazitoloji, Moleküler Biyoloji laboratuvarlarında yürütülmektedir. Anabilim Dalımızda 24 saat kesintisiz hizmet verilmektedir. Bir Araştırma Görevlisi, bir teknisyen ve icapçı bir öğretim üyesinin görev aldığı nöbet koşullarında bakteriyolojik, mikobakteriyolojik, mikolojik kültürler ve moleküler mikrobiyoloji için örnek kabul edilerek hizmet verilmektedir. Moleküler tekniklerden; Kalitatif PCR, Real-Time PCR, RFLP, Ticari Strip Testler, DNA Dizi Analizi, SDS-PAGE ile çalışmalar yürütülmektedir. Laboratuvarlarımızda yapılan testler; hastanemizin gereksinimlerine göre geliştirilmektedir. İmmünosüpresyondaki diğer hastalarda enfeksiyon tanı ve izlemine yönelik bakteriyolojik ve mikolojik ileri testler, viral hepatit, diğer viral etkenler ve HIV tanı ve izlem testleri, hücre kültürü ve moleküler tanı testleri gibi geniş bir yelpazede hizmet verilmektedir. Bu hizmet, kaliteli ve etkin hizmet anlayışı, eğitimli ve deneyimli personelimizle en üst düzeyde verilmeye çalışılmaktadır. Anabilim Dalımız, uzmanlık öğrencilerinin eğitimi için zengin materyale sahiptir. Uzmanlık öğrencileri rutin hizmet ve nöbet uygulamaları ile yeterli deneyimi kazanabilecekleri, ayrıca araştırma yapabilecekleri uygun bir ortamda çalışır. Uzmanlık eğitiminde ulusal ve uluslararası eğitim standardının sağlanmasına çalışılmaktadır. Eğitim kadromuz, Klinik Mikrobiyoloji Laboratuvarını yönetebilecek donanıma sahip, uygun becerileri kazanmış, yetkin uzmanlık öğrencileri yetiştirmeyi hedefler. Ayrıca öğretim üyesi sayısı, kalitesi ve yeterli teknik altyapı ile istenilen araştırmaların yapılması için uygun ortam mevcuttur. Anabilim dalımızda planlanan araştırmalarda, evrensel bilimsel temellere dayanan, ancak toplumun ve kurumun gereksinimi karşılayacak konulara ağırlık verilmektedir. Anabilim Dalımız geleneksel olarak eğitime önem veren bir bölümdür. Öğretim üyelerimizin Fakülte eğitim çalışmalarına katılma oranının yüksek olması nedeniyle, deneyim ve bilgi birikimleri yüksektir. Tıp Fakültesi öğrencilerinin eğitiminde gerekli Klinik Mikrobiyoloji kuramsal bilgilerinin uygulamalar desteği ile aktarılması ve pratisyen hekime gerekli becerilerin kazandırılması amaçlanmıştır.",
               Doktorlar: [
                 {
                   unvan: "Prof. Dr. ",
@@ -1291,7 +1306,8 @@ export class ContextProvider extends Component {
           DigerTedaviUniteleri: [
             {
               BolumAdi: "Geleneksel ve Tamamlayıcı Tıp Uygulama Merkezi(GETAT)",
-              Detay:"Geleneksel ve Tamamlayıcı Tıp Uygulama Merkezi, Akupunktur Uygulama Merkezi, Ozon Tedavi Ünitesi ve KUPA(Hacamat) Tedavi Ünitesi olmak üzere üç bölümden oluşmaktadır.              ",
+              Detay:
+                "Geleneksel ve Tamamlayıcı Tıp Uygulama Merkezi, Akupunktur Uygulama Merkezi, Ozon Tedavi Ünitesi ve KUPA(Hacamat) Tedavi Ünitesi olmak üzere üç bölümden oluşmaktadır.              ",
               Doktorlar: [
                 {
                   unvan: "Prof. Dr. ",
@@ -1303,34 +1319,27 @@ export class ContextProvider extends Component {
           ],
         },
       ],
-    
+
       Yonetim: [
         {
-
           id: "1",
           Baslik: "Hastane Başhekimi",
           Kisiler: [
             {
-    
               id: "1",
               unvan: "Başhekim Prof. Dr.",
               Adi: "İrfan KAYGUSUZ",
               Hakkinda:
                 "Elazığ’da 1967 yılında doğdu. 1991 yılında İstanbul Üniversitesi İstanbul Tıp Fakültesi’nden mezun oldu. 1994 Nisan dönemi Tıpta Uzmanlık Sınavını kazanarak Fırat Üniversitesi Tıp Fakültesi Kulak Burun Boğaz Anabilim Dalı’nda araştırma görevlisi olarak akademik hayatına başladı. 1998 yılında “Özefagus Koroziv Yanıklarının İyileşmesinde Interferon–alfa-2b ve Octreotide Etkinliği” adlı tez ile ihtisasını tamamladı ve Kulak Burun Boğaz Hastalıkları Uzmanı oldu. Daha sonra 1999 yılında aynı anabilim dalına yardımcı doçent doktor olarak atandı. 14.04.2004 tarihinde girdiği doçentlik sınavını başarı ile geçerek Doçent unvanını aldı. 18.09.2009 tarihinde Fırat Üniversitesi Tıp Fakültesi Kulak Burun Boğaz Anabilim Dalı’nda Profesör kadrosuna atandı. 13.09.2012 tarihinde Ağız Yüz ve Çene Cerrahisi Uzmanı unvanını aldı. 2018 yılından beri Türk Kulak Burun Boğaz ve Baş Boyun Cerrahisi Yeterlik Yürütme Kurulu Başkanlığı görevini sürdürmektedir. Bugüne kadar akademik ve idari olarak almış olduğu görevler; Fırat Üniversitesi Hastanesi Başhekimliği (2004–2008), F.Ü. Tıp Fakültesi KBB Anabilim Dalı Başkanlığı (2004–2007),F.Ü. Tıp Fakültesi Dekan Yardımcılığı (2004–2008),F.Ü. Tıp Fakültesi Yönetim Kurulu Üyeliği (2004–2012),F.Ü. Tıp Fakültesi Fakülte Kurulu Üyeliği (2009–2012/2018-……),F.Ü. Sağlık Bilimleri Enstitüsü Kurulu Üyeliği (2004–2007),F.Ü. Tıp Fakültesi Dönem III Eğitim Koordinatörlüğü (2017-2020),F.Ü. Tıp Fakültesi Eğitim Baş Koordinatörlüğü (2017-2020),F.Ü. Tıp Fakültesi Cerrahi Tıp Bilimleri Bölüm Başkanlığı (2018-….),Fırat Üniversitesi Hastanesi Yönetim Kurulu Üyeliği (2018-…..),F.Ü. Tıp Fakültesi Dekan Yardımcılığı (2020-2020),Türk KBB ve BBC Yeterlik Kurulu Eğitim Komisyonu Üyeliği (2008-2010) ve Başkanlığı (2010-2012),Türk KBB ve BBC Yeterlik Kurulu Akreditasyon Komisyonu Üyeliği (2014-2016) ve Başkanlığı (2016-2018),Türk KBB ve BBC Derneği Yönetim Kurulu Üyeliği (2016-2018),Türk KBB ve BBC Derneği Danışma Kurulu Üyeliği (2016-……),Fırat-Dicle Havzası KBB ve BBC Derneği Başkanlığı (2015-2018),Sağlık Bakanlığı Ağız, Yüz ve Çene Cerrahisi II. Dönem (2012-2013) ve III. Dönem (2014-…..) TUKMOS Komisyon Üyeliği görevlerinde bulunmuştur. Mesleği ile ilgili çok sayıda bilimsel dernek üyeliğine sahiptir. Ayrıca ülkemizde yayınlanan 10’ dan fazla derginin de danışma kurulu üyeliğini yapmaktadır. Halen Fırat Tıp Dergisi Editörlüğünü sürdürmektedir. Bugüne kadar ülkemizde düzenlenen 16 sempozyum, kongre veya kursta düzenleme komitesinde veya sekreteryasında; 47 kongre ve sempozyuma da ise moderatör, oturum başkanı, konuşmacı veya panelist olarak görev almıştır. Ayrıca 41 kongre ve sempozyuma da dinleyici olarak katılmıştır. Bu toplantılarda çok sayıda kurs düzenlemiştir. Bugüne kadar 10 doktora tezi yönetmiş ve ülkemizde yapılan farklı sempozyum ve kongrelerde 8 bilimsel çalışma ile (üçü birincilik) ödül almıştır. Ayrıca ülkemizde yayınlanan iki tıp dergisi tarafından da yılın en iyi bilimsel danışman (hakem) ödülüne layık görülmüştür. 58’i uluslararası, 93’ü ulusal olmak üzere toplam 151 bilimsel yayını (makale) ve 13’ü uluslararası, 93’ü ulusal olmak üzere 106 bilimsel bidirisi bulunmaktadır. Makalelerine bugüne kadar Web of Science portalında 636 atıf yapılmıştır. Kulak burun boğaz alanında yayınlanan 7 bilimsel kitapta bölüm yazarlığı ve yine bu alanda İngilizce olarak yayınlanan 5 bilimsel kitabın Türkçeye çevrilmesinde bölüm çeviriciliği bulunmaktadır. Halen Fırat Üniversitesi Tıp Fakültesi Kulak Burun Boğaz Anabilim Dalı’nda profesör doktor olarak çalışmaktadır. Yabancı dil olarak ingilizce bilmektedir. Evli ve iki çocuk babasıdır.",
               Fotograf: bashekimfotografi,
-          
-            
-          }
+            },
           ],
-  
-            
-          },
-  
+        },
+
         {
           id: "2",
           Baslik: "Hastane Başhekimliği",
           Kisiler: [
-      
             {
               id: "1",
               unvan: " Başhekim Yardımcısı Prof. Dr.",
@@ -1365,7 +1374,6 @@ export class ContextProvider extends Component {
             },
           ],
         },
-
 
         {
           id: "3",
@@ -1505,70 +1513,70 @@ export class ContextProvider extends Component {
       Haberler: [
         {
           HaberId: 1,
-          Fotograf:[ hstn3,selcenozkayafotografi ],
+          Fotograf: [hstn3, selcenozkayafotografi],
           HaberBasligi:
             "Firat Universitesi Hastanesi1 haberleri burada gösterilecek",
           HaberDetayi: "Detayy1",
         },
         {
           HaberId: 2,
-          Fotograf:[ hstn3,hstn4 ],
+          Fotograf: [hstn3, hstn4],
           HaberBasligi:
             "Firat Universitesi Hastanesi haberleri burada gösterilecekFirat Universitesi Hastanesi2",
           HaberDetayi: "detay2",
         },
         {
           HaberId: 3,
-          Fotograf:[ hstn3,hstn4 ],
+          Fotograf: [hstn3, hstn4],
           HaberBasligi:
             " Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3",
           HaberDetayi: "Detayy3",
         },
         {
           HaberId: 4,
-          Fotograf: [ hstn3,hstn4 ],
+          Fotograf: [hstn3, hstn4],
           HaberBasligi:
             " Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3",
           HaberDetayi: "Detayy4",
         },
         {
           HaberId: 5,
-          Fotograf:[ hstn3, hstn4],
+          Fotograf: [hstn3, hstn4],
           HaberBasligi:
             " Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3",
           HaberDetayi: "Detayy5",
         },
         {
           HaberId: 6,
-          Fotograf: [ hstn3,hstn4 ],
+          Fotograf: [hstn3, hstn4],
           HaberBasligi:
             " Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3",
           HaberDetayi: " detay6 ",
         },
         {
           HaberId: 7,
-          Fotograf: [ hstn3, hstn4],
+          Fotograf: [hstn3, hstn4],
           HaberBasligi:
             " Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3",
           HaberDetayi: "Detayy7",
         },
         {
           HaberId: 8,
-          Fotograf:[ hstn3, hstn4],
+          Fotograf: [hstn3, hstn4],
           HaberBasligi:
             " Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3",
           HaberDetayi: "Detayy8",
         },
         {
           HaberId: 9,
-          Fotograf:[ hstn3,hstn4 ],
+          Fotograf: [hstn3, hstn4],
           HaberBasligi:
             " Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3",
           HaberDetayi: " detay9 ",
         },
         {
           HaberId: 10,
-          Fotograf:[ hstn3,hstn4, hstn3,hstn4 , hstn3,hstn4, hstn3, ],
+          Fotograf: [hstn3, hstn4, hstn3, hstn4, hstn3, hstn4, hstn3],
           HaberBasligi:
             " Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3",
           HaberDetayi:
