@@ -4,38 +4,20 @@ import { useState } from "react";
 
 function ResimlerSlider(props) {
   const [ResimNumarasi, setResimNumarasi] = useState(0);
-
-  const Fotograflar = props.Fotograf;
-  console.log(Fotograflar);
-
   const Foto= props.Fotograf;
-
   return (
     <div className="ResimSlider">
-      <div className="HaberFotografi">
-        <img src={Fotograflar[ResimNumarasi]}></img>
+      <div className="ResimSliderFotograf"  > 
+      <div
+        className="ResimSliderLeftButton"
+        onClick={() => {
+          setResimNumarasi(ResimNumarasi - 1);
+        }}
+      >
+        <span>
+          <i className="fa fa-angle-left"></i>
+        </span>
       </div>
-
-      <div className="HrStyle" >
-        <hr></hr>{" "}
-      </div>
-
-      <div className="KucukFotograflar">
-        <ul>
-          {Fotograflar.map((Fotograf, index) => {
-            return (
-              <li
-                className="ResimSliderFotografCard "
-                onClick={() => setResimNumarasi(ResimNumarasi + 1)}
-              >
-                <img src={Fotograf}></img>
-              </li>
-            );
-          })}
-        </ul>
-      </div>
-    </div>
-
       <div className="ResimSliderFotograf ">
         <img src={Foto[ResimNumarasi]}></img>
       </div>
@@ -66,7 +48,6 @@ function ResimlerSlider(props) {
       </ul>
 
     </div>  </div>
-
   );
 }
 
